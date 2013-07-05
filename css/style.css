@@ -1,0 +1,287 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+#map_canvas img,
+.google-maps img {
+  max-width: none;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+body {
+  margin: 0;
+  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+}
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #005580;
+  text-decoration: underline;
+}
+
+/* Type */
+
+h1, h2, h3 {
+  margin: 0.667em 0;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.1;
+}
+
+/* Logo */
+
+header {
+  margin: 1.5em 0 0;
+  overflow: hidden;
+}
+
+.logo-wrapper {
+  margin: 0;
+  font-size: 1em;
+  float: left;
+}
+.logo {
+  margin: 0;
+}
+.logo:hover {
+  text-decoration: none;
+}
+.logo img {
+  position: relative;
+  top: -1px;
+  margin-right: 4px;
+}
+
+/* Question/Search */
+
+.ask-a-question {
+  float: right;
+  line-height: 1.1;
+}
+
+/* Modules */
+
+.block {
+  padding: 0 1em;
+}
+
+/* Article */
+
+.steps {
+  margin: 1.5em 1em;
+  margin-right: 0;
+  padding-left: 0;
+}
+
+.steps li {
+  margin: 0 1em 2.5em;
+  margin-right: 0;
+}
+
+.article img {
+  border: 1px solid #eee;
+  border: 1px solid rgba(0,0,0,.05);
+  max-width: 100%;
+}
+
+.article figure {
+  text-align: center;
+  margin: 1.5em 0 0;
+  padding: 0;
+}
+
+.steps figure {
+  margin-left: -2em;
+}
+
+.article figcaption {
+  margin-top: 1em;
+  font-style: italic;
+}
+
+/* Related content */
+
+.related {
+  margin: 2.5em 0 2em;
+}
+
+.related h2 {
+  font-size: 1.5em;
+}
+
+.related ul {
+  margin-bottom: 0;
+}
+
+.related li {
+  margin: 0 0 0.667em;
+}
+
+/* Embed */
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16/9 ratio */
+  padding-top: 30px; /* IE6 workaround*/
+  height: 0;
+  overflow: hidden;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+
+.footer {
+  margin: 0 0 1.5em;
+}
