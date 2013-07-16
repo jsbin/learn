@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Learn about JS Bin",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": "0.10.x",
+    "npm": "0.2.x"
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,6 @@
   "author": "",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "799c4110868689e4a6a4bf8fff2cdf31dfae1c8a",
   "dependencies": {
     "docserver": "~0.1.4",
     "express": "~3.3.4"
