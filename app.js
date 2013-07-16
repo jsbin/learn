@@ -2,9 +2,9 @@
  * Learn JS Bin
  */
 
-var express   = require('express'),
-    http      = require('http'),
-    docserver = require('docserver');
+var express = require('express'),
+    http    = require('http'),
+    mdware  = require('mdware');
 
 /**
  * Express setup
@@ -17,7 +17,7 @@ app.use(express.favicon(__dirname + '/public/img/favicon.png'));
 app.use(express.logger('dev'));
 app.use(express.compress());
 app.use(express.static(__dirname + '/public'));
-app.use(docserver({
+app.use(mdware({
   dir: __dirname + '/content',
   url: '/'
 }));

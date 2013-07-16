@@ -15,7 +15,7 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "docserver": "~0.1.4",
-    "express": "~3.3.4"
+    "express": "~3.3.4",
+    "mdware": "~0.2.0"
   }
 }
