@@ -14,16 +14,16 @@ The whole site should be searchable.
 
 **Note:** Content should be being written throughout this.
 
-- [ ] Finish off the single task template for mobile
-- [ ] Add larger page styles for task page
-- [ ] Finish feature list and build feature grid
-- [ ] Add navigation to all articles (initially, a big list. This will be searchable later on)
-- [ ] Search
-- [ ] Add ask question box (maybe linked to search)
+- Finish off the single task template for mobile
+- Add larger page styles for task page
+- Finish feature list and build feature grid
+- Add navigation to all articles (initially, a big list. This will be searchable later on)
+- Search
+- Add ask question box (maybe linked to search)
 
 ## Content
 
-*Please add to this.**
+*Please add to this.*
 
 - Tasks
   - Teach a workshop about advanced JavaScript
@@ -103,8 +103,8 @@ The whole site should be searchable.
 
 # Design
 
-![http://f.cl.ly/items/0P3j3J3C1r2C042k1u0O/IMG_1307.JPG](http://f.cl.ly/items/0P3j3J3C1r2C042k1u0O/IMG_1307.JPG)
+![img](http://f.cl.ly/items/0P3j3J3C1r2C042k1u0O/IMG_1307.JPG)
 
-![http://f.cl.ly/items/252u2w0L163C2y1w1e22/IMG_1308.JPG](http://f.cl.ly/items/252u2w0L163C2y1w1e22/IMG_1308.JPG)
+![img](http://f.cl.ly/items/252u2w0L163C2y1w1e22/IMG_1308.JPG)
 
-![http://f.cl.ly/items/0l2G2L0h2l3K3K1B0F2X/IMG_1309.JPG](http://f.cl.ly/items/0l2G2L0h2l3K3K1B0F2X/IMG_1309.JPG)
+![img](http://f.cl.ly/items/0l2G2L0h2l3K3K1B0F2X/IMG_1309.JPG)
