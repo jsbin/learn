@@ -32,13 +32,17 @@ app.use(express.static(__dirname + '/public'));
 
 var baseDir = 'content';
 
+// Search the content directory for all articles
 mdtree.build(baseDir, function (err, tree) {
 
+  // Flatten the list of articles for navigation
   var articles = mdtree.files(tree);
 
+  // Iterate through them, creating a URL and setting up a route
   articles.forEach(function (article) {
-    var url = '/' + article.urlPath.replace(baseDir, '');
-    app.get(url, function (req, res) {
+    article.url = ('/' + article.urlPath.replace(baseDir, '')).replace(/\/\//, '/');
+    article.articles = articles;
+    app.get(article.url, function (req, res) {
       res.render(article.layout || 'index', article);
     });
   });
