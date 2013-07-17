@@ -18,6 +18,7 @@ app.set('port', process.env.PORT || 4567);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);
+hbs.registerPartials(__dirname + '/views/partials');
 // Content
 app.use(express.favicon(__dirname + '/public/img/favicon.png'));
 app.use(express.logger('dev'));
@@ -29,7 +30,7 @@ app.use(mdware({
 }));
 app.use(function (req, res, next) {
   if (!req.mdware) return next();
-  res.render('index', req.mdware);
+  res.render(req.mdware.attributes.layout || 'index', req.mdware);
 });
 
 http.createServer(app).listen(app.get('port'), function () {
