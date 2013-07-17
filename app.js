@@ -4,7 +4,7 @@
 
 var express = require('express'),
     http    = require('http'),
-    mdware  = require('mdware'),
+    mdtree  = require('mdtree'),
     hbs     = require('hbs');
 
 /**
@@ -23,16 +23,29 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.use(express.favicon(__dirname + '/public/img/favicon.png'));
 app.use(express.logger('dev'));
 app.use(express.compress());
+app.use(app.router);
 app.use(express.static(__dirname + '/public'));
-app.use(mdware({
-  dir: __dirname + '/content',
-  url: '/'
-}));
-app.use(function (req, res, next) {
-  if (!req.mdware) return next();
-  res.render(req.mdware.attributes.layout || 'index', req.mdware);
+
+/**
+ * Content setup & routing
+ */
+
+var baseDir = 'content';
+
+mdtree.build(baseDir, function (err, tree) {
+
+  var articles = mdtree.files(tree);
+
+  articles.forEach(function (article) {
+    var url = '/' + article.urlPath.replace(baseDir, '');
+    app.get(url, function (req, res) {
+      res.render(article.layout || 'index', article);
+    });
+  });
+
+  http.createServer(app).listen(app.get('port'), function () {
+    console.log('http://localhost:' + this.address().port);
+  });
+
 });
 
-http.createServer(app).listen(app.get('port'), function () {
-  console.log('http://localhost:' + this.address().port);
-});
