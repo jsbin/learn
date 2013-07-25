@@ -285,3 +285,30 @@ header {
 .footer {
   margin: 0 0 1.5em;
 }
+
+/* styles */
+body > article {
+  max-width: 976px;
+  margin: 0 auto;
+  float: left;
+  width: 70%;
+}
+
+body > nav {
+
+}
+
+body > header.block {
+  margin-top: 0;
+  padding: 10px;
+  background: #eee;
+}
+
+body > header > div {
+  max-width: 976px;
+  margin: 0 auto;
+}
+
+pre code {
+  overflow-x: scroll;
+}

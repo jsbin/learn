@@ -17,6 +17,7 @@
   "dependencies": {
     "express": "~3.3.4",
     "hbs": "~2.3.0",
-    "mdtree": "~1.0.2"
+    "mdtree": "~1.0.2",
+    "highlight.js": "~7.3.0"
   }
 }

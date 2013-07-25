@@ -2,7 +2,7 @@
   <ul>
     {{#each articles}}
       <li>
-        <a href="{{ url }}">{{ title }}</a>
+        <a href="{{ url }}">{{{ title }}}{{! note: title is already escaped }}</a>
       </li>
     {{/each}}
   </ul>
