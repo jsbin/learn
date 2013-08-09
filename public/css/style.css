@@ -287,7 +287,7 @@ header {
 }
 
 /* styles */
-body > article {
+article {
   max-width: 976px;
   margin: 0 auto;
   float: left;
@@ -304,7 +304,8 @@ body > header.block {
   background: #eee;
 }
 
-body > header > div {
+body > header > div,
+.body {
   max-width: 976px;
   margin: 0 auto;
 }
