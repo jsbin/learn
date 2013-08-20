@@ -155,7 +155,7 @@ body {
 a {
   color: #0088cc;
   text-decoration: none;
- 
+
 }
 a:hover,
 a:focus {
@@ -300,7 +300,7 @@ article {
   float: left;
   width: 80%;
   margin-right: 20px;
-  background: #fff;
+  /*background: #fff;*/
 }
 
 body {
@@ -337,16 +337,20 @@ pre code {
   font-size: 16px;
 }
 
+iframe {
+  box-sizing: border-box;
+}
+
 @media (max-width: 800px) {
-  body > header > div, .body { 
+  body > header > div, .body {
     width: 98%;
   }
   article {
     width: 100%;
   }
   nav {
-    clear: left; 
-  } 
+    clear: left;
+  }
 }
 
 nav ul {

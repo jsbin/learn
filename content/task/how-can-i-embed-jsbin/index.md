@@ -2,23 +2,21 @@
 
 JS Bin can be embedded in your site with very little work. The easiest way is to simply change the ending url `/edit` to `/embed` and wrap the url in an iframe.
 
-If you want JS Bin to inject the iframe for you, and progressively enhance a link to the bin, you can use the share menu and copy and paste from there.
+If you want JS Bin to inject the iframe for you, and progressively enhance a link to the bin, you can use the share menu and copy and paste from there:
+
+![The embed panel in JS Bin](/img/embed-small.gif)
 
 ## Specifying panels
 
 By default, JS Bin will embed the live output panel. Panels are specified in the query string as such:
 
-> http://jsbin.com/iwovaj/73/embed?javascript,html,output
+> http://jsbin.com/iwovaj/73/embed?js,html,output
 
 Remember you can also point an embed to your latest bin (in the above example, you would use `latest` instead of `73`).
 
-Each panel can be specified using:
+Each panel can be specified by changing the checkboxes in the *Panels* heading under share:
 
-* HTML: html
-* CSS: css
-* JavaScript: javascript (or js)
-* Console: console
-* Output: output (or live)
+![Share panel options](/img/panel-options.png)
 
 ## Setting the height and width
 
