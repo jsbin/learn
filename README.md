@@ -53,7 +53,8 @@ The whole site should be searchable.
   - Quickly try out some code I’ve found on some site somewhere
   - Find an old bin
   - Sharing and embedding specific panels
-- Features
+
+## Features
   - Live rendering
   - Interactive console
   - Codecasting
@@ -88,7 +89,8 @@ The whole site should be searchable.
   - Shortcut URLs
     - /:user/last
     - /:bin/latest
-- FAQ
+
+## FAQ
   - Ask new question box
 - Search
 - Vote on what gets written
