@@ -2,7 +2,7 @@
 
 This is the new home for information about jsbin, and where you can find out what's possible and perform particular tasks.
 
-As this is still in it's infant stage, only a small number of articles have been posted, so we'll include the readme for the [project](https://github.com/jsbin&#8209;org/learn) below. If you want to contribute, all the source for this site is, as usual, on [github.com/jsbin-org/learn](https://github.com/jsbin-org/learn).
+As this is still in it's infant stage, only a small number of articles have been posted, so we'll include the readme for the [project](https://github.com/jsbin-org/learn) below. If you want to contribute, all the source for this site is, as usual, on [github.com/jsbin-org/learn](https://github.com/jsbin-org/learn).
 
 ## The idea
 
