@@ -32,6 +32,10 @@ app.use(express.static(__dirname + '/public'));
 
 var baseDir = 'content';
 
+mdtree.filter = function (file) {
+  return file.name !== '.DS_Store';
+};
+
 // Search the content directory for all articles
 mdtree.build(baseDir, function (err, tree) {
 
