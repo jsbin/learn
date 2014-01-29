@@ -1,0 +1,13 @@
+{
+  "globals": {
+    "title": "JS Bin Documentation",
+    "jsbin": "http://jsbin.com",
+    "static": "",
+    "authors": {
+      "remy": {
+        "name": "Remy Sharp",
+        "avatar": "/images/avatars/remy.jpg"
+      }
+    }
+  }
+}

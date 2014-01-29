@@ -1,0 +1,59 @@
+doctype
+html
+  head
+    meta(charset='utf-8')
+    title #{title}
+    meta(name='viewport', content='width=device-width')
+    link(rel='icon', href='#{ static }/images/favicon.png')
+    link(rel='stylesheet', href='#{static}/css/style.css')
+    link(rel='stylesheet', href='#{static}/css/github.css')
+    != partial('/js/moment')
+  body
+    #container
+      header
+        .inner
+          //- this is is because jade is a bit crap at tags mixed with text
+          //- <img src="#{static}/images/jsbin-32.png">
+          a#back(href='#{jsbin}/').
+            Back <span class="morewords">to JS Bin</span>
+          nav
+            block link
+            -var selected = '/' + current.path.join('/'); //default
+            -var menu = { 'Blog': '/blog', 'Help': '/help' };
+
+            each val, key in menu
+              if selected.indexOf(val) === 0
+                a.selected(href=val)= key
+              else
+                a(href=val)= key
+
+
+            //- a(href='/blog') Blog
+            //- a.selected(href='/help') Help
+            a.button.action(href='#{jsbin}/pro') Upgrade to Pro
+
+      #body
+        article
+          if locals.author
+            include partials/author
+          != yield
+        .clear
+    footer#footer
+      .inner
+        ul.notable
+          li
+            a(href='/supporters') Supporters
+          li
+            a(href='/about') About
+          li
+            a(href='http://twitter.com/js_bin') Twitter
+          li
+            a(href='http://jsbin.com/videos') YouTube
+        ul.legal
+          li
+            a(href='/terms') Terms
+          li
+            a(href='/privacy') Privacy
+    script(src='/js/highlight.pack.js')
+    script.
+      hljs.initHighlightingOnLoad();
