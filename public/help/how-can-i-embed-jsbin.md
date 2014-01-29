@@ -4,7 +4,7 @@ JS Bin can be embedded in your site with very little work. The easiest way is to
 
 If you want JS Bin to inject the iframe for you, and progressively enhance a link to the bin, you can use the share menu and copy and paste from there:
 
-![The embed panel in JS Bin](/img/embed-small.gif)
+![The embed panel in JS Bin](/images/embed-small.gif)
 
 ## Specifying panels
 
@@ -16,7 +16,7 @@ Remember you can also point an embed to your latest bin (in the above example, y
 
 Each panel can be specified by changing the checkboxes in the *Panels* heading under share:
 
-![Share panel options](/img/panel-options.png)
+![Share panel options](/images/panel-options.png)
 
 ## Setting the height and width
 
