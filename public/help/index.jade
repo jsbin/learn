@@ -1,0 +1,3 @@
+for post, slug in public.help._data
+  h2: a(href="/help/#{ slug }")= post.title
+  != partial("help/" + slug)
