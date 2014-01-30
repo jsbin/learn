@@ -1,8 +1,6 @@
 {
   "api": {
-    "title": "JS Bin API",
-    "author": "remy",
-    "date": "2013-09-10"
+    "title": "JS Bin API"
   },
   "populating-bins": {
     "title": "How to pre-populate bins and inject content"

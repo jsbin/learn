@@ -1,0 +1,7 @@
+extends ../_partials/layout
+
+block content
+  if locals.author
+    include ../_partials/author
+
+  != yield

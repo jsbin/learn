@@ -1,3 +1,5 @@
-for post, slug in public.help._data
-  h2: a(href="/help/#{ slug }")= post.title
-  != partial("help/" + slug)
+h2 Help
+
+ul.links
+  for post, slug in public.help._data
+    li: a(href="/help/#{ slug }")= post.title
