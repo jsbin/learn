@@ -69,6 +69,7 @@ margin: -0.125em 0;
   position: relative;
   padding-top: 20px;
   padding-top: 20px;
+  max-width: 1024px;
 }
 
 #body img {
@@ -76,9 +77,15 @@ margin: -0.125em 0;
 }
 
 .inner, #body {
-  max-width: 760px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 0 10px; /* ensures the shadow is still visible */
+}
+
+#body p, #body li, #body h1, #body h2, #body h3 {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
@@ -97,13 +104,15 @@ hr {
 
 header nav {
   display: inline;
+  padding: 10px 0;
 }
 
 header nav a {
   position: relative;
   padding: 10px;
   margin-right: 10px;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
+  line-height: 1.2em;
 }
 
 header nav a.selected:before {
@@ -282,7 +291,8 @@ footer .legal a:hover {
 /*   position: absolute; */
   width: 32px;
   height: 32px;
-  border-radius: 32px;
+  
+border-radius: 2px;
   vertical-align: middle;
   right: -42px;
   margin-right: 10px;
@@ -295,7 +305,7 @@ footer .legal a:hover {
 /* wider than 640 */
 @media only screen and (min-width: 640px) {
   .links {
-    -webkit-column-count: 3;
+    -webkit-column-count: 2;
     -moz-column-count: 3;
     -ms-column-count: 3;
     column-count: 3;
@@ -303,7 +313,7 @@ footer .legal a:hover {
   
   .links li {
     display: block;
-    float: left;
+    /* float: left; */
     margin-bottom: 10px;
   }
 }
@@ -356,3 +366,15 @@ footer .legal a:hover {
   background: #e5e5e5
 }
 */
+
+.embed-container {
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.embed-container iframe {
+  height: 100%;
+  width: 100%;
+}

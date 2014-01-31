@@ -13,22 +13,18 @@ html
     #container
       header
         .inner
-          //- this is is because jade is a bit crap at tags mixed with text
-          //- <img src="#{static}/images/jsbin-32.png">
-          a#back(href='#{jsbin}/').
-            Back <span class="morewords">to JS Bin</span>
+          a#back(href='#{jsbin}/') Back
+            span.morewords to JS Bin
           nav
             block link
             -var selected = '/' + current.path.join('/'); //default
-            -var menu = { 'Blog': '/blog', 'Help': '/help' };
+            -var menu = { 'Account': '#{jsbin}/account', 'Blog': '/blog', 'Help': '/help' };
 
             each val, key in menu
               if selected.indexOf(val) === 0
                 a.selected(href=val)= key
               else
                 a(href=val)= key
-
-            a.button.action(href='#{jsbin}/pro') Upgrade to Pro
       #body
         article
           block content
@@ -36,8 +32,8 @@ html
     footer#footer
       .inner
         ul.notable
-          li
-            a(href='/supporters') Supporters
+          //- li
+          //-   a(href='/supporters') Supporters
           li
             a(href='/about') About
           li

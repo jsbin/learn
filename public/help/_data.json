@@ -9,9 +9,13 @@
     "title": "How can I embed JS Bin?"
   },
   "test-code-on-other-devices": {
-    "title": "Test out code on other devices"
+    "title": "Test out code on other devices",
+    "video": "http://www.youtube.com/embed/eDFGrqjjyLk"
   },
   "roadmap": {
     "title": "Roadmap for learn.jsbin"
+  },
+  "vision": {
+    "title": "Vision"
   }
 }
