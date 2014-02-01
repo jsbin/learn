@@ -3,7 +3,6 @@
     "categories": ["hack", "learn", "fix", "teach"],
     "title": "JS Bin Documentation",
     "jsbin": "http://jsbin.com",
-    "static": "",
     "authors": {
       "remy": {
         "name": "Remy Sharp",

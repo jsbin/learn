@@ -4,21 +4,21 @@ html
     meta(charset='utf-8')
     title #{title}
     meta(name='viewport', content='width=device-width')
-    link(rel='icon', href='#{ static }/images/favicon.png')
-    link(rel='stylesheet', href='#{static}/css/style.css')
-    link(rel='stylesheet', href='#{static}/css/github.css')
+    link(rel='icon', href='/images/favicon.png')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/github.css')
     != partial('/js/moment')
     block head
   body
     #container
       header
         .inner
-          a#back(href='#{jsbin}/') Back
+          a#back(href='#{jsbin}/') Back&nbsp;
             span.morewords to JS Bin
           nav
             block link
             -var selected = '/' + current.path.join('/'); //default
-            -var menu = { 'Account': '#{jsbin}/account', 'Blog': '/blog', 'Help': '/help' };
+            -var menu = { 'Account': jsbin + '/account', 'Blog': '/blog', 'Help': '/help' };
 
             each val, key in menu
               if selected.indexOf(val) === 0
