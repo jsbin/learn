@@ -19,6 +19,8 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "harp": "*"
+    "harp": "*",
+    "st": "~0.2.3",
+    "glob": "~3.2.8"
   }
 }
