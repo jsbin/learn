@@ -1,21 +1,30 @@
 {
+  "index": {
+    "layout": "_index-layout.jade"
+  },
   "api": {
-    "title": "JS Bin API"
+    "title": "JS Bin API",
+    "category": "hack"
   },
   "populating-bins": {
-    "title": "How to pre-populate bins and inject content"
+    "title": "How to pre-populate bins and inject content",
+    "category": "teach"
   },
   "how-can-i-embed-jsbin": {
-    "title": "How can I embed JS Bin?"
+    "title": "How can I embed JS Bin?",
+    "category": "teach"
   },
   "test-code-on-other-devices": {
     "title": "Test out code on other devices",
-    "video": "http://www.youtube.com/embed/eDFGrqjjyLk"
+    "video": "http://www.youtube.com/embed/eDFGrqjjyLk",
+    "category": "learn"
   },
   "roadmap": {
-    "title": "Roadmap for learn.jsbin"
+    "title": "Roadmap for learn.jsbin",
+    "category": "fix"
   },
   "vision": {
-    "title": "Vision"
+    "title": "Vision",
+    "category": "fix"
   }
 }

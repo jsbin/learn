@@ -9,7 +9,7 @@ html, body {
   color: #111111;
   font-family: 'helvetica neue', helvetica;
   font-weight: 200;
-} 
+}
 
 header, footer {
   background: #f2f2f2;
@@ -82,7 +82,12 @@ margin: -0.125em 0;
   padding: 0 10px; /* ensures the shadow is still visible */
 }
 
-#body p, #body li, #body h1, #body h2, #body h3 {
+#body > article p,
+#body > article li,
+#body > article h1,
+#body > article h2,
+#body > article h3,
+#body > article pre {
   max-width: 660px;
   margin-left: auto;
   margin-right: auto;
@@ -117,11 +122,11 @@ header nav a {
 
 header nav a.selected:before {
   position: absolute;
-  top: 42px; 
+  top: 42px;
   left: 35%;
   /* border-left: solid 1px #ccc; */
   /* border-top: solid 1px #ccc; */
-  width: 1.1em; 
+  width: 1.1em;
   height: 1.1em;
   -webkit-transform: rotate(45deg);
   background: #fff;
@@ -231,7 +236,7 @@ footer .legal a:hover {
   /* margin-bottom: 150px; */
   /* margin-top: 20px; */
 }
- 
+
 #footer a {
   color: #999;
   font-weight: 600;
@@ -291,7 +296,7 @@ footer .legal a:hover {
 /*   position: absolute; */
   width: 32px;
   height: 32px;
-  
+
 border-radius: 2px;
   vertical-align: middle;
   right: -42px;
@@ -310,7 +315,7 @@ border-radius: 2px;
     -ms-column-count: 3;
     column-count: 3;
   }
-  
+
   .links li {
     display: block;
     /* float: left; */
@@ -323,7 +328,7 @@ border-radius: 2px;
   .morewords {
     display: none;
   }
-  
+
   #footer .legal {
     float: left;
   }

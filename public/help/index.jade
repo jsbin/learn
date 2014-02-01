@@ -1,5 +1,13 @@
 h2 Help
 
+pre.
+  #{ JSON.stringify(current, false, ' ') }
+
+pre.
+  #{ JSON.stringify(public, false, ' ') }
+
+
 ul.links
   for post, slug in public.help._data
-    li: a(href="/help/#{ slug }")= post.title
+    if (post.title)
+      li: a(href="/help/#{ slug }")= post.title

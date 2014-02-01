@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node_modules/.bin/harp server",
-    "test": "node_modules/.bin/harp compile",
-    "//start": "node server"
+    "test": "node_modules/.bin/harp compile"
   },
   "engines": {
     "node": "0.10.x",
