@@ -1,6 +1,7 @@
 h2 Help
 
-ul.links
-  for post, slug in public.help._data
-    if (post.title)
-      li: a(href="/help/#{ slug }")= post.title
+for category in categories
+  div(class="category #{category.name}")
+    h3 #{category.title}
+    h4 #{category.description}
+    != partial('../_partials/help-posts', { filter: category.name })

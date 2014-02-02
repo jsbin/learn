@@ -10,11 +10,13 @@ html
     != partial('../js/moment')
     block head
   body
+    //- modify the yield (the content) and add ids to all heading tags
+    - yield = partial('../js/idify', yield);
     #container
       header
         .inner
-          a#back(href='#{jsbin}/') Back&nbsp;
-            span.morewords to JS Bin
+          a#back(href='#{jsbin}/')
+            span.morewords Back to JS Bin
           nav
             block link
             -var selected = '/' + current.path.join('/'); //default

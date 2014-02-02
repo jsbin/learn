@@ -1,6 +1,11 @@
 {
   "globals": {
-    "categories": ["hack", "learn", "fix", "teach"],
+    "categories": [
+      { "name": "hack",  "title": "Hacking & play", "description": "Prototypes, demos, and sharing your work" },
+      { "name": "learn", "title": "Learn", "description": "Making more use of JS Bin as part of your tools" },
+      { "name": "fix",   "title": "Fix & contribute", "description": "Making JS Bin better for everyone, and advanced usage" },
+      { "name": "teach", "title": "Teach & share your knowledge", "description": "Using JS Bin to teach others via blogs and published work or classroom and multi-user environments" }
+    ],
     "title": "JS Bin Documentation",
     "jsbin": "http://jsbin.com",
     "authors": {

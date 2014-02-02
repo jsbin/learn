@@ -1,6 +1,6 @@
 {
   "index": {
-    "layout": "_index-layout.jade"
+    "layout": "_index-layout"
   },
   "api": {
     "title": "JS Bin API",

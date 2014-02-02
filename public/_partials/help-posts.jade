@@ -1,0 +1,6 @@
+block
+  - var f = filter || current.path.slice(-2, -1)[0];
+  ul.links
+    for post, slug in public.help._data
+      if (post.title && (post.category === f || !f))
+        li: a(href="/help/#{ slug }")= post.title
