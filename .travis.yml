@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "0.10"
+before_script:
+  - npm install
+notifications:
+  email: false
+  irc:
+    channels:
+      - "chat.freenode.net#jsbin"
+deploy:
+  provider: heroku
+  api_key: "46569723f6928e4e56bf8e3e4de0ac82"
+  app: jsbin-learn
