@@ -79,7 +79,7 @@ margin: -0.125em 0;
 .inner, #body {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 10px; /* ensures the shadow is still visible */
+  padding: 0 20px; /* ensures the shadow is still visible */
 }
 
 #body > article p,
@@ -98,7 +98,7 @@ header {
   font-size: 14px;
   font-weight: bold;
   overflow: hidden;
-  padding: 12px 10px;
+  padding: 12px 0;
 }
 
 hr {
@@ -166,7 +166,7 @@ header a, footer a {
 }
 
 #footer {
-  padding: 20px 0;
+  padding: 30px 0 10px 0;
 }
 
 article p {

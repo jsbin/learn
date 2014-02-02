@@ -26,7 +26,11 @@ html
               else
                 a(href=val)= key
       #body
-        block content
+        if current.path.slice(-1).pop() !== 'index'
+          article
+            block content
+        else
+          block content
       .clear
     footer#footer
       .inner

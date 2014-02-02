@@ -1,12 +1,5 @@
 h2 Help
 
-pre.
-  #{ JSON.stringify(current, false, ' ') }
-
-pre.
-  #{ JSON.stringify(public, false, ' ') }
-
-
 ul.links
   for post, slug in public.help._data
     if (post.title)
