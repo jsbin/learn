@@ -1,5 +1,5 @@
 *, *::after, *::before {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 html, body {
@@ -29,6 +29,10 @@ header, footer {
 
 code {
 /*   overflow: auto; */
+}
+
+ul {
+  margin-left: -40px;
 }
 
 pre {
@@ -62,8 +66,7 @@ pre code {
   word-wrap: -moz-break-word;
   word-wrap: break-word;
   white-space: pre;
-  word-wrap: normal
-}
+  word-wrap: normal}
 
 pre code {
 /*   background: #F8F8F8; */
@@ -329,13 +332,13 @@ border-radius: 2px;
 /* smaller than 480 */
 @media only screen and (max-width: 480px) {
   #body, .inner {
-    padding: 0 10px;  
+    padding: 0 10px;
   }
-  
+
   .morewords {
     display: none;
   }
-  
+
   #back {
     margin-right: 0;
   }
@@ -343,21 +346,22 @@ border-radius: 2px;
   #footer .legal {
     float: left;
   }
-  
+
   #footer {
     height: 50px;
   }
-  
+
   div.clear {
     height: 100px;
   }
-  
+
   #container {
     margin: 0 0 -100px;
   }
 
   ul {
     padding-left: 20px;
+    margin-left: 0px;
   }
 
 }
@@ -415,4 +419,75 @@ border-radius: 2px;
   font-weight: 400;
   font-size: 14px;
   color: #aaa;
+}
+
+/* video icon */
+.links a.play {
+  position:relative;
+  z-index:1;
+  /* overflow:hidden; */
+  /* list-style:none; */
+  /* padding:0; */
+  margin-left: 5px;
+}
+
+.play:before,
+.play:after,
+.play span:before,
+.play span:after {
+  content:"";
+  position:absolute;
+  top:50%;
+  left:0;
+}
+
+.play:before,
+.play:after,
+.play span:before,
+.play span:after {
+  content:"";
+  position:absolute;
+  top:50%;
+  left:0;
+}
+
+.play span:before,
+.play span:after {
+  margin: -6px 0 0;
+  background:#ccc;
+}
+
+.play:link span,
+.play:visited span {
+  display: inline-block;
+  border:0;
+  padding-left: 0px;
+  color:#fff;
+  overflow: hidden;
+  width: 20px;
+  /* padding-top: 15px; */
+  /* top: 2px; */
+}
+
+.play span:before {
+  width: 20px;
+  height: 12px;
+  /* css3 */
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+}
+
+.play span:after {
+  left:8px;
+  border:0.3rem solid transparent;
+  border-left-color:#fff;
+  margin-top: -4px;
+  background:transparent;
+}
+
+.play span {
+  text-indent: -99px;
+  padding-left: 0;
+  height: 14px;
 }

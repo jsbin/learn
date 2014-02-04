@@ -10,8 +10,6 @@ html
     != partial('../js/moment')
     block head
   body
-    //- modify the yield (the content) and add ids to all heading tags
-    - yield = partial('../js/idify', yield);
     #container
       header
         .inner
@@ -21,6 +19,7 @@ html
             block link
             -var selected = '/' + current.path.join('/'); //default
             -var menu = { 'Account': jsbin + '/account', 'Blog': '/blog', 'Help': '/help' };
+            -var menu = { 'Help': '/help' };
 
             each val, key in menu
               if selected.indexOf(val) === 0
@@ -28,6 +27,11 @@ html
               else
                 a(href=val)= key
       #body
+        //- modify the yield (the content) and add ids to all heading tags
+        //- - var ret = partial('../js/_idify')
+        //- pre.
+          //- #{JSON.stringify(locals, null, 2)}
+
         if current.path.slice(-1).pop() !== 'index'
           article
             block content

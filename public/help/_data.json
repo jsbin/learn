@@ -16,7 +16,7 @@
   },
   "test-code-on-other-devices": {
     "title": "Test out code on other devices",
-    "video": "http://www.youtube.com/embed/eDFGrqjjyLk",
+    "video": "//www.youtube.com/embed/eDFGrqjjyLk",
     "category": "learn"
   },
   "roadmap": {
@@ -26,5 +26,10 @@
   "vision": {
     "title": "Vision",
     "category": "fix"
+  },
+  "customise-editor-settings": {
+    "title": "How to customise the editor settings",
+    "category": "learn",
+    "video": "//www.youtube.com/embed/pzFqaRJwNQ8"
   }
 }

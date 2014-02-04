@@ -4,3 +4,5 @@ block
     for post, slug in public.help._data
       if (post.title && (post.category === f || !f))
         li: a(href="/help/#{ slug }")= post.title
+          if (post.video)
+            a.play(href="#{post.video}"): span Play video
