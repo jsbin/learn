@@ -66,13 +66,10 @@ pre code {
   word-wrap: -moz-break-word;
   word-wrap: break-word;
   white-space: pre;
-  word-wrap: normal}
-
-pre code {
-/*   background: #F8F8F8; */
-margin: -0.125em 0;
-padding: 20px 20px !important;
-display: table-cell !important;
+  word-wrap: normal;
+  margin: -0.125em 0;
+  padding: 25px !important;
+  display: table-cell !important;
 }
 
 #body {
@@ -111,8 +108,8 @@ display: table-cell !important;
 }
 
 #body > article pre {
-  max-width: 700px;
   padding: 0;
+  max-width: 710px;
 }
 
 header {
