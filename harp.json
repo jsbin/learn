@@ -12,6 +12,14 @@
       "remy": {
         "name": "Remy Sharp",
         "avatar": "/images/avatars/remy.jpg"
+      },
+      "danny": {
+        "name": "Danny Hope",
+        "avatar": "/images/avatars/danny.jpg"
+      },
+      "fabien": {
+        "name": "Fabien O'Carroll",
+        "avatars": "/images/avatars/fabien.jpg"
       }
     }
   }
