@@ -33,8 +33,9 @@ To change these dimensions, you can pass in any height or width value on the que
 
 Here it is in action, do check the source code too :)
 
-<a class="jsbin-embed foo" href="http://jsbin.com/iwovaj/74/embed?js,output">Simple Animation Tests</a><script src="http://static.jsbin.com/js/embed.js"></script>
-
+<div class="embed-container">
+  <a class="jsbin-embed foo" href="http://jsbin.com/iwovaj/74/embed?js,output">Simple Animation Tests</a><script src="http://static.jsbin.com/js/embed.js"></script>
+</div>
 
 
 <!--

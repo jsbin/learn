@@ -20,11 +20,11 @@ header, footer {
 }
 
 .category h4 {
+  /* display: none; */
   margin: 0;
   color: #999;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1;
 }
 
 code {
@@ -32,7 +32,7 @@ code {
 }
 
 ul {
-  margin-left: -40px;
+  margin-left: 0px;
 }
 
 pre {
@@ -71,6 +71,8 @@ pre code {
 pre code {
 /*   background: #F8F8F8; */
 margin: -0.125em 0;
+padding: 20px 20px !important;
+display: table-cell !important;
 }
 
 #body {
@@ -106,6 +108,11 @@ margin: -0.125em 0;
   max-width: 660px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#body > article pre {
+  max-width: 700px;
+  padding: 0;
 }
 
 header {
@@ -345,10 +352,12 @@ border-radius: 2px;
 
   #footer .legal {
     float: left;
-  }
+  
+    margin-top: 10px;
+}
 
   #footer {
-    height: 50px;
+    height: 100px;
   }
 
   div.clear {
