@@ -35,5 +35,9 @@
   "pronounceable-urls": {
     "title": "Pronounceable URLs",
     "category": "learn"
+  },
+  "session-secret": {
+    "title": "Session Secrets",
+    "category": "fix"
   }
 }
