@@ -497,3 +497,15 @@ border-radius: 2px;
   padding-left: 0;
   height: 14px;
 }
+
+.sample {
+  font-family: Georgia, Times;
+  font-size: 400%;
+  text-align: center;
+  line-height: 10px;
+}
+
+.sample small {
+  color: #ccc;
+  font-size: 80%;
+}
