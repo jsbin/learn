@@ -40,4 +40,8 @@
     "title": "Session Secrets",
     "category": "fix"
   }
+  "disabling-all-keyboard-shortcuts": {
+    "title": "How to disable JS Bin keyboard shortcuts",
+    "category": "fix"
+  }
 }
