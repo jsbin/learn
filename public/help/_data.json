@@ -43,5 +43,9 @@
   "disabling-all-keyboard-shortcuts": {
     "title": "How to disable JS Bin keyboard shortcuts",
     "category": "fix"
+  },
+  "design-principles": {
+    "title": "Design principles",
+    "category": "fix"
   }
 }
