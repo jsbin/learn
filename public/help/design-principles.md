@@ -10,6 +10,6 @@ These are emerging from the ongoing process of designing and building JS Bin. Th
   Avoid requiring login
 - **Open first**  
   Design and development happens in public, unless there’s a good reason to go private.
-- **Respect ex-users’**  
+- **Respect ex-users**  
   Don’t break links to their stuff.
   Never make public things they set as private.
