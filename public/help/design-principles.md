@@ -5,7 +5,7 @@ These are emerging from the ongoing process of designing and building JS Bin. Th
 - ** Visitors to jsbin.com get a cursor**  
   Nothing obscures the tool – users just start typing to begin a bin.
 - **Support learning**
-- **Real-time by default**
+- **Streaming by default**
 - **Anonymous first**  
   Avoid requiring login
 - **Open first**  
