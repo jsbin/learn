@@ -13,3 +13,5 @@ These are emerging from the ongoing process of designing and building JS Bin. Th
 - **Respect ex-users**  
   Don’t break links to their stuff.
   Never make public things they set as private.
+- **Return is as it was left**  
+  When people return to an application or document, they expect it to be as they left it.
