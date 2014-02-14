@@ -2,7 +2,7 @@
 
 These are emerging from the ongoing process of designing and building JS Bin. They’re a work in progress.
 
-- ** Visitors to jsbin.com get a cursor**  
+- **Visitors to jsbin.com get a cursor**  
   Nothing obscures the tool – users just start typing to begin a bin.
 - **Support learning**
 - **Streaming by default**
