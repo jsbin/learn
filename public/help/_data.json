@@ -47,5 +47,17 @@
   "design-principles": {
     "title": "Design principles",
     "category": "fix"
+  },
+  "embed-doesnt-load": {
+    "title": "What to do if your embed doesn't load",
+    "category": "fix"
+  },
+  "2-second-setup": {
+    "title": "Local JS Bin: 2 second guide",
+    "category": "hack"
+  },
+  "running-a-local-copy-of-jsbin": {
+    "title": "Local JS Bin: the detailed how-to",
+    "category": "hack"
   }
 }
