@@ -107,6 +107,10 @@ pre code {
   margin-right: auto;
 }
 
+#body > article h1 {
+  font-size: 32px;
+}
+
 #body > article li {
   padding-left: 10px;
   margin-top: 15px;
@@ -425,7 +429,7 @@ border-radius: 2px;
 
 .edit {
   position: absolute;
-  right: 20px;
+  right: 40px;
   margin-top: 5px;
   text-decoration: none;
   font-weight: 400;

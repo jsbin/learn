@@ -59,5 +59,9 @@
   "running-a-local-copy-of-jsbin": {
     "title": "Local JS Bin: the detailed how-to",
     "category": "hack"
+  },
+  "when-do-revisions-change": {
+    "title": "When do revisions change?",
+    "category": "learn"
   }
 }
