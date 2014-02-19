@@ -63,5 +63,9 @@
   "when-do-revisions-change": {
     "title": "When do revisions change?",
     "category": "learn"
+  },
+  "faq": {
+    "title": "FAQ",
+    "category": "learn"
   }
 }
