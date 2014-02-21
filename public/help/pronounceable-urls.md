@@ -1,6 +1,6 @@
 # Pronounceable URLs
 
-Did you ever notice that that JS Bin'sURLs have been designed to be pronounceable?
+Did you ever notice that that JS Bin's URLs have been designed to be pronounceable?
 
 ![/images/url-example.png](/images/url-example.png)
 

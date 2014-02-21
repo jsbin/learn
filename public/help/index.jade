@@ -1,7 +1,7 @@
-h2 Help
+h1 Help
 
 for category in categories
   div(class="category #{category.name}")
-    h3 #{category.title}
+    h2 #{category.title}
     h4 #{category.description}
     != partial('../_partials/help-posts', { filter: category.name })
