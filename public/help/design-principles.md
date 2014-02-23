@@ -15,5 +15,5 @@ These are emerging from the ongoing process of designing and building JS Bin. Th
   Never make public things they set as private.
 - **Return is as it was left**  
   When people return to an application or document, they expect it to be as they left it.
-- **Assert failure to communicate, not the lack of a network**
+- **Assert failure to communicate, not the lack of a network**  
   An app can’t truly know that there’s no network and people care more about the risk of data loss than the status of their network. This principle came from a discussion in [offlinefirst](https://github.com/offlinefirst/research/issues/10#issuecomment-34654691).
