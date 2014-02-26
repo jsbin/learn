@@ -1,13 +1,16 @@
+static = ''
+if environment == "production"
+  static = 'http://learn.jsbin.com/'
 doctype
 html
   head
     meta(charset='utf-8')
     title #{title}
     meta(name='viewport', content='width=device-width')
-    link(rel='icon', href='/images/favicon.png')
+    link(rel='icon', href='#{static}/images/favicon.png')
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:700,400', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', href='/css/github.css')
-    link(rel='stylesheet', href='/css/help.css')
+    link(rel='stylesheet', href='#{static}/css/github.css')
+    link(rel='stylesheet', href='#{static}/css/help.css')
     != partial('../js/moment')
     block head
   body
@@ -69,7 +72,7 @@ html
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(wf, s);
     })();
-  script(src='/js/vendor/permalink.js')
-  script(src='/js/vendor/highlight.pack.js')
+  script(src='#{static}/js/vendor/permalink.js')
+  script(src='#{static}/js/vendor/highlight.pack.js')
   script.
     hljs.initHighlightingOnLoad();
