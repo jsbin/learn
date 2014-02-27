@@ -1,13 +1,46 @@
-# Welcome to the new learning site
+# Welcome to the new help & blog
 
-Welcome to the new learning site for JS Bin. The aim of the site is to provide a central resource for learning how to use JS Bin, learning from videos, discovering tricks, reading about how JS Bin is built (and how you might be able to re-use technology and ideas) and share upcoming features via this new blog.
+JS Bin for years has done an absolutely superb job of giving it's users an editor and the live output of the HTML, CSS & JavaScript. Something the project has been terrible at is exposing features and new information.
 
-## What's new?
+One of JS Bin's core values is *everyone gets a cursor*. 
 
-We've been working hard in the last few months to introduce pro user accounts to the site along with a few additional features for everyone else.
+But we're also very aware of tweets and issues along the lines of "it would be great if I could do X", and I reply along the lines of "yeah, we did that back in 2011, it's here...". It's our own fault, but this new area of JS Bin will be the home for all the [help](/help) and the blog will be used to share our workings on new features and ideas—and hopefully share some of the process we use.
 
-### Why pro?
+There's a few ways you can keep track of what's going on:
 
-As you know (or maybe are discovering), JS Bin is an open source project, [freely available on github](http://github.com/jsbin/jsbin).
+* Via twitter, follow [@js_bin](http://twitter.com/js_bin)
+* [Subscribe](/blog/feed.xml) to the blog RSS feed
+* Watch the [github projects](http://github.com/jsbin)
 
-However, it's been a side project of mine for the last 5 years, and I wanted to really invest my time properly into the project, to support the school, univercities and companies using JS Bin to freely provide education. So the project needs to become sustainable. This is where pro accounts come in.
+## Say Hello to the Team
+
+I wanted to introduce you to the team that's working hard on JS Bin to day to make it all that it can be:
+
+* [Remy Sharp](http://twitter.com/rem) / [@remy](http://github.com/remy) - dev and direction
+* [Danny Hope](http://twitter.com/yandle) - UX and design
+* [Fabien O'Carroll](http://twitter.com/allouis_) / [@allouis](http://github.com/allouis) - dev
+* [Giulia Alfonsi](http://twitter.com/electric_g) / [@electricg](http://github.com/electricg) - dev
+
+And an equal hello to all the [contributors](https://github.com/jsbin/jsbin/graphs/contributors) over the years.
+
+## What's shipped just recently
+
+- Subtle, flatter design
+- [Delete a bin revision](/help/delete-a-bin)
+- Windows & Mavericks support is now solid for the [local npm install](/help/2-second-setup)
+
+## What we're working on
+
+There's a sluth of projects going on at the moment, and we'll be posting as progress is made:
+
+- Pro accounts and white-labeled version of JS Bin (see [emberjs.jsbin.com](http://emberjs.jsbin.com) for example) - [get in touch](http://leftlogic.com/contact?subject=JS%20Bin%20white%20label) if you'd like to enquire about this
+- Monthly competitions giving away stickers and pro accounts
+- A vastly better mobile experience
+- SSL for login
+- Sass & SCSS support
+- Timeline recording and playback
+- [And a lot more](http://github.com/jsbin/jsbin/issues)
+
+I'd love to hear your feedback, if you're using JS Bin for teaching or sharing - what's your experience like? How can we make JS Bin better for all of you?
+
+– Remy

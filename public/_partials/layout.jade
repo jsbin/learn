@@ -13,7 +13,7 @@ html
     link(rel='stylesheet', href='#{static}/css/help.css')
     != partial('../js/moment')
     block head
-  body
+  body(id="#{current.path[0]}-page")
     #container
       header
         .inner
@@ -23,7 +23,7 @@ html
             block link
             -var selected = '/' + current.path.join('/'); //default
             -var menu = { 'Account': jsbin + '/account', 'Blog': '/blog', 'Help': '/help' };
-            -var menu = { 'Help': '/help' };
+            -var menu = { 'Blog': '/blog', 'Help': '/help' };
 
             each val, key in menu
               if selected.indexOf(val) === 0
@@ -56,9 +56,10 @@ html
             a(href='http://twitter.com/js_bin') Twitter
           li
             a(href='http://jsbin.com/videos') YouTube
-        //- ul.legal
-        //-   li
-        //-     a(href='/legals') Legals
+        ul.legal
+          li: em "Hack. Learn. Fix. Teach."
+          //- li
+            a(href='/legals') Legals
   script(type="text").
     WebFontConfig = {
       google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
@@ -72,7 +73,8 @@ html
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(wf, s);
     })();
-  script(src='#{static}/js/vendor/permalink.js')
-  script(src='#{static}/js/vendor/highlight.pack.js')
+  script(src='#{static}/js/permalink.js')
+  script(src='#{static}/js/keyboard.js')
+  script(src='#{static}/js/highlight.pack.js')
   script.
     hljs.initHighlightingOnLoad();

@@ -5,3 +5,8 @@ block content
     include ../_partials/author
 
   != yield
+
+  if current.path[0] == 'blog' && current.path[1] != 'index'
+    #comments
+      h2 Comments
+      != partial('_comments')

@@ -67,5 +67,10 @@
   "faq": {
     "title": "FAQ",
     "category": "learn"
+  },
+  "delete-a-bin": {
+    "title": "Delete a bin",
+    "category": "learn"
   }
+
 }

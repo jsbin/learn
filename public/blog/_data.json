@@ -1,7 +1,10 @@
 {
   "welcome": {
-    "title": "Welcome to JS Bin v4",
+    "title": "Welcome to the new help & blog",
     "author": "remy",
     "date": "2014-01-28"
+  },
+  "feed": {
+    "layout": false
   }
 }

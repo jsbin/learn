@@ -1,7 +1,10 @@
-h2 Blog
+h1 The JS Bin Blog
 
-ul.links
+a.subscribe(href="/blog/feed.xml") Subscribe
+
+ul.posts
   for post, slug in public.blog._data
     if (post.title)
-      li: a(href="/blog/#{ slug }")= post.title
-      //- date, author etc
+      li
+        span.date= moment(post.date, 'YYYY-MM-DD').format('D-MMM, YYYY')
+        a(href="/blog/#{ slug }")= post.title
