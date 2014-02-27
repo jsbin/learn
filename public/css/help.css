@@ -672,3 +672,7 @@ kbd kbd {
   border-radius: 3px;
   background: #eee;
 }
+
+.extract p {
+  color: #999;
+}

@@ -8,3 +8,6 @@ ul.posts
       li
         span.date= moment(post.date, 'YYYY-MM-DD').format('D-MMM, YYYY')
         a(href="/blog/#{ slug }")= post.title
+        p.extract
+          != partial(slug).split('<p>')[1].replace(/<\/p>/, '')
+          a(href="/blog/#{ slug }") Read post
