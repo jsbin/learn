@@ -673,6 +673,6 @@ kbd kbd {
   background: #eee;
 }
 
-.extract p {
-  color: #999;
+.extract {
+  opacity: 0.7;
 }
