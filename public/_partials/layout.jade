@@ -37,7 +37,7 @@ html
         //- of periods to add for path navigation.
         - function repeat(str, num) { return new Array( num + 1 ).join( str ); }
         - yield = partial(repeat('.', current.path.length) + '/js/_idify')
-        - yield = yield.replace(/src="\//g, 'src="' + static + '/');
+        - if (yield) yield = yield.replace(/src="\//g, 'src="' + static + '/')
         if current.path.slice(-1).pop() !== 'index'
           article
             block content
