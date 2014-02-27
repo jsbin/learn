@@ -8,5 +8,5 @@ Techniques used in this video:
 * Enable debug mode using `jsbin.settings.debug = true`
 
 <div class="embed-container">
-  <iframe src="//www.youtube.com/embed/pzFqaRJwNQ8" frameborder="0" allowfullscreen></iframe>
+  <iframe src="http://www.youtube.com/embed/pzFqaRJwNQ8" frameborder="0" allowfullscreen></iframe>
 </div>
