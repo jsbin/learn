@@ -1,6 +1,6 @@
 # Welcome to the new help & blog
 
-JS Bin for years has done an absolutely superb job of giving it's users an editor and the live output of the HTML, CSS & JavaScript. Something the project has been terrible at is exposing features and new information.
+JS Bin for years has done an absolutely superb job of giving its users an editor and the live output of the HTML, CSS & JavaScript. Something the project has been terrible at is exposing features and new information.
 
 We try hard to recess the application of JS Bin to let you get on with coding right away. This way *everyone gets a cursor*. You visit JS Bin, you type: you get a bin.
 
@@ -33,7 +33,7 @@ And an equal hello to all the [contributors](https://github.com/jsbin/jsbin/grap
 
 ## What we're working on
 
-There's a sluth of projects going on at the moment, and we'll be posting as progress is made:
+There's a slew of projects going on at the moment, and we'll be posting as progress is made:
 
 - Pro accounts and white-labeled version of JS Bin (see [emberjs.jsbin.com](http://emberjs.jsbin.com) for example) - [get in touch](http://leftlogic.com/contact?subject=JS%20Bin%20white%20label) if you'd like to enquire about this
 - Monthly competitions giving away stickers and pro accounts
