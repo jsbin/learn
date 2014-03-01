@@ -1,12 +1,18 @@
 static = ''
 if environment == "production"
   static = 'http://learn.jsbin.com/'
+
+if title == ''
+  pagetitle = siteTitle
+else
+  pagetitle = title + ' - ' + siteTitle
 doctype
 html
   head
     meta(charset='utf-8')
-    title #{title}
+    title #{pagetitle}
     meta(name='viewport', content='width=device-width')
+    meta(name='description', content='JS Bin help documentation, tips, tricks, features and blog')
     link(rel='icon', href='#{static}/images/favicon.png')
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:700,400', rel='stylesheet', type='text/css')
     link(rel='stylesheet', href='#{static}/css/github.css')
