@@ -2,10 +2,10 @@ static = ''
 if environment == "production"
   static = 'http://learn.jsbin.com/'
 
-if title == ''
-  pagetitle = siteTitle
-else
+pagetitle = siteTitle
+if title
   pagetitle = title + ' - ' + siteTitle
+
 doctype
 html
   head
