@@ -42,7 +42,7 @@ JS Bin comes with a default config file. Should you want to customise how JS Bin
 
 
 ```bash
-$ JSBIN_CONFIG=/path/to/my/config.local.json jsbin
+$ JSBIN_CONFIG=/PATH/TO/config.local.json jsbin
 ```
 
 There are a number of options that you can change to configure JS Bin to your needs. The property names, meaning and possible values have been listed below:

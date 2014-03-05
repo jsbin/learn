@@ -6,6 +6,14 @@ pagetitle = siteTitle
 if title
   pagetitle = title + ' - ' + siteTitle
 
+//- sad panda code: the path of the partial is relative to the request
+//- *not* the file being included (ie. this one).
+//- so we're using the path.length (ie. ['blog', 'index']) as the number
+//- of periods to add for path navigation.
+- function repeat(str, num) { return new Array( num + 1 ).join( str ); }
+
+prefix = repeat('.', current.path.length)
+
 doctype
 html
   head
@@ -17,7 +25,7 @@ html
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:700,400', rel='stylesheet', type='text/css')
     link(rel='stylesheet', href='#{static}/css/github.css')
     link(rel='stylesheet', href='#{static}/css/help.css')
-    != partial('../js/moment')
+    != partial(prefix + '/js/moment')
     block head
     if environment == "production"
       script.
@@ -49,12 +57,7 @@ html
               else
                 a(href=val)= key
       #body
-        //- sad panda code: the path of the partial is relative to the request
-        //- *not* the file being included (ie. this one).
-        //- so we're using the path.length (ie. ['blog', 'index']) as the number
-        //- of periods to add for path navigation.
-        - function repeat(str, num) { return new Array( num + 1 ).join( str ); }
-        - yield = partial(repeat('.', current.path.length) + '/js/_idify')
+        - yield = partial(prefix + '/js/_idify')
         - if (yield) yield = yield.replace(/src="\//g, 'src="' + static + '/')
         if current.path.slice(-1).pop() !== 'index'
           article

@@ -4,7 +4,7 @@ a.subscribe(href="/blog/feed.xml") Subscribe
 
 ul.posts
   for post, slug in public.blog._data
-    if (post.title)
+    if (post.title && partial(slug))
       li
         span.date= moment(post.date, 'YYYY-MM-DD').format('D-MMM, YYYY')
         a(href="/blog/#{ slug }")= post.title

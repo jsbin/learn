@@ -23,3 +23,4 @@ This (private) article outlines useful tips and the process for releasing a blog
 * Are you using consistent punctuation on titles and lists (i.e. ensuring lists all end with a period or not)?
 * Ensure any images are included in the `public/images/` directory and have been run through ImageOptim (or similar)
 * To ensure the post is deployed commit and push to the github repo (*without the `[skip ci]` command*). Deployment takes about 5 minutes or less
+* Full width images should be 658px wide (to allow for a 660px centre column and 2px border around the image)
