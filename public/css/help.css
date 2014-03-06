@@ -366,7 +366,7 @@ footer .legal a:hover {
 
 border-radius: 2px;
   vertical-align: middle;
-  
+
 right: -42px;
   margin-right: 10px;
 box-shadow: none;
@@ -592,40 +592,52 @@ h6:hover .anchor span:before {
   margin-right: 4px;
 }
 
-/* wider than 640 */
-@media only screen and (min-width: 640px) {
-  .links {
-    /* -webkit-column-count: 2; */
-    -moz-column-count: 2;
-    -ms-column-count: 2;
-    column-count: 2;
-    padding-left: 0;
-  }
-  
-  .help-index {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    -ms-column-count: 2;
-    column-count: 2;
-    padding-left: 0;    
-  }
-  
-  .category {
-    display: inline-block;
-  }
+#comments {
+  margin-top: 100px;
+}
 
-  .links li {
-    padding-left: 0;
-    display: block;
-    margin-bottom: 10px;
-    list-style: none;
-  }
+kbd {
+}
+
+kbd kbd {
+  padding: 5px;
+  border-radius: 3px;
+  background: #eee;
+}
+
+.extract {
+  opacity: 0.7;
+}
+
+blockquote {
+  border-left: 5px solid #cccccd;
+  padding: 20px 30px;
+  background: #fafafd;
+  margin: 0 auto;
+  max-width: 660px;
+  font-style: italic;
+}
+
+#body blockquote p:first-child {
+  margin-top: 0;
+}
+
+#body blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote em {
+  font-weight: 600;
 }
 
 /* smaller than 480 */
 @media only screen and (max-width: 480px) {
   .sample {
     font-size: 200%;
+  }
+
+  blockquote {
+    padding: 0px 10px;
   }
 
   .edit {
@@ -635,12 +647,12 @@ h6:hover .anchor span:before {
     margin-top: 10px;
     display: block;
   }
-  
+
   #body > article h1 {
    line-height: 32px;
     margin-top: 10px;
   }
-  
+
   #body, .inner {
     padding: 0 10px;
   }
@@ -657,12 +669,12 @@ h6:hover .anchor span:before {
     display: block;
     float: none;
     margin-top: 10px;
-  
+
     overflow: hidden;
     clear: left;
     padding-top: 10px;
   }
-  
+
   #footer .legal li {
     display: block;
     text-align: center;
@@ -688,29 +700,38 @@ h6:hover .anchor span:before {
   #body > h1 {
     margin: 0px;
   }
-  
+
   code {
     word-wrap: break-word;
   }
 }
 
-#comments {
-  margin-top: 100px;
-}
+/* wider than 640 */
+@media only screen and (min-width: 640px) {
+  .links {
+    /* -webkit-column-count: 2; */
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    column-count: 2;
+    padding-left: 0;
+  }
 
-kbd {
-}
+  .help-index {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    column-count: 2;
+    padding-left: 0;
+  }
 
-kbd kbd {
-  padding: 5px;
-  border-radius: 3px;
-  background: #eee;
-}
+  .category {
+    display: inline-block;
+  }
 
-.extract {
-  opacity: 0.7;
-}
-
-li {
-  /* vertical-align: bottom; */
+  .links li {
+    padding-left: 0;
+    display: block;
+    margin-bottom: 10px;
+    list-style: none;
+  }
 }
