@@ -1,6 +1,6 @@
 # What is JS Bin?
 
-JS Bin is a tool that *enables* the education and learning web technologies. 
+JS Bin is a tool that *enables* you to learn, experiment and teach using web technologies.
 
 There's a mass of features packed inside of JS Bin, but our aim is to be part of your tool chain to help you solve problems, explore technology and teach others.
 
