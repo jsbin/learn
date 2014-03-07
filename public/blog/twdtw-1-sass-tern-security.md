@@ -16,7 +16,7 @@ It does mean that Bourbon, Compass, et al aren't supported, but it's still a goo
 
 ## Tern
 
-I'm proud to say that my company, [Left Logic](http://leftlogic.com) was the first to back *big* behind the Tern project last year. And this week [Giulia](http://github.com/electricg) has been adding support to JS Bin.
+I'm proud to say that my company, [Left Logic](http://leftlogic.com) was the first to back big behind the Tern project last year. And this week [Giulia](http://github.com/electricg) has been adding support to JS Bin.
 
 It'll be a user preference to enable, and we're working on dynamically loading definition files based on the contents of your bin (i.e. if you have jQuery, it'll automatically load the jQuery definition file for you).
 
