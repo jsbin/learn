@@ -58,7 +58,7 @@ html
                 a(href=val)= key
       #body
         - yield = partial(prefix + '/js/_idify')
-        - if (yield) yield = yield.replace(/src="\//g, 'src="' + static + '/')
+        - if (yield) yield = yield.replace(/src="\/([^/])/g, 'src="' + static + '/$1')
         if current.path.slice(-1).pop() !== 'index'
           article
             block content
