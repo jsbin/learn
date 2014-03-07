@@ -1,13 +1,16 @@
+- function eachPost(data) { return Object.keys(data).map(function (slug) { var post = data[slug]; post.slug = slug; return post }).sort(byDate) }
+- function byDate(a, b) { return moment(b.date).unix() - moment(a.date).unix() }
+
 h1 The JS Bin Blog
 
 a.subscribe(href="/blog/feed.xml") Subscribe
 
 ul.posts
-  for post, slug in public.blog._data
-    if (post.title && partial(slug))
+  for post in eachPost(public.blog._data)
+    if (post.title && partial(post.slug))
       li
         span.date= moment(post.date, 'YYYY-MM-DD').format('D-MMM, YYYY')
-        a(href="/blog/#{ slug }")= post.title
+        a(href="/blog/#{ post.slug }")= post.title
         p.extract
-          != partial(slug).split('<p>')[1].replace(/<\/p>/, '')
-          a(href="/blog/#{ slug }") Read post
+          != partial(post.slug).split('<p>')[1].replace(/<\/p>/, '')
+          a(href="/blog/#{ post.slug }") Read post
