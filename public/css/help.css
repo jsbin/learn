@@ -580,6 +580,7 @@ h6:hover .anchor span:before {
   color: #111;
   font-weight: bold;
   text-decoration: none;
+  z-index: 10;
 }
 
 .subscribe:before {
