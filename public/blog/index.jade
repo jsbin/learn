@@ -3,8 +3,6 @@
 
 h1 The JS Bin Blog
 
-a.subscribe(href="/blog/feed.xml") Subscribe
-
 ul.posts
   for post in eachPost(public.blog._data)
     if (post.title && partial(post.slug))

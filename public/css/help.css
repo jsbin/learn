@@ -652,6 +652,10 @@ blockquote em {
 
 /* smaller than 480 */
 @media only screen and (max-width: 480px) {
+  .posts li > a {
+    display: block;
+    font-weight: bold;
+  }
   .sample {
     font-size: 200%;
   }
@@ -660,12 +664,17 @@ blockquote em {
     padding: 0px 10px;
   }
 
-  .edit {
+  .edit,
+  .subscribe {
     position: relative;
     margin-top: 0;
     right: 0;
     margin-top: 10px;
     display: block;
+  }
+
+  .subscribe {
+    margin-top: 0;
   }
 
   #body > article h1 {
