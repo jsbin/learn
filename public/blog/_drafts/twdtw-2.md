@@ -6,7 +6,7 @@ This week we released more experiments, discovered one experiment going wrong (s
 
 Code folding, matched brackets, trailing white spaces, and more. We all have our favourite features in the editors we love, and CodeMirror comes with a great deal of addons that historically I've been careful about enabling (since it adds to the footprint of the jsbin.js script request).
 
-I've releases a dev feature (i.e. there's no interface, [yet](https://github.com/jsbin/jsbin/pull/1224)) that allows you to enable a slew of addons from your browser console. For example, in the console if you run the following then refresh:
+I've releases a dev feature (i.e. there's no interface, [yet](https://github.com/jsbin/jsbin/pull/1224)) that allows you to enable to lazy-load in a slew of addons from your browser console. For example, in the console if you run the following then refresh:
 
 ```js
 jsbin.settings.addons.fold = true;
