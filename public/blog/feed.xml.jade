@@ -1,3 +1,5 @@
+- function eachPost(data) { return Object.keys(data).map(function (slug) { var post = data[slug]; post.slug = slug; return post }).sort(byDate) }
+- function byDate(a, b) { return moment(b.date).unix() - moment(a.date).unix() }
 doctype xml
 rss(version="2.0", xmlns:atom="http://www.w3.org/2005/Atom")
   channel
@@ -5,11 +7,11 @@ rss(version="2.0", xmlns:atom="http://www.w3.org/2005/Atom")
     link #{ jsbin }/blog
     description The JS Bin Blog
     atom:link(href="#{ jsbin }/blog/feed.xml", rel="self", type="application/rss+xml")
-    for post, slug in public.blog._data
-      if (post.title)
+    for post in eachPost(public.blog._data)
+      if (post.title && partial(post.slug))
         item
           title= post.title
-          description <![CDATA[!{ partial(slug) }]]>
+          description <![CDATA[!{ partial(post.slug) }]]>
           pubDate= new Date(post.date)
-          link #{ jsbin }/blog/#{ slug }
-          guid(isPermaLink="true") #{ jsbin }/blog/#{ slug }
+          link #{ jsbin }/blog/#{ post.slug }
+          guid(isPermaLink="true") #{ jsbin }/blog/#{ post.slug }
