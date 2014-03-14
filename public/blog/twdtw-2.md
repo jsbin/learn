@@ -16,6 +16,12 @@ Gets you code folding:
 
 ![/images/twdtw/2/fold.png](/images/twdtw/2/fold.png)
 
+Or maybe you're a Vim beast, easy:
+
+```js
+jsbin.settings.addons.vim = true;
+```
+
 [Addons will be documented](/help/addons) soon, but there are details in the pull request: [#1273](https://github.com/jsbin/jsbin/pull/1273).
 
 ## First pass at collaboration

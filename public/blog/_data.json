@@ -2,17 +2,20 @@
   "welcome": {
     "title": "Welcome to the new help & blog",
     "author": "remy",
-    "date": "2014-02-27"
+    "date": "2014-02-27",
+    "published": true
   },
   "twdtw-1-sass-tern-security": {
     "title": "TWDTW #1: Sass, Tern, Security",
     "author": "remy",
-    "date": "2014-03-07"
+    "date": "2014-03-07",
+    "published": true
   },
   "twdtw-2": {
     "title": "TWDTW #2: Addons, Collaboration, Hardware",
     "author": "remy",
-    "date": "2014-03-14"
+    "date": "2014-03-14",
+    "published": false
   },
   "feed": {
     "layout": false
