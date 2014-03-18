@@ -17,6 +17,12 @@
     "date": "2014-03-14",
     "published": true
   },
+  "ssl": {
+    "title": "SSL Login",
+    "author": "fabien",
+    "date": "2014-03-18",
+    "published": false
+  },
   "feed": {
     "layout": false
   }
