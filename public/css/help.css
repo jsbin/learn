@@ -395,6 +395,7 @@ display: inline;
   font-size: 14px;
   display: inline-block;
   text-decoration: none;
+  vertical-align: top;
 }
 
 /*
@@ -570,7 +571,8 @@ h6:hover .anchor span:before {
   font-size: 16px;
 }
 
-.subscribe {
+.subscribe,
+.issue {
   position: absolute;
   right: 20px;
   top: 10px;
@@ -583,7 +585,13 @@ h6:hover .anchor span:before {
   z-index: 10;
 }
 
-.subscribe:before {
+.issue {
+  font-weight: 200;
+  color: #999;
+}
+
+.subscribe:before,
+.issue:before {
   content: '';
   background: url(/images/rss_alt.svg) no-repeat;
   background-size: cover;
@@ -591,6 +599,10 @@ h6:hover .anchor span:before {
   height: 12px;
   width: 12px;
   margin-right: 4px;
+}
+
+.issue:before {
+  background-image: url(/images/comment.svg);
 }
 
 #comments {
@@ -665,7 +677,8 @@ blockquote em {
   }
 
   .edit,
-  .subscribe {
+  .subscribe,
+  .issue {
     position: relative;
     margin-top: 0;
     right: 0;
