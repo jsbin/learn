@@ -4,6 +4,10 @@
 
 They're kept indefinitely. In JS Bin's early life, back in 2008, we removed them after not being seen for 3 months, but that's long been removed. Bins are permanent.
 
+## How can I clear the console?
+
+Very simple: `ctrl+l` from any panel, or using code: `console.clear()`.
+
 ## Can I run a Gist in JS Bin?
 
 Funny you ask! Absolutely you can - just save the gist in Github, and either using the gist to [JS Bin bookmarklet][1], or change the url from [<http://gist.github.com/271333>][2] to [<http://jsbin.com/gist/271333>][3]

@@ -83,6 +83,10 @@
   "adding-custom-libraries": {
     "title": "How to add more libraries to the library list",
     "category": "hack"
+  },
+  "clearing-the-console": {
+    "title": "How to clear the console",
+    "category": "learn"
   }
 
 
