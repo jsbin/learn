@@ -79,6 +79,11 @@
   "ssl": {
     "title": "Why don't we use SSL on all of JS Bin?",
     "category": "fix"
+  },
+  "adding-custom-libraries": {
+    "title": "How to add libraries to the existing list",
+    "category": "hack"
   }
+
 
 }

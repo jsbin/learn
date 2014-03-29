@@ -23,6 +23,12 @@
     "date": "2014-03-19",
     "published": true
   },
+  "twdtw-3-codemirror-settings": {
+    "title": "TWDTW #3: CodeMirror, User settings, Hacks",
+    "author": "remy",
+    "date": "2014-03-24",
+    "published": false
+  },
   "feed": {
     "layout": false
   }
