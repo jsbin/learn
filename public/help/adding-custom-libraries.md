@@ -4,7 +4,7 @@ JS Bin comes with out of the box support for a number of libraries, but if you'r
 
 The format for a new library entry is as follows:
 
-```json
+```js
 { 
   text: 'My Category',
   requires: 'http://someotherlibary.com/lib.js', // optional
@@ -20,7 +20,8 @@ There's a variable called libraries on the global namespace, with two methods: a
 To add this library, open your console, and run the following (changing the library for your own):
 
 ```js
-libraries.add({ text: 'My Libraries', scripts: [ { text: 'Foo 1.0', url: 'http://foo.com/bar-1.0.js' } ] });
+var mylib = {...}; // the "My Library" object above
+libraries.add(mylib);
 ```
 
 These changes will save to your browser (on those browsers that support the Storage API - all the latest versions of browsers), and will remain until you call `libraries.clear()`.
