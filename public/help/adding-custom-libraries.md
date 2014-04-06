@@ -1,6 +1,6 @@
 # Adding custom libraries
 
-JS Bin comes with out of the box support for a number of libraries, but if you're comfortable on the command line, you can add your own.
+JS Bin comes with out of the box support for a number of libraries, but if you're comfortable in the developer tools, you can add your own.
 
 The format for a new library entry is as follows:
 
