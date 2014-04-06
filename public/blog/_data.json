@@ -29,6 +29,12 @@
     "date": "2014-04-01",
     "published": true
   },
+  "twdtw-4-tern-pro-features": {
+    "title": "TWDTW #4: Tern live, and our upcoming Pro features",
+    "author": "remy",
+    "date": "2014-04-07",
+    "published": false
+  },
   "feed": {
     "layout": false
   }
