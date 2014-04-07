@@ -18,7 +18,7 @@ We're all working hard on Pro features for JS Bin (whilst also pushing out more 
 
 This means your shared URLs will include your username to your editable bins, like [http://rem.jsbin.com/kuzef/2/](http://rem.jsbin.com/kuzef/2/) and more importantly, you can *publish to your vanity url*, as so: [http://rem.jsbin.com](http://rem.jsbin.com).
 
-The vanity URL will also support pointing your own domain directly at JS Bin (like code.rem.io)The vanity URL will also support pointing your own domain directly at JS Bin (like code.rem.io)
+The vanity URL will also support pointing your own domain directly at JS Bin (like code.rem.io).
 
 Also in the works is Dropbox support (for your own copy of you bins but also quickly embedding external resources). More on that soon.
 
