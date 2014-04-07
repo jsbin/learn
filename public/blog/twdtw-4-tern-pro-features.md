@@ -10,7 +10,7 @@ A few weeks ago we showed off the [demo of Tern](/blog/twdtw-1-sass-tern-securit
 jsbin.settings.addons.tern = true;
 ```
 
-...then refresh and Turn is enabled in the JavaScript panel.
+...then refresh and Tern is enabled in the JavaScript panel.
 
 ## Upcoming Pro feature: vanity urls
 
