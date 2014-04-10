@@ -1,4 +1,4 @@
-# Heartbleed on JS Bin
+# Heartbleed and JS Bin
 
 If you've not heard about [Heartbleed](http://heartbleed.com), means that **potentially** all your passwords can be compromised. This isn't a bug that's specific to JS Bin, it affects most sign in forms that go over HTTPS. Yes, it's **that** scary. 
 
@@ -10,16 +10,21 @@ Here's what *we've* done:
 - We've re-issued our SSL certificate for our login and register
 - We're recommending that you [change your password](/help/change-your-password)
 
-We can't control when the old SSL certificate gets revoked (serial number 842265), but we've already seen people on the new certificate (serial number 1169237). You can check you have the updated certificate by clicking on the "pad lock", and digging into the certificate details, where you should see the issue "Not Valid Before" date, which will be 8 April 2014:
+We can't control when the old SSL certificate gets revoked (serial number 842265), but we've already seen people on the new certificate (serial number 1169237). You can check you have the updated certificate by clicking on the "padlock", and digging into the certificate details, where you should see the issue "Not Valid Before" date, which will be 8 April 2014:
 
 ![/images/ssl-cert.png](/images/ssl-cert.png)
 
-And importantly, what **you'll** need to (or I'm suggesting you) do:
-
-1. If you're using Chrome, it doesn't check for revoked SSL certificates by default - you'll want to enable this:
+Note that if you use Chrome, you'll also need to ensure your browser checks for revoked SSL certificate by default:
 
 ![/images/chrome-revoke.png](/images/chrome-revoke.png)
 
-2. Change your password
-3. Log out and log back in again
-4. Read up and share what you learn about Heartbleed
+And importantly, what **you'll** need to (or I'm suggesting you) do:
+
+* Change your password
+* Log out and log back in again
+* Read up and share what you learn about Heartbleed
+
+Some good resources I've found are:
+
+* [Everything you need to know about Heartbleed](http://www.troyhunt.com/2014/04/everything-you-need-to-know-about.html) - very good if you're at all technical and need to get a grip on the issues
+* [Big web sites affected](http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/) - I found this pretty useful for what to tell non-technical people I know.

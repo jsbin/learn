@@ -35,6 +35,12 @@
     "date": "2014-04-07",
     "published": true
   },
+  "heartbleed": {
+    "title": "Heartbleed and JS Bin",
+    "author": "remy",
+    "date": "2014-04-10",
+    "published": true
+  },
   "feed": {
     "layout": false
   }
