@@ -24,6 +24,8 @@ And importantly, what **you'll** need to (or I'm suggesting you) do:
 * Log out and log back in again (to clear your session based on the old SSL certificate)
 * Read up and share what you learn about Heartbleed
 
+We could (technically) reset everyone's password, but it's not that simple for us to code up, and really the complexity is in the user flow, and getting it right. So I decided against it in the end.
+
 Some good resources I've found are:
 
 * [Everything you need to know about Heartbleed](http://www.troyhunt.com/2014/04/everything-you-need-to-know-about.html) - very good if you're at all technical and need to get a grip on the issues
