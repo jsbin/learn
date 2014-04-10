@@ -21,7 +21,7 @@ Note that if you use Chrome, you'll also need to ensure your browser checks for 
 And importantly, what **you'll** need to (or I'm suggesting you) do:
 
 * Change your password
-* Log out and log back in again
+* Log out and log back in again (to clear your session based on the old SSL certificate)
 * Read up and share what you learn about Heartbleed
 
 Some good resources I've found are:
