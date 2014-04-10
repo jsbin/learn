@@ -14,6 +14,10 @@
     "title": "How to pre-populate bins and inject content",
     "category": "teach"
   },
+  "change-your-password": {
+    "title": "How to change your password",
+    "category": "learn"
+  },
   "how-can-i-embed-jsbin": {
     "title": "How can I embed JS Bin?",
     "category": "teach"
