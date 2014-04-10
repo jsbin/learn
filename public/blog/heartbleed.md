@@ -27,4 +27,4 @@ And importantly, what **you'll** need to (or I'm suggesting you) do:
 Some good resources I've found are:
 
 * [Everything you need to know about Heartbleed](http://www.troyhunt.com/2014/04/everything-you-need-to-know-about.html) - very good if you're at all technical and need to get a grip on the issues
-* [Big web sites affected](http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/) - I found this pretty useful for what to tell non-technical people I know.
+* [Big web sites affected](http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/) - I found this pretty useful for what to tell non-technical people I know
