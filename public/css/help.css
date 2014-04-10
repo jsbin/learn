@@ -81,6 +81,8 @@ pre code {
   margin: -0.125em 0;
   padding: 25px !important;
   display: table-cell !important;
+  /* because iOS is just weird */
+  -webkit-text-size-adjust: none;
 }
 
 #body {
@@ -745,6 +747,10 @@ blockquote em {
 
   code {
     word-wrap: break-word;
+  }
+
+  pre code {
+    padding: 10px !important;
   }
 }
 
