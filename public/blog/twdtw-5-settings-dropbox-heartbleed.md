@@ -4,23 +4,22 @@ This week we've wrestled with the Heartbleed bug, shipped some new settings and 
 
 ## Heartbleed
 
-The Heartbleed bug definately took it's toll in the office this week, first we panicked, then [Remy](https://github.com/remy) 
+The Heartbleed bug definately took it's toll in the office this week, after some initial panic [Remy](https://github.com/remy) 
 updated our servers to patch the OpenSSL which was great, we were no longer vulnerable! 
 
 During the update however our MySQL client had become incompatible with our MySQL server leaving us in an awkward position of 
-not being able to release certain features that required a database change. Remy also had a tough time getting SSL certificates 
-revoked and reissued - it was generally a headache all round.
+not being able to release certain features that required a database change. 
 
-For anyone interested, here's a simple [xkcd](http://xkcd.com) comic to explain Heartbleed.
+This comic from [xkcd](http://xkcd.com) does a good job of simply explaining the issue
 
 ![Are you still there, server? It's me, Margaret.](http://imgs.xkcd.com/comics/heartbleed_explanation.png)
 
 ## Settings
 
-[Giulia](https://github.com/electricg) has been continuing work on our account pages, with updates to the editor settings (Remy spoke 
-about these in [TWDTW #3](http://jsbin.com/blog/twdtw-3-codemirror-settings#usersettings)) and created a page for managing your JS Bin
-default preferences, such as your default open panels, starting template and jshint options. As with the rest of our account pages, 
-these are still going through internal testing until they're all good for you guys! 
+[Giulia](https://github.com/electricg) has been continuing work on our account pages, with updates to the editor settings (Mentioned before in 
+[TWDTW #3](http://jsbin.com/blog/twdtw-3-codemirror-settings#usersettings)) and created a page for managing your JS Bin
+default preferences, such as your starting open panels. As with the rest of our account pages, these are still going through internal testing 
+until they're all good for you people! 
 
 ![Preferences page](/images/twdtw/5/preferences.png)
 
