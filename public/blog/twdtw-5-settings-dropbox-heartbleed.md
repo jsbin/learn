@@ -4,10 +4,12 @@ This week we've wrestled with the Heartbleed bug, shipped some new settings and 
 
 ## Heartbleed
 
-The Heartbleed bug definately took it's toll on our office this week, first it was panic/wtf, then [Remy](https://github.com/remy) 
-updated our servers to patch the OpenSSL which was great, we were no longer vulnerable! But during the update our MySQL client had 
-become incompatible with our MySQL server leaving us in an awkward position of not being able to release certain features that 
-required a database change. Remy also had a tough time getting SSL certificates sorted [TODO - clarify what happened here].
+The Heartbleed bug definately took it's toll in the office this week, first we panicked, then [Remy](https://github.com/remy) 
+updated our servers to patch the OpenSSL which was great, we were no longer vulnerable! 
+
+During the update however our MySQL client had become incompatible with our MySQL server leaving us in an awkward position of 
+not being able to release certain features that required a database change. Remy also had a tough time getting SSL certificates 
+revoked and reissued - it was generally a headache all round.
 
 For anyone interested, here's a simple [xkcd](http://xkcd.com) comic to explain Heartbleed.
 
@@ -22,10 +24,7 @@ these are still going through internal testing until they're all good for you gu
 
 ![Preferences page](/images/twdtw/5/preferences.png)
 
-
 ## Dropbox
-
-[TODO - Remove the techie bit || remove the non techie bit]
 
 For the past couple of weeks I've been working on linking Dropbox accounts with JS Bin. We've got a version out for internal 
 testing. This work has resulted in our [jobsworth](https://github.com/jsbin/jobsworth) module. jobsworth 
@@ -38,4 +37,9 @@ as well as the compiled output as documented in [#609](https://github.com/jsbin/
 
 ## Totally aside
 
+This is for anyone that's seen Gravity. And this is for anyone that hasn't - [8.1](http://www.imdb.com/title/tt1454468/)!
+
+<div class="embed-container">
+  <iframe width="1280" height="720" src="//www.youtube.com/embed/Gw79smKZB9E" frameborder="0" allowfullscreen></iframe>
+</div>
 
