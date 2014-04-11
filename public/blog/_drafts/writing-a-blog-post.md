@@ -4,8 +4,20 @@ This (private) article outlines useful tips and the process for releasing a blog
 
 ## Creating the draft post
 
-1. Whilst drafting your post, ensure it lives inside the `public/blog/_drafts` directory, this way it'll be in the git repo, but hidden from the live site. 
-2. You *can* work on a separate branch for the blog post, and this will ensure the content doesn't go live, *or* you can commit with `[skip ci]` which will skip the automated deployment process.
+1. Whilst drafting your post, ensure it lives inside the `public/blog/` directory.
+* You *can* work on a separate branch for the blog post, and this will ensure the content doesn't go live, *or* you can commit with `[skip ci]` which will skip the automated deployment process - though this isn't really required for weekly (TWDTW) posts.
+* Insert a new record in the `public/blog/_data.json` file structured as:
+
+```json
+  "<filename-excluding-ext>": {
+    "title": "<title of post>",
+    "author": "<author-username>",
+    "date": "<publised-date>",
+    "published": false
+  },
+```
+
+Note that setting `published: false` will show the post offline for development, but not show the post online in production. This is useful for sharing and copy editing with colleagues.
 
 ## Structure
 

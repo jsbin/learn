@@ -22,7 +22,7 @@ The vanity URL will also support pointing your own domain directly at JS Bin (li
 
 Also in the works is Dropbox support (for your own copy of you bins but also quickly embedding external resources). More on that soon.
 
-Most importantly, Pro is the way that JS Bin will continuing to be open source and **free for education**. And we need your help to do that. So spread the word, and [sign signed up too](https://jsbin.com/register) so you're ready for when it lands!
+Most importantly, Pro is the way that JS Bin will continuing to be open source and **free for education**. And we need your help to do that. So spread the word, and [sign up too](https://jsbin.com/register) so you're ready for when it lands!
 
 ## Totally aside
 
