@@ -1,3 +1,7 @@
+static = ''
+if environment == "production"
+  static = 'http://learn.jsbin.com/'
+
 - function eachPost(data) { return Object.keys(data).map(function (slug) { var post = data[slug]; post.slug = slug; return post }).sort(byDate).filter(function (post) { return environment == "production" ? post.published : post.title }) }
 - function byDate(a, b) { return moment(b.date).unix() - moment(a.date).unix() }
 doctype xml
@@ -9,7 +13,7 @@ rss(version="2.0", xmlns:atom="http://www.w3.org/2005/Atom")
     for post in eachPost(public.blog._data)
       item
         title= post.title
-        description <![CDATA[!{ partial(post.slug) }]]>
+        description <![CDATA[!{ partial(post.slug).replace(/src="\/([^\/])/g, 'src="' + static + '$1') }]]>
         pubDate= new Date(post.date)
         link #{ jsbin }/blog/#{ post.slug }
         guid(isPermaLink="true") #{ jsbin }/blog/#{ post.slug }
