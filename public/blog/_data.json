@@ -42,10 +42,10 @@
     "published": true
   },
   "twdtw-5-settings-dropbox-heartbleed":{
-    "title": "TWDTW #5 Heartbleed, Settings, Dropbox",
+    "title": "TWDTW #5: Heartbleed, Settings, User Backups",
     "author": "fabien",
     "date": "2014-04-11",
-    "published": false
+    "published": true
   },
   "feed": {
     "layout": false
