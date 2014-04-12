@@ -21,7 +21,7 @@ We're hoping to release this to you all next week.
 
 ## User backups
 
-For the past couple of weeks, I've been working on a new part of JS Bin called [Jobsworth](https://github.com/jsbin/jobsworth). This is a task manager that communicates using [zeromq](http://http://zeromq.org/) and contrary to it's name, will do our bidding. Initially backing up all my new bins to Dropbox in real-time (and we intend to add other services, like SkyDrive, Drive, etc).
+For the past couple of weeks, I've been working on a new part of JS Bin called [Jobsworth](https://github.com/jsbin/jobsworth). This is a task manager that communicates using [zeromq](http://zeromq.org/) and contrary to it's name, will do our bidding. Initially backing up all my new bins to Dropbox in real-time (and we intend to add other services, like SkyDrive, Drive, etc).
 
 The format of the file saved in which the bins are saved is a single HTML file that includes the full source of the bin, including pre-processor's source, which acts as an API for JS Bin importing too [#609](https://github.com/jsbin/jsbin/issues/609).
 
