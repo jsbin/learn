@@ -1,8 +1,7 @@
-# TWDTW #6 - Bin files, Webhooks, Pro Accounts
+# TWDTW #6 - Bin files, Dropbox, Pro Accounts
 
 This week we've been doing mostly internal updates to JS Bin, so not much to see. I've been working on updating the way in which we create HTML
-files from bins and the peeps at [Dropbox](http://dropbox.com) have given us beta access to their webhooks, so we're gonna start to experiment with
-that! 
+files from bins and we're gonna start to experiment with two-way syncing with [Dropbox](http://dropbox.com)
 
 ## Bin files
 
