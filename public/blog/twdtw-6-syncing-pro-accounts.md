@@ -25,6 +25,6 @@ features, it's a lot bigger than I thought!
 
 ## Totally aside
 
-Also, a very big congratulations to Remy and [Julie](https://twitter.com/jullieanne) - they've had a beautiful baby girl :D!
+Also, a very big congratulations to Remy and [Julie](https://twitter.com/julieanne) - they've had a beautiful baby girl :D!
 
 ![](/images/twdtw/6/baby.png)
