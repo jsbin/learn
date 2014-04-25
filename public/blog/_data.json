@@ -47,6 +47,12 @@
     "date": "2014-04-11",
     "published": true
   },
+  "twdtw-6-syncing-pro-accounts": {
+    "title": "TWDTW #6: Bin files, Webhooks, Pro Accounts",
+    "author": "fabien",
+    "date": "2014-04-25",
+    "published": true
+  },
   "feed": {
     "layout": false
   }
