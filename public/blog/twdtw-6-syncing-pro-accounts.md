@@ -10,11 +10,10 @@ Transforming a Bin into a html file has always been done by JS Bin - to display 
 to create more than just a renderable file, but a file that stores both the raw panel content and the content *after* it has gone through 
 preproccesors. This will eventually allow files in this format to be dropped into JS Bin and populate all the panels, cool!
 
-## Webhooks
+## Dropbox
 
-[Remy](https://twitter.com/rem) and I were talking about having two way syncing with a datastore like Dropbox but reading the documentation, we could 
-only do this with native apps. Remy got an email last week inviting us to beta test their webhooks for updates to files, we're hoping to have two-way 
-syncing of bins to Dropbox ready to be tested internally by next week. Here's how the current dropbox syncing works:
+[Remy](https://twitter.com/rem) and I were talking about our Dropbox linking being more than just saving - but syncing, where any changes made to your files on Dropbox would then be reflected in JS Bin. We're hoping to have two-way 
+syncing of bins to Dropbox ready to be tested internally by next week. Here's how the current dropbox linking works:
 <div class="embed-container">
  <iframe name='quickcast' src='http://quick.as/embed/4qb1f7bg' scrolling='no' frameborder='0' width='100%' allowfullscreen></iframe><script src='http://quick.as/embed/script/1.50'></script>
 </div>
