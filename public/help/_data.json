@@ -91,7 +91,9 @@
   "clearing-the-console": {
     "title": "How to clear the console",
     "category": "learn"
+  },
+    "features": {
+    "title": "Feature list",
+    "category": "learn"
   }
-
-
 }
