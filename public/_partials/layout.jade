@@ -50,6 +50,8 @@ html
             span.morewords Back to JS Bin
           nav
             block link
+              input#search(placeholder="Search...")
+              ol#results(hidden=true)
             -var selected = '/' + current.path.join('/'); //default
             -var menu = { 'Account': jsbin + '/account', 'Blog': '/blog', 'Help': '/help' };
             -var menu = { 'Blog': '/blog', 'Help': '/help' };
@@ -99,6 +101,8 @@ html
       s.parentNode.insertBefore(wf, s);
     })();
   script(src='#{static}/js/permalink.js')
+  script(src='#{static}/js/search.js')
+  script(src='#{static}/js/xhr.js')
   script(src='#{static}/js/keyboard.js')
   script(src='#{static}/js/highlight.pack.js')
   script.

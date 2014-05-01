@@ -1,0 +1,52 @@
+<%
+function wordmap(input) {
+  var ignore = "a an and on in it of if for the i is i'm i'd it's or to me be not was do so at are what bin bins".split(' ');
+
+  var endings = 'ing ly lies s';
+  var endingRe = new RegExp('(' + endings.split(' ').join('|') + ')$');
+
+  return (input||'')
+    //- strip html
+    .replace(/(<([^>]+)>)/ig,'')
+    //- strip non-letters
+    .replace(/\W/g, ' ').replace(/["'\.,]/g, '')
+    //- turn in to array of lower case words
+    .toLowerCase().split(' ')
+    //- filter out ignored words
+    .filter(function (word) {
+      return ignore.indexOf(word.trim()) === -1;
+    }).filter(function (e, i, words) {
+      //- return unique
+      return words.lastIndexOf(e) === i;
+    }).filter(function (word) {
+      //- return words 3 chars or longer
+      return word.length > 2;
+    }).map(function (word) {
+      return word.trim().replace(endingRe, '');
+    }).sort();
+}
+
+function eachPost(type) {
+  var data = public[type]._data;
+  return Object.keys(data).map(function (slug) {
+    var post = data[slug];
+    return {
+      type: type,
+      slug: type + '/' + slug,
+      title: post.title,
+      category: post.category,
+      words: wordmap(partial(type + '/' + slug)),
+      ignore: post.layout === false || post.slug === 'index'
+    };
+  }).filter(function (post) {
+    var ret = !post.ignore;
+    delete post.ignore;
+    return ret;
+  });
+}
+
+var data = eachPost('help');
+data = data.concat(eachPost('blog'));
+
+%>
+<%- JSON.stringify(data) %>

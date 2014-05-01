@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+[hidden], .hidden {
+  display: none !important;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -39,6 +43,39 @@ code {
 
 ul, ol {
   margin-left: 0px;
+}
+
+#results {
+  background: white;
+  /* max-height: 200px; */
+  overflow-y: visible;
+  border: 1px solid rgb(220, 220, 220);
+  position: absolute;
+  z-index: 100;
+  margin-top: 4px;
+  overflow-x: hidden;
+  list-style: numeric outside none;
+  border-radius: 2px;
+  padding-left: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+#results:empty {
+  display: none;
+}
+
+#results li {
+  padding: 0;
+}
+
+#results a {
+  display: block;
+  padding: 10px 15px;
+}
+
+#results li:hover,
+#results li.highlight {
+  background: #eee;
 }
 
 pre {
@@ -171,8 +208,9 @@ header {
   margin: 0 auto;
   font-size: 14px;
   font-weight: bold;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 12px 0;
+  height: 60px;
 }
 
 hr {
@@ -183,7 +221,17 @@ hr {
 
 header nav {
   display: inline;
-  padding: 10px 0;
+  padding: 5px 0 0px 0;
+  position: relative;
+}
+
+header nav input {
+  font-size: 14px;
+  font-family: "helvetica neue", sans-serif;
+  padding: 5px;
+  border: 1px solid rgb(220, 220, 220);
+  margin: 0;
+  margin-right: 20px;
 }
 
 header nav a {
@@ -706,7 +754,8 @@ blockquote em {
   }
 
   #back {
-    margin-right: 0;
+    display: none;
+    /*margin-right: 0;*/
   }
 
   #footer .legal {

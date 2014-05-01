@@ -1,5 +1,8 @@
 {
   "about": {
     "title": "About JS Bin"
+  },
+  "search": {
+    "layout": false
   }
 }

@@ -11,17 +11,15 @@ preproccesors. This will eventually allow files in this format to be dropped int
 
 ## Dropbox
 
-[Remy](https://twitter.com/rem) and I were talking about our Dropbox linking being more than just saving - but syncing, where any changes made to your files on Dropbox would then be reflected in JS Bin. We're hoping to have two-way 
-syncing of bins to Dropbox ready to be tested internally by next week. Here's how the current dropbox linking works:
+[Remy](https://twitter.com/rem) and I were talking about our Dropbox linking being more than just saving - but syncing, where any changes made to your files on Dropbox would then be reflected in JS Bin. We're hoping to have two-way syncing of bins to Dropbox ready to be tested internally by next week. Here's how the current dropbox linking works:
+
 <div class="embed-container">
  <iframe name='quickcast' src='http://quick.as/embed/4qb1f7bg' scrolling='no' frameborder='0' width='100%' allowfullscreen></iframe><script src='http://quick.as/embed/script/1.50'></script>
 </div>
 
 ## Pro Accounts
 
-Our pro account offering is being polished for when Remy returns to the office and we can release them, [Danny](https://twitter.com/yandle) popped in
-this week to go over the designs and user flow from registered or anonymous to pro and I've been compiling a list of all JS Bins current and future 
-features, it's a lot bigger than I thought!
+Our pro account offering is being polished for when Remy returns to the office and we can release them, [Danny](https://twitter.com/yandle) popped in this week to go over the designs and user flow from registered or anonymous to pro and I've been compiling a list of all JS Bins current and future features, it's a lot bigger than I thought!
 
 ## Totally aside
 
