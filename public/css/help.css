@@ -484,6 +484,7 @@ display: inline;
   font-weight: 400;
   font-size: 14px;
   color: #aaa;
+  z-index: 10;
 }
 
 /* video icon */
@@ -710,6 +711,12 @@ blockquote em {
 .posts li:first-child a,
 .posts li:hover a {
   color: blue;
+}
+
+@media only screen and (max-width: 544px) {
+  .morewords {
+    display: none;
+  }
 }
 
 /* smaller than 480 */
