@@ -4,7 +4,7 @@
   var search = document.querySelector('#search');
   search.addEventListener('input', throttle(function () {
     if (searchTerms.length === 0) {
-      get('/search.json', function (data) {
+      get('/help/search.json', function (data) {
         searchTerms = data;
         searchFor(this.value, searchTerms);
       }.bind(this));

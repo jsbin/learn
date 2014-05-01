@@ -35,8 +35,8 @@ function eachPost(type) {
       slug: type + '/' + slug,
       title: post.title,
       category: post.category,
-      words: wordmap(partial(type + '/' + slug)),
-      ignore: post.layout === false || post.slug === 'index'
+      words: wordmap(partial('../' + type + '/' + slug)),
+      ignore: post.layout === false || slug.indexOf('index') !== -1
     };
   }).filter(function (post) {
     var ret = !post.ignore;

@@ -2,6 +2,9 @@
   "index": {
     "layout": "_index-layout"
   },
+  "search": {
+    "layout": false
+  },
   "what-is-jsbin": {
     "title": "What is JS Bin?",
     "category": "learn"
