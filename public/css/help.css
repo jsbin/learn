@@ -45,6 +45,13 @@ ul, ol {
   margin-left: 0px;
 }
 
+#search {
+  /* fuck ios */
+  -webkit-appearance: none;
+  border-radius: 0;
+  font-size: 16px;
+}
+
 #results {
   background: white;
   /* max-height: 200px; */
@@ -731,6 +738,10 @@ blockquote em {
 
   blockquote {
     padding: 0px 10px;
+  }
+
+  #search {
+    width: 150px;
   }
 
   .edit,

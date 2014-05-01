@@ -50,7 +50,7 @@ html
             span.morewords Back to JS Bin
           nav
             block link
-              input#search(placeholder="Search...")
+              input#search(placeholder="Search...", spellcheck="false", autocapitalize="off", autocorrect="off")
               ol#results(hidden=true)
             -var selected = '/' + current.path.join('/'); //default
             -var menu = { 'Account': jsbin + '/account', 'Blog': '/blog', 'Help': '/help' };
