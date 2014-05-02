@@ -16,9 +16,14 @@ function keyboard() {
 
   [].forEach.call($('kbd'), function (el) {
     var m = el.innerHTML;
-    if (mackeys[m]) {
-      el.replaceChild(document.createTextNode(mackeys[m]), el.firstChild);
+    var c = el.className;
+    if (c !== 'same' && m.toLowerCase().indexOf('ctrl') !== -1) {
+      el.innerHTML = m.replace(/(c)trl/ig, '$1md');
     }
+    // if (mackeys[m]) {
+    //   el.replaceChild(document.createTextNode(mackeys[m]), el.firstChild);
+    //   el.className = 'symbol';
+    // }
   });
 }
 

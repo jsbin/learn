@@ -143,6 +143,33 @@ pre code {
   max-width: 1024px;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px 0;
+  vertical-align: top;
+}
+
+tr td:nth-child(2n+1) {
+  width: 230px;
+}
+
+th {
+  font-weight: normal;
+  text-align: left;
+  padding-top: 0;
+  /* font-size: 14px; */
+  /* background: #eee; */
+}
+
+thead {
+  border-bottom: 1px solid #ccc;
+  /* display: none; */
+}
+
 #body img {
   max-width: 100%;
   border: 1px solid #eee;
@@ -168,6 +195,7 @@ div > img {
 #body > article h2,
 #body > article h3,
 #body > article pre,
+#body > article table,
 #disqus_thread {
   max-width: 660px;
   margin-left: auto;
@@ -668,12 +696,36 @@ h6:hover .anchor span:before {
 }
 
 kbd {
+  font-family: menlo, consolas, monospace;
+  font-size: 14px;
 }
 
-kbd kbd {
+kbd.combo {
+  padding: 0;
+  background: none;
+}
+
+kbd.combo > kbd, 
+kbd {
   padding: 5px;
   border-radius: 3px;
-  background: #eee;
+  background: rgb(243, 243, 243);
+  /* border: 2px solid #fff; */
+}
+
+p > kbd,
+td > kbd {
+  box-shadow: .5px .5px 0 rgba(0,0,0,.2);
+  border: 1px solid #ccc;
+  margin: 0 4px;
+}
+
+kbd:first-child {
+  margin-left: 0;
+}
+
+kbd.symbol {
+  font-family: monospace;
 }
 
 .extract {

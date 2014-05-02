@@ -91,8 +91,12 @@
     "title": "How to clear the console",
     "category": "learn"
   },
-    "features": {
+  "features": {
     "title": "Feature list",
+    "category": "learn"
+  },
+  "keyboard-shortcuts"  : {
+    "title": "Keyboard shortcuts",
     "category": "learn"
   }
 }

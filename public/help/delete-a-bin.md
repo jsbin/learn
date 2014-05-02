@@ -2,7 +2,7 @@
 
 Deleting a bin is easy. Once a bin is deleted, all changes on that particular bin URL are ignored, and when you leave the browser window (or refresh) the bin is permanently lost.
 
-Delete can be accessed via the "Bins" menu, and select "Delete". Or via the keyboard using <kbd><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>del</kbd></kbd>.
+Delete can be accessed via the "Bins" menu, and select "Delete". Or via the keyboard using <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>del</kbd>.
 
 If you are the owner of the bin, you'll see this message and the bin is deleted.
 
