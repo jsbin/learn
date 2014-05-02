@@ -53,6 +53,12 @@
     "date": "2014-04-25",
     "published": true
   },
+  "twdtw-7-processors-search": {
+    "title": "TWDTW #7: SCSS, Compass and search",
+    "author": "remy",
+    "date": "2014-05-02",
+    "published": false
+  },
   "feed": {
     "layout": false
   }
