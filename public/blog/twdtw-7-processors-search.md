@@ -18,7 +18,7 @@ Once I'm back from paternity leave (in 2 weeks) I'll be focused on releasing thi
 
 ## Help & blog search
 
-This part of JS Bin (the blog and help) are statically generated using [Harp](harpjs.com/), which makes search a little tricky (and bin searching is also on the roadmap, but a separate issue for now).
+This part of JS Bin (the blog and help) are statically generated using [Harp](http://harpjs.com/), which makes search a little tricky (and bin searching is also on the roadmap, but a separate issue for now).
 
 I've hacked in a simple solution that generates a static JSON file with all the words from the content on help & blog. It's not perfect, and requires JavaScript right now (and no keyboard support yet), but it's a start to jump to content a little quicker.
 
