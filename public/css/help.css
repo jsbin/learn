@@ -825,9 +825,9 @@ blockquote em {
 @media only screen and (min-width: 640px) {
   .links {
     /* -webkit-column-count: 2; */
-    -moz-column-count: 2;
-    -ms-column-count: 2;
-    column-count: 2;
+    /*-moz-column-count: 2;*/
+    /*-ms-column-count: 2;*/
+    /*column-count: 2;*/
     padding-left: 0;
   }
 
