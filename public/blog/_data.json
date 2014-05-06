@@ -59,6 +59,12 @@
     "date": "2014-05-02",
     "published": true
   },
+  "my-zen-mode": {
+    "title": "How I run JS Bin in Zen mode!",
+    "author": "fabien",
+    "date": "2014-05-09",
+    "published": false
+  },
   "feed": {
     "layout": false
   }

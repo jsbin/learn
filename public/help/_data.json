@@ -98,5 +98,9 @@
   "keyboard-shortcuts"  : {
     "title": "Keyboard shortcuts",
     "category": "learn"
+  },
+  "defaults-in-bins": {
+    "title": "How do I set default code in all new bins?",
+    "category": "hack"
   }
 }
