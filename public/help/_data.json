@@ -101,14 +101,18 @@
   },
   "import-gists": {
     "title": "Gists: how to import a gist",
-    "category": "hack"
+    "category": "teach"
   },
   "export-gist": {
     "title": "Gists: how to export to a gist",
-    "category": "hack"
+    "category": "teach"
   },
   "defaults-in-bins": {
     "title": "How do I set default code in all new bins?",
-    "category": "hack"
+    "category": "learn"
+  },
+  "linking-bins": {
+    "title": "How to link multiple bins",
+    "category": "learn"
   }
 }
