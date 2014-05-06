@@ -6,4 +6,4 @@ For example, changing [https://gist.github.com/remy/271333](https://gist.github.
 
 If you're a bookmarklet user, here's one that you can use to simply click when you're on a gist to import to JS Bin: **<a href="javascript:(function()%7Bwindow.location='http://jsbin.com/gist'+window.location.pathname%7D)()">Import Gist</a>**.
 
-You can also [export gists](/help/export-gists.md).
+You can also [export gists](/help/export-gist).
