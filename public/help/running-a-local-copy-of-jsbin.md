@@ -1,4 +1,4 @@
-# Running a local copy of JS Bin
+# Running JS Bin locally
 
 JS Bin is a [Node](http://nodejs.org) project.
 
