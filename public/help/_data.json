@@ -99,6 +99,14 @@
     "title": "Keyboard shortcuts",
     "category": "learn"
   },
+  "import-gists": {
+    "title": "Gists: how to import a gist",
+    "category": "hack"
+  },
+  "export-gist": {
+    "title": "Gists: how to export to a gist",
+    "category": "hack"
+  },
   "defaults-in-bins": {
     "title": "How do I set default code in all new bins?",
     "category": "hack"
