@@ -94,11 +94,11 @@ grunt build
 
 This will generate the `public/js/prod/` directory and read the version in the `package.json` file to generate to build a number of files:
 
-1. jsbin-<version>.js - the uncompressed, concatted version of all the scripts from `/scripts.json`
-2. jsbin-<version>.min.js - the production compressed version of jsbin, used in the editor
+1. jsbin-$version.js - the uncompressed, concatted version of all the scripts from `/scripts.json`
+2. jsbin-$version.min.js - the production compressed version of jsbin, used in the editor
 3. jsbin.map.json - the sourcemaps file (useful for debugging in live)
-4. runner-<version>.js - the runner script, used to generate the output of the user's code in an iframe
-5. runner-<version>.min.js - the production version of the runner
+4. runner-$version.js - the runner script, used to generate the output of the user's code in an iframe
+5. runner-$version.min.js - the production version of the runner
 
 Finally, ensure either the config.local.json's `env` property is set to "production" or you can run JS Bin in production via the envinoment:
 
