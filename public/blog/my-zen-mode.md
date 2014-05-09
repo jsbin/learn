@@ -1,7 +1,6 @@
 # How I run JS Bin in Zen mode!
 
 Since using JS Bin, I've discovered a number of ways to customise it to my liking, and I wanted to share how I'm running in *Zen mode*!
-Here's a screen shot of my Zen mode
 
 ![Zen mode](/images/jsbin-zen-mode-1.png)
 
@@ -11,12 +10,11 @@ Here's a screen shot of my Zen mode
   jsbin.settings.addons.vim = true;
 ```
 
-My editor of choice is Vim, and if you're a Vim user, using *normal* text inputs
-can be really frustrating. Since we upgraded CodeMirror to version 4, we've added 
-a lot of extra plugins for CodeMirror, including Vim mode. Just note that
-not all of the Vim functionality comes with the plugin, visual block mode, for 
-example, doesn't work. But a lot of the Ex commands are there, including search 
-and replace, which is great, as jsbin doens't support this in normal mode.
+Since we upgraded CodeMirror to version 4, we've added a lot of extra plugins for
+CodeMirror, including Vim mode. Just note that not all of the Vim functionality
+comes with the plugin, visual block mode, for example, doesn't work. But a lot of
+the Ex commands are there, including search and replace, which is great, as jsbin
+doesn't support this in normal mode.
 
 ## Custom theme
 
@@ -24,17 +22,14 @@ and replace, which is great, as jsbin doens't support this in normal mode.
   jsbin.settings.editor.theme = 'solarized light';
 ```
 
-I'll be quite frank, the default theme for CodeMirror/jsbin isn't the prettiest to
-work with, so I've opted to use the solarized theme, it's the theme I use everywhere
-else (Terminal.app && Vim). We support both light and dark solarized themes, I use
-the light theme in the browser.
+Solarized is a beautiful theme, I use everywhere (Terminal.app && Vim). We support
+both light and dark solarized themes, I use the light theme in the browser.
 
 ## Default template
 
-I the default template functionality, when I was mostly using jsbin for hacking
-canvas experiments, I could just go to jsbin.com and have the canvas element in the DOM
-with a loads of javascript functions already defined. Now, my default template is somewhat
-simpler:
+Default templates in JS Bin really make it your own, you can add default content
+to all three of the input panels, so if you always use jQuery, you can have JS Bin
+always include it for you. My default template is pretty simple 
 
 ### HTML
 
@@ -77,18 +72,39 @@ the code is run!
 
 ## Hidden toolbar
 
-I've also chosen to hide the top toolbar, most of the bins I create now days use solely the 
-javascript and console panel, getting rid of the top panel just lets me focus more on the
-code I'm debugging/developing. To hide the top bar, you just use a keyboard shortcut <kbd>ctrl</kbd>+<kbd>Shift</kbd>+<kbd>\</kbd> 
+<kbd>ctrl</kbd>+<kbd>Shift</kbd>+<kbd>\</kbd>
+
+The hidden topbar lets me really focus on the code, most of the items in the menus
+can be accessed via keyboard shortcuts and for everything else, when I *do* need
+it, the toolbar pops open when you hover near it.
 
 ## Keyboard shortcuts
 
-Keyboard shortcuts in jsbin are *awesome*, I'm often using <kbd>ctrl</kbd>+<kbd>[number]</kbd> to open and close
-panels if i do need to access the html/css/output panel. My two favourite shortcuts are <kbd>ctrl</kbd>+<kbd>/</kbd>
-which you can probably guess, comments out the current line (yes, this still works in Vim mode)
-and <kbd>ctrl</kbd>+<kbd>enter</kbd> which does quite a few things, if you have the console panel open, it will run
-the javascript panel's code in the console. It also re-renders the output, so if you are remotely 
-viewing a bin, on a mobile device, for example, it will force a refresh on that page.
+I use the JS Bin keyboard shortcuts quite extensively, here's my top 3.
+
+### Open panels
+
+<kbd>ctrl</kbd>+<kbd>[number]</kbd>
+
+This little number, simply opens and focuses, or closes (when focused) the relative
+panel, I mostly use it when I need to make a quick CSS tweak, but the bulk of the
+work is Javascript
+
+### Comment lines
+
+<kbd>ctrl</kbd>+<kbd>/</kbd>
+
+You may be familar with this keyboard shortcut from editors such as Sublime, it
+just comments out the current line of code, and it works in Vim mode!
+
+### Run / Render
+
+<kbd>ctrl</kbd>+<kbd>enter</kbd>
+
+My most favourite of all, this command will force a re-render on your output, on
+all devices, so it's pretty handy for mobile testing. It also runs all your javascript
+so if you just have the console open, you can use it to run your code each time
+you make changes
 
 ## Default panels
 
