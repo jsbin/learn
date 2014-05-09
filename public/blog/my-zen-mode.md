@@ -1,23 +1,33 @@
 # How I run JS Bin in Zen mode!
 
 Since using JS Bin, I've discovered a number of ways to customise it to my liking, and I wanted to share how I'm running in *Zen mode*!
+Here's a screen shot of my Zen mode
+
+![Zen mode](/images/jsbin-zen-mode-1.png)
 
 ## Vim mode
 
+```javascript
+  jsbin.settings.addons.vim = true;
+```
+
 My editor of choice is Vim, and if you're a Vim user, using *normal* text inputs
 can be really frustrating. Since we upgraded CodeMirror to version 4, we've added 
-a lot of extra plugins for CodeMirror, including Vim mode. To turn this on you 
-can just run `jsbin.settings.editor.vim = true;` in your console. Just note that
+a lot of extra plugins for CodeMirror, including Vim mode. Just note that
 not all of the Vim functionality comes with the plugin, visual block mode, for 
 example, doesn't work. But a lot of the Ex commands are there, including search 
 and replace, which is great, as jsbin doens't support this in normal mode.
 
 ## Custom theme
 
+```javascript
+  jsbin.settings.editor.theme = 'solarized light';
+```
+
 I'll be quite frank, the default theme for CodeMirror/jsbin isn't the prettiest to
 work with, so I've opted to use the solarized theme, it's the theme I use everywhere
 else (Terminal.app && Vim). We support both light and dark solarized themes, I use
-the light theme in the browser. To change your theme you can run `jsbin.settings.theme = 'solarized light';` 
+the light theme in the browser.
 
 ## Default template
 
@@ -69,14 +79,14 @@ the code is run!
 
 I've also chosen to hide the top toolbar, most of the bins I create now days use solely the 
 javascript and console panel, getting rid of the top panel just lets me focus more on the
-code I'm debugging/developing. To hide the top bar, you just use a keyboard shortcut `Cmd + Shift + \ `
+code I'm debugging/developing. To hide the top bar, you just use a keyboard shortcut <kbd>ctrl</kbd>+<kbd>Shift</kbd>+<kbd>\</kbd> 
 
 ## Keyboard shortcuts
 
-Keyboard shortcuts in jsbin are *awesome*, I'm often using `Cmd + <number>` to open and close
-panels if i do need to access the html/css/output panel. My two favourite shortcuts are `Cmd + /`
+Keyboard shortcuts in jsbin are *awesome*, I'm often using <kbd>ctrl</kbd>+<kbd>[number]</kbd> to open and close
+panels if i do need to access the html/css/output panel. My two favourite shortcuts are <kbd>ctrl</kbd>+<kbd>/</kbd>
 which you can probably guess, comments out the current line (yes, this still works in Vim mode)
-and `Cmd + Enter` which does quite a few things, if you have the console panel open, it will run
+and <kbd>ctrl</kbd>+<kbd>enter</kbd> which does quite a few things, if you have the console panel open, it will run
 the javascript panel's code in the console. It also re-renders the output, so if you are remotely 
 viewing a bin, on a mobile device, for example, it will force a refresh on that page.
 
@@ -90,7 +100,3 @@ and the Console panels. Something I do pretty much anytime I use jsbin is to put
 *underneath* the Javascript one, you can simply drag the panel by its side and move it underneath. It
 would be good to have the panel position configuration be saved to user settings, and this is something
 we've spoken about and will be exploring internally.
-
-## Screenshots
-
-![Zen mode](/images/jsbin-zen-mode-1.png)
