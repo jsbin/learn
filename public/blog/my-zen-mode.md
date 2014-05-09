@@ -72,36 +72,17 @@ console.clear();
 
 ## Hidden toolbar
 
-<kbd>ctrl</kbd>+<kbd>Shift</kbd>+<kbd>\</kbd>
+<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\</kbd>
 
 The hidden topbar lets me really focus on the code, most of the items in the menus
 can be accessed via keyboard shortcuts and for everything else, when I *do* need
-it, the toolbar pops open when you hover near it.
+it, the topbar pops open when you hover near it.
 
 ## Keyboard shortcuts
 
-I use the JS Bin keyboard shortcuts quite extensively, here's my top 3.
-
-### Open panels
-
-<kbd>ctrl</kbd>+<kbd>[number]</kbd>
-
-This little number, simply opens and focuses, or closes (when focused) the relative
-panel, I mostly use it when I need to make a quick CSS tweak, but the bulk of the
-work is Javascript
-
-### Comment lines
-
-<kbd>ctrl</kbd>+<kbd>/</kbd>
-
-You may be familar with this keyboard shortcut from editors such as Sublime, it
-just comments out the current line of code, and it works in Vim mode!
-
-### Run / Render
-
 <kbd>ctrl</kbd>+<kbd>enter</kbd>
 
-My most favourite of all, this command will force a re-render on your output, on
+My favourite Js Bin keyboard shortcut, this command will force a re-render on your output, on
 all devices, so it's pretty handy for mobile testing. It also runs all your JavaScript
 so if you just have the console open, you can use it to run your code each time
 you make changes
