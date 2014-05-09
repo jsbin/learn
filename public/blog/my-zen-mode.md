@@ -22,15 +22,15 @@ doesn't support this in normal mode.
 jsbin.settings.editor.theme = 'solarized light';
 ```
 
-Solarized is a beautiful theme, I use everywhere (Terminal.app && Vim). We support
+Solarized is a beautiful theme that I use everywhere (Terminal and text editors). We support
 both light and dark solarized themes, I use the light theme in the browser.
 
 ## Default template
 
 Default templates in JS Bin really make it your own, you can add default content
 to all three of the input panels, so if you always use jQuery, you can have JS Bin
-always include it for you. You can read more on default templates [here](http://jsbin.com/help/defaults-in-bins).
-[My default template](http://jsbin.com/allouis-template/1/edit?html,css,js) is pretty simple
+always include it for you. [My default template](http://jsbin.com/allouis-template/1/edit?html,css,js)
+is pretty simple. You can read more on default templates [here](http://jsbin.com/help/defaults-in-bins).
 
 ### HTML
 
