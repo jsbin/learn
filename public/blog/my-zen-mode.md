@@ -10,7 +10,7 @@ Since using JS Bin, I've discovered a number of ways to customise it to my likin
   jsbin.settings.addons.vim = true;
 ```
 
-Since we upgraded CodeMirror to version 4, we've added a lot of extra plugins for
+Since we upgraded CodeMirror to version 4, we've added a lot of [addons](http://jsbin.com/blog/twdtw-2#userenabledaddons) for
 CodeMirror, including Vim mode. Just note that not all of the Vim functionality
 comes with the plugin, visual block mode, for example, doesn't work. But a lot of
 the Ex commands are there, including search and replace, which is great, as JS Bin
@@ -29,7 +29,8 @@ both light and dark solarized themes, I use the light theme in the browser.
 
 Default templates in JS Bin really make it your own, you can add default content
 to all three of the input panels, so if you always use jQuery, you can have JS Bin
-always include it for you. My default template is pretty simple 
+always include it for you. You can read more on default templates [here](http://jsbin.com/help/defaults-in-bins).
+[My default template](http://jsbin.com/allouis-template/1/edit?html,css,js) is pretty simple
 
 ### HTML
 
@@ -85,15 +86,11 @@ it, the topbar pops open when you hover near it.
 My favourite Js Bin keyboard shortcut, this command will force a re-render on your output, on
 all devices, so it's pretty handy for mobile testing. It also runs all your JavaScript
 so if you just have the console open, you can use it to run your code each time
-you make changes
+you make changes. [Here](http://jsbin.com/help/keyboard-shortcuts) is a list of all the keyboard shortcuts
 
-## Default panels
+## Panel configuration
 
-We've recently built a UI for setting all of the above functionality, so you don't have to set it via
-the console, but it's still in alpha testing. Along with adding a UI to all these settings, it also
-added some extra functionality, one of them being the default panels, meaning, everytime you load up
-jsbin.com, which panels will be open/closed. I've got my setup so the two defaults are the Javascript
-and the Console panels. Something I do pretty much anytime I use JS Bin is to put the console panel
-*underneath* the Javascript one, you can simply drag the panel by its side and move it underneath. It
-would be good to have the panel position configuration be saved to user settings, and this is something
-we've spoken about and will be exploring internally.
+I like to place my console panel *underneath* my JavaScript panel, you can do this
+kind of panel configuration with all of the panels in JS Bin like so:
+
+![Panel Moving](/images/panel-configure.gif)
