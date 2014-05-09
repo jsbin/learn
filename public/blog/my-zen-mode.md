@@ -19,7 +19,7 @@ doesn't support this in normal mode.
 ## Custom theme
 
 ```javascript
-  jsbin.settings.editor.theme = 'solarized light';
+jsbin.settings.editor.theme = 'solarized light';
 ```
 
 Solarized is a beautiful theme, I use everywhere (Terminal.app && Vim). We support
@@ -36,18 +36,18 @@ always include it for you. My default template is pretty simple
 My default html panel just adds two metatags for webapps, and a custom title
 
 ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-      <title>@allouis_</title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>@allouis_</title>
+  </head>
+  <body>
 
-    </body>
-  </html>
+  </body>
+</html>
 ```
 
 ### CSS
@@ -55,10 +55,10 @@ My default html panel just adds two metatags for webapps, and a custom title
 The default css panel just contains a basic reset
 
 ```css
-  html, body {
-    margin: 0;
-    padding: 0;
-  }
+html, body {
+  margin: 0;
+  padding: 0;
+}
 ```
 
 ### JavaScript
@@ -67,7 +67,7 @@ This is my favourite of the panel templates, a single line, it just clears the c
 the code is run!
 
 ```javascript
-  console.clear();
+console.clear();
 ```
 
 ## Hidden toolbar
