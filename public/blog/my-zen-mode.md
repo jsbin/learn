@@ -13,7 +13,7 @@ Since using JS Bin, I've discovered a number of ways to customise it to my likin
 Since we upgraded CodeMirror to version 4, we've added a lot of extra plugins for
 CodeMirror, including Vim mode. Just note that not all of the Vim functionality
 comes with the plugin, visual block mode, for example, doesn't work. But a lot of
-the Ex commands are there, including search and replace, which is great, as jsbin
+the Ex commands are there, including search and replace, which is great, as JS Bin
 doesn't support this in normal mode.
 
 ## Custom theme
@@ -112,7 +112,7 @@ We've recently built a UI for setting all of the above functionality, so you don
 the console, but it's still in alpha testing. Along with adding a UI to all these settings, it also
 added some extra functionality, one of them being the default panels, meaning, everytime you load up
 jsbin.com, which panels will be open/closed. I've got my setup so the two defaults are the Javascript
-and the Console panels. Something I do pretty much anytime I use jsbin is to put the console panel
+and the Console panels. Something I do pretty much anytime I use JS Bin is to put the console panel
 *underneath* the Javascript one, you can simply drag the panel by its side and move it underneath. It
 would be good to have the panel position configuration be saved to user settings, and this is something
 we've spoken about and will be exploring internally.
