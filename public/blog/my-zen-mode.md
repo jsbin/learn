@@ -61,7 +61,7 @@ The default css panel just contains a basic reset
   }
 ```
 
-### JS
+### JavaScript
 
 This is my favourite of the panel templates, a single line, it just clears the console everytime 
 the code is run!
@@ -102,7 +102,7 @@ just comments out the current line of code, and it works in Vim mode!
 <kbd>ctrl</kbd>+<kbd>enter</kbd>
 
 My most favourite of all, this command will force a re-render on your output, on
-all devices, so it's pretty handy for mobile testing. It also runs all your javascript
+all devices, so it's pretty handy for mobile testing. It also runs all your JavaScript
 so if you just have the console open, you can use it to run your code each time
 you make changes
 
