@@ -7,14 +7,14 @@ Since using JS Bin, I've discovered a number of ways to customise it to my likin
 ## Vim mode
 
 ```javascript
-  jsbin.settings.addons.vim = true;
+jsbin.settings.addons.vim = true;
 ```
 
 Since we upgraded CodeMirror to version 4, we've added a lot of [addons](http://jsbin.com/blog/twdtw-2#userenabledaddons) for
-CodeMirror, including Vim mode. Just note that not all of the Vim functionality
-comes with the plugin, visual block mode, for example, doesn't work. But a lot of
-the Ex commands are there, including search and replace, which is great, as JS Bin
-doesn't support this in normal mode.
+CodeMirror, including Vim mode, which you can turn on by running the above command
+in the console. Just note that not all of the Vim functionality comes with the plugin,
+visual block mode, for example, doesn't work. But a lot of the Ex commands are there,
+including search and replace, which is great, as JS Bin doesn't support this in normal mode.
 
 ## Custom theme
 
@@ -30,11 +30,11 @@ both light and dark solarized themes, I use the light theme in the browser.
 Default templates in JS Bin really make it your own, you can add default content
 to all three of the input panels, so if you always use jQuery, you can have JS Bin
 always include it for you. [My default template](http://jsbin.com/allouis-template/1/edit?html,css,js)
-is pretty simple. You can read more on default templates [here](http://jsbin.com/help/defaults-in-bins).
+is pretty simple. Our help articles have a [post on default templates](http://jsbin.com/help/defaults-in-bins).
 
 ### HTML
 
-My default html panel just adds two metatags for webapps, and a custom title
+My default html panel just adds two metatags for webapps, and a custom title.
 
 ```html
 <!DOCTYPE html>
@@ -53,7 +53,7 @@ My default html panel just adds two metatags for webapps, and a custom title
 
 ### CSS
 
-The default css panel just contains a basic reset
+The default css panel just contains a basic reset.
 
 ```css
 html, body {
@@ -83,10 +83,10 @@ it, the topbar pops open when you hover near it.
 
 <kbd>ctrl</kbd>+<kbd>enter</kbd>
 
-My favourite Js Bin keyboard shortcut, this command will force a re-render on your output, on
+My favourite JS Bin keyboard shortcut, this command will force a re-render on your output, on
 all devices, so it's pretty handy for mobile testing. It also runs all your JavaScript
 so if you just have the console open, you can use it to run your code each time
-you make changes. [Here](http://jsbin.com/help/keyboard-shortcuts) is a list of all the keyboard shortcuts
+you make changes. Here is our complete list of [keyboard shortcuts](http://jsbin.com/help/keyboard-shortcuts)
 
 ## Panel configuration
 
@@ -94,3 +94,6 @@ I like to place my console panel *underneath* my JavaScript panel, you can do th
 kind of panel configuration with all of the panels in JS Bin like so:
 
 ![Panel Moving](/images/panel-configure.gif)
+
+Do note, that currently panel configuration won't save so you'll need to do this
+each time you visit.
