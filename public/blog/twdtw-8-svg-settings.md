@@ -25,8 +25,7 @@ Emil also [blogged about his own workflow](http://thatemil.com/blog/2014/05/14/u
 
 We've spoken a [fair](/blog/twdtw-3-codemirror-settings#usersettings) [bit](/blog/twdtw-4-tern-pro-features#tern) [about](/blog/twdtw-5-settings-dropbox-heartbleed#jsbinsettingspreferences) the upcoming user settings in JS Bin and today we've started our staggered release.
 
-
-We're releasing to 10% of users to start with to monitor the affect on our infrastructure (since we've moved to a memcache system for our sessions), and we'll quickly increase this to 100% over the coming days (and weeks).
+We're releasing to 10% of users ([using our feature flags](https://github.com/remy/feature-gateway#ab-testing)) to start with to monitor the affect on our infrastructure (since we've moved to a memcache system for our sessions), and we'll quickly increase this to 100% over the coming days (and weeks).
 
 ## Want a JS Bin sticker? At BACON conf?
 
