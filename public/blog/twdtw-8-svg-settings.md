@@ -29,7 +29,7 @@ We're releasing to 10% of users ([using our feature flags](https://github.com/re
 
 ## Want a JS Bin sticker? At BACON conf?
 
-I'll be attending the [BACON conference](http://devslovebacon.com/) and I'll be armed with a swath of JS Bin stickers, I look pretty much like my avatar,
+I'll be attending the [BACON conference](http://devslovebacon.com/) and I'll be armed with a swathe of JS Bin stickers, I look pretty much like my avatar,
 so hit me up if you want one for your laptop!
 
 ## Totally aside
