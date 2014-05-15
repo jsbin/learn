@@ -65,6 +65,12 @@
     "date": "2014-05-09",
     "published": true
   },
+  "twdtw-8-svg-settings": {
+    "title": "TWDTW #8: SVG supports, User Settings",
+    "author": "fabien",
+    "date": "2014-05-15",
+    "published": false
+  },
   "feed": {
     "layout": false
   }
