@@ -5,7 +5,7 @@ have been a bit more lively, and pushing a few more bits to production.
 
 ## SVG Support
 
-We just landed SVG support in JS Bin. Simply add `.svg` to the bin URL, and JS Bin will correctly serve up the HTML content panel as SVG with the correct headers. So now you can easily prototype SVG using JS Bin:
+We just landed SVG support in JS Bin. Simply add `.svg` to the bin URL, and JS Bin will correctly serve up the HTML content panel as SVG with the correct headers. So now you can easily [prototype SVG](http://jsbin.com/gecew.svg) using JS Bin:
 
 ```html
 <img src="http://jsbin.com/gecew.svg" alt="Source: http://jsbin.com/gecew/edit">
