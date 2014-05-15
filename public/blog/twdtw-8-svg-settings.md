@@ -1,32 +1,37 @@
-# TWDTW #8 - SVG support and user settings
+# TWDTW #8 - SVG support and settings live
 
 With [Giulia](https://twitter.com/electric_g) back from holiday and [Remy](https://twitter.com/rem) easing back into work, the Left Logic offices
-have been a bit more lively! 
+have been a bit more lively, and pushing a few more bits to production.
 
 ## SVG Support
 
-Last friday [Emil](https://twitter.com/ThatEmil) opened a [feature request](http://github.com/jsbin/jsbin/issues/1466) for us to handle SVG's in 
-JS Bin, meaning you could use the html panel to author SVG markup, and then request jsbin.com/binid.svg and it would send the appropriate headers.
-We all thought this was a pretty cool idea and fairly [trivial to implement](https://github.com/jsbin/jsbin/commit/59d729f3cade53ba10ca3c817daa51c1e36bce15)
-so on tuesday we released! 
+We just landed SVG support in JS Bin. Simply add `.svg` to the bin URL, and JS Bin will correctly serve up the HTML content panel as SVG with the correct headers. So now you can easily prototype SVG using JS Bin:
 
-There's currently an issue with using `<object>` to display SVG's, it won't display correctly in the output panel, but
-the full output renders correctly. sometimes. Try using an image tag and setting the src to `http://jsbin.com/davebot.svg` 
+```html
+<img src="http://jsbin.com/gecew.svg" alt="Source: http://jsbin.com/gecew/edit">
+```
 
-## User settings
+<img alt="Source: http://jsbin.com/gecew/edit" title="Source: http://jsbin.com/gecew/edit" src="http://jsbin.com/gecew.svg" height="200" width="658">
 
-We've spoken a fair bit about the upcoming user settings in JS Bin and today we've started on our staggered release, they'll now be availiable to
-10% of users (Remy has documented [how this is done](https://github.com/remy/feature-gateway#examples) in the feature-gateway repo). So look out for
-a different experience when you click your account icon. We'll be be eventually realising it to everyone over the course of a couple of weeks, whilst
-we check server loads and analytics. 
+<small>Thanks to <a href="https://twitter.com/jorgeATGU">@jorgeATGU</a> for the SVG madness!</small>
 
-## Bacon
+The feature request came through from [Emil on twitter](https://twitter.com/ThatEmil/status/464665080005951488), suggesting that the `.svg` extension serve up the right headers. So we opened a [feature request](http://github.com/jsbin/jsbin/issues/1466), and [one simple change](https://github.com/jsbin/jsbin/commit/59d729f3cade53ba10ca3c817daa51c1e36bce15) later it was live.
 
-I'll be attending the [BACON conference](http://devslovebacon.com/) and I'll be armed with JS Bin stickers, I look pretty much like my avatar,
-so hit me up if you'd like a sticker!
+Emil also [blogged about his own workflow](http://thatemil.com/blog/2014/05/14/using-js-bin-as-an-svg-playground/) with JS Bin and SVGs. It's *that* easy to help make JS Bin a better product.
+
+## User settings live
+
+We've spoken a [fair](/blog/twdtw-3-codemirror-settings#usersettings) [bit](/blog/twdtw-4-tern-pro-features#tern) [about](/blog/twdtw-5-settings-dropbox-heartbleed#jsbinsettingspreferences) the upcoming user settings in JS Bin and today we've started our staggered release.
+
+We're releasing to 10% of users to start with to monitor the affect on our infrastructure (since we've moved to a memcache system for our sessions), and we'll quickly increase this to 100% over the coming days (and weeks).
+
+## Want a JS Bin sticker? At BACON conf?
+
+I'll be attending the [BACON conference](http://devslovebacon.com/) and I'll be armed with a swath JS Bin stickers, I look pretty much like my avatar,
+so hit me up if you want one for your laptop!
 
 ## Totally aside
 
-Myself and Giulia were in tears this week watching this clip on repeat, Nick Cage knows how to dive.
+Myself and Giulia were in tears this week watching this clip over and over and over: Nick Cage knows us how to dive:
 
-<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/krotxywU2Es" frameborder="0" allowfullscreen></iframe></div>
+<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/krotxywU2Es?version=3&amp;loop=1&amp;playlist=krotxywU2Es" frameborder="0" allowfullscreen></iframe></div>
