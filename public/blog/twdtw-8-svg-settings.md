@@ -30,11 +30,11 @@ We're releasing to 10% of users to start with to monitor the affect on our infra
 
 ## Want a JS Bin sticker? At BACON conf?
 
-I'll be attending the [BACON conference](http://devslovebacon.com/) and I'll be armed with a swath JS Bin stickers, I look pretty much like my avatar,
+I'll be attending the [BACON conference](http://devslovebacon.com/) and I'll be armed with a swath of JS Bin stickers, I look pretty much like my avatar,
 so hit me up if you want one for your laptop!
 
 ## Totally aside
 
-Myself and Giulia were in tears this week watching this clip over and over and over: Nick Cage knows us how to dive:
+Myself and Giulia were in tears this week watching this clip over and over and over: Nick Cage knows how to dive:
 
 <div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/krotxywU2Es?version=3&amp;loop=1&amp;playlist=krotxywU2Es" frameborder="0" allowfullscreen></iframe></div>
