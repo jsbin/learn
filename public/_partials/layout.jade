@@ -1,6 +1,8 @@
 static = ''
 if environment == "production"
   static = 'http://learn.jsbin.com/'
+if environment == "test"
+  static = 'http://localhost:9000/'
 
 pagetitle = siteTitle
 if title
@@ -104,6 +106,7 @@ html
   script(src='#{static}/js/search.js')
   script(src='#{static}/js/xhr.js')
   script(src='#{static}/js/keyboard.js')
+  script(src='#{static}/js/back-button.js')
   script(src='#{static}/js/highlight.pack.js')
   script.
     hljs.initHighlightingOnLoad();
