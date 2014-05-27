@@ -114,5 +114,9 @@
   "linking-bins": {
     "title": "How to link multiple bins",
     "category": "learn"
+  },
+  "github-username": {
+    "title": "My Github username isn't available",
+    "category": "fix"
   }
 }
