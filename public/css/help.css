@@ -609,11 +609,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.anchor,
-.anchor,
-.anchor,
-.anchor,
-.anchor,
 .anchor
  {
   height: 20px;
@@ -705,7 +700,7 @@ kbd.combo {
   background: none;
 }
 
-kbd.combo > kbd, 
+kbd.combo > kbd,
 kbd {
   padding: 5px;
   border-radius: 3px;
@@ -751,6 +746,86 @@ blockquote {
 
 blockquote em {
   font-weight: 600;
+}
+
+#legal {
+  margin-top: 40px;
+}
+
+#legals-page tr td:nth-child(2n+1) {
+  width: 40px;
+  /* line-height: 45px; */
+  padding: 0;
+  vertical-align: top;
+  padding-bottom: 20px;
+}
+
+#legals-page td {
+  padding: 0;
+}
+
+#legals-page td :first-child {
+  margin-top: 0;
+}
+
+#legals-page h2,
+#legals-page h3 {
+  font-size: 14px;
+  margin: 0;
+}
+ 
+#legals-page small {
+  color: grey;
+  margin-bottom: 20px;
+}
+
+#legals-page div.legal {
+  width: 55%;
+  float: left;
+}
+
+#legals-page div.legal {
+  font-size: 90%;
+  clear: left;
+}
+
+#legals-page div.ourwords {
+  float: left;
+  width: 40%;
+  font-size: 125%;
+  /* margin-left: 55%; */
+  margin-left: 5%;
+}
+
+#legals-page div.ourwords p {
+  line-height: 1.6em;
+  margin: 0.8em 0;
+}
+
+#legals-page div.legal > * {
+  /* padding-right: 40px; */
+}
+
+#legals-page div.ourwords > * {
+  /* padding-left: 40px; */
+}
+
+#legals-page hr {
+  width: 100%;
+  display: block;
+  padding: 10px 0 0;
+  margin: 0 0 20px;
+  clear: both;
+}
+
+#legals-page .ourwords h3 {
+  color: #B0B0B0;
+  font-weight: normal;
+}
+
+#legals-page div p {
+  margin: 0;
+  padding-bottom: 0.5em;
 }
 
 .posts li {

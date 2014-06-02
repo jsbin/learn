@@ -1,0 +1,6 @@
+extends ../_partials/layout
+
+block content
+  a.edit(href="https://github.com/jsbin/learn/blob/master/public/#{current.path.join('/')}.md") Edit on github
+
+  != yield
