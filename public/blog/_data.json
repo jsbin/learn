@@ -71,6 +71,12 @@
     "date": "2014-05-15",
     "published": true
   },
+  "maintenance-1": {
+    "title": "Maintenance",
+    "author": "giulia",
+    "date": "2014-06-04",
+    "published": false
+  },
   "feed": {
     "layout": false
   }
