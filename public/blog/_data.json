@@ -71,11 +71,11 @@
     "date": "2014-05-15",
     "published": true
   },
-  "maintenance-1": {
-    "title": "Maintenance",
+  "twdtw-9-tweaks-maintenance.md": {
+    "title": "TWDTW #9: Tweaks and maintenance",
     "author": "giulia",
-    "date": "2014-06-04",
-    "published": false
+    "date": "2014-06-09",
+    "published": true
   },
   "feed": {
     "layout": false
