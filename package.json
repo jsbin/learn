@@ -20,6 +20,6 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "harp": "*",
-    "harp-static": "0.0.2"
+    "harp-static": "0.0.3"
   }
 }
