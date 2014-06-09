@@ -754,7 +754,6 @@ blockquote em {
 
 #legals-page tr td:nth-child(2n+1) {
   width: 40px;
-  /* line-height: 45px; */
   padding: 0;
   vertical-align: top;
   padding-bottom: 20px;
@@ -768,9 +767,8 @@ blockquote em {
   margin-top: 0;
 }
 
-#legals-page h2,
-#legals-page h3 {
-  font-size: 14px;
+#legals-page h2 {
+  font-size: 12px;
   margin: 0;
 }
  
@@ -785,7 +783,7 @@ blockquote em {
 }
 
 #legals-page div.legal {
-  font-size: 90%;
+  font-size: 75%;
   clear: left;
 }
 
@@ -802,14 +800,6 @@ blockquote em {
   margin: 0.8em 0;
 }
 
-#legals-page div.legal > * {
-  /* padding-right: 40px; */
-}
-
-#legals-page div.ourwords > * {
-  /* padding-left: 40px; */
-}
-
 #legals-page hr {
   width: 100%;
   display: block;
@@ -818,9 +808,12 @@ blockquote em {
   clear: both;
 }
 
-#legals-page .ourwords h3 {
+#legals-page .ourwords .mean {
+  font-size: 14px;
   color: #B0B0B0;
   font-weight: normal;
+  margin: 0;
+  line-height: 10px;
 }
 
 #legals-page div p {
