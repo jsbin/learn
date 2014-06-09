@@ -709,7 +709,8 @@ kbd {
 }
 
 p > kbd,
-td > kbd {
+td > kbd,
+li > kbd {
   box-shadow: .5px .5px 0 rgba(0,0,0,.2);
   border: 1px solid #ccc;
   margin: 0 4px;
@@ -771,7 +772,7 @@ blockquote em {
   font-size: 12px;
   margin: 0;
 }
- 
+
 #legals-page small {
   color: grey;
   margin-bottom: 20px;
