@@ -6,18 +6,16 @@ These past three weeks we have been mainly working on bug fixes and internal mai
 
 We're often releasing multiple times throughout the week with small bug fixes and tweaks, a few that you might have noticed:
 
-- We changed "Bins" to "File" in the top menu [#1414](https://github.com/jsbin/jsbin/issues/1414) (more on why and how in a post later)
 - Github changed their URL format for gists, so we fixed [gist import](/help/import-gists) (which was broken for a short time) [#1507](https://github.com/jsbin/jsbin/pull/1507)
 - Logged in users can archive using keyboard shortcut <kbd>ctrl</kbd>+<kbd>Y</kbd> [#1000](https://github.com/jsbin/jsbin/issues/1000)
-- *All* the [JS Bin keyboard shortcuts](/help/keyboard-shortcuts) are documented in detail
-
-The general maintenance involved changing the top menu label from "Bins" to "File" (there will be a post about it to illustrate why we changed it), updating and fixing [gist import](/help/import-gists) and adding a shortcut to archive bins (check the updated [help page](http://jsbin.com/help/keyboard-shortcuts) to see all the shortcuts available in JS Bin).
+- All the [JS Bin keyboard shortcuts](/help/keyboard-shortcuts) are documented in detail
+- We changed "Bins" to "File" in the top menu [#1414](https://github.com/jsbin/jsbin/issues/1414) (more on why in a later post)
 
 ## Spread your love
 
 We love when you help us improving JS Bin by raising [issues](https://github.com/jsbin/jsbin/issues), bugs and pull requests, and we love it just as much when you tell us that you love JS Bin:
 
-[Why I Love JS Bin](http://www.jimmylauzau.com/blog/2014/05/28/why-i-love-js-bin/) by Jimmy Lauzau [@jimmay5469](http://twitter.com/jimmay5469)
+> [Why I Love JS Bin](http://www.jimmylauzau.com/blog/2014/05/28/why-i-love-js-bin/) by Jimmy Lauzau [@jimmay5469](http://twitter.com/jimmay5469)
 
 Where Jimmy talks about using the Ember branded version of JS Bin, his preferences and default templates.
 
