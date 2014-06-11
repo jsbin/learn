@@ -286,6 +286,7 @@ header nav a.selected:before {
   width: 1.1em;
   height: 1.1em;
   -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   background: #fff;
   content: '';
 }
