@@ -5,3 +5,12 @@ for category in categories
     h2 #{category.title}
     h4 #{category.description}
     != partial('../_partials/help-posts', { filter: category.name })
+
+div(class="category")
+  h2 Legals
+  h4 Our terms and privacy policy that we run JS Bin under
+  ul.links
+    li
+      a(href="/legals/privacy") Privacy Policy
+    li
+      a(href="/legals") Terms of Service
