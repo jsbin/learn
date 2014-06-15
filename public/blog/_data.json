@@ -77,6 +77,12 @@
     "date": "2014-06-09",
     "published": true
   },
+  "twdtw-10-preparing-for-pro": {
+    "title": "TWDTW #10: Preparing for pro",
+    "author": "remy",
+    "date": "2014-06-16",
+    "published": false
+  },
   "feed": {
     "layout": false
   }
