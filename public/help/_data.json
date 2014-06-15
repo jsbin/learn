@@ -9,6 +9,10 @@
     "title": "What is JS Bin?",
     "category": "learn"
   },
+  "getting-started": {
+    "title": "* Getting started",
+    "category": "learn"
+  },
   "api": {
     "title": "JS Bin API",
     "category": "hack"

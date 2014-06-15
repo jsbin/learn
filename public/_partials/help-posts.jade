@@ -12,6 +12,6 @@ block
   ul.links
     for post in sortByTitle(public.help._data)
       if (post.category === f || !f)
-        li: a(href="/help/#{ post.slug }")= post.title
+        li: a(href="/help/#{ post.slug }")= post.title.replace(/^\*/, '★')
           if (post.video)
             a.play(href="#{post.video}"): span Play video
