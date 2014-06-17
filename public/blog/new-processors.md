@@ -6,7 +6,7 @@ But we now need input from **you**.
 
 ## Compass, Bourbon, et al
 
-Currently our thinking is this: we'll run both Sass and SCSS using the compass compile tool. So if you want to include Bourbon, you just import it.
+Currently our thinking is this: we'll run both Sass and SCSS using the Compass compile tool. So if you want to include Bourbon, you just import it.
 
 I'm not particularly a pro user of CSS preprocessors, so I'm not 100% sure if this what people expect or not. I like that everything is just there, and you don't have to mess around selecting the right config option in your bin.
 
