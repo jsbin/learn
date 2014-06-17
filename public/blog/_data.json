@@ -77,10 +77,16 @@
     "date": "2014-06-09",
     "published": true
   },
+  "new-processors": {
+    "title": "New processors. We need your input",
+    "author": "remy",
+    "date": "2014-06-17",
+    "published": false
+  },
   "twdtw-10-preparing-for-pro": {
     "title": "TWDTW #10: Preparing for pro",
     "author": "remy",
-    "date": "2014-06-16",
+    "date": "2014-06-20",
     "published": false
   },
   "feed": {
