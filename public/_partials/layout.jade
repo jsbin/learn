@@ -17,7 +17,7 @@ if title
 prefix = repeat('.', current.path.length)
 
 doctype
-html
+html(id="#{current.path.join('-')}-page")
   head
     meta(charset='utf-8')
     title #{pagetitle}

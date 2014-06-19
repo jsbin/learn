@@ -153,16 +153,21 @@ td, th {
   vertical-align: top;
 }
 
-tr td:nth-child(2n+1) {
+tr td:nth-child(1) {
   width: 230px;
 }
 
+#help-versions-page tr td {
+  width: 100px;
+}
+
 th {
-  font-weight: normal;
+  font-weight: 500;
   text-align: left;
   padding-top: 0;
-  /* font-size: 14px; */
+  font-size: 14px;
   /* background: #eee; */
+  color: rgb(123, 123, 123);
 }
 
 thead {

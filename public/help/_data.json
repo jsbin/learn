@@ -126,5 +126,9 @@
   "adding-processors": {
     "title": "Adding new pre-processors",
     "category": "fix"
+  },
+  "versions": {
+    "title": "Versions: Processors & core libraries",
+    "category": "fix"
   }
 }
