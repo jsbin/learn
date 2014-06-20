@@ -9,5 +9,3 @@ Easy. **Save as template**, and note that you don't need to be logged in for thi
 Perhaps you actually prefer a [super minimal boilerplate](http://jsbin.com/zunod/1/edit) and you could go further an predefine exactly which panels you want to see using the [account preferences](http://jsbin.com/account/preferences) (perhaps only the CSS & output panel for instance):
 
 ![/images/default-prefs.png](/images/default-prefs.png)
-
-*Note that default preferences is currently only available to alpha testers, but will be released to all users once part of the stable release.*
