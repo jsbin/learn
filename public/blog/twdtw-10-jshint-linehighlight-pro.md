@@ -30,6 +30,6 @@ So tell your friends, your co-workers, help support JS Bin and look out for the 
 
 ## Totally aside
 
-Did you ever wonder what would happen if a man dressed head to toe in metos climbed into a vat of coke would look like? You're welome.
+Did you ever wonder what would happen if a man dressed head to toe in mentos climbed into a vat of coke would look like? You're welome.
 
 <iframe class="vine-embed" src="https://vine.co/v/MI2aE2qWXqv/embed/simple" width="600" height="600" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
