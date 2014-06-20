@@ -27,9 +27,3 @@ Tweets like this is why we need you to go pro:
 We've been working hard towards releasing Pro which will initially include: vanity URLs, read/write API access, private bins, dropbox sync, beta access to features and first line support.
 
 So tell your friends, your co-workers, help support JS Bin and look out for the release coming very soon.
-
-## Totally aside
-
-Did you ever wonder what would happen if a man dressed head to toe in mentos climbed into a vat of coke would look like? You're welome.
-
-<iframe class="vine-embed" src="https://vine.co/v/MI2aE2qWXqv/embed/simple" width="600" height="600" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
