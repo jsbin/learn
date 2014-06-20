@@ -146,6 +146,7 @@ pre code {
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 40px;
 }
 
 td, th {
