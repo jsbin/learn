@@ -83,11 +83,11 @@
     "date": "2014-06-17",
     "published": true
   },
-  "twdtw-10-preparing-for-pro": {
-    "title": "TWDTW #10: Preparing for pro",
+  "twdtw-10-jshint-linehighlight-pro": {
+    "title": "TWDTW #10: JSHint, line highlighting and update on pro",
     "author": "remy",
     "date": "2014-06-20",
-    "published": false
+    "published": true
   },
   "feed": {
     "layout": false

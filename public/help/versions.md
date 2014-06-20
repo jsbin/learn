@@ -38,7 +38,7 @@ Note that these libraries are not exposed to you as the user, but might be usefu
 |Library|Version|Updated|
 |---|---|---|
 |[CodeMirror](https://github.com/marijnh/CodeMirror/tree/2af72ea8a6e489a21e6b0e3f7168f058bffb64ee)|4.0.3|20-Mar 2014|
-|[JSHint](https://github.com/jshint/jshint/tree/2.1.3)|v2.1.3|3-Jan 2013|
+|[JSHint](https://github.com/jshint/jshint/tree/2.5.1)|2.5.1|16-May 2014|
 |[Tern](https://github.com/marijnh/tern/tree/5ae2b7e6542e14de120ee3b31d4d7eb54b32093b)|0.5.1|10-Oct 2013|
 
 
