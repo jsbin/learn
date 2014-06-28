@@ -130,5 +130,9 @@
   "versions": {
     "title": "Versions: Processors & core libraries",
     "category": "fix"
+  },
+  "why-register": {
+    "title": "Why register?",
+    "category": "learn"
   }
 }
