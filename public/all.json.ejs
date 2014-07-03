@@ -1,0 +1,27 @@
+<%
+function eachPost(type) {
+  var data = public[type]._data;
+  return Object.keys(data).map(function (slug) {
+    var post = data[slug];
+    return {
+      slug: type + '/' + slug,
+      title: (post.title || '').replace(/^\* /, ''),
+      category: post.category,
+      ignore: post.layout === false || slug.indexOf('index') !== -1 || post.published === false,
+      date: post.date
+    };
+  }).filter(function (post) {
+    var ret = !post.ignore;
+    delete post.ignore;
+    return ret;
+  });
+}
+
+var data = {};
+data.help = eachPost('help');
+data.blog = eachPost('blog').sort(function (a, b) {
+  return (new Date(b.date + ' 00:00:00').getTime()) - (new Date(a.date + ' 00:00:00').getTime())
+});
+
+%>
+<%- JSON.stringify(data) %>
