@@ -20,7 +20,7 @@ If you share a URL to your bin, others can view the code and the output. Others 
 
 ## Registering
 
-If you [register](http://jsbin.com/register) (which is free and simple), your profile will remember which bins you created, but also give you a shortcut URL that always takes you to your the last bin you worked on.
+If you [register](http://jsbin.com/register) (which is free and simple), your profile will remember which bins you created, but also give you a shortcut URL that always takes you to the last bin you worked on.
 
 For instance, if your username was "Dave", your last bin URL is: http://jsbin.com/dave/last and to edit it's http://jsbin.com/dave/last/edit.
 
