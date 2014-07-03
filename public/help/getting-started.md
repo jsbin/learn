@@ -2,7 +2,7 @@
 
 JS Bin is a tool for experimenting with web languages. In particular HTML, CSS and JavaScript, but JS Bin also supports other languages too (like Markdown, Jade and Sass).
 
-JS Bin is ultimately a code sharing site. Along with the code, the complete output of the code is also be shared. As you type into one of the editor "panels", they will see the output being generated in real-time in the output panel.
+JS Bin is ultimately a code sharing site. Along with the code, the complete output of the code is also shared with other developers, colleagues and/or students. As you type into one of the editor "panels", you and anyone watching your bin will see the output being generated in real-time in the output panel.
 
 There's many features tucked away inside JS Bin, but our design principle is that **everyone gets a cursor**. So when you arrive for the first time, you'll be greeted with an initial start HTML page and very little else (though you [can customise your default code](/help/defaults-in-bins)).
 
