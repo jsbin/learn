@@ -14,7 +14,7 @@ It was quickly reversed out because we spotted (and remembered) that the `iframe
 
 So SSL for *all of JS Bin* was removed and later replaced with SSL for specific pages.
 
-## Enabling SSL for JS Bin
+## Enabling SSL for all of JS Bin
 
 Those users with pro accounts can enable SSL across all of JS Bin via [their preferences](http://jsbin.com/account/preferences). Note that extra care in including resources is needed, and to ensure they work, it's recommended you use [protocol relative](http://www.paulirish.com/2010/the-protocol-relative-url/) URLs.
 
