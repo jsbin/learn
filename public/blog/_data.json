@@ -89,6 +89,12 @@
     "date": "2014-06-20",
     "published": true
   },
+  "security-limited-output": {
+    "title": "TWDTW #11: A week of security",
+    "author": "remy",
+    "date": "2014-07-08",
+    "published": false
+  },
   "feed": {
     "layout": false
   }
