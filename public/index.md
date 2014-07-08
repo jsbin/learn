@@ -1,7 +1,9 @@
 # Welcome
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam illum excepturi expedita accusantium pariatur ducimus similique rerum vel harum nobis sint reiciendis impedit. Repellat iste possimus porro est adipisci.
+This is the home of JS Bin [blog](/blog) and [help](/help).
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quod laborum quibusdam excepturi libero iure quis amet repellat itaque quia voluptatem porro natus quo maiores nemo impedit explicabo obcaecati neque!
+JS Bin is a collaborative web development tool for teachers and hackers.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quod laborum quibusdam excepturi libero iure quis amet repellat itaque quia voluptatem porro natus quo maiores nemo impedit explicabo obcaecati neque!
+<script>
+window.location = 'http://jsbin.com';
+</script>
