@@ -80,13 +80,15 @@ html(id="#{current.path.join('-')}-page")
           li
             a(href='/about') About
           li
-            a(href='http://github.com/jsbin') Github
+            a(href='https://github.com/jsbin') Github
           li
-            a(href='http://twitter.com/js_bin') Twitter
+            a(href='https://twitter.com/js_bin') Twitter
           li
             a(href='http://jsbin.com/videos') YouTube
+          li
+            a(href='https://www.gittip.com/js_bin') Donate
         ul.legal
-          li: em "Hack. Learn. Fix. Teach."
+          li: em: a(href='/help/what-is-jsbin') Hack. Learn. Fix. Teach.
   script(type="text").
     WebFontConfig = {
       google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }

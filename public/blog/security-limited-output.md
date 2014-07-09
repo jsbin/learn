@@ -8,7 +8,7 @@ After last week's release of JSHint setting control, [Giulia](https://github.com
 
 The error reporting has also had an upgrade, so you can set if you want errors in the footer of the panel, next to the line or under the line - or even all three!
 
-![/images/twdtw/11/linting.png](/images/twdtw/11/linting.png)
+![Example of full linting options in editor](/images/twdtw/11/linting.png)
 
 ## Limited full output for anonymous bins
 
