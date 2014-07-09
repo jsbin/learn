@@ -24,6 +24,8 @@ Once this is enabled, visiting jsbin.com will redirect to https. However, not al
 - Visiting the JS Bin editor will *always* redirect to https
 - You *can* share non-https URLs, but you need to change these manually
 - Viewing another user's bins can be on http and will not redirect to https
+- You *can* view another user's bin under https
+- Other user's can't view their bins under https (if they haven't enabled the pro option)
 - Embedded bins will maintain their protocol of their author
 
 ## SSL support in the open source project
