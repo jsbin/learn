@@ -134,5 +134,9 @@
   "why-register": {
     "title": "Why register?",
     "category": "learn"
+  },
+  "toggle-line-numbers": {
+    "title": "How to show & hide line numbers",
+    "category": "learn"
   }
 }
