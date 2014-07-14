@@ -4,20 +4,18 @@ This page lists the versions of processors used and a few important libraries us
 
 ## Processors
 
-> Note that JS Bin processors are undergoing an upgrade, and any particularly out of date libraries will be updated in the release ([#1229](https://github.com/jsbin/jsbin/pull/1229))
-
 ### HTML
 
 |Processor|Version|Updated|
 |---|---|---|
-|[Markdown](https://github.com/evilstreak/markdown-js/tree/v0.4.0/)|0.4.0|9-Jun 2012|
-|[Jade](https://github.com/visionmedia/jade/tree/0.17.0)|0.17.0|10-Nov 2011|
+|[Markdown](https://github.com/evilstreak/markdown-js/tree/v0.5.0/)|0.5.0|26-Jul 2013|
+|[Jade](https://github.com/visionmedia/jade/tree/1.3.1)|1.3.1|4-Apr 2014|
 
 ### JavaScript
 
 |Processor|Version|Updated|
 |---|---|---|
-|[CoffeeScript](https://github.com/jashkenas/coffeescript/tree/1.6.2)|1.6.2|13-Mar 2013|
+|[CoffeeScript](https://github.com/jashkenas/coffeescript/tree/1.7.1)|1.7.1|30-Jan 2014|
 |[React (JSX)](https://github.com/facebook/react/tree/v0.9.0)|0.9.0|20-Feb 2014|
 |[Processing](https://github.com/processing-js/processing-js/tree/v1.4.1)|1.4.1|9-Aug 2012|
 |[Traceur](https://github.com/phuu/jsbin/blob/e13b1a3b5e0fb626d2aba8941ccdbde196b314d2/public/js/vendor/traceur.js)|unknown|11 Oct 2012|
@@ -27,9 +25,12 @@ This page lists the versions of processors used and a few important libraries us
 
 |Processor|Version|Updated|
 |---|---|---|
-|[Less](https://github.com/less/less.js/tree/v1.4.2)|1.4.2|20 Jul 2013|
-<!-- |Stylus|| -->
-
+|[Less](https://github.com/less/less.js/tree/v1.7.1)|1.7.1|8 Jun 2014|
+|[Stylus](https://github.com/LearnBoost/stylus/tree/0.47.1)|0.47.1|2 Jul 2014|
+|[Myth](https://github.com/segmentio/myth/tree/1.1.0)|1.1.0|14 Jul 2014|
+|[Sass & SCSS](https://github.com/sass/sass/tree/3.3.8)|3.3.8|13 May 2014|
+|[Compass](https://github.com/Compass/compass/tree/core-1.0.0.alpha.19)|1.0.0.alpha.19|12 Mar 2014|
+|[Bourbon](https://github.com/thoughtbot/bourbon/tree/v4.0.1)|4.0.2|23 Apr 2014|
 
 ## JS Bin Core Libraries
 
