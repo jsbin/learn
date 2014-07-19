@@ -9,7 +9,7 @@ This page lists the versions of processors used and a few important libraries us
 |Processor|Version|Updated|
 |---|---|---|
 |[Markdown](https://github.com/evilstreak/markdown-js/tree/v0.5.0/)|0.5.0|26-Jul 2013|
-|[Jade](https://github.com/visionmedia/jade/tree/1.3.1)|1.3.1|4-Apr 2014|
+|[Jade](https://github.com/visionmedia/jade/tree/1.4.2)|1.4.2|16-Jul 2014|
 
 ### JavaScript
 
