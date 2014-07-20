@@ -990,3 +990,32 @@ blockquote em {
     list-style: none;
   }
 }
+
+.pro-feature {
+  position: absolute;
+  top: 25px;
+  color: #999;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #999;
+  line-height: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background: rgb(243, 243, 243);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pro-feature:hover {
+  color: #666;
+  border-color: #666;
+  box-shadow: 0px 0px 4px rgba(0, 100, 255, 0.3);
+}
+
+@media only screen and (max-width: 910px) {
+  .pro-feature {
+    display: none;
+  }
+}

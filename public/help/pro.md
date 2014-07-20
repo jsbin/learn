@@ -18,13 +18,16 @@ Eventually we decided that to spend fully time on JS Bin, and to invest fully in
 At time of writing, our pro feature set is:
 
 - [Private bins](#privatebins)
-- Vanity URLs
-- SSL option for all of JS Bin
-- Dropbox integration
-- Priority support
-- "Sandbox" mode
+- [Vanity URLs](#vanityurls)
+- [Opt-in SSL for all of JS Bin](#optinssl)
+- [Dropbox integration](#dropbox)
+- [Priority support](#prioritysupport)
+- ["Sandbox" mode](#sandboxmode)
+- [Coming next](#comingnext)
 
 ## Private bins
+
+![Making a bin private](/images/private-menu.png)
 
 Self explanatory, but it means if any other user than you tries to access your private bin, they will get a 404.
 
@@ -34,6 +37,40 @@ Once your bin is private, you'll also see the card in the bottom right indicatin
 
 ## Vanity URLs
 
-Vanity URLs has two purposes. The first is that puts *your* username when you share your bin.
+Vanity URLs has two purposes. The first is that puts *your* username when you share your bin's output, and secondly allows you to publish to your vanity homepage.
 
-*...to be continued...*
+## Opt-in SSL
+
+![SSL URLs in JS Bin](/images/twdtw/11/ssl.png)
+
+[SSL](/help/ssl) can be turned on for all of JS Bin through the [preferences](/account/preferences) and once enabled, all your bins will be served under SSL, also allowing you to [embed](/help/how-can-i-embed-jsbin) bins on an SSL based site.
+
+## Dropbox
+
+Linking to your Dropbox account [from your profile](/account/profile) will put every bin as a full HTML file in your Dropbox `Apps/jsbin` directory. This means you have a complete offline backup of your bins or any bin you edit.
+
+Note that only the latest revision is saved to your Dropbox (though we're considering adding support for revisions).
+
+Finally, *two way* syncing is being investigated and will be released to Pro users if possible.
+
+## Priority support
+
+We manage all our support [through github](https://github.com/jsbin/jsbin/issues) but as a Pro user, you will be able to email directly (or chat via [Gitter](https://gitter.im/jsbin/jsbin)). Be sure to notify us of your username and we'll be sure to help.
+
+## "Sandbox" mode
+
+JS Bin is different from other pastebins in that it saves by default *automatically*. This means you'll never lose your work. However, sometimes you want to throw open JS Bin and test some code without JS Bin ever knowing you were there. This is "sandbox" mode.
+
+The URL is simply "slash-dash": [http://jsbin.com/-](http://jsbin.com/-)
+
+JS Bin runs as it normally does, but doesn't save. If you want to save, just use the [keyboard shortcut](/help/keyboard-shortcuts) <kbd>ctrl</kbd>+<kbd>s</kbd>
+
+## Coming next
+
+As development continues, the following Pro features are next in our roadmap:
+
+* Read and write API access
+* Asset hosting via a simple drag and drop
+* Beta access opt-in setting
+* Sass/SCSS external @imports
+

@@ -138,5 +138,26 @@
   "toggle-line-numbers": {
     "title": "How to show & hide line numbers",
     "category": "learn"
+  },
+  "pro": {
+    "title": "* What to expect from a Pro subscription",
+    "category": "pro"
+  },
+  "dropbox": {
+    "title": "Dropbox integration",
+    "category": "pro",
+    "video": "//www.youtube.com/embed/BZIMB6suEx8?rel=0"
+  },
+  "ssl-opt-in": {
+    "title": "SSL opt-in support",
+    "category": "pro"
+  },
+  "sandbox-mode": {
+    "title": "Sandbox mode",
+    "category": "pro"
+  },
+  "private-bins": {
+    "title": "Private bins",
+    "category": "pro"
   }
 }

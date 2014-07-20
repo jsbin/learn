@@ -1,24 +1,9 @@
-#Private bins
-  
-Pro members may change the privacy settings for any bin they own, even those created before they became a pro.
+## Private bins
 
-Bins can be private to:
+![Making a bin private](/images/private-menu.png)
 
-- their owner
-- any team of which the owner is a member
+Self explanatory, but it means if any other user than you tries to access your private bin, they will get a 404.
 
-All team members are pros.
+Once your bin is private, you'll also see the card in the bottom right indicating it's privacy mode.
 
-Pro members don’t have to be in a team but they can join any number of teams.
-
-## Leaving teams & downgrading
-
-If you leave a team, bins you own which were private to the team:
-
-- remain available to you
-- are hidden from that team
-
-If you downgrade from pro membership
-
-- your private bins remain private
-- you can make private bins public but you can’t go back
+![Example of a private bin](/images/private-bins.gif)
