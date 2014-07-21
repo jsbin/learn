@@ -1,6 +1,6 @@
 static = ''
 if environment == "production"
-  static = 'http://learn.jsbin.com/'
+  static = '//learn.jsbin.com/'
 
 - function eachPost(data) { return Object.keys(data).map(function (slug) { var post = data[slug]; post.slug = slug; return post }).sort(byDate).filter(function (post) { return environment == "production" ? post.published : post.title }) }
 - function byDate(a, b) { return moment(b.date).unix() - moment(a.date).unix() }

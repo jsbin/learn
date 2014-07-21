@@ -12,7 +12,7 @@ I'm not particularly a pro user of CSS preprocessors, so I'm not 100% sure if th
 
 **A question to you:** what extensions would you want to be available?
 
-A nice benefit to our system, is that imports from one bin to another just works. The same way as being able to [reference the JavaScript from one bit to another](http://jsbin.com/help/linking-bins) to create Ajax requests.
+A nice benefit to our system, is that imports from one bin to another just works. The same way as being able to [reference the JavaScript from one bit to another](/help/linking-bins) to create Ajax requests.
 
 ## Other processors
 
