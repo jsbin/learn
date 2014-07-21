@@ -84,7 +84,7 @@
     "category": "learn"
   },
   "ssl": {
-    "title": "Why don't we use SSL on all of JS Bin?",
+    "title": "The state of SSL on JS Bin",
     "category": "fix"
   },
   "adding-custom-libraries": {

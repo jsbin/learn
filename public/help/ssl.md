@@ -1,4 +1,4 @@
-# Why don't we use SSL on all of JS Bin?
+# The state of SSL on JS Bin
 
 Currently only the login, register and (upcoming) account settings are served over SSL. The rest of JS Bin is not.
 
