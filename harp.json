@@ -8,7 +8,7 @@
       { "name": "pro", "title": "Pro features", "description": "" }
     ],
     "siteTitle": "JS Bin Documentation",
-    "jsbin": "http://jsbin.com",
+    "jsbin": "//jsbin.com",
     "authors": {
       "remy": {
         "name": "Remy Sharp",
