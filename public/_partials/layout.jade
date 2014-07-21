@@ -20,7 +20,7 @@ doctype
 html(id="#{current.path.join('-')}-page")
   head
     meta(charset='utf-8')
-    title #{pagetitle.replace(/^\* /, '')}
+    title #{(pagetitle||'').replace(/^\* /, '')}
     meta(name='viewport', content='width=device-width')
     meta(name='description', content='JS Bin help documentation, tips, tricks, features and blog')
     link(rel='icon', href='#{static}/images/favicon.png')
