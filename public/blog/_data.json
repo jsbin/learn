@@ -97,5 +97,8 @@
   },
   "feed": {
     "layout": false
+  },
+  "all": {
+    "layout": false
   }
 }

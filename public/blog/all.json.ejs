@@ -8,11 +8,15 @@ function eachPost(type) {
       title: (post.title || '').replace(/^\* /, ''),
       category: post.category,
       ignore: post.layout === false || slug.indexOf('index') !== -1 || post.published === false,
-      date: post.date
+      date: post.date,
+      timestamp: (new Date(post.date + ' 00:00:00').getTime())
     };
   }).filter(function (post) {
     var ret = !post.ignore;
     delete post.ignore;
+    if (type === 'help') {
+      delete post.timestamp;
+    }
     return ret;
   });
 }
@@ -20,7 +24,8 @@ function eachPost(type) {
 var data = {};
 data.help = eachPost('help');
 data.blog = eachPost('blog').sort(function (a, b) {
-  return (new Date(b.date + ' 00:00:00').getTime()) - (new Date(a.date + ' 00:00:00').getTime())
+  return b.timestamp - a.timestamp;
+  // return (new Date(b.date + ' 00:00:00').getTime()) - (new Date(a.date + ' 00:00:00').getTime())
 });
 
 %>
