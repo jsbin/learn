@@ -159,5 +159,9 @@
   "private-bins": {
     "title": "Private bins",
     "category": "pro"
+  },
+  "sass-import": {
+    "title": "@import with Sass",
+    "category": "learn"
   }
 }
