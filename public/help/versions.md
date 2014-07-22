@@ -8,7 +8,7 @@ This page lists the versions of processors used and a few important libraries us
 
 |Processor|Version|Updated|
 |---|---|---|
-|[Marked](https://github.com/chjj/marked/tree/1c188ebb55ef512653e03b0a03e60d7209a3bc73)|0.3.2|1 May 2014|
+|[Marked](https://github.com/chjj/marked/tree/v0.3.2)|0.3.2|10 Mar 2014|
 |[Jade](https://github.com/visionmedia/jade/tree/1.4.2)|1.4.2|16 Jul 2014|
 
 ### JavaScript
