@@ -9,8 +9,9 @@ block content
   != yield
 
   if current.path[0] == 'blog' && current.path[1] != 'index'
-    script
-      var timestamp = (new Date('#{date} 00:00:00').getTime())
+    - var timestamp = new Date(date + ' 00:00:00').getTime();
+    script.
+      var timestamp = #{timestamp};
     script(src='#{static}/js/blog.js')
     #comments
       h2 Comments
