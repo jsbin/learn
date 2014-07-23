@@ -11,7 +11,7 @@ The Pro user status does two important things:
 
 This second point is *really* important to us. JS Bin has existed for over 5 years with no income, running on hefty servers and thousands of development hours poured into it simply because knowing it was being used to teach others was motivation enough.
 
-Eventually we decided that to spend fully time on JS Bin, and to invest fully in it's infrastructure, JS Bin needed to sustain itself, hence Pro status.
+Eventually we decided that to spend full time on JS Bin, and to invest fully in it's infrastructure, JS Bin needed to sustain itself, hence Pro status.
 
 ## Pro features
 
