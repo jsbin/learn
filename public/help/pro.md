@@ -13,6 +13,8 @@ This second point is *really* important to us. JS Bin has existed for over 5 yea
 
 Eventually we decided that to spend full time on JS Bin, and to invest fully in it's infrastructure, JS Bin needed to sustain itself, hence Pro status.
 
+If you don't want (or need) Pro, but you want to support the project, maybe [donate via Gittip](https://www.gittip.com/js_bin/) instead?
+
 ## Pro features
 
 At time of writing, our pro feature set is:
@@ -24,6 +26,8 @@ At time of writing, our pro feature set is:
 - [Priority support](#prioritysupport)
 - ["Sandbox" mode](#sandboxmode)
 - [Coming next](#comingnext)
+
+And you can [upgrade today](/account/upgrade/pay)!
 
 ## Private bins
 
