@@ -41,7 +41,7 @@ Note that these libraries are not exposed to you as the user, but might be usefu
 |[CodeMirror](https://github.com/marijnh/CodeMirror/tree/466319fc1648b6c65d3886ce0f984dc9905fbc56)|4.4.0|21 Jul 2014|
 |[JSHint](https://github.com/jshint/jshint/tree/2.5.1)|2.5.1|16 May 2014|
 |[CSSLint](https://github.com/CSSLint/csslint/tree/v0.10.0)|0.10.0|15 Aug 2013|
-|[HTMLHint](https://github.com/yaniswang/HTMLHint/tree/eddcca1c1ccf0aa08d89ff0ec0751b3aaabef716)|v0.9.6|15 Jun 2014|
+|[HTMLHint](https://github.com/yaniswang/HTMLHint/tree/eddcca1c1ccf0aa08d89ff0ec0751b3aaabef716)|0.9.6|15 Jun 2014|
 |[CoffeeLint](https://github.com/clutchski/coffeelint/tree/v1.5.0)|1.5.0|28 May 2014|
 |[Tern](https://github.com/marijnh/tern/tree/5ae2b7e6542e14de120ee3b31d4d7eb54b32093b)|0.5.1|10 Oct 2013|
 
