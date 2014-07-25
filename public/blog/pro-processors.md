@@ -16,7 +16,7 @@ By upgrading to Pro accounts, your contribution helps support JS Bin as a contin
 
 ## Processors
 
-The biggest news is that Sass & SCSS both with Compass and Boubon support has landed. Also, we've restored Stylus, updated LESS and added [Myth](http://www.myth.io/) to the CSS processors. Full specifics on [versions](/help/versions) are also available.
+The biggest news is that Sass & SCSS both with Compass and Bourbon support has landed. Also, we've restored Stylus, updated LESS and added [Myth](http://www.myth.io/) to the CSS processors. Full specifics on [versions](/help/versions) are also available.
 
 ![Processors on JS Bin](/images/blog/processors.png)
 
