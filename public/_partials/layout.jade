@@ -67,7 +67,7 @@ html(id="#{current.path.join('-')}-page")
         - yield = partial(prefix + '/js/_idify')
         - if (yield) yield = yield.replace(/src="\/([^/])/g, 'src="' + static + '/$1')
         if category == 'pro'
-          a.pro-feature(href="/account/upgrade") Upgrade to Pro
+          a.pro-feature(href="/upgrade") Upgrade to Pro
         if current.path.slice(-1).pop() !== 'index' && current.path.slice(-2, 1).pop() !== 'legals'
           article
             block content
