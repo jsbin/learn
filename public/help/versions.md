@@ -16,6 +16,7 @@ This page lists the versions of processors used and a few important libraries us
 |Processor|Version|Updated|
 |---|---|---|
 |[CoffeeScript](https://github.com/jashkenas/coffeescript/tree/1.7.1)|1.7.1|30 Jan 2014|
+|[LiveScript](https://github.com/gkz/LiveScript/tree/1.2.0)|1.2.0|2 Aug 2013|
 |[React (JSX)](https://github.com/facebook/react/tree/v0.9.0)|0.9.0|20 Feb 2014|
 |[Processing](https://github.com/processing-js/processing-js/tree/v1.4.1)|1.4.1|9 Aug 2012|
 |[Traceur](https://github.com/phuu/jsbin/blob/e13b1a3b5e0fb626d2aba8941ccdbde196b314d2/public/js/vendor/traceur.js)|unknown|11 Oct 2012|
