@@ -2,7 +2,7 @@
 
 If you've upgraded to pro, or if you're curious, then thank you and here's the skinny.
 
-## What do Pro get you?
+## What does a Pro account get you?
 
 The Pro user status does two important things:
 
