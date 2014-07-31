@@ -15,6 +15,8 @@ Eventually we decided that to spend full time on JS Bin, and to invest fully in 
 
 If you don't want (or need) Pro, but you want to support the project, maybe [donate via Gittip](https://www.gittip.com/js_bin/) instead?
 
+<center><a class="actionButton actionButton-primary actionButton-jumbo actionButton-rounded" href="http://jsbin.com/upgrade">Upgrade to Pro</a></center>
+
 ## Pro features
 
 At time of writing, our pro feature set is:
@@ -42,6 +44,10 @@ Once your bin is private, you'll also see the card in the bottom right indicatin
 ## Vanity URLs
 
 Vanity URLs has two purposes. The first is that puts *your* username when you share your bin's output, and secondly allows you to publish to your vanity homepage.
+
+This means you can publish any bin to your vanity url on `<you>.jsbin.com` for example: [http://dave.jsbin.com](http://dave.jsbin.com)
+
+In addition, when you share the full output of your bins, your username is included in the URL, such as [http://dave.jsbin.com/fajac/3/](http://dave.jsbin.com/fajac/3/)
 
 ## Opt-in SSL
 
@@ -78,3 +84,4 @@ As development continues, the following Pro features are next in our roadmap:
 * Beta access opt-in setting
 * Sass/SCSS external @imports
 
+<p><center><a class="actionButton actionButton-primary actionButton-jumbo actionButton-rounded" href="http://jsbin.com/upgrade">Upgrade to Pro today</a></center></p>

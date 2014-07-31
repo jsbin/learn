@@ -1,4 +1,4 @@
-## Private bins
+# Private bins
 
 ![Making a bin private](/images/private-menu.png)
 

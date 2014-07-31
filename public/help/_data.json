@@ -160,6 +160,10 @@
     "title": "Private bins",
     "category": "pro"
   },
+  "vanity-urls": {
+    "title": "Vanity URLs",
+    "category": "pro"
+  },
   "sass-import": {
     "title": "@import with Sass",
     "category": "learn"
