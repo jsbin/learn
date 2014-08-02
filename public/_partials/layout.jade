@@ -14,7 +14,7 @@ if title
 //- of periods to add for path navigation.
 - function repeat(str, num) { return new Array( num + 1 ).join( str ); }
 
-prefix = repeat('.', current.path.length)
+prefix = repeat('.', current.path.length).split('..').join('../')
 
 doctype
 html(id="#{current.path.join('-')}-page")
