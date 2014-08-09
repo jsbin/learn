@@ -1,5 +1,8 @@
 {
   "slow-response": {
-    "title": "jsbin.response.slow"
+    "title": "Slow response from JS Bin"
+  },
+  "discovering-spam": {
+    "title": "Ways of discovering spam"
   }
 }

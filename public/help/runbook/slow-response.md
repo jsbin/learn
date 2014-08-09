@@ -1,4 +1,4 @@
-# jsbin.response.slow
+# Slow response from JS Bin
 
 Response time on JS Bin has been over 10 seconds for a prolonged period of time.
 

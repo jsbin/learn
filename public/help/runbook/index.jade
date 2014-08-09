@@ -1,0 +1,8 @@
+h2 Runbooks for dealing with JS Bin issues
+
+ul.links
+  for post, slug in public.help.runbook._data
+    li
+      a(href="/help/runbook/#{ slug }")= post.title.replace(/^\*/, '★')
+      br
+      != partial(slug).split('<p>')[1].replace(/<\/p>\s*.*/m, '').replace(/(<([^>]+)>)/ig, '').trim()
