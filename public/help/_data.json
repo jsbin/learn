@@ -167,5 +167,9 @@
   "sass-import": {
     "title": "@import with Sass",
     "category": "learn"
+  },
+  "object-doesnt-work": {
+    "title": "Why doesn't <object> work?",
+    "category": "fix"
   }
 }
