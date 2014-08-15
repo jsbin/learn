@@ -202,6 +202,7 @@ div > img {
 #body > article h3,
 #body > article pre,
 #body > article table,
+#body > article .related,
 #disqus_thread {
   max-width: 660px;
   margin-left: auto;
@@ -1230,4 +1231,18 @@ input.actionButton-small, button.actionButton-small {
 
 #help-runbook-index-page .links a {
   font-size: 16px;
+}
+
+.related {
+  /* border: 1px solid #ccc; */
+  /* background: hsl(0, 0%, 98%); */
+  /* border-radius: 5px; */
+  font-size: 85%;
+  /* padding: 10px 20px; */
+  margin-top: 80px;
+  border-top: 10px solid #f1f1f1
+}
+
+.related > *:first-child {
+  margin-top: 14px;
 }
