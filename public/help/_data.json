@@ -171,5 +171,11 @@
   "object-doesnt-work": {
     "title": "Why doesn't <object> work?",
     "category": "fix"
+  },
+  "share-latest-bin": {
+    "title": "How do I share the latest bin?",
+    "category": "learn",
+    "related": ["vanity-urls"]
   }
+
 }

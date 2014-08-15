@@ -262,14 +262,14 @@ hr {
 
 header nav {
   display: inline;
-  padding: 5px 0 0px 0;
+  padding: 4px 0 0px 0;
   position: relative;
 }
 
 header nav input {
   font-size: 14px;
   font-family: "helvetica neue", sans-serif;
-  padding: 5px;
+  padding: 7px 5px 6px;
   border: 1px solid rgb(220, 220, 220);
   margin: 0;
   margin-right: 20px;
@@ -304,11 +304,15 @@ header nav a.selected:before {
   /* padding-left: 26px; */
   box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
   background: #fff;
+  margin-top: 4px;
+  /* font-size: 14px; */
+  /* font-weight: bold; */
+  /* font-family: sans-serif; */
 }
 
 #back:before {
   content: '← ';
-  background: url(/images/favicon.png) no-repeat 28px center;
+  background: url(/images/favicon.svg) no-repeat 28px center;
   padding-right: 30px;
 }
 
@@ -528,6 +532,7 @@ display: inline;
   font-size: 14px;
   color: #aaa;
   z-index: 10;
+  top: 10px;
 }
 
 article > .edit {
@@ -901,8 +906,14 @@ blockquote em {
   }
 
   #body > article h1 {
-   line-height: 32px;
+    line-height: 32px;
     margin-top: 10px;
+    font-size: 28px;
+  }
+  
+  #body > article h2 {
+    font-size: 22px;
+    line-height: 24px;
   }
 
   #body, .inner {
