@@ -2,11 +2,10 @@
 
 JS Bin is a [Node](http://nodejs.org) project.
 
-Installation requires just 3 simple steps:
+Installation requires just two steps:
 
 1. Installing code
 2. Configuration
-3. Database
 
 For the simplest install process we recommend using Node with SQLite.
 
@@ -29,7 +28,7 @@ This will automatically install all the dependancies.
 If you're installing JS Bin for development (and hopefully contribution), clone the project from github:
 
 ```bash
-git clone git@github.com:jsbin/jsbin.git
+git clone https://github.com/jsbin/jsbin.git
 cd jsbin
 npm install
 ```
