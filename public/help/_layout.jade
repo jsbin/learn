@@ -5,7 +5,7 @@ block content
 
   != yield
 
-  if locals.public.help._data[current.source].related
+  if locals.public.help._data[current.source] && locals.public.help._data[current.source].related
     div.related
       h2 Related posts
       each slug in locals.public.help._data[current.source].related
