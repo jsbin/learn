@@ -14,7 +14,7 @@ JS Bin supports [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_
 
 Below is a bin that can be tweaked to change the request it's making so you can see, live, what the impact of that change is:
 
-<div><a class="jsbin-embed" href="//jsbin.com/lupof/2/embed?js,console&height=400px">Ajax responses from JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></div>
+<div><a class="jsbin-embed" href="//jsbin.com/lupof/2/embed?js,console&amp;height=400px">Ajax responses from JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></div>
 
 The example includes prepared ajax requests that are commented out. If you change the line from:
 
