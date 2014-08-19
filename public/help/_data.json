@@ -176,6 +176,16 @@
     "title": "How do I share the latest bin?",
     "category": "learn",
     "related": ["vanity-urls"]
+  },
+  "free-preview-expired": {
+    "title": "Why do full previews expired?",
+    "category": "fix",
+    "related": ["why-register"]
+  },
+  "ajax-requests": {
+    "title": "Ajax request to bins",
+    "category": "hack",
+    "related": ["how-can-i-embed-jsbin"]
   }
 
 }

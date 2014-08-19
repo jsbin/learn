@@ -42,7 +42,7 @@ Here it is in action, the source:
 ...and the result:
 
 <div class="embed-container">
-  <a class="jsbin-embed foo" href="http://jsbin.com/iwovaj/74/embed?js,output">Simple Animation Tests</a><script src="http://static.jsbin.com/js/embed.js"></script>
+  <a class="jsbin-embed foo" href="//jsbin.com/iwovaj/74/embed?js,output">Simple Animation Tests</a><script src="http://static.jsbin.com/js/embed.js"></script>
 </div>
 
 

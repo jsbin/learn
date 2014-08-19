@@ -33,7 +33,7 @@ function eachPost(type) {
     return {
       type: type,
       slug: type + '/' + slug,
-      title: post.title.replace(/^\*/, '★'),
+      title: (post.title || '').replace(/^\*/, '★'),
       category: post.category,
       words: wordmap(partial('../' + type + '/' + slug)),
       ignore: post.layout === false || slug.indexOf('index') !== -1
