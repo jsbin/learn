@@ -12,10 +12,10 @@ Say you want to include a large JSON file in an ajax request, simple create a se
 
 Since making requests for bins without the revision always calls the latest, you can be sure the content is always up to date as you work on the two separate bins.
 
-For example, the following bin is making a jQuery ajax request to the `/megax.json` URL, which contains simple JSON in the JavaScript panel:
+For example, the following bin is making a jQuery ajax request to the `//jsbin.com/megax.json` URL, which contains simple JSON in the JavaScript panel:
 
-<div class="embed"><a class="jsbin-embed" href="http://jsbin.com/yuraf/1/embed?js,output">XHR requests to external data</a><script src="http://static.jsbin.com/js/embed.js"></script></div>
+<div class="embed"><a class="jsbin-embed" href="http://jsbin.com/yuraf/2/embed?js,output">XHR requests to external data</a><script src="http://static.jsbin.com/js/embed.js"></script></div>
 
-Note that the JS Bin URL can be relative, and in this example, I'm using a specific extension on the URL which tells JS Bin to serve this particular bin as `application/json` (other formats include `.js`, `.css`, etc)
+Note that the JS Bin URL **must** include the jsbin.com domain (but can be relative off the protocol), and in this example, I'm using a specific extension on the URL which tells JS Bin to serve this particular bin as `application/json` (other formats include `.js`, `.css`, etc)
 
 ***Pro tip:*** if you're logged in when you create the bin, then the latest revision will only ever belong to you. If you're logged out, you may need to reference a specific revision

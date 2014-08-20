@@ -1,59 +1,72 @@
 # Features
 
-This is a non-exhaustive, non-prioirtised list of features that JS Bin has.
+This is a non-exhaustive, non-priortised list of features that JS Bin has.
 
 Please feel free to **contribute to this list** if you know of a feature, and add descriptions and demos where appropriate.
 
-* Live rendering both in editor and in full preview
-* Interactive console
+* Live reload both in editor and in full preview
 * Codecasting - [blog post](http://remysharp.com/2013/11/14/what-is-codecasting/)
-* Remote rendering
-* Quiet mode
-* Gist support: import and export
+* Console
+* Full unmodified rendered view
+* Gist support: [import](/help/import-gists) and [export](/help/export-gist)
 * Processors
-  * Markdown
-  * Jade
-  * Less
-  * Stylus
-  * React (jsx)
-  * Coffeescript
-  * Processing
-  * Traceur
-  * TypeScript
-  * Soon: Sass, SCSS, Compass, SmartJS
+  * HTML
+    * Markdown
+    * Jade
+  * CSS
+    * Less
+    * Myth
+    * Stylus
+    * Sass & SCSS (with Compass & Bourbon)
+  * JavaScript
+    * Coffeescript
+    * Processing
+    * React (jsx)
+    * Traceur
+    * TypeScript
 * Debug/source mode
-* JSHint
+* Linting (inline to code, gutter or in footer) with full config control
+  * JSHint
+  * CoffeeLint
+  * CSSLint
+  * HTMLLint
 * Archive a bin
-* Delete bins
-* Pronounceable urls - [explanation](http://learn.jsbin.com/help/pronounceable-urls)
-* Embeddable in any configuration
-* Self-host and locally installable
-* CodeMirror
+* [Delete bins](/help/delete-a-bin)
+* Pronounceable urls - [explanation](/help/pronounceable-urls)
+* [Embeddable in any configuration](/help/how-can-i-embed-jsbin)
+* [Self-host and locally installable](/help/running-a-local-copy-of-jsbin)
+* CodeMirror (4.4.0)
   * Multiple cursors
   * Themes
   * Addon support
   * Keybindings: vim, emacs and sublime
   * Tern
-* Custom templates and default preferences (like default processors)
+* [Custom templates](/help/defaults-in-bins) and default preferences (like default processors)
 * Library support
-* Custom libraries
+* [Custom libraries](/help/adding-custom-libraries)
 * Drag & drop file
 * File update binding
 * Custom URLs
 * Emmet (previously known as Zen Coding)
-* Hide toolbar - cmd+/
-* Keyboard shortcuts - cmd+shift+?
+* Hide toolbar - <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\</kbd>
+* [Keyboard shortcuts](/help/keyboard-shortcuts) - cmd+shift+?
 * Download
 * Clone
 * Shortcut URLs
   * /:user/last
   * /:bin/latest
+* Bin info card - details about the owner, and whether they're streaming
+
+## Pro features
+
+* [SSL](/help/ssl-opt-in)
+* [Sandbox mode](/help/sandbox-mode) - does not save the bin
+* [Private bins](/help/private-bins)
+* [Dropbox](/help/dropbox)
+* [Vanity URLs](/help/pro#vanityurls) - [blog post](/blog/twdtw-4-tern-pro-features#upcomingprofeaturevanityurls)
 
 Coming features (currently in closed alpha or under pro)
 
-* Sandbox mode - does not save the bin
 * Collaborative mode
-* Private bins
-* Bin info card - details about the owner, and whether they're streaming
-* Dropbox synchronisation
-* Vanity URLs - [blog post](http://jsbin.com/blog/twdtw-4-tern-pro-features#upcomingprofeaturevanityurls)
+* Asset hosting
+* LiveScript processor

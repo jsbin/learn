@@ -4,29 +4,31 @@
       { "name": "learn", "title": "Learn", "description": "Making more use of JS Bin as part of your tools" },
       { "name": "hack",  "title": "Hacking & play", "description": "Prototypes, demos, and sharing your work" },
       { "name": "fix",   "title": "Fix & contribute", "description": "Making JS Bin better for everyone, and advanced usage" },
-      { "name": "teach", "title": "Teach & share your knowledge", "description": "Using JS Bin to teach others via blogs and published work or classroom and multi-user environments" }
+      { "name": "teach", "title": "Teach & share your knowledge", "description": "Using JS Bin to teach others via blogs and published work or classroom and multi-user environments" },
+      { "name": "pro", "title": "Pro features", "description": "" }
     ],
     "siteTitle": "JS Bin Documentation",
-    "jsbin": "http://jsbin.com",
+    "jsbin": "//jsbin.com",
     "authors": {
       "remy": {
         "name": "Remy Sharp",
-        "avatar": "http://learn.jsbin.com/images/avatars/remy.jpg"
+        "avatar": "//learn.jsbin.com/images/avatars/remy.jpg"
       },
       "danny": {
         "name": "Danny Hope",
-        "avatar": "http://learn.jsbin.com/images/avatars/danny.jpg"
+        "avatar": "//learn.jsbin.com/images/avatars/danny.jpg"
       },
       "fabien": {
         "name": "Fabien O'Carroll",
-        "avatar": "http://learn.jsbin.com/images/avatars/fabien.jpg"
+        "avatar": "//learn.jsbin.com/images/avatars/fabien.jpg"
       },
       "giulia": {
         "name": "Giulia Alfonsi",
-        "avatar": "http://learn.jsbin.com/images/avatars/giulia.jpg"
+        "avatar": "//learn.jsbin.com/images/avatars/giulia.jpg"
       }
 
     },
-    "analytics": "UA-1656750-35"
+    "analytics": "UA-1656750-13",
+    "old-analytics": "UA-1656750-35"
   }
 }

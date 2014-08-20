@@ -4,3 +4,15 @@ block content
   a.edit(href="https://github.com/jsbin/learn/blob/master/public/#{current.path.join('/')}.md") Edit on github
 
   != yield
+
+  if locals.public.help._data[current.source] && locals.public.help._data[current.source].related
+    div.related
+      h2 Related posts
+      each slug in locals.public.help._data[current.source].related
+        - var post = locals.public.help._data[slug]
+        p.extract
+          a(href="#{slug}")= post.title
+          br
+          != partial(slug).split('<p>')[1].replace(/<\/p>\s*.*/m, '').replace(/(<([^>]+)>)/ig, '').trim()
+          &nbsp;
+          a(href="#{ slug }") Read&nbsp;more

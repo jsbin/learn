@@ -14,7 +14,7 @@ function readCookie(name) {
 
   var back = readCookie('last');
 
-  if (back !== null) {
+  if (back !== null && back !== '%2Fedit') {
     document.getElementById('back').href = decodeURIComponent(back);
   }
 })();

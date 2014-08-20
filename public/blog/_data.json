@@ -1,4 +1,10 @@
 {
+  "feed": {
+    "layout": false
+  },
+  "all": {
+    "layout": false
+  },
   "welcome": {
     "title": "Welcome to the new help & blog",
     "author": "remy",
@@ -77,7 +83,34 @@
     "date": "2014-06-09",
     "published": true
   },
-  "feed": {
-    "layout": false
+  "new-processors": {
+    "title": "New processors. We need your input",
+    "author": "remy",
+    "date": "2014-06-17",
+    "published": true
+  },
+  "twdtw-10-jshint-linehighlight-pro": {
+    "title": "TWDTW #10: JSHint, line highlighting and update on pro",
+    "author": "remy",
+    "date": "2014-06-20",
+    "published": true
+  },
+  "security-limited-output": {
+    "title": "TWDTW #11: A week of security",
+    "author": "remy",
+    "date": "2014-07-09",
+    "published": true
+  },
+  "pro-processors": {
+    "title": "Announcements: Pro & Processors",
+    "author": "remy",
+    "date": "2014-07-24",
+    "published": true
+  },
+  "protection": {
+    "title": "Protecting you from yourself",
+    "author": "remy",
+    "date": "2014-08-08",
+    "published": true
   }
 }

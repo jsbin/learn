@@ -1,6 +1,6 @@
 {
   "name": "learn.jsbin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Learn about JS Bin",
   "main": "server.js",
   "scripts": {
@@ -20,6 +20,6 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "harp": "*",
-    "harp-static": "0.0.3"
+    "harp-static": "~0.1.0"
   }
 }

@@ -2,6 +2,8 @@
 
 *JS Bin is an open source collaborative web development debugging tool.*
 
+Made in Brighton, England with blood sweat and code.
+
 ## What can JS Bin do?
 
 * Write code and have it both save in real-time, but also render a full preview in real-time

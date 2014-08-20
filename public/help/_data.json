@@ -9,6 +9,10 @@
     "title": "What is JS Bin?",
     "category": "learn"
   },
+  "getting-started": {
+    "title": "* Getting started",
+    "category": "learn"
+  },
   "api": {
     "title": "JS Bin API",
     "category": "hack"
@@ -80,7 +84,7 @@
     "category": "learn"
   },
   "ssl": {
-    "title": "Why don't we use SSL on all of JS Bin?",
+    "title": "The state of SSL on JS Bin",
     "category": "fix"
   },
   "adding-custom-libraries": {
@@ -118,5 +122,70 @@
   "github-username": {
     "title": "My Github username isn't available",
     "category": "fix"
+  },
+  "adding-processors": {
+    "title": "Adding new pre-processors",
+    "category": "fix"
+  },
+  "versions": {
+    "title": "Versions: Processors & core libraries",
+    "category": "fix"
+  },
+  "why-register": {
+    "title": "Why register?",
+    "category": "learn"
+  },
+  "toggle-line-numbers": {
+    "title": "How to show & hide line numbers",
+    "category": "learn"
+  },
+  "pro": {
+    "title": "* What to expect from a Pro subscription",
+    "category": "pro"
+  },
+  "dropbox": {
+    "title": "Dropbox integration",
+    "category": "pro",
+    "video": "//www.youtube.com/embed/BZIMB6suEx8?rel=0"
+  },
+  "ssl-opt-in": {
+    "title": "SSL opt-in support",
+    "category": "pro"
+  },
+  "sandbox-mode": {
+    "title": "Sandbox mode",
+    "category": "pro"
+  },
+  "private-bins": {
+    "title": "Private bins",
+    "category": "pro"
+  },
+  "vanity-urls": {
+    "title": "Vanity URLs",
+    "category": "pro"
+  },
+  "sass-import": {
+    "title": "@import with Sass",
+    "category": "learn"
+  },
+  "object-doesnt-work": {
+    "title": "Why doesn't <object> work?",
+    "category": "fix"
+  },
+  "share-latest-bin": {
+    "title": "How do I share the latest bin?",
+    "category": "learn",
+    "related": ["vanity-urls"]
+  },
+  "free-preview-expired": {
+    "title": "Why do full previews expired?",
+    "category": "fix",
+    "related": ["why-register"]
+  },
+  "ajax-requests": {
+    "title": "Ajax request to bins",
+    "category": "hack",
+    "related": ["how-can-i-embed-jsbin"]
   }
+
 }
