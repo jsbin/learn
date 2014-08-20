@@ -295,6 +295,7 @@ header nav a.selected:before {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
   background: #fff;
   content: '';
 }
@@ -911,7 +912,7 @@ blockquote em {
     margin-top: 10px;
     font-size: 28px;
   }
-  
+
   #body > article h2 {
     font-size: 22px;
     line-height: 24px;
