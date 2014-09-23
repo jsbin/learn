@@ -4,7 +4,7 @@ JS Bin has recently had some subtle changes that help protect you from bugs in y
 
 ## Crash protection
 
-Although we have loop protection in JS Bin, it's entirely possible that you JavaScript might side-step our protection, and crash the browser anyway.
+Although we have loop protection in JS Bin, it's entirely possible that your JavaScript might side-step our protection, and crash the browser anyway.
 
 If that happens, JS Bin will automatically disable the *live JavaScript rendering* when the page is refresh. This means that HTML & CSS is still live rendered, but the JavaScript waits for you to click "run with JS" (or use the <kbd>ctrl</kbd>+<kbd>return</kbd> shortcut).
 
