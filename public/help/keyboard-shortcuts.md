@@ -7,6 +7,7 @@ JS Bin supports keyboard shortcuts when the editor panels are focused (i.e. you 
 |Shortcut|Action|
 |---|---|
 |<kbd>ctrl</kbd>+<kbd>?</kbd>|Show keyboard shortcuts|
+|<kbd class="same">ctrl</kbd>+<kbd>cmd</kbd>+<kbd>/</kbd>|Search help|
 |<kbd class="same">ctrl</kbd>+<kbd>l</kbd>|Clear the console|
 |<kbd>ctrl</kbd>+<kbd>return</kbd>|Run code and send live reload|
 |<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>del</kbd>|Delete the current bin|
