@@ -16,4 +16,4 @@ These are emerging from the ongoing process of designing and building JS Bin. Th
   When people return to an application or document, they expect it to be as they left it.
   <small>*FIXME* this principle is currently ambiguous when it comes to the document affecting the application state. Where *possible*, implement this principle.</small>
 - **Assert failure to communicate, not the lack of a network**  
-  An app can’t truly know that there’s no network and people care more about the risk of data loss than the status of their network. This principle came from a discussion in [offlinefirst](https://github.com/offlinefirst/research/issues/10#issuecomment-34654691).
+  An app can’t truly know that there’s no network, and people care more about the risk of data loss than the status of their network. This principle came from a discussion in [offlinefirst](https://github.com/offlinefirst/research/issues/10#issuecomment-34654691).
