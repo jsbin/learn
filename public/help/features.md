@@ -56,6 +56,8 @@ Please feel free to **contribute to this list** if you know of a feature, and ad
   * /:user/last
   * /:bin/latest
 * Bin info card - details about the owner, and whether they're streaming
+* Plain text mode / accessibility mode
+* oEmbed
 
 ## Pro features
 
