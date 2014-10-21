@@ -112,5 +112,12 @@
     "author": "remy",
     "date": "2014-08-08",
     "published": true
+  },
+  "asset-upload-oembed": {
+    "title": "Asset uploads & oembed",
+    "author": "remy",
+    "date": "2014-10-07",
+    "published": false
   }
+
 }

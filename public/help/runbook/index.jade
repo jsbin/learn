@@ -5,4 +5,4 @@ ul.links
     li
       a(href="/help/runbook/#{ slug }")= post.title.replace(/^\*/, '★')
       br
-      != partial(slug).split('<p>')[1].replace(/<\/p>\s*.*/m, '').replace(/(<([^>]+)>)/ig, '').trim()
+      != partial(slug).split('</p>')[0].trim().replace(/\n/g, '').replace(/^(.*<p>)/ig, '').replace(/(<([^>]+)>)/ig, '').trim()

@@ -19,8 +19,12 @@ function request(type, url, opts, callback) {
   }
 
   xhr.onload = function () {
-    callback(JSON.parse(xhr.response));
+    callback(null, JSON.parse(xhr.response));
   };
+
+  xhr.onerror = function () {
+    callback(new Error('XHR failed'));
+  }
 
   xhr.send(opts ? fd : null);
 }

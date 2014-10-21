@@ -1,11 +1,12 @@
 (function () {
   'use strict';
-  var resultsEl = document.querySelector('#results');
+  /*global $, get*/
+  var resultsEl = $('#results');
   var searchTerms = [];
-  var search = document.querySelector('#search');
+  var search = $('#search');
   var position = -1;
 
-  search.addEventListener('input', throttle(function () {
+  search.on('input', throttle(function () {
     if (searchTerms.length === 0) {
       get('/help/search.json', function (data) {
         searchTerms = data;
@@ -15,9 +16,9 @@
       searchFor(this.value, searchTerms);
     }
     position = -1;
-  }, 200), false);
+  }, 200));
 
-  document.documentElement.addEventListener('click', function (event) {
+  document.documentElement.on('click', function (event) {
     if (event.target.id === 'search' || event.target.id === 'results') {
 
     } else {
@@ -25,7 +26,7 @@
     }
   });
 
-  document.documentElement.addEventListener('keydown', function (event) {
+  document.documentElement.on('keydown', function (event) {
     if (event.which === 191) {
       event.preventDefault();
       search.focus();
@@ -35,7 +36,7 @@
   }, false);
 
   if (search.classList) {
-    resultsEl.addEventListener('mousemove', function () {
+    resultsEl.on('mousemove', function () {
       if (position !== -1) {
         for (var i = 0; i < resultsEl.children.length; i++) {
           resultsEl.children[i].classList.remove('highlight');
@@ -44,7 +45,7 @@
       }
     });
 
-    search.addEventListener('keydown', function (event) {
+    search.on('keydown', function (event) {
       var key = event.which;
       if (key === 38 || key === 40) { // up / down
         event.preventDefault();
@@ -77,12 +78,12 @@
     }, false);
   }
 
-  search.addEventListener('focus', function () {
+  search.on('focus', function () {
     resultsEl.hidden = false;
   });
 
   function wordmap(input) {
-    var ignore = "a an and on in it of if for the i is i'm i'd it's or to me be not was do so at are what bin bins".split(' ');
+    var ignore = 'a an and on in it of if for the i is i\'m i\'d it\'s or to me be not was do so at are what bin bins'.split(' ');
 
     var endings = 'ing ly lies s';
     var endingRe = new RegExp('(' + endings.split(' ').join('|') + ')$');
@@ -109,7 +110,6 @@
   }
 
   function searchFor(needles, haystack) {
-    'use strict';
     needles = wordmap(needles);
     var results = haystack.map(function (data) {
       var matches = needles.filter(function (needle) {
@@ -137,7 +137,6 @@
   }
 
   function throttle(fn, delay) {
-    'use strict';
     var throttled = function () {
       var context = this, args = arguments;
       throttled.cancel();
