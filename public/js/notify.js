@@ -1,7 +1,7 @@
 function notify(form) {
   'use strict';
   /*global $, post*/
-  if (!form) {
+  if (!form || (form instanceof NodeList && form.length === 0) || form.nodeName !== 'FORM') {
     return;
   }
 
