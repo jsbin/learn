@@ -15,7 +15,7 @@ This page lists the versions of processors used and a few important libraries us
 
 |Processor|Version|Updated|
 |---|---|---|
-|[6to5](https://github.com/sebmck/6to5/tree/1.10.10)|1.10.10|1 Nov 2014|
+|[6to5](https://github.com/sebmck/6to5/tree/v1.10.10)|1.10.10|1 Nov 2014|
 |[CoffeeScript](https://github.com/jashkenas/coffeescript/tree/1.7.1)|1.7.1|30 Jan 2014|
 |[LiveScript](https://github.com/gkz/LiveScript/tree/1.2.0)|1.2.0|2 Aug 2013|
 |[React (JSX)](https://github.com/facebook/react/tree/v0.9.0)|0.9.0|20 Feb 2014|
