@@ -186,6 +186,9 @@
     "title": "Ajax request to bins",
     "category": "hack",
     "related": ["how-can-i-embed-jsbin"]
+  },
+  "experimental-features": {
+    "title": "Experimental Features",
+    "category": "pro"
   }
-
 }

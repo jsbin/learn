@@ -10,7 +10,7 @@ function request(type, url, opts, callback) {
 
   xhr.open(type, url);
 
-  if (type === 'POST' && opts) {
+  if (opts) {
     fd = new FormData();
 
     for (var key in opts) {
