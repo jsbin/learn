@@ -19,11 +19,13 @@ Please feel free to **contribute to this list** if you know of a feature, and ad
     * Stylus
     * Sass & SCSS (with Compass & Bourbon)
   * JavaScript
+    * 6to5
     * Coffeescript
     * Processing
     * React (jsx)
     * Traceur
     * TypeScript
+    * LiveScript
 * Debug/source mode
 * Linting (inline to code, gutter or in footer) with full config control
   * JSHint
@@ -70,5 +72,4 @@ Please feel free to **contribute to this list** if you know of a feature, and ad
 Coming features (currently in closed alpha or under pro)
 
 * Collaborative mode
-* Asset hosting
-* LiveScript processor
+* [Asset hosting](http://jsbin.com/help/experimental-features#assetsuploading)
