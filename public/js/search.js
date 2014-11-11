@@ -8,8 +8,8 @@
 
   search.on('input', throttle(function () {
     if (searchTerms.length === 0) {
-      get('/help/search.json', function (data) {
-        searchTerms = data;
+      get('/help/search.json', function (error, data) {
+        searchTerms = data || [];
         searchFor(this.value, searchTerms);
       }.bind(this));
     } else {
