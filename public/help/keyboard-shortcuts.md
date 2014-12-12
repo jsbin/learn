@@ -27,6 +27,7 @@ Note that all changes in any code panel (excluding the console) both triggers a 
 |<kbd>ctrl</kbd>+<kbd>/</kbd>|Toggle comments on the selected lines|
 |<kbd>ctrl</kbd>+<kbd>[</kbd>|Indent selected lines|
 |<kbd>ctrl</kbd>+<kbd>]</kbd>|Unindent selected lines|
+|<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>L</kbd>|Beautify code|
 
 ## HTML & CSS panel
 
