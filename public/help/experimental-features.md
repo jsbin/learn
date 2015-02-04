@@ -12,14 +12,6 @@ This document will change over time as feature change.
 
 To enable experiments head to your [profile](/account/profile) page and check the "Enable experiments" box.
 
-### Assets uploading
-
-Drag & drop assets into jsbin and it'll upload instantly and insert an image tag with your newly uploaded asset.
-
-Head over to the [Assets](/account/assets) page to manage the assets you have, delete files and check your usage.
-
-<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/d8TkAeGFLx4?rel=0" frameborder="0" allowfullscreen></iframe></div>
-
 ### Fine grain control over bin headers
 
 The infocard (that appears on the editor at the bottom right) has been upgraded to include the ability to manage the title, description, status code and headers for the bin. Useful for mocking response handlers with different statuses (like a 404 or 500) or setting a custom content type or setting a CSP header.
