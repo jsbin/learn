@@ -12,11 +12,12 @@ Each pro user can host up to 1GB of assets - so that gives you a bit of freedom 
 
 To manage your assets, head over to the [assets](/account/assets) account page and you can delete files and check your usage.
 
+So what are you waiting for? Support JS Bin's continued development and [go pro today](/upgrade).
+
 You can see a demo of upload in action below:
 
 <div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/d8TkAeGFLx4?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
-So what are you waiting for? Support JS Bin's continued development and [go pro today](/upgrade).
 
 ## oEmbed
 
