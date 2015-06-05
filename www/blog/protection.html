@@ -1,0 +1,48 @@
+<!DOCTYPE html><html id="blog-protection-page"><head><meta charset="utf-8"><title>Protecting you from yourself - JS Bin Documentation</title><meta name="viewport" content="width=device-width"><meta name="description" content="JS Bin help documentation, tips, tricks, features and blog"><link rel="icon" href="https://learn.jsbin.com/images/favicon.png"><link href="//fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://learn.jsbin.com/css/github.css"><link rel="stylesheet" href="https://learn.jsbin.com/css/help.css"><!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js"></script>
+<![endif]--><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1656750-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script></head><body id="blog-page"><div id="container"><header><div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a><nav><input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off"><ol id="results" hidden></ol><a href="/blog" class="selected">Blog</a><a href="/help">Help</a></nav></div></header><div id="body"><article><a href="/blog/feed.xml" class="subscribe">Subscribe</a><div class="avatar"><img src="//learn.jsbin.com/images/avatars/remy.jpg"><span class="by">By Remy Sharp</span><span class="date">8-Aug, 2014</span></div><h1 id="protectingyoufromyourself">Protecting you from yourself</h1>
+<p>JS Bin has recently had some subtle changes that help protect you from bugs in your own code.</p>
+<h2 id="crashprotection">Crash protection</h2>
+<p>Although we have loop protection in JS Bin, it&#39;s entirely possible that your JavaScript might side-step our protection, and crash the browser anyway.</p>
+<p>If that happens, JS Bin will automatically disable the <em>live JavaScript rendering</em> when the page is refresh. This means that HTML &amp; CSS is still live rendered, but the JavaScript waits for you to click &quot;run with JS&quot; (or use the <kbd>ctrl</kbd>+<kbd>return</kbd> shortcut).</p>
+<p><img src="https://learn.jsbin.com/images/blog/auto-disabled.png" alt="Automatically disabled"></p>
+<h2 id="loopprotection">Loop protection</h2>
+<p>We&#39;ve long had <a href="https://www.youtube.com/watch?v=EA74ODg1qKE">loop protection</a> (video) in JS Bin which meant if you accidently wrote an infinite loop, JS Bin would quietly exit out and warn in the browser console.</p>
+<p>Now you&#39;ll see a warning either in the footer of the JavaScript panel, or in the gutter (if you have gutter warnings enabled in your <a href="/account/preferences">preferences</a>).</p>
+<p><img src="https://learn.jsbin.com/images/blog/loop-protect.gif" alt="Loop protection in JS Bin"></p>
+<p>We&#39;ve also made the <a href="http://github.com/jsbin/loop-protect">loop protection module available</a> in our git repo under MIT, so you&#39;re welcome re-use it in your own projects.</p>
+<script>var timestamp = 1407452400000;</script><script src="https://learn.jsbin.com/js/blog.js"></script><div id="comments"><h2>Comments</h2><div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jsbinblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></article></div><div class="clear"></div></div><footer id="footer"><div class="inner"><ul class="notable"><li><a href="/about">About</a></li><li><a href="https://github.com/jsbin">Github</a></li><li><a href="https://twitter.com/js_bin">Twitter</a></li><li><a href="http://jsbin.com/videos">YouTube</a></li><li><a href="https://www.gittip.com/js_bin">Donate</a></li></ul><ul class="legal"><li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li></ul></div></footer></body><script type="text">WebFontConfig = {
+  google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script><script src="https://learn.jsbin.com/js/min.js"></script><script src="https://learn.jsbin.com/js/permalink.js"></script><script src="https://learn.jsbin.com/js/search.js"></script><script src="https://learn.jsbin.com/js/xhr.js"></script><script src="https://learn.jsbin.com/js/keyboard.js"></script><script src="https://learn.jsbin.com/js/back-button.js"></script><script src="https://learn.jsbin.com/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>

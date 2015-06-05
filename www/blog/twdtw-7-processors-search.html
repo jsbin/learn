@@ -1,0 +1,54 @@
+<!DOCTYPE html><html id="blog-twdtw-7-processors-search-page"><head><meta charset="utf-8"><title>TWDTW #7: SCSS, Compass and search - JS Bin Documentation</title><meta name="viewport" content="width=device-width"><meta name="description" content="JS Bin help documentation, tips, tricks, features and blog"><link rel="icon" href="https://learn.jsbin.com/images/favicon.png"><link href="//fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://learn.jsbin.com/css/github.css"><link rel="stylesheet" href="https://learn.jsbin.com/css/help.css"><!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js"></script>
+<![endif]--><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1656750-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script></head><body id="blog-page"><div id="container"><header><div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a><nav><input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off"><ol id="results" hidden></ol><a href="/blog" class="selected">Blog</a><a href="/help">Help</a></nav></div></header><div id="body"><article><a href="/blog/feed.xml" class="subscribe">Subscribe</a><div class="avatar"><img src="//learn.jsbin.com/images/avatars/remy.jpg"><span class="by">By Remy Sharp</span><span class="date">2-May, 2014</span></div><h1 id="twdtw7scsscompassandsearch">TWDTW #7 - SCSS, Compass and search</h1>
+<p>Whilst Fabien continues with <a href="/blog/twdtw-6-syncing-pro-accounts">Pro user integration</a> and Giulia <a href="https://twitter.com/electric_g/status/460844432649355264">goes on holiday</a>, I&#39;ve snuck out of paternity leave and cheekily completed a bit of dev.</p>
+<h2 id="scsscompassandprocessorstotalupgrade">SCSS, Compass and processors total upgrade</h2>
+<p>In the last year, I had to remove the Stylus processor because there was a weird bug that caused an infinite loop (both client <em>and</em> server side). Since JS Bin is single threaded(!) Stylus can&#39;t be reintroduced until it&#39;s running in a separate process.</p>
+<p>In the same vein as <a href="/blog/twdtw-5-settings-dropbox-heartbleed#userbackups">Jobsworth</a> (our zeromq based bin backup server), I&#39;ve created <a href="https://github.com/jsbin/pennyworth">Pennyworth</a>: a server for running processors and spitting out rendered CSS, JavaScript or HTML.</p>
+<p>There&#39;s a simple <a href="https://github.com/jsbin/pennyworth/blob/master/targets/markdown/index.js">markdown</a> module, but more importantly to user demand, there&#39;s modules for <a href="https://github.com/jsbin/pennyworth/blob/master/targets/scss/index.js">SCSS</a> and <a href="https://github.com/jsbin/pennyworth/blob/master/targets/sass-with-compass/index.js">SCSS with Compass</a> (and more being adding before we go live).</p>
+<p>Here&#39;s a couple of shots using a couple of <a href="http://twitter.com/thebabydino">Ana Tudor&#39;s</a> excellent SCSS demos:</p>
+<p><img src="https://learn.jsbin.com/images/twdtw/7/scss.gif" alt="SCSS demos"></p>
+<p>Once I&#39;m back from paternity leave (in 2 weeks) I&#39;ll be focused on releasing this entirely.</p>
+<h2 id="helpblogsearch">Help &amp; blog search</h2>
+<p>This part of JS Bin (the blog and help) are statically generated using <a href="http://harpjs.com/">Harp</a>, which makes search a little tricky (and bin searching is also on the roadmap, but a separate issue for now).</p>
+<p>I&#39;ve hacked in a simple solution that generates a static JSON file with all the words from the content on help &amp; blog. It&#39;s not perfect, and requires JavaScript right now (and no keyboard support yet), but it&#39;s a start to jump to content a little quicker.</p>
+<p><img src="https://learn.jsbin.com/images/twdtw/7/search.png" alt="Search example"></p>
+<h2 id="totallyaside">Totally aside</h2>
+<p>It&#39;s a bank holiday weekend here in the UK, which means most of us have Monday off. So what to do with all this free time? How about melting your brain on TV?</p>
+<p><a href="http://www.huffingtonpost.com/2014/05/01/binge-watching-chart-_n_5246342.html">Huffington Post</a> rescues us from a hard decision:</p>
+<p><img src="https://learn.jsbin.com/images/twdtw/7/tv-brain-melt.jpg" alt="TV brain melt"></p>
+<script>var timestamp = 1398985200000;</script><script src="https://learn.jsbin.com/js/blog.js"></script><div id="comments"><h2>Comments</h2><div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jsbinblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></article></div><div class="clear"></div></div><footer id="footer"><div class="inner"><ul class="notable"><li><a href="/about">About</a></li><li><a href="https://github.com/jsbin">Github</a></li><li><a href="https://twitter.com/js_bin">Twitter</a></li><li><a href="http://jsbin.com/videos">YouTube</a></li><li><a href="https://www.gittip.com/js_bin">Donate</a></li></ul><ul class="legal"><li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li></ul></div></footer></body><script type="text">WebFontConfig = {
+  google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script><script src="https://learn.jsbin.com/js/min.js"></script><script src="https://learn.jsbin.com/js/permalink.js"></script><script src="https://learn.jsbin.com/js/search.js"></script><script src="https://learn.jsbin.com/js/xhr.js"></script><script src="https://learn.jsbin.com/js/keyboard.js"></script><script src="https://learn.jsbin.com/js/back-button.js"></script><script src="https://learn.jsbin.com/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>

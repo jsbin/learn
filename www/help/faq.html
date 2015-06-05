@@ -1,0 +1,50 @@
+<!DOCTYPE html><html id="help-faq-page"><head><meta charset="utf-8"><title>FAQ - JS Bin Documentation</title><meta name="viewport" content="width=device-width"><meta name="description" content="JS Bin help documentation, tips, tricks, features and blog"><link rel="icon" href="https://learn.jsbin.com/images/favicon.png"><link href="//fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://learn.jsbin.com/css/github.css"><link rel="stylesheet" href="https://learn.jsbin.com/css/help.css"><!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js"></script>
+<![endif]--><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1656750-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script></head><body id="help-page"><div id="container"><header><div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a><nav><input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off"><ol id="results" hidden></ol><a href="/blog">Blog</a><a href="/help" class="selected">Help</a></nav></div></header><div id="body"><article><a href="https://github.com/jsbin/learn/blob/master/public/help/faq.md" class="edit">Edit on github</a><h1 id="frequentlyaskedquestions">Frequently Asked Questions</h1>
+<h2 id="howlongarebinskeptfor">How long are bins kept for?</h2>
+<p>They&#39;re kept indefinitely. In JS Bin&#39;s early life, back in 2008, we removed them after not being seen for 3 months, but that&#39;s long been removed. Bins are permanent.</p>
+<h2 id="howcanicleartheconsole">How can I clear the console?</h2>
+<p>Very simple: <code>ctrl+l</code> from any panel, or using code: <code>console.clear()</code>.</p>
+<h2 id="canirunagistinjsbin">Can I run a Gist in JS Bin?</h2>
+<p>Funny you ask! Absolutely you can - just save the gist in Github, and either using the gist to <a href="javascript:(function()%7Bwindow.location=&#39;http://jsbin.com/gist&#39;+window.location.pathname%7D)()">JS Bin bookmarklet</a>, or change the url from <a href="http://gist.github.com/271333"><a href="http://gist.github.com/271333">http://gist.github.com/271333</a></a> to <a href="http://jsbin.com/gist/271333"><a href="http://jsbin.com/gist/271333">http://jsbin.com/gist/271333</a></a></p>
+<h2 id="whydoesthejavascriptworkwhenididntinsertit">Why does the JavaScript work when I didn&#39;t insert it?</h2>
+<p>When you tab to the output panel, JS Bin automatically inserts your JavaScript on the fly, so you don&#39;t need to worry about it.</p>
+<h2 id="howdoestheerrorcheckingwork">How does the error checking work?</h2>
+<p>Error checking is provided by the <a href="http://jshint.com/" title="http://jshint.com/">JSHint project</a>. Like JSLint, but maintained and with a lovely API so it can plug it into JS Bin.</p>
+<h2 id="canishowjustasinglespecificpanelwhenloadingabin">Can I show just a single specific panel when loading a bin?</h2>
+<p>Appending a panel name to the query string will ensure that JS Bin only opens those specific panels. This is useful if you don&#39;t want the output to open for instance.</p>
+<p>The valid values are: html, js, css, console, output.</p>
+<p>Used as: <a href="http://jsbin.com/iwovaj/74/edit?js,output"><a href="http://jsbin.com/iwovaj/74/edit?js,output">http://jsbin.com/iwovaj/74/edit?js,output</a></a></p>
+<h2 id="howdoiinsertmyjavascriptinaspecificpositioninthehtml">How do I insert my JavaScript in a specific position in the HTML?</h2>
+<p>Either insert the JavaScript directly in to the HTML panel, or you can use the special %code% command. Add it to your HTML and the contents of the JavaScript panel will be inserted at that point.</p>
+<h2 id="howdoirerunorrerenderthecode">How do I re-run or re-render the code?</h2>
+<p>Just click the &quot;Run with JS&quot; button, and your entire code will re-run, or ctrl (or cmd) + enter.</p>
+<h2 id="canjsbinrespondtoajaxrequests">Can JS Bin respond to Ajax requests?</h2>
+<p>Yes. See the <a href="http://jsbin.tumblr.com/post/9246335362/testing-ajax-rquests-one-of-js-bins-original" title="http://jsbin.tumblr.com/post/9246335362/testing-ajax-rquests-one-of-js-bins-original">Ajax debugging video</a> for a demo. Or, it&#39;s as simple as removing the HTML output, saving the code, then requesting the URL via a new snippet. JS Bin will respond to Ajax requests appropriately.</p>
+<h2 id="ie6">IE6?</h2>
+<p>I&#39;m afraid not, but the application is open source, so if you think you can get it working - please go ahead: <a href="http://github.com/jsbin/jsbin"><github.com/jsbin/jsbin></a></p>
+<h2 id="howdoideletemyaccount">How do I delete my account?</h2>
+<p>Raise an <a href="http://github.com/jsbin/jsbin/issues/new">issue</a> with your username requested that we delete your account, and we&#39;ll do as asked.</p>
+<h2 id="myquestionisntanswered">My question isn&#39;t answered</h2>
+<p>Please let <a href="http://github.com/jsbin/learn/issues/new">us know your question</a>, and if appropriate we&#39;ll add it to the FAQ.</p>
+</article></div><div class="clear"></div></div><footer id="footer"><div class="inner"><ul class="notable"><li><a href="/about">About</a></li><li><a href="https://github.com/jsbin">Github</a></li><li><a href="https://twitter.com/js_bin">Twitter</a></li><li><a href="http://jsbin.com/videos">YouTube</a></li><li><a href="https://www.gittip.com/js_bin">Donate</a></li></ul><ul class="legal"><li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li></ul></div></footer></body><script type="text">WebFontConfig = {
+  google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script><script src="https://learn.jsbin.com/js/min.js"></script><script src="https://learn.jsbin.com/js/permalink.js"></script><script src="https://learn.jsbin.com/js/search.js"></script><script src="https://learn.jsbin.com/js/xhr.js"></script><script src="https://learn.jsbin.com/js/keyboard.js"></script><script src="https://learn.jsbin.com/js/back-button.js"></script><script src="https://learn.jsbin.com/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>

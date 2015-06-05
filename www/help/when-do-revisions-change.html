@@ -1,0 +1,47 @@
+<!DOCTYPE html><html id="help-when-do-revisions-change-page"><head><meta charset="utf-8"><title>When do revisions change? - JS Bin Documentation</title><meta name="viewport" content="width=device-width"><meta name="description" content="JS Bin help documentation, tips, tricks, features and blog"><link rel="icon" href="https://learn.jsbin.com/images/favicon.png"><link href="//fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://learn.jsbin.com/css/github.css"><link rel="stylesheet" href="https://learn.jsbin.com/css/help.css"><!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js"></script>
+<![endif]--><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1656750-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script></head><body id="help-page"><div id="container"><header><div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a><nav><input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off"><ol id="results" hidden></ol><a href="/blog">Blog</a><a href="/help" class="selected">Help</a></nav></div></header><div id="body"><article><a href="https://github.com/jsbin/learn/blob/master/public/help/when-do-revisions-change.md" class="edit">Edit on github</a><h1 id="whendorevisionschange">When do revisions change?</h1>
+<p>Let&#39;s say you&#39;ve started afresh on jsbin.com. You&#39;re welcomed with either your own saved template or the default empty HTML page.</p>
+<p><strong>As soon as you start typing</strong> you recieve your own URL and revision (revision 1) for that code. Let&#39;s say that url is <code>jsbin.com/abcde/1/</code></p>
+<p>If you continue to type, all your changes are saved under revision 1 of <code>abcde</code>.</p>
+<h2 id="whendoestherevisionincrement">When does the revision increment?</h2>
+<p>There&#39;s a few situations that can cause a revision to change, some obvious and simple, some much more subtle and designed to be.</p>
+<h3 id="whenyoucreateanewmilestone">When you create a new milestone</h3>
+<p>This will immediately increment the revision, and you will no long be able to save to the previous revision you were on.</p>
+<h3 id="whenyoulockrevisionx">When you &quot;lock revision #X&quot;</h3>
+<p>The &quot;lock revision #X&quot; is inside the Share menu - which is only available on saved bins.</p>
+<p>This doesn&#39;t increment the revision right away, but clears your ability to write to the current revision. What does that actually mean?</p>
+<p>It means locking prevents <em>you</em> from making subsequent changes to the bin. This is useful when you want to share an exact representation of code. When you want to make absolutely sure that revision #X has the code you intended.</p>
+<p>Any subsequent key strokes will now <em>automatically</em> increament the revision number, and continue to save all your updated code in <code>jsbin.com/abcde/2/</code>.</p>
+<p>Note that use the keyboard shortcut ctrl+s (or cmd+s on a Mac) has the same effect as locking the revision.</p>
+<h3 id="whenyoustartafreshsession">When you start a fresh session</h3>
+<p>A &quot;session&quot; is limited to a single window (or more precisely: browser tab), and last only whilst you&#39;re on the same URL, such as <code>jsbin.com/abcde/1/</code>. If you open a <em>new</em> tab to <code>jsbin.com/abcde/1/</code>, it&#39;s considered a new session, and therefore you don&#39;t have write access to the revision #1 bin. So if you begin typing in this new tab, it will <em>automatically</em> increment the revision.</p>
+<p>So if you close your browser and later return to the same URL (that you might have been editing before), this is considered a new fresh session, and therefore a new revision is created as you begin to type.</p>
+<h3 id="usingkeyboardshortcutctrlsorcmdsonmaconanunmodifiedbin">Using keyboard shortcut ctrl+s (or cmd+s on Mac) on an unmodified bin</h3>
+<p>If you execute this keyboard shortcut and the bin has not been modified at all - and therefore don&#39;t have &quot;write access&quot; to the bin, it will automatically increment the revision and you will now own this new revision.</p>
+<p>If there is no URL, and are on simply <code>jsbin.com</code>, then you will be given a full new URL, such as <code>jsbin.com/vwxyz/1</code>.</p>
+<h2 id="whatisarevision">What is a revision</h2>
+<p>Technically the revisions have no real meaning. Since you could in theory only own revision 1, 15 and 36 and none in between (due to perhaps sharing the URL). Equally the <em>content</em> in &quot;revision&quot; 1, 15 and 36 could be entirely different and not really represent a revision of one another.</p>
+<p>A revision simply indicates that there was a specific starting point, but all subsequent bins on that URL don&#39;t have to have a relationship.</p>
+<p>That said, it&#39;s also quite likely that you create <code>abcde/1</code> and share it with me, I make a change that fixes some problem you had, and return <code>abcde/2</code> - in this case it might be quite useful to produce a <a href="http://www.youtube.com/watch?v=KZd_J8XFxTM">diff between the two bins</a> (note that this feature has since been removed but it&#39;s something I&#39;d like to bring back to JS Bin 3 with a graphic UI to read the diff).</p>
+</article></div><div class="clear"></div></div><footer id="footer"><div class="inner"><ul class="notable"><li><a href="/about">About</a></li><li><a href="https://github.com/jsbin">Github</a></li><li><a href="https://twitter.com/js_bin">Twitter</a></li><li><a href="http://jsbin.com/videos">YouTube</a></li><li><a href="https://www.gittip.com/js_bin">Donate</a></li></ul><ul class="legal"><li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li></ul></div></footer></body><script type="text">WebFontConfig = {
+  google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script><script src="https://learn.jsbin.com/js/min.js"></script><script src="https://learn.jsbin.com/js/permalink.js"></script><script src="https://learn.jsbin.com/js/search.js"></script><script src="https://learn.jsbin.com/js/xhr.js"></script><script src="https://learn.jsbin.com/js/keyboard.js"></script><script src="https://learn.jsbin.com/js/back-button.js"></script><script src="https://learn.jsbin.com/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html><html id="help-running-a-local-copy-of-jsbin-page"><head><meta charset="utf-8"><title>Local JS Bin: the detailed how-to - JS Bin Documentation</title><meta name="viewport" content="width=device-width"><meta name="description" content="JS Bin help documentation, tips, tricks, features and blog"><link rel="icon" href="https://learn.jsbin.com/images/favicon.png"><link href="//fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://learn.jsbin.com/css/github.css"><link rel="stylesheet" href="https://learn.jsbin.com/css/help.css"><!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js"></script>
+<![endif]--><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1656750-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script></head><body id="help-page"><div id="container"><header><div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a><nav><input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off"><ol id="results" hidden></ol><a href="/blog">Blog</a><a href="/help" class="selected">Help</a></nav></div></header><div id="body"><article><a href="https://github.com/jsbin/learn/blob/master/public/help/running-a-local-copy-of-jsbin.md" class="edit">Edit on github</a><h1 id="runningjsbinlocally">Running JS Bin locally</h1>
+<p>JS Bin is a <a href="http://nodejs.org">Node</a> project.</p>
+<p>Installation requires just two steps:</p>
+<ol>
+<li>Installing code</li>
+<li>Configuration</li>
+</ol>
+<p>For the simplest install process we recommend using Node with SQLite.</p>
+<p>Historically, JS Bin v1, v2 and the first release of v3 had support for PHP. <strong>PHP is no longer supported</strong>. If you want to install JS Bin using PHP, I&#39;m afraid you&#39;re on your own. There are some old docs that can help, but the project has long surpassed PHP&#39;s functionality.  If you want to risk the PHP version, grab <a href="https://github.com/jsbin/jsbin/releases">v3.0.0 here</a>, warts an all.</p>
+<h2 id="installing">Installing</h2>
+<h3 id="node">Node</h3>
+<p>Install the <a href="http://nodejs.org/">latest stable version</a> of Node first which will give you the <code>node</code> and <code>npm</code> programs.</p>
+<p>You can (and should) install JS Bin directly from <code>npm</code> using the following command:</p>
+<pre><code class="language-bash">npm install -g jsbin</code></pre>
+<p>This will automatically install all the dependancies.</p>
+<p>If you&#39;re installing JS Bin for development (and hopefully contribution), clone the project from github:</p>
+<pre><code class="language-bash">git clone https://github.com/jsbin/jsbin.git
+cd jsbin
+npm install</code></pre>
+<p>If you plan to build and test for production, see the section at the end.</p>
+<h2 id="configuration">Configuration</h2>
+<p>JS Bin comes with a default config file. Should you want to customise how JS Bin runs, you should create a <code>config.local.json</code> (which could be based on <a href="https://github.com/jsbin/jsbin/blob/master/config.default.json"><code>config.default.json</code></a>) and then when you run the <code>jsbin</code> command you must tell the application <em>where</em> your local config is using the following command:</p>
+<pre><code class="language-bash">$ JSBIN_CONFIG=/PATH/TO/config.local.json jsbin</code></pre>
+<p>There are a number of options that you can change to configure JS Bin to your needs. The property names, meaning and possible values have been listed below:</p>
+<ul>
+<li>env: <code>development</code> or <code>production</code></li>
+</ul>
+<p>This is whether you want to run in development mode (recommended) or production. Production mode requires that you build a single JavaScript file for JS Bin to run from. This is only required if you plan to run JS Bin as a service to a larger public audience. Building for production is detailed in a section later on.</p>
+<ul>
+<li>url: Object - detailed next</li>
+</ul>
+<p>This is an object controlling how URLs are generated in JS Bin. If you plan to run JS Bin from a subdirectory, you must change these settings.</p>
+<ul>
+<li>url.host: The host you will access JS Bin on, eg. <code>jsbin.dev</code> is what we use offline. If you want to include a port number here you should do, eg. <code>jsbin.dev:8000</code> will request JS Bin over port 8000.</li>
+<li>url.prefix: <code>/</code> or your subdirectory that JS Bin should be accessed from. For instance, if you run JS Bin under <code>http://remysharp.com/jsbin</code> the <code>url.prefix</code> value must be <code>/jsbin/</code>.</li>
+<li>url.ssl: <code>false</code> or <code>true</code> whether you want to run JS Bin over SSL.</li>
+<li>url.static: <code>false</code> or a url, such as <code>http://static.jsbin.dev:8000/jsbin/</code>. This will control where static assets are served from. If the value is <code>false</code>, they will be served from the same path as dynamic content.</li>
+</ul>
+<h3 id="runningbehindaproxy">Running behind a proxy</h3>
+<p>JS Bin will run behind a proxy, indeed our production version of JS Bin is behind a proxy.</p>
+<p>The <code>PORT</code> on the command line takes precedence over the config variable. This means in your config, you set the url to be the user facing port (typically port 80, so no port required), and then JS Bin will listen on the port you gave at the envinoment level.</p>
+<p>So to proxy jsbin.com to a localhost:8000 (using something like nginx to do the proxying), the config would look like (this snippet of <code>config.local.json</code>):</p>
+<pre><code class="language-json">&quot;url&quot;: {
+  &quot;host&quot;: &quot;jsbin.com&quot;,
+  &quot;prefix&quot;: &quot;/&quot;,
+  &quot;ssl&quot;: false
+},</code></pre>
+<p>Note that in the above config, <code>jsbin.com</code> is what is used in the HTML and JavaScript, so this is the <em>client facing url</em>. Next, running JS Bin behind a proxy is as simple as:</p>
+<pre><code>$ PORT=8000 JSBIN_CONFIG=~/config.local.json jsbin</code></pre>
+<p>Now the <code>jsbin</code> node process is listening on port 8000, but the client facing urls are all port 80.</p>
+<h3 id="buildingforproduction">Building for production</h3>
+<p>JS Bin&#39;s build process uses Grunt, so assuming you&#39;ve cloned a copy, you will need the dev dependancies and the grunt cli:</p>
+<pre><code class="language-bash">npm install -g grunt-cli
+npm install --dev
+grunt build</code></pre>
+<p>This will generate the <code>public/js/prod/</code> directory and read the version in the <code>package.json</code> file to generate to build a number of files:</p>
+<ol>
+<li>jsbin-$version.js - the uncompressed, concatted version of all the scripts from <code>/scripts.json</code></li>
+<li>jsbin-$version.min.js - the production compressed version of jsbin, used in the editor</li>
+<li>jsbin.map.json - the sourcemaps file (useful for debugging in live)</li>
+<li>runner-$version.js - the runner script, used to generate the output of the user&#39;s code in an iframe</li>
+<li>runner-$version.min.js - the production version of the runner</li>
+</ol>
+<p>Finally, ensure either the config.local.json&#39;s <code>env</code> property is set to &quot;production&quot; or you can run JS Bin in production via the envinoment:</p>
+<pre><code>$ NODE_ENV=production node .</code></pre>
+<p>And that&#39;s it.</p>
+</article></div><div class="clear"></div></div><footer id="footer"><div class="inner"><ul class="notable"><li><a href="/about">About</a></li><li><a href="https://github.com/jsbin">Github</a></li><li><a href="https://twitter.com/js_bin">Twitter</a></li><li><a href="http://jsbin.com/videos">YouTube</a></li><li><a href="https://www.gittip.com/js_bin">Donate</a></li></ul><ul class="legal"><li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li></ul></div></footer></body><script type="text">WebFontConfig = {
+  google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script><script src="https://learn.jsbin.com/js/min.js"></script><script src="https://learn.jsbin.com/js/permalink.js"></script><script src="https://learn.jsbin.com/js/search.js"></script><script src="https://learn.jsbin.com/js/xhr.js"></script><script src="https://learn.jsbin.com/js/keyboard.js"></script><script src="https://learn.jsbin.com/js/back-button.js"></script><script src="https://learn.jsbin.com/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>

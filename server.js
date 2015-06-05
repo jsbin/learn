@@ -8,7 +8,6 @@ server.middleware.push(function (req, res, next) {
   var headers = req.headers['Access-Control-Request-Headers'];
   var origin = req.headers.origin;
 
-  // TODO should this check if the request is via the API?
   if (req.method === 'OPTIONS' || (req.method === 'GET' && origin)) {
     res.setHeader('Access-Control-Allow-Origin', origin);
     // res.setHeader('Access-Control-Allow-Headers', headers);
@@ -21,12 +20,15 @@ server.middleware.push(function (req, res, next) {
   }
 });
 
-harp.compile(__dirname, outputPath, function(errors){
-  if(errors) {
-    console.log(JSON.stringify(errors, null, 2));
-    process.exit(1);
-  }
-
+if (process.argv[2] === 'compile') {
+  harp.compile(__dirname, outputPath, function (errors) {
+    if (errors) {
+      console.log(JSON.stringify(errors, null, 2));
+      process.exit(1);
+    }
+    console.log('project compiled');
+  });
+} else {
   console.log('Running harp-static on ' + port);
   server(outputPath, port);
-});
+}

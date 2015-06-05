@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The JS Bin Blog</title><link>//jsbin.com/blog</link><atom:link href="//jsbin.com/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link><item><title>Asset uploads &amp; oembed</title><description><![CDATA[<h1>Asset uploads &amp; oEmbed</h1>
+<p>We said we&#39;d be working on more pro features, and we are. Also, since we&#39;re open source, this awesome stuff happens from time to time: oEmbed as a community submitted feature.</p>
+<p><img src="//learn.jsbin.com/images/blog/oembed-pr.png" alt="Pull request that landed oEmbed"></p>
+<h2>Asset uploads</h2>
+<p>As of today, I&#39;ve released the asset upload feature to <strong>all existing Pro users</strong>. Simply drag &amp; drop your assets into JS Bin and it&#39;ll upload instantly and insert an image tag with your newly uploaded asset.</p>
+<p>Each pro user can host up to 1GB of assets - so that gives you a bit of freedom to sling up your images as quickly as you create bins.</p>
+<p>To manage your assets, head over to the <a href="/account/assets">assets</a> account page and you can delete files and check your usage.</p>
+<p>So what are you waiting for? Support JS Bin&#39;s continued development and <a href="/upgrade">go pro today</a>.</p>
+<p>You can see a demo of upload in action below:</p>
+<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/d8TkAeGFLx4?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+
+<h2>oEmbed</h2>
+<p>Thanks to an awesome (and relatively simple) <a href="https://github.com/jsbin/jsbin/pull/1984">pull request</a>, JS Bin now also supports oEmbed for rich content - allowing you to oEmbed the <em>embed</em> view of your bin.</p>
+<p>A simple call to <a href="http://jsbin.com/oembed?url=http://jsbin.com/fajac/3">http://jsbin.com/oembed?url=http://jsbin.com/fajac/3</a> (the Dave&#39;s demo page) yeilds the following JSON:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;rich&quot;,
+  &quot;version&quot;: &quot;1.0&quot;,
+  &quot;title&quot;: &quot;JS Bin&quot;,
+  &quot;url&quot;: &quot;http://jsbin.com/fajac/3/edit?html,output&quot;,
+  &quot;width&quot;: 640,
+  &quot;height&quot;: 480,
+  &quot;html&quot;: &quot;&lt;iframe src=\&quot;http://jsbin.com/fajac/3/embed?html,output\&quot; width=\&quot;640\&quot; height=\&quot;480\&quot; frameborder=\&quot;0\&quot;&gt;&lt;/iframe&gt;&quot;
+}</code></pre>
+<p>And just like that, JS Bin links posted in <a href="https://gitter.im/">Gitter</a> (the awesome chat client) pulls in a live embeded bin.</p>
+]]></description><pubDate>Wed Feb 04 2015 00:00:00 GMT+0000 (GMT)</pubDate><link>//jsbin.com/blog/asset-upload-oembed</link><guid isPermaLink="true">//jsbin.com/blog/asset-upload-oembed</guid></item><item><title>Protecting you from yourself</title><description><![CDATA[<h1>Protecting you from yourself</h1>
+<p>JS Bin has recently had some subtle changes that help protect you from bugs in your own code.</p>
+<h2>Crash protection</h2>
+<p>Although we have loop protection in JS Bin, it&#39;s entirely possible that your JavaScript might side-step our protection, and crash the browser anyway.</p>
+<p>If that happens, JS Bin will automatically disable the <em>live JavaScript rendering</em> when the page is refresh. This means that HTML &amp; CSS is still live rendered, but the JavaScript waits for you to click &quot;run with JS&quot; (or use the <kbd>ctrl</kbd>+<kbd>return</kbd> shortcut).</p>
+<p><img src="//learn.jsbin.com/images/blog/auto-disabled.png" alt="Automatically disabled"></p>
+<h2>Loop protection</h2>
+<p>We&#39;ve long had <a href="https://www.youtube.com/watch?v=EA74ODg1qKE">loop protection</a> (video) in JS Bin which meant if you accidently wrote an infinite loop, JS Bin would quietly exit out and warn in the browser console.</p>
+<p>Now you&#39;ll see a warning either in the footer of the JavaScript panel, or in the gutter (if you have gutter warnings enabled in your <a href="/account/preferences">preferences</a>).</p>
+<p><img src="//learn.jsbin.com/images/blog/loop-protect.gif" alt="Loop protection in JS Bin"></p>
+<p>We&#39;ve also made the <a href="http://github.com/jsbin/loop-protect">loop protection module available</a> in our git repo under MIT, so you&#39;re welcome re-use it in your own projects.</p>
+]]></description><pubDate>Fri Aug 08 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/protection</link><guid isPermaLink="true">//jsbin.com/blog/protection</guid></item><item><title>Announcements: Pro &amp; Processors</title><description><![CDATA[<h1>Announcements: Pro &amp; Processors</h1>
+<p>The last few weeks we&#39;ve all been busy on that last stretch of work, that last 5% of work that always eeks itself out to be longer than you expect.</p>
+<p>But now, we&#39;re live and two huge updates for you: Pro and processors.</p>
+<h2>Pro</h2>
+<p>We&#39;ve been working on Pro accounts for the last 6 months (amongst a lot of other work) and our initial offering is now live.</p>
+<p><img src="//learn.jsbin.com/images/blog/dave-loves-you.jpg" alt="Dave loves you, because you&#39;re a pro"></p>
+<p>To upgrade to pro, first you&#39;ll need a free account, then head to the <a href="http://jsbin.com/upgrade">upgrade page</a>. Pro accounts are £6 per month (with yearly subscriptions currently offering 2 months free).</p>
+<p>By upgrading to Pro accounts, your contribution helps support JS Bin as a continued open source project. Plus, you&#39;ll have access to <a href="/help/private-bins">private bins</a>, <a href="/help/dropbox">dropbox support</a>, vanity URLs and <a href="/help/pro">more</a>.</p>
+<h2>Processors</h2>
+<p>The biggest news is that Sass &amp; SCSS both with Compass and Bourbon support has landed. Also, we&#39;ve restored Stylus, updated LESS and added <a href="http://www.myth.io/">Myth</a> to the CSS processors. Full specifics on <a href="/help/versions">versions</a> are also available.</p>
+<p><img src="//learn.jsbin.com/images/blog/processors.png" alt="Processors on JS Bin"></p>
+<p>In keeping with JS Bin being open source, our processor server is also open source, found under <a href="https://github.com/jsbin/pennyworth">Pennyworth</a>.</p>
+<p>You can use Pennyworth for your own project if you want &quot;Processors as a Service&quot;, or perhaps extend it to be a CLI tool, or a sublime plugin? It&#39;s online, documented and available under <a href="http://jsbin.mit-license.org">MIT</a>.</p>
+<p>So for forth and hack, learn, fix and teach!</p>
+<h2>Totally aside</h2>
+<p>With all the seriousness aside, you got to take a break, and frankly, this video sours into amazing at 2m49s! Enjoy. This guy is a genius.</p>
+<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/jus7S5vBJyU" frameborder="0" allowfullscreen></iframe></div>
+]]></description><pubDate>Thu Jul 24 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/pro-processors</link><guid isPermaLink="true">//jsbin.com/blog/pro-processors</guid></item><item><title>TWDTW #11: A week of security</title><description><![CDATA[<h1>TWDTW #11 - A week of security</h1>
+<p>This last week has had a particularly strong focus on security. Some of these changes might also have a direct impact on the way you use JS Bin.</p>
+<h2>Lint all the things!</h2>
+<p>After last week&#39;s release of JSHint setting control, <a href="https://github.com/electricg">Giulia</a> released the new HTML, CSS and CofeeScript linting control. All available under the <a href="http://jsbin.com/account/preferences">preferences</a> and all of them take a JSON object to control your defaults.</p>
+<p>The error reporting has also had an upgrade, so you can set if you want errors in the footer of the panel, next to the line or under the line - or even all three!</p>
+<p><img src="//learn.jsbin.com/images/twdtw/11/linting.png" alt="Example of full linting options in editor"></p>
+<h2>Limited full output for anonymous bins</h2>
+<p>If a bin is created by an anonymous user, the full output (that is: with the JS Bin editor stripped away) is only available for 90 minutes after creation. After which the URL will redirect to the editor view.</p>
+<p>If you&#39;re (freely) registered <em>anyone</em> can always view your full output. This change applies to all anonymously created bins as of around July 3, 2014 at 4pm GMT.</p>
+<p>JS Bin has long been a target for spam and phishing and this is first change that would outwardly impact our users. After speaking to many of you, and taking your feedback, I feel like this change is the right balance between starting to address the issue, but also maintaining flexibility for those of you who use JS Bin for teaching.</p>
+<h2>General security</h2>
+<p>We&#39;ve updated our SSL certificate for another 4 years until 2018 and recently closed latest <a href="https://www.openssl.org/news/secadv_20140605.txt">openssl security issue</a> (which you should read up on if you manage servers).</p>
+<p>There was also an issue reporting that the <code>jsbin.state</code> and user object could be accessed, which has been also closed. The impact of which is that JS Bin can&#39;t be set in an iframe anymore <em>but</em> of course you can still <a href="/help/how-can-i-embed-jsbin">embed</a> (and if you happen to point an iframe to JS Bin, it&#39;ll automagically switch to embed mode for you).</p>
+<p>Finally, if you&#39;re security concious, we&#39;ll be <a href="/help/ssl#enablingsslforallofjsbin">adding SSL for all</a> of JS Bin for pro users as a configurable preference (you just need to make sure your external assets are <a href="http://www.paulirish.com/2010/the-protocol-relative-url/">protocol relative</a> because you can run into trouble):</p>
+<p><img src="//learn.jsbin.com/images/twdtw/11/ssl.png" alt="All of JS Bin under SSL"></p>
+]]></description><pubDate>Wed Jul 09 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/security-limited-output</link><guid isPermaLink="true">//jsbin.com/blog/security-limited-output</guid></item><item><title>TWDTW #10: JSHint, line highlighting and update on pro</title><description><![CDATA[<h1>TWDTW 10 - JSHint, line highlighting and Pro update</h1>
+<p>Today we pushed a fairly hefty release containing a few PRs to update libraries, but also a few extra features for all our users.</p>
+<h2>JSHint</h2>
+<p>We&#39;ve finally got around to updating JSHint (whilst still providing support to IE8 by serving an old version for them). More importantly, for those of you who have <a href="http://jsbin.com/register">registered</a>, you can now configure your default JSHint <a href="http://jsbin.com/account/preferences">preferences</a>:</p>
+<p><img src="//learn.jsbin.com/images/twdtw/10/jshint-prefs.png" alt="/images/twdtw/10/jshint-prefs.png"></p>
+<h2>Line highlighting</h2>
+<p>The original precursor to JS Bin had line highlighting and sharing (from back in 2007), and it&#39;s a great feature that we use all the time in Github, so I went ahead and implemented support in JS Bin. You need line numbers enabled (either from preferences, or the shortcut double click on the panel title, like &quot;HTML&quot;).</p>
+<p>Now when you click in the gutter, it&#39;ll highlight that line for sharing. You can also shift+click to select a range:</p>
+<p><img src="//learn.jsbin.com/images/twdtw/10/line-highlight.png" alt="/images/twdtw/10/line-highlight.png"></p>
+<h2>An update on Pro</h2>
+<p>Pro is all about making JS Bin sustainable so we can continue to keep JS Bin free and for education and making JS Bin the best tool it can be for teaching.</p>
+<p>Tweets like this is why we need you to go pro:</p>
+<blockquote>
+<p>Best @CodeClub ever! @js_bin you are a life saver... – <a href="https://twitter.com/olizilla/status/480011434513162240">Oli Evans on Twitter</a></p>
+</blockquote>
+<p>We&#39;ve been working hard towards releasing Pro which will initially include: vanity URLs, read/write API access, private bins, dropbox sync, beta access to features and first line support.</p>
+<p>So tell your friends, your co-workers, help support JS Bin and look out for the release coming very soon.</p>
+]]></description><pubDate>Fri Jun 20 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-10-jshint-linehighlight-pro</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-10-jshint-linehighlight-pro</guid></item><item><title>New processors. We need your input</title><description><![CDATA[<h1>New processors. We need your input</h1>
+<p>We&#39;re doing the final testing on our new processor code. Sass and SCSS have been in high demand for a long time (<a href="https://github.com/jsbin/jsbin/issues/176">#176</a>), which has driven this rewrite (<a href="https://github.com/jsbin/jsbin/pull/1229">#1229</a>).</p>
+<p>But we now need input from <strong>you</strong>.</p>
+<h2>Compass, Bourbon, et al</h2>
+<p>Currently our thinking is this: we&#39;ll run both Sass and SCSS using the Compass compile tool. So if you want to include Bourbon, you just import it.</p>
+<p>I&#39;m not particularly a pro user of CSS preprocessors, so I&#39;m not 100% sure if this what people expect or not. I like that everything is just there, and you don&#39;t have to mess around selecting the right config option in your bin.</p>
+<p><strong>A question to you:</strong> what extensions would you want to be available?</p>
+<p>A nice benefit to our system, is that imports from one bin to another just works. The same way as being able to <a href="/help/linking-bins">reference the JavaScript from one bit to another</a> to create Ajax requests.</p>
+<h2>Other processors</h2>
+<p>We&#39;re in the process of <a href="/help/adding-processors">documenting</a> how you add more processors, and currently support (in our rewrite):</p>
+<ul>
+<li><strong>JavaScript</strong>: CoffeeScript, React (JSX), Traceur, Processing, TypeScript</li>
+<li><strong>CSS</strong>: Less, Stlyus, Sass, SCSS</li>
+<li><strong>HTML</strong>: Jade, Markdown</li>
+</ul>
+<p><strong>A question to you:</strong> are there others that we should add?</p>
+<p>I&#39;ve thought about adding <a href="http://sweetjs.org/">sweet.js</a>, and equally I can see how all the new processors might just spiral the options out of control!</p>
+<p>JS Bin&#39;s ethos is that the processor should work in the client side, but I&#39;ve made an exception for Sass and SCSS (due to the sheer demand), so I&#39;m willing to make exceptions for other processors if there&#39;s the demand.</p>
+<h2>Get yourself heard</h2>
+<p>This is your oppotunity to tell us what you think. What&#39;s important to you and whether there&#39;s something obvious we&#39;re missing.</p>
+<p>Either comment below, or comment directly on the <a href="https://github.com/jsbin/jsbin/pull/1229">pull request for the feature</a>.</p>
+]]></description><pubDate>Tue Jun 17 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/new-processors</link><guid isPermaLink="true">//jsbin.com/blog/new-processors</guid></item><item><title>TWDTW #9: Tweaks and maintenance</title><description><![CDATA[<h1>TWDTW #9 - Tweaks and maintenance</h1>
+<p>These past three weeks we have been mainly working on bug fixes and internal maintenance, so no big announcement except that we have released to 100% of our users the <a href="/blog/twdtw-8-svg-settings#usersettingslive">settings and preferences pages</a>. Go and have fun with it!</p>
+<h2>The small things that matter</h2>
+<p>We&#39;re often releasing multiple times throughout the week with small bug fixes and tweaks, a few that you might have noticed:</p>
+<ul>
+<li>Github changed their URL format for gists, so we fixed <a href="/help/import-gists">gist import</a> (which was broken for a short time) <a href="https://github.com/jsbin/jsbin/pull/1507">#1507</a></li>
+<li>Logged in users can archive using keyboard shortcut <kbd>ctrl</kbd>+<kbd>Y</kbd> <a href="https://github.com/jsbin/jsbin/issues/1000">#1000</a></li>
+<li>All the <a href="/help/keyboard-shortcuts">JS Bin keyboard shortcuts</a> are documented in detail</li>
+<li>We changed &quot;Bins&quot; to &quot;File&quot; in the top menu <a href="https://github.com/jsbin/jsbin/issues/1414">#1414</a> (more on why in a later post)</li>
+</ul>
+<h2>Spread your love</h2>
+<p>We love when you help us improving JS Bin by raising <a href="https://github.com/jsbin/jsbin/issues">issues</a>, bugs and pull requests, and we love it just as much when you tell us that you love JS Bin:</p>
+<blockquote>
+<p><a href="http://www.jimmylauzau.com/blog/2014/05/28/why-i-love-js-bin/">Why I Love JS Bin</a> by Jimmy Lauzau <a href="http://twitter.com/jimmay5469">@jimmay5469</a></p>
+</blockquote>
+<p>Where Jimmy talks about using the Ember branded version of JS Bin, his preferences and default templates.</p>
+<h2>Totally aside</h2>
+<p>We like the classics and we like geeky strange ideas, so what&#39;s better than Star Wars, re-edited in alphabetical order..?</p>
+<div class="embed-container"><iframe width="560" height="315" src="//www.youtube.com/embed/5GFW-eEWXlc" frameborder="0" allowfullscreen></iframe></div>
+]]></description><pubDate>Mon Jun 09 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-9-tweaks-maintenance</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-9-tweaks-maintenance</guid></item><item><title>TWDTW #8: SVG support and settings live</title><description><![CDATA[<h1>TWDTW #8 - SVG support and settings live</h1>
+<p>With <a href="https://twitter.com/electric_g">Giulia</a> back from holiday and <a href="https://twitter.com/rem">Remy</a> easing back into work, the Left Logic offices
+have been a bit more lively, and pushing a few more bits to production.</p>
+<h2>SVG Support</h2>
+<p>We just landed SVG support in JS Bin. Simply add <code>.svg</code> to the bin URL, and JS Bin will correctly serve up the HTML content panel as SVG with the correct headers. So now you can easily <a href="http://jsbin.com/gecew.svg">prototype SVG</a> using JS Bin:</p>
+<pre><code class="language-html">&lt;img src=&quot;http://jsbin.com/gecew.svg&quot; alt=&quot;Source: http://jsbin.com/gecew/edit&quot;&gt;</code></pre>
+<p><img alt="Source: http://jsbin.com/gecew/edit" title="Source: http://jsbin.com/gecew/edit" src="http://jsbin.com/gecew.svg" height="200" width="658"></p>
+<p><small>Thanks to <a href="https://twitter.com/jorgeATGU">@jorgeATGU</a> for the SVG madness!</small></p>
+<p>The feature request came through from <a href="https://twitter.com/ThatEmil/status/464665080005951488">Emil on twitter</a>, suggesting that the <code>.svg</code> extension serve up the right headers. So we opened a <a href="http://github.com/jsbin/jsbin/issues/1466">feature request</a>, and <a href="https://github.com/jsbin/jsbin/commit/59d729f3cade53ba10ca3c817daa51c1e36bce15">one simple change</a> later it was live.</p>
+<p>Emil also <a href="http://thatemil.com/blog/2014/05/14/using-js-bin-as-an-svg-playground/">blogged about his own workflow</a> with JS Bin and SVGs. It&#39;s <em>that</em> easy to help make JS Bin a better product.</p>
+<h2>User settings live</h2>
+<p><img src="//learn.jsbin.com/images/twdtw/8/settings.png" alt="/images/twdtw/8/settings.png"></p>
+<p>We&#39;ve spoken a <a href="/blog/twdtw-3-codemirror-settings#usersettings">fair</a> <a href="/blog/twdtw-4-tern-pro-features#tern">bit</a> <a href="/blog/twdtw-5-settings-dropbox-heartbleed#jsbinsettingspreferences">about</a> the upcoming user settings in JS Bin and today we&#39;ve started our staggered release.</p>
+<p>We&#39;re releasing to 10% of users (<a href="https://github.com/remy/feature-gateway#ab-testing">using our feature flags</a>) to start with to monitor the affect on our infrastructure (since we&#39;ve moved to a memcache system for our sessions), and we&#39;ll quickly increase this to 100% over the coming days (and weeks).</p>
+<h2>Want a JS Bin sticker? At BACON conf?</h2>
+<p>I&#39;ll be attending the <a href="http://devslovebacon.com/">BACON conference</a> and I&#39;ll be armed with a swathe of JS Bin stickers, I look pretty much like my avatar,
+so hit me up if you want one for your laptop!</p>
+<h2>Totally aside</h2>
+<p>Myself and Giulia were in tears this week watching this clip over and over and over: Nick Cage knows how to dive:</p>
+<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/krotxywU2Es?version=3&amp;loop=1&amp;playlist=krotxywU2Es" frameborder="0" allowfullscreen></iframe></div>
+]]></description><pubDate>Thu May 15 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-8-svg-settings</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-8-svg-settings</guid></item><item><title>How I run JS Bin in Zen mode!</title><description><![CDATA[<h1>How I run JS Bin in Zen mode!</h1>
+<p>Since using JS Bin, I&#39;ve discovered a number of ways to customise it to my liking, and I wanted to share how I&#39;m running in <em>Zen mode</em>!</p>
+<p><img src="//learn.jsbin.com/images/jsbin-zen-mode-1.png" alt="Zen mode"></p>
+<h2>Vim mode</h2>
+<pre><code class="language-javascript">jsbin.settings.addons.vim = true;</code></pre>
+<p>Since we upgraded CodeMirror to version 4, we&#39;ve added a lot of <a href="/blog/twdtw-2#userenabledaddons">addons</a> for
+CodeMirror, including Vim mode, which you can turn on by running the above command
+in the console. Just note that not all of the Vim functionality comes with the plugin,
+visual block mode, for example, doesn&#39;t work. But a lot of the Ex commands are there,
+including search and replace, which is great, as JS Bin doesn&#39;t support this in normal mode.</p>
+<h2>Custom theme</h2>
+<pre><code class="language-javascript">jsbin.settings.editor.theme = &#39;solarized light&#39;;</code></pre>
+<p>Solarized is a beautiful theme that I use everywhere (Terminal and text editors). We support
+both light and dark solarized themes, I use the light theme in the browser.</p>
+<h2>Default template</h2>
+<p>Default templates in JS Bin really make it your own, you can add default content
+to all three of the input panels, so if you always use jQuery, you can have JS Bin
+always include it for you. <a href="http://jsbin.com/allouis-template/1/edit?html,css,js">My default template</a>
+is pretty simple. Our help articles have a <a href="/help/defaults-in-bins">post on default templates</a>.</p>
+<h3>HTML</h3>
+<p>My default html panel just adds two metatags for webapps, and a custom title.</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, user-scalable=no&quot;&gt;
+    &lt;title&gt;@allouis_&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h3>CSS</h3>
+<p>The default css panel just contains a basic reset.</p>
+<pre><code class="language-css">html, body {
+  margin: 0;
+  padding: 0;
+}</code></pre>
+<h3>JavaScript</h3>
+<p>This is my favourite of the panel templates, a single line, it just clears the console everytime
+the code is run!</p>
+<pre><code class="language-javascript">console.clear();</code></pre>
+<h2>Hidden toolbar</h2>
+<p><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\</kbd></p>
+<p>The hidden topbar lets me really focus on the code, most of the items in the menus
+can be accessed via keyboard shortcuts and for everything else, when I <em>do</em> need
+it, the topbar pops open when you hover near it.</p>
+<h2>Keyboard shortcuts</h2>
+<p><kbd>ctrl</kbd>+<kbd>enter</kbd></p>
+<p>My favourite JS Bin keyboard shortcut, this command will force a re-render on your output, on
+all devices, so it&#39;s pretty handy for mobile testing. It also runs all your JavaScript
+so if you just have the console open, you can use it to run your code each time
+you make changes. Here is our complete list of <a href="/help/keyboard-shortcuts">keyboard shortcuts</a></p>
+<h2>Panel configuration</h2>
+<p>I like to place my console panel <em>underneath</em> my JavaScript panel, you can do this
+kind of panel configuration with all of the panels in JS Bin like so:</p>
+<p><img src="//learn.jsbin.com/images/panel-configure.gif" alt="Panel Moving"></p>
+<p>Do note, that currently panel configuration won&#39;t save so you&#39;ll need to do this
+each time you visit.</p>
+]]></description><pubDate>Fri May 09 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/my-zen-mode</link><guid isPermaLink="true">//jsbin.com/blog/my-zen-mode</guid></item><item><title>TWDTW #7: SCSS, Compass and search</title><description><![CDATA[<h1>TWDTW #7 - SCSS, Compass and search</h1>
+<p>Whilst Fabien continues with <a href="/blog/twdtw-6-syncing-pro-accounts">Pro user integration</a> and Giulia <a href="https://twitter.com/electric_g/status/460844432649355264">goes on holiday</a>, I&#39;ve snuck out of paternity leave and cheekily completed a bit of dev.</p>
+<h2>SCSS, Compass and processors total upgrade</h2>
+<p>In the last year, I had to remove the Stylus processor because there was a weird bug that caused an infinite loop (both client <em>and</em> server side). Since JS Bin is single threaded(!) Stylus can&#39;t be reintroduced until it&#39;s running in a separate process.</p>
+<p>In the same vein as <a href="/blog/twdtw-5-settings-dropbox-heartbleed#userbackups">Jobsworth</a> (our zeromq based bin backup server), I&#39;ve created <a href="https://github.com/jsbin/pennyworth">Pennyworth</a>: a server for running processors and spitting out rendered CSS, JavaScript or HTML.</p>
+<p>There&#39;s a simple <a href="https://github.com/jsbin/pennyworth/blob/master/targets/markdown/index.js">markdown</a> module, but more importantly to user demand, there&#39;s modules for <a href="https://github.com/jsbin/pennyworth/blob/master/targets/scss/index.js">SCSS</a> and <a href="https://github.com/jsbin/pennyworth/blob/master/targets/sass-with-compass/index.js">SCSS with Compass</a> (and more being adding before we go live).</p>
+<p>Here&#39;s a couple of shots using a couple of <a href="http://twitter.com/thebabydino">Ana Tudor&#39;s</a> excellent SCSS demos:</p>
+<p><img src="//learn.jsbin.com/images/twdtw/7/scss.gif" alt="SCSS demos"></p>
+<p>Once I&#39;m back from paternity leave (in 2 weeks) I&#39;ll be focused on releasing this entirely.</p>
+<h2>Help &amp; blog search</h2>
+<p>This part of JS Bin (the blog and help) are statically generated using <a href="http://harpjs.com/">Harp</a>, which makes search a little tricky (and bin searching is also on the roadmap, but a separate issue for now).</p>
+<p>I&#39;ve hacked in a simple solution that generates a static JSON file with all the words from the content on help &amp; blog. It&#39;s not perfect, and requires JavaScript right now (and no keyboard support yet), but it&#39;s a start to jump to content a little quicker.</p>
+<p><img src="//learn.jsbin.com/images/twdtw/7/search.png" alt="Search example"></p>
+<h2>Totally aside</h2>
+<p>It&#39;s a bank holiday weekend here in the UK, which means most of us have Monday off. So what to do with all this free time? How about melting your brain on TV?</p>
+<p><a href="http://www.huffingtonpost.com/2014/05/01/binge-watching-chart-_n_5246342.html">Huffington Post</a> rescues us from a hard decision:</p>
+<p><img src="//learn.jsbin.com/images/twdtw/7/tv-brain-melt.jpg" alt="TV brain melt"></p>
+]]></description><pubDate>Fri May 02 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-7-processors-search</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-7-processors-search</guid></item><item><title>TWDTW #6: Bin files, Dropbox, Pro Accounts</title><description><![CDATA[<h1>TWDTW #6 - Bin files, Dropbox, Pro Accounts</h1>
+<p>This week we&#39;ve been doing mostly internal updates to JS Bin, so not much to see. I&#39;ve been working on updating the way in which we create HTML
+files from bins and we&#39;re going to start experimenting with two-way syncing with <a href="http://dropbox.com">Dropbox</a></p>
+<h2>Bin files</h2>
+<p>Transforming a Bin into a html file has always been done by JS Bin - to display your output in the iframe, but this week I&#39;ve been creating a module
+to create more than just a renderable file, but a file that stores both the raw panel content and the content <em>after</em> it has gone through 
+preproccesors. This will eventually allow files in this format to be dropped into JS Bin and populate all the panels, cool!</p>
+<h2>Dropbox</h2>
+<p><a href="https://twitter.com/rem">Remy</a> and I were talking about our Dropbox linking being more than just saving - but syncing, where any changes made to your files on Dropbox would then be reflected in JS Bin. We&#39;re hoping to have two-way syncing of bins to Dropbox ready to be tested internally by next week. Here&#39;s how the current dropbox linking works:</p>
+<div class="embed-container">
+ <iframe name='quickcast' src='http://quick.as/embed/4qb1f7bg' scrolling='no' frameborder='0' width='100%' allowfullscreen></iframe><script src='http://quick.as/embed/script/1.50'></script>
+</div>
+
+<h2>Pro Accounts</h2>
+<p>Our pro account offering is being polished for when Remy returns to the office and we can release them, <a href="https://twitter.com/yandle">Danny</a> popped in this week to go over the designs and user flow from registered or anonymous to pro and I&#39;ve been compiling a list of all JS Bins current and future features, it&#39;s a lot bigger than I thought!</p>
+<h2>Totally aside</h2>
+<p>Also, a very big congratulations to Remy and <a href="https://twitter.com/julieanne">Julie</a> - they&#39;ve had a beautiful baby girl :D!</p>
+<p><img src="//learn.jsbin.com/images/twdtw/6/baby.png" alt=""></p>
+]]></description><pubDate>Fri Apr 25 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-6-syncing-pro-accounts</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-6-syncing-pro-accounts</guid></item><item><title>TWDTW #5: Heartbleed, Settings, User Backups</title><description><![CDATA[<h1>TWDTW #5 - Heartbleed, Settings, User Backups</h1>
+<p>This week we&#39;ve been dealing with the Heartbleed issue, but more positively have also shipped (for internal, but live testing) updates to user settings and a new pro feature: real-time backup of your bins.</p>
+<h2>Heartbleed, no more</h2>
+<p>The Heartbleed bug definately took it&#39;s toll on <a href="https://twitter.com/rem/status/454293558317821952">Remy</a> as he patched our OpenSSL, reissued SSL certificates and fixed weird <a href="http://stackoverflow.com/questions/22968867/error-1018-hy000-cant-read-dir-of-db-errno-13-not-a-permission/23014237">MySQL issues</a>, but we were <a href="/blog/heartbleed">no longer vulnerable</a>!</p>
+<p>This, from <a href="http://xkcd.com/1354/">xkcd</a>, does a good job of explaining the issue:</p>
+<p><img src="http://imgs.xkcd.com/comics/heartbleed_explanation.png" alt="Are you still there, server? It&#39;s me, Margaret."></p>
+<h2>JS Bin settings &amp; preferences</h2>
+<p><a href="https://github.com/electricg">Giulia</a> has been continuing work on <a href="/blog/twdtw-3-codemirror-settings#usersettings">our new account pages</a>, with a new page for managing your default preferences, such as your starting open panels, templates, processors and so on.</p>
+<p>We&#39;re hoping to release this to you all next week.</p>
+<p><img src="//learn.jsbin.com/images/twdtw/5/preferences.png" alt="Preferences page"></p>
+<h2>User backups</h2>
+<p>For the past couple of weeks, I&#39;ve been working on a new part of JS Bin called <a href="https://github.com/jsbin/jobsworth">Jobsworth</a>. This is a task manager that communicates using <a href="http://zeromq.org/">zeromq</a> and contrary to it&#39;s name, will do our bidding. Initially backing up all my new bins to Dropbox in real-time (and we intend to add other services, like SkyDrive, Drive, etc).</p>
+<p>The format of the file saved in which the bins are saved is a single HTML file that includes the full source of the bin, including pre-processor&#39;s source, which acts as an API for JS Bin importing too <a href="https://github.com/jsbin/jsbin/issues/609">#609</a>.</p>
+<h2>Totally aside</h2>
+<p>If you&#39;ve not seen the oscar winning <a href="http://www.imdb.com/title/tt1454468/">Gravity</a>, well, you should, but this is Gravity for those of you without much time on your hands - enjoy!</p>
+<div class="embed-container">
+  <iframe width="1280" height="720" src="//www.youtube.com/embed/Gw79smKZB9E" frameborder="0" allowfullscreen></iframe>
+</div>
+
+]]></description><pubDate>Fri Apr 11 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-5-settings-dropbox-heartbleed</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-5-settings-dropbox-heartbleed</guid></item><item><title>Heartbleed and JS Bin</title><description><![CDATA[<h1>Heartbleed and JS Bin</h1>
+<p>If you&#39;ve not heard about <a href="http://heartbleed.com">Heartbleed</a>, means that <strong>potentially</strong> all your passwords can be compromised. This isn&#39;t a bug that&#39;s specific to JS Bin, it affects most sign in forms that go over HTTPS. Yes, it&#39;s <strong>that</strong> scary. </p>
+<p>Note that if you registered with JS Bin after 9-April 2014 10pm UK time, then you won&#39;t be affected, but I still strongly recommend you familiar yourself with the issue.</p>
+<p>Here&#39;s what <em>we&#39;ve</em> done:</p>
+<ul>
+<li>We&#39;ve patched all our versions of OpenSSL</li>
+<li>We&#39;ve re-issued our SSL certificate for our login and register</li>
+<li>We&#39;re recommending that you <a href="/help/change-your-password">change your password</a></li>
+</ul>
+<p>We can&#39;t control when the old SSL certificate gets revoked (serial number 842265), but we&#39;ve already seen people on the new certificate (serial number 1169237). You can check you have the updated certificate by clicking on the &quot;padlock&quot;, and digging into the certificate details, where you should see the issue &quot;Not Valid Before&quot; date, which will be 8 April 2014:</p>
+<p><img src="//learn.jsbin.com/images/ssl-cert.png" alt="/images/ssl-cert.png"></p>
+<p>Note that if you use Chrome, you&#39;ll also need to ensure your browser checks for revoked SSL certificate by default:</p>
+<p><img src="//learn.jsbin.com/images/chrome-revoke.png" alt="/images/chrome-revoke.png"></p>
+<p>And importantly, what <strong>you&#39;ll</strong> need to (or I&#39;m suggesting you) do:</p>
+<ul>
+<li>Change your password</li>
+<li>Log out and log back in again (to clear your session based on the old SSL certificate)</li>
+<li>Read up and share what you learn about Heartbleed</li>
+</ul>
+<p>We could (technically) reset everyone&#39;s password, but it&#39;s not that simple for us to code up, and really the complexity is in the user flow, and getting it right. So I decided against it in the end.</p>
+<p>Some good resources I&#39;ve found are:</p>
+<ul>
+<li><a href="http://www.troyhunt.com/2014/04/everything-you-need-to-know-about.html">Everything you need to know about Heartbleed</a> - very good if you&#39;re at all technical and need to get a grip on the issues</li>
+<li><a href="http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/">Big web sites affected</a> - I found this pretty useful for what to tell non-technical people I know</li>
+</ul>
+]]></description><pubDate>Thu Apr 10 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/heartbleed</link><guid isPermaLink="true">//jsbin.com/blog/heartbleed</guid></item><item><title>TWDTW #4: Tern live, and our upcoming Pro features</title><description><![CDATA[<h1>TWDTW #4 - Tern is live</h1>
+<p>We&#39;ve now released Tern to live for everyone, and we&#39;ve been hard at work on our Pro features and working on improving the JS Bin core code.</p>
+<h2>Tern</h2>
+<p>A few weeks ago we showed off the <a href="/blog/twdtw-1-sass-tern-security#tern">demo of Tern</a>, and now it&#39;s live. You need to manually turn it on via the <code>addons</code>:</p>
+<pre><code class="language-js">jsbin.settings.addons.tern = true;</code></pre>
+<p>...then refresh and Tern is enabled in the JavaScript panel.</p>
+<h2>Upcoming Pro feature: vanity urls</h2>
+<p>We&#39;re all working hard on Pro features for JS Bin (whilst also pushing out more and more features for <em>all</em> users), and I&#39;ve just finished the first version of vanity URLs. </p>
+<p>This means your shared URLs will include your username to your editable bins, like <a href="http://rem.jsbin.com/kuzef/2/"><a href="http://rem.jsbin.com/kuzef/2/">http://rem.jsbin.com/kuzef/2/</a></a> and more importantly, you can <em>publish to your vanity url</em>, as so: <a href="http://rem.jsbin.com"><a href="http://rem.jsbin.com">http://rem.jsbin.com</a></a>.</p>
+<p>The vanity URL will also support pointing your own domain directly at JS Bin (like code.rem.io).</p>
+<p>Also in the works is Dropbox support (for your own copy of you bins but also quickly embedding external resources). More on that soon.</p>
+<p>Most importantly, Pro is the way that JS Bin will continuing to be open source and <strong>free for education</strong>. And we need your help to do that. So spread the word, and <a href="https://jsbin.com/register">sign up too</a> so you&#39;re ready for when it lands!</p>
+<h2>Totally aside</h2>
+<p>Fabien had been catching up on some classic movies, in particular Sneakers, which reminded me of this amazing story by Moran Cerf, about a particular point in life where his group decided to say &quot;yes&quot;.</p>
+<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/RJVHTQSvUIo" frameborder="0" allowfullscreen></iframe></div>
+]]></description><pubDate>Mon Apr 07 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-4-tern-pro-features</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-4-tern-pro-features</guid></item><item><title>TWDTW #3: CodeMirror, User settings, Hacks</title><description><![CDATA[<h1>TWDTW #3</h1>
+<p>Last week we rolled out <a href="/blog/ssl">SSL support</a> for our sign in (long overdue), and this week we&#39;ve had two pretty cool releases: CodeMirror 4 and (in private testing) user settings UI.</p>
+<h2>CodeMirror 4</h2>
+<p><a href="http://codemirror.net">CodeMirror</a> is the excellent editor that backs JS Bin. Version 4 was released last week and on Tuesday it landed in JS Bin. The highlights for me personally are multiple cursors and sublime mode (via <code>jsbin.settings.addons.sublime = true</code>):</p>
+<p><img src="//learn.jsbin.com/images/twdtw/3/cm4.gif" alt="/images/twdtw/3/cm4.gif"></p>
+<p>But isn&#39;t setting these <a href="/blog/twdtw-2#userenabledaddons">sweet addons</a> via the console a bit tricky and maybe for the hacker?! Well, we&#39;ve been working hard to introduce a &quot;proper&quot; UI which has gone live behind alpha flags so we can give it some production testing, so I&#39;m expecting to release to public next week.</p>
+<h2>User Settings</h2>
+<p>But take a look:</p>
+<p><img src="//learn.jsbin.com/images/twdtw/3/settings.png" alt="/images/twdtw/3/settings.png"></p>
+<p>These settings will give you full control over how your editor works, and if you think anything is missing, we&#39;re looking for <em>your</em> input. We&#39;re also working on adding a JS Bin preferences panel to help manage your default templates and default processors (like Less or CoffeeScript) and more.</p>
+<h2>The Autoprefixer hack - did you know...?</h2>
+<p>Last Friday I saw a <a href="https://twitter.com/pepelsbey_/status/449460914941853696">tweet asking for Autoprefixer support</a> (which coincidently landed in our friendly neighbour CodePen about two hours after we replied with...): JS Bin is extremely maluable.</p>
+<p>So we hacked together a bin that lets you run Autoprefixer entirely client side, and uses the CSS panel and the magical <code>%css%</code> value to post process <em>your</em> CSS through Autoprefixer.</p>
+<p>Then in the afternoon <a href="http://github.com/electricg">Giulia</a> added this to our library drop down, so if you select Autoprefixer, you can use the CSS panel without prefixes. All without a server side change. <a href="http://jsbin.com/xewil/1/edit">Have a play</a>.</p>
+<h2>Totally aside</h2>
+<p>Fabien found and shared this site <a href="http://8tracks.com">8tracks</a> that you can give it a tag, say &quot;programming&quot;, and you can listen to tracks to suit that mood. So get your groove on.</p>
+<p><img src="//learn.jsbin.com/images/twdtw/3/dance.gif" alt="/images/twdtw/3/dance.gif"></p>
+]]></description><pubDate>Tue Apr 01 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-3-codemirror-settings</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-3-codemirror-settings</guid></item><item><title>SSL: A secure login</title><description><![CDATA[<h1>SSL: A secure login</h1>
+<p>Up until now all of JS Bin has been served over standard HTTP. This is fine for most of the site, however we&#39;ve decided to upgrade
+the login and register (and eventually the account settings) pages to use SSL (i.e. encrypted data transmission).</p>
+<p>This means your email and password are always sent over a secure connection, keeping those details safe. </p>
+<p>If you&#39;re already logged into JS Bin you&#39;ll notice that the next time you visit you&#39;ll recieve a message and be prompted to sign in again, just the once, using the newer, SSL login.</p>
+<p>If you have any questions, or find any problems with the process, <a href="http://github.com/jsbin/jsbin/issues/new?title=Problem%20with%20new%20SSL%20Login">please submit an issue on github</a>.</p>
+<p><strong>Possibly related</strong> <a href="/help/ssl">Why don&#39;t we use SSL on all of JS Bin?</a></p>
+]]></description><pubDate>Wed Mar 19 2014 00:00:00 GMT+0000 (GMT)</pubDate><link>//jsbin.com/blog/ssl</link><guid isPermaLink="true">//jsbin.com/blog/ssl</guid></item><item><title>TWDTW #2: Addons, Collaboration, Hardware</title><description><![CDATA[<h1>TWDTW #2</h1>
+<p>This week we released more experiments, discovered one experiment going wrong (sad face), little two day retreat playing with arduinos and where I&#39;ll be about giving away some sweet <a href="http://www.flickr.com/photos/remysharp/9576228318/">JS Bin stickers</a> and maybe even a <a href="http://www.flickr.com/photos/remysharp/10805438263/">t-shirt</a> or two.</p>
+<h2>User enabled addons</h2>
+<p>Code folding, matched brackets, trailing white spaces, and more. We all have our favourite features in the editors we love, and CodeMirror comes with a great deal of addons that historically I&#39;ve been careful about enabling (since it adds to the footprint of the jsbin.js script request).</p>
+<p>I&#39;ve releases a dev feature (i.e. there&#39;s no interface, <a href="https://github.com/jsbin/jsbin/pull/1224">yet</a>) that allows you to enable to lazy-load in a slew of addons from your browser console. For example, in the console if you run the following then refresh:</p>
+<pre><code class="language-js">jsbin.settings.addons.fold = true;</code></pre>
+<p>Gets you code folding:</p>
+<p><img src="//learn.jsbin.com/images/twdtw/2/fold.png" alt="/images/twdtw/2/fold.png"></p>
+<p>Or maybe you&#39;re a Vim beast, easy:</p>
+<pre><code class="language-js">jsbin.settings.addons.vim = true;</code></pre>
+<p><a href="/help/addons">Addons will be documented</a> soon, but there are details in the pull request: <a href="https://github.com/jsbin/jsbin/pull/1273">#1273</a>.</p>
+<h2>First pass at collaboration</h2>
+<p><a href="http://github.com/electricg">Giulia</a> took <a href="http://togetherjs.com">together.js</a> and implemented under an experimental flag. </p>
+<p>Sadly, and due to no fault of Giulia&#39;s, using together.js just doesn&#39;t do the job properly. The way it works is this: whenever anyone makes a change, all of the text is sent and replaced in the collaborators window. This results in the <em>cursor position being reset</em> when this happens. </p>
+<p>As it turns out, this already affects <em>all</em> the sites that already use together.js with CodeMirror (the embedded editor that JS Bin uses).</p>
+<p>So we&#39;re looking at whether we fork together.js and send a pull request to fix this, or go down the <a href="https://github.com/share/ShareJS">share.js</a> route (which I personally think is highly likely for a few other reasons).</p>
+<h2>A hardware retreat</h2>
+<p>Well, we didn&#39;t actually leave the office, but we did take a complete break from coding on JS Bin to experiment with <a href="http://arduino.cc/">Arduinos</a>, <a href="https://www.spark.io/">Sparks</a>, soldering irons, <a href="https://github.com/rwaldron/johnny-five/">Johnny Five</a> and lots of LEDs.</p>
+<p><img src="//learn.jsbin.com/images/twdtw/2/hack.jpg" alt="/images/twdtw/2/hack.jpg"></p>
+<p>Overall, great little fun. Though none of us managed to produce anything that we&#39;ll be recording videos for Kickstarter, we have now broadened the amount of things we don&#39;t know!</p>
+<h2>Out and about</h2>
+<p>I&#39;ll be venturing out of sunny Brighton to a couple of London events, and I&#39;ll have a fistfull of JS Bin stickers (which are <em>really</em> nice quality) and a few t-shirts at <a href="http://lanyrd.com/2014/edgeconf/">Edge London</a> and <a href="http://lanyrd.com/2014/lnug-march/">LNUG</a>. So come grab me!</p>
+<h2>Totally aside</h2>
+<p>This shouldn&#39;t be funny, but it&#39;s utterly hypnotic...</p>
+<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/ub1Dc3NHZ3s" frameborder="0" allowfullscreen></iframe></div>]]></description><pubDate>Fri Mar 14 2014 00:00:00 GMT+0000 (GMT)</pubDate><link>//jsbin.com/blog/twdtw-2</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-2</guid></item><item><title>TWDTW #1: Sass, Tern, Security</title><description><![CDATA[<h1>TWDTW #1</h1>
+<p>This is the first installment of &quot;things we did this week&quot;. Where we&#39;ll share some of the features or changes or fixes we&#39;ve been working on. Sometimes it will be small features, sometimes BIG exciting features and other times it&#39;ll be progress to much longer term goals.</p>
+<p>We&#39;re working on local branches of JS Bin with a few cool features.</p>
+<h2>Sass</h2>
+<p>There&#39;s been <a href="https://github.com/jsbin/jsbin/issues/176">tons of demand</a> for Sass support, but until we could pull it off on the client side, I wasn&#39;t sure it would land. Now thanks to <a href="https://github.com/medialize/sass.js/">sass.js</a> and a few hours of hacking, JS Bin has a development branch with Sass (or more specifically SCSS) in a <abbr title="Pull Request">PR</abbr> <a href="https://github.com/jsbin/jsbin/pull/1229">feature/scss</a> (see <a href="http://blog.rodneyrehm.de/archives/33-libsass.js-An-Emscripten-Experiment.html">Rodney Rehm&#39;s post</a> on porting to sass.js). </p>
+<p>It does mean that Bourbon, Compass, et al aren&#39;t supported, but it&#39;s still a good step forward (and the changes also mean it&#39;s now easy to add server-based support for Sass - which will come soon).</p>
+<p><img src="//learn.jsbin.com/images/twdtw/1/sass.png" alt="/images/twdtw/1/sass.png"></p>
+<p>(Demo pitched from <a href="http://red-team-design.com/simple-scss-spinner-animation/">red-team-design.com</a>)</p>
+<h2>Tern</h2>
+<p>I&#39;m proud to say that my company, <a href="http://leftlogic.com">Left Logic</a> was the first to back big behind the Tern project last year. And this week <a href="http://github.com/electricg">Giulia</a> has been adding support to JS Bin.</p>
+<p>It&#39;ll be a user preference to enable, and we&#39;re working on dynamically loading definition files based on the contents of your bin (i.e. if you have jQuery, it&#39;ll automatically load the jQuery definition file for you).</p>
+<p><img src="//learn.jsbin.com/images/twdtw/1/tern.gif" alt="/images/twdtw/1/tern.gif"></p>
+<h2>Security</h2>
+<p>Finally, <a href="http://github.com/allouis">Fabien</a> has been doing lots of behind the scenes work that&#39;s starting to land in production behind feature flags (which allows us to test new features and letting us control how many people see them).</p>
+<p>Specifically we&#39;ve reinstated SSL support for login and register. We tried to apply SSL to all of JS Bin some many months back, but because the iframe that your output is rendered in is under https, it would block <em>all</em> assets in the iframe pointing to http - this would usually be included libraries, images, CSS, etc, etc. So we had to abandon it, and return with SSL for login and register:</p>
+<p><img src="//learn.jsbin.com/images/twdtw/1/login.png" alt="/images/twdtw/1/login.png"></p>
+<p>SSL is likely to land next week, and this will also open the door to <a href="https://github.com/jsbin/jsbin/pull/1224">editor settings and preferences</a> - without having to open devtools to have on the console!</p>
+<h2>Totally aside</h2>
+<p>How seriously sweet is this!</p>
+<div class="embed-container"><iframe src="//player.vimeo.com/video/84938216" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
+<p>And yes, I have actually asked myself: how could I get JS Bin to control a drone...insane, I completely appreciate.</p>
+]]></description><pubDate>Fri Mar 07 2014 00:00:00 GMT+0000 (GMT)</pubDate><link>//jsbin.com/blog/twdtw-1-sass-tern-security</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-1-sass-tern-security</guid></item><item><title>Welcome to the new help &amp; blog</title><description><![CDATA[<h1>Welcome to the new help &amp; blog</h1>
+<p>JS Bin for years has done an absolutely superb job of giving its users an editor and the live output of the HTML, CSS &amp; JavaScript. Something the project has been terrible at is exposing features and new information.</p>
+<p>We try hard to recess the application of JS Bin to let you get on with coding right away. This way <em>everyone gets a cursor</em>. You visit JS Bin, you type: you get a bin.</p>
+<p>But we&#39;re also very aware of the cost of recessing away like this. Often I see tweets and issues along the lines of &quot;it would be great if I could do X&quot;, and I reply along the lines of &quot;yeah, we did that back in 2011, it&#39;s here...&quot;. </p>
+<p>It&#39;s our own fault, but <em>this</em> new area of JS Bin will be the home for all the <a href="/help">help</a> and the blog will be used to share our workings on new features and ideas—and hopefully share some of the process we use.</p>
+<p>There&#39;s a few ways you can keep track of what&#39;s going on:</p>
+<ul>
+<li>Via twitter, follow <a href="http://twitter.com/js_bin">@js_bin</a></li>
+<li><a href="/blog/feed.xml">Subscribe</a> to the blog RSS feed</li>
+<li>Watch the <a href="http://github.com/jsbin">github projects</a></li>
+</ul>
+<h2>Say Hello to the Team</h2>
+<p>I wanted to introduce you to the team that&#39;s working hard on JS Bin to day to make it all that it can be:</p>
+<ul>
+<li>Remy Sharp (<a href="http://twitter.com/rem">twitter</a>, <a href="http://github.com/remy">github</a>) - dev and direction</li>
+<li>Danny Hope (<a href="http://twitter.com/yandle">twitter</a>, <a href="http://github.com/dannyhope">github</a>) - UX and design</li>
+<li>Fabien O&#39;Carroll (<a href="http://twitter.com/allouis_">twitter</a>, <a href="http://github.com/allouis">github</a>) - dev</li>
+<li>Giulia Alfonsi (<a href="http://twitter.com/electric_g">twitter</a>, <a href="http://github.com/electricg">github</a>) - dev</li>
+</ul>
+<p>And an equal hello to all the <a href="https://github.com/jsbin/jsbin/graphs/contributors">contributors</a> over the years.</p>
+<h2>What&#39;s shipped just recently</h2>
+<ul>
+<li>Subtle, flatter design</li>
+<li><a href="/help/delete-a-bin">Delete a bin revision</a></li>
+<li>Windows &amp; Mavericks support is now solid for the <a href="/help/2-second-setup">local npm install</a></li>
+</ul>
+<h2>What we&#39;re working on</h2>
+<p>There&#39;s a slew of projects going on at the moment, and we&#39;ll be posting as progress is made:</p>
+<ul>
+<li>Pro accounts and white-labeled version of JS Bin (see <a href="http://emberjs.jsbin.com">emberjs.jsbin.com</a> for example) - <a href="http://leftlogic.com/contact?subject=JS%20Bin%20white%20label">get in touch</a> if you&#39;d like to enquire about this</li>
+<li>Monthly competitions giving away stickers and pro accounts</li>
+<li>A vastly better mobile experience</li>
+<li>SSL for login</li>
+<li>Sass &amp; SCSS support</li>
+<li>Timeline recording and playback</li>
+<li><a href="http://github.com/jsbin/jsbin/issues">And a lot more</a></li>
+</ul>
+<p>I&#39;d love to hear your feedback, if you&#39;re using JS Bin for teaching or sharing - what&#39;s your experience like? How can we make JS Bin better for all of you?</p>
+<p>– Remy</p>
+]]></description><pubDate>Thu Feb 27 2014 00:00:00 GMT+0000 (GMT)</pubDate><link>//jsbin.com/blog/welcome</link><guid isPermaLink="true">//jsbin.com/blog/welcome</guid></item></channel></rss>

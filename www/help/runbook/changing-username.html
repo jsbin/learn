@@ -1,0 +1,55 @@
+<!DOCTYPE html><html id="help-runbook-changing-username-page"><head><meta charset="utf-8"><title>Changing a username - JS Bin Documentation</title><meta name="viewport" content="width=device-width"><meta name="description" content="JS Bin help documentation, tips, tricks, features and blog"><link rel="icon" href="https://learn.jsbin.com/images/favicon.png"><link href="//fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://learn.jsbin.com/css/github.css"><link rel="stylesheet" href="https://learn.jsbin.com/css/help.css"><!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js"></script>
+<![endif]--><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1656750-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script></head><body id="help-page"><div id="container"><header><div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a><nav><input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off"><ol id="results" hidden></ol><a href="/blog">Blog</a><a href="/help" class="selected">Help</a></nav></div></header><div id="body"><article><a href="https://github.com/jsbin/learn/blob/master/public/help/runbook/changing-username.md" class="edit">Edit on github</a><h1 id="changingausername">Changing a username</h1>
+<p>Sometimes users request to change their username (usually if their github username doesn&#39;t match). This is not currently automated, so we have to manually update the database.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Old username</li>
+<li>New (desired) username</li>
+<li>Ensure new username is available (or owned by the same user - i.e. a github account)</li>
+</ul>
+<h2 id="tasks">Tasks</h2>
+<ol>
+<li>Update database</li>
+<li>Clear memcache state for user</li>
+<li><strong>Finally</strong>, ask user to sign out and back in (as a precaution)</li>
+</ol>
+<p><em>Note: ensure to replace the variables in the examples below with the actual usernames.</em></p>
+<h2 id="updatingthedatabase">Updating the database</h2>
+<p>Tables to update:</p>
+<ol>
+<li><code>ownership</code></li>
+<li><code>owners</code></li>
+<li><code>customers</code> (if user has a pro account)</li>
+</ol>
+<pre><code class="language-sql">update ownership set name=&quot;$NEW-NAME&quot; where name=&quot;$OLD-NAME&quot;;
+update owners set name=&quot;$NEW-NAME&quot; where name=&quot;$OLD-NAME&quot;;
+update customers set name=&quot;$NEW-NAME&quot; where name=&quot;$OLD-NAME&quot;;</code></pre>
+<h2 id="clearmemcache">Clear memcache</h2>
+<p>From the apps server:</p>
+<pre><code class="language-bash">$ cd /WWW/jsbin/bin
+$ JSBIN_CONFIG=../../leftlogic-jsbin/config.local.json ./admin
+Config from /WWW/leftlogic-jsbin/config.local.json
+&gt; clear $OLD-NAME
+true</code></pre>
+</article></div><div class="clear"></div></div><footer id="footer"><div class="inner"><ul class="notable"><li><a href="/about">About</a></li><li><a href="https://github.com/jsbin">Github</a></li><li><a href="https://twitter.com/js_bin">Twitter</a></li><li><a href="http://jsbin.com/videos">YouTube</a></li><li><a href="https://www.gittip.com/js_bin">Donate</a></li></ul><ul class="legal"><li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li></ul></div></footer></body><script type="text">WebFontConfig = {
+  google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script><script src="https://learn.jsbin.com/js/min.js"></script><script src="https://learn.jsbin.com/js/permalink.js"></script><script src="https://learn.jsbin.com/js/search.js"></script><script src="https://learn.jsbin.com/js/xhr.js"></script><script src="https://learn.jsbin.com/js/keyboard.js"></script><script src="https://learn.jsbin.com/js/back-button.js"></script><script src="https://learn.jsbin.com/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html><html id="blog-heartbleed-page"><head><meta charset="utf-8"><title>Heartbleed and JS Bin - JS Bin Documentation</title><meta name="viewport" content="width=device-width"><meta name="description" content="JS Bin help documentation, tips, tricks, features and blog"><link rel="icon" href="https://learn.jsbin.com/images/favicon.png"><link href="//fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://learn.jsbin.com/css/github.css"><link rel="stylesheet" href="https://learn.jsbin.com/css/help.css"><!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js"></script>
+<![endif]--><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1656750-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script></head><body id="blog-page"><div id="container"><header><div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a><nav><input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off"><ol id="results" hidden></ol><a href="/blog" class="selected">Blog</a><a href="/help">Help</a></nav></div></header><div id="body"><article><a href="/blog/feed.xml" class="subscribe">Subscribe</a><div class="avatar"><img src="//learn.jsbin.com/images/avatars/remy.jpg"><span class="by">By Remy Sharp</span><span class="date">10-Apr, 2014</span></div><h1 id="heartbleedandjsbin">Heartbleed and JS Bin</h1>
+<p>If you&#39;ve not heard about <a href="http://heartbleed.com">Heartbleed</a>, means that <strong>potentially</strong> all your passwords can be compromised. This isn&#39;t a bug that&#39;s specific to JS Bin, it affects most sign in forms that go over HTTPS. Yes, it&#39;s <strong>that</strong> scary. </p>
+<p>Note that if you registered with JS Bin after 9-April 2014 10pm UK time, then you won&#39;t be affected, but I still strongly recommend you familiar yourself with the issue.</p>
+<p>Here&#39;s what <em>we&#39;ve</em> done:</p>
+<ul>
+<li>We&#39;ve patched all our versions of OpenSSL</li>
+<li>We&#39;ve re-issued our SSL certificate for our login and register</li>
+<li>We&#39;re recommending that you <a href="/help/change-your-password">change your password</a></li>
+</ul>
+<p>We can&#39;t control when the old SSL certificate gets revoked (serial number 842265), but we&#39;ve already seen people on the new certificate (serial number 1169237). You can check you have the updated certificate by clicking on the &quot;padlock&quot;, and digging into the certificate details, where you should see the issue &quot;Not Valid Before&quot; date, which will be 8 April 2014:</p>
+<p><img src="https://learn.jsbin.com/images/ssl-cert.png" alt="/images/ssl-cert.png"></p>
+<p>Note that if you use Chrome, you&#39;ll also need to ensure your browser checks for revoked SSL certificate by default:</p>
+<p><img src="https://learn.jsbin.com/images/chrome-revoke.png" alt="/images/chrome-revoke.png"></p>
+<p>And importantly, what <strong>you&#39;ll</strong> need to (or I&#39;m suggesting you) do:</p>
+<ul>
+<li>Change your password</li>
+<li>Log out and log back in again (to clear your session based on the old SSL certificate)</li>
+<li>Read up and share what you learn about Heartbleed</li>
+</ul>
+<p>We could (technically) reset everyone&#39;s password, but it&#39;s not that simple for us to code up, and really the complexity is in the user flow, and getting it right. So I decided against it in the end.</p>
+<p>Some good resources I&#39;ve found are:</p>
+<ul>
+<li><a href="http://www.troyhunt.com/2014/04/everything-you-need-to-know-about.html">Everything you need to know about Heartbleed</a> - very good if you&#39;re at all technical and need to get a grip on the issues</li>
+<li><a href="http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/">Big web sites affected</a> - I found this pretty useful for what to tell non-technical people I know</li>
+</ul>
+<script>var timestamp = 1397084400000;</script><script src="https://learn.jsbin.com/js/blog.js"></script><div id="comments"><h2>Comments</h2><div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jsbinblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></article></div><div class="clear"></div></div><footer id="footer"><div class="inner"><ul class="notable"><li><a href="/about">About</a></li><li><a href="https://github.com/jsbin">Github</a></li><li><a href="https://twitter.com/js_bin">Twitter</a></li><li><a href="http://jsbin.com/videos">YouTube</a></li><li><a href="https://www.gittip.com/js_bin">Donate</a></li></ul><ul class="legal"><li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li></ul></div></footer></body><script type="text">WebFontConfig = {
+  google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script><script src="https://learn.jsbin.com/js/min.js"></script><script src="https://learn.jsbin.com/js/permalink.js"></script><script src="https://learn.jsbin.com/js/search.js"></script><script src="https://learn.jsbin.com/js/xhr.js"></script><script src="https://learn.jsbin.com/js/keyboard.js"></script><script src="https://learn.jsbin.com/js/back-button.js"></script><script src="https://learn.jsbin.com/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>

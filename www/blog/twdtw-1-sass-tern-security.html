@@ -1,0 +1,59 @@
+<!DOCTYPE html><html id="blog-twdtw-1-sass-tern-security-page"><head><meta charset="utf-8"><title>TWDTW #1: Sass, Tern, Security - JS Bin Documentation</title><meta name="viewport" content="width=device-width"><meta name="description" content="JS Bin help documentation, tips, tricks, features and blog"><link rel="icon" href="https://learn.jsbin.com/images/favicon.png"><link href="//fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://learn.jsbin.com/css/github.css"><link rel="stylesheet" href="https://learn.jsbin.com/css/help.css"><!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js"></script>
+<![endif]--><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1656750-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script></head><body id="blog-page"><div id="container"><header><div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a><nav><input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off"><ol id="results" hidden></ol><a href="/blog" class="selected">Blog</a><a href="/help">Help</a></nav></div></header><div id="body"><article><a href="/blog/feed.xml" class="subscribe">Subscribe</a><div class="avatar"><img src="//learn.jsbin.com/images/avatars/remy.jpg"><span class="by">By Remy Sharp</span><span class="date">7-Mar, 2014</span></div><h1 id="twdtw1">TWDTW #1</h1>
+<p>This is the first installment of &quot;things we did this week&quot;. Where we&#39;ll share some of the features or changes or fixes we&#39;ve been working on. Sometimes it will be small features, sometimes BIG exciting features and other times it&#39;ll be progress to much longer term goals.</p>
+<p>We&#39;re working on local branches of JS Bin with a few cool features.</p>
+<h2 id="sass">Sass</h2>
+<p>There&#39;s been <a href="https://github.com/jsbin/jsbin/issues/176">tons of demand</a> for Sass support, but until we could pull it off on the client side, I wasn&#39;t sure it would land. Now thanks to <a href="https://github.com/medialize/sass.js/">sass.js</a> and a few hours of hacking, JS Bin has a development branch with Sass (or more specifically SCSS) in a <abbr title="Pull Request">PR</abbr> <a href="https://github.com/jsbin/jsbin/pull/1229">feature/scss</a> (see <a href="http://blog.rodneyrehm.de/archives/33-libsass.js-An-Emscripten-Experiment.html">Rodney Rehm&#39;s post</a> on porting to sass.js). </p>
+<p>It does mean that Bourbon, Compass, et al aren&#39;t supported, but it&#39;s still a good step forward (and the changes also mean it&#39;s now easy to add server-based support for Sass - which will come soon).</p>
+<p><img src="https://learn.jsbin.com/images/twdtw/1/sass.png" alt="/images/twdtw/1/sass.png"></p>
+<p>(Demo pitched from <a href="http://red-team-design.com/simple-scss-spinner-animation/">red-team-design.com</a>)</p>
+<h2 id="tern">Tern</h2>
+<p>I&#39;m proud to say that my company, <a href="http://leftlogic.com">Left Logic</a> was the first to back big behind the Tern project last year. And this week <a href="http://github.com/electricg">Giulia</a> has been adding support to JS Bin.</p>
+<p>It&#39;ll be a user preference to enable, and we&#39;re working on dynamically loading definition files based on the contents of your bin (i.e. if you have jQuery, it&#39;ll automatically load the jQuery definition file for you).</p>
+<p><img src="https://learn.jsbin.com/images/twdtw/1/tern.gif" alt="/images/twdtw/1/tern.gif"></p>
+<h2 id="security">Security</h2>
+<p>Finally, <a href="http://github.com/allouis">Fabien</a> has been doing lots of behind the scenes work that&#39;s starting to land in production behind feature flags (which allows us to test new features and letting us control how many people see them).</p>
+<p>Specifically we&#39;ve reinstated SSL support for login and register. We tried to apply SSL to all of JS Bin some many months back, but because the iframe that your output is rendered in is under https, it would block <em>all</em> assets in the iframe pointing to http - this would usually be included libraries, images, CSS, etc, etc. So we had to abandon it, and return with SSL for login and register:</p>
+<p><img src="https://learn.jsbin.com/images/twdtw/1/login.png" alt="/images/twdtw/1/login.png"></p>
+<p>SSL is likely to land next week, and this will also open the door to <a href="https://github.com/jsbin/jsbin/pull/1224">editor settings and preferences</a> - without having to open devtools to have on the console!</p>
+<h2 id="totallyaside">Totally aside</h2>
+<p>How seriously sweet is this!</p>
+<div class="embed-container"><iframe src="//player.vimeo.com/video/84938216" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
+<p>And yes, I have actually asked myself: how could I get JS Bin to control a drone...insane, I completely appreciate.</p>
+<script>var timestamp = 1394150400000;</script><script src="https://learn.jsbin.com/js/blog.js"></script><div id="comments"><h2>Comments</h2><div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jsbinblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></article></div><div class="clear"></div></div><footer id="footer"><div class="inner"><ul class="notable"><li><a href="/about">About</a></li><li><a href="https://github.com/jsbin">Github</a></li><li><a href="https://twitter.com/js_bin">Twitter</a></li><li><a href="http://jsbin.com/videos">YouTube</a></li><li><a href="https://www.gittip.com/js_bin">Donate</a></li></ul><ul class="legal"><li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li></ul></div></footer></body><script type="text">WebFontConfig = {
+  google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script><script src="https://learn.jsbin.com/js/min.js"></script><script src="https://learn.jsbin.com/js/permalink.js"></script><script src="https://learn.jsbin.com/js/search.js"></script><script src="https://learn.jsbin.com/js/xhr.js"></script><script src="https://learn.jsbin.com/js/keyboard.js"></script><script src="https://learn.jsbin.com/js/back-button.js"></script><script src="https://learn.jsbin.com/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>

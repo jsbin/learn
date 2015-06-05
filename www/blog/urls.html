@@ -1,0 +1,58 @@
+<!DOCTYPE html><html id="blog-urls-page"><head><meta charset="utf-8"><title>JS Bin Documentation</title><meta name="viewport" content="width=device-width"><meta name="description" content="JS Bin help documentation, tips, tricks, features and blog"><link rel="icon" href="https://learn.jsbin.com/images/favicon.png"><link href="//fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://learn.jsbin.com/css/github.css"><link rel="stylesheet" href="https://learn.jsbin.com/css/help.css"><!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js"></script>
+<![endif]--><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1656750-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script></head><body id="blog-page"><div id="container"><header><div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a><nav><input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off"><ol id="results" hidden></ol><a href="/blog" class="selected">Blog</a><a href="/help">Help</a></nav></div></header><div id="body"><article><a href="/blog/feed.xml" class="subscribe">Subscribe</a><h1 id="achangetothewayurlswork">A change to the way URLs work</h1>
+<p>We&#39;ve just landed a change to the way JS Bin URLs work, and though the new way aims to be intuitive and backward compatible, some of you pro users might be wondering what changed and why.</p>
+<h2 id="revisionsarenowcalledsnapshots">Revisions are now called snapshots</h2>
+<p>There&#39;s been some confusion of exactly what a revision was, and when they&#39;re created. There was also language that talked about creating &quot;milestones&quot;.</p>
+<p>So we&#39;ve changed this all to read as a &quot;snapshot&quot;.</p>
+<p>A snapshot is a static moment in a bin&#39;s lifetime. The shortcut is <kbd>ctrl</kbd>+ <kbd>s</kbd> to create a snapshot of the current code.</p>
+<h2 id="snapshotnumbersinurls">Snapshot numbers in URLs</h2>
+<p>A difference in the URLs you might notice is that you&#39;ll only see the snapshot number in the URL when you&#39;re looking at a snapshot. If you&#39;re looking at the latest state of the bin, then there&#39;s no snapshot number. </p>
+<p>This makes URLs simpler, but also means it&#39;s easy for you to read a URL and know immediately if you&#39;re looking at the latest state or not.</p>
+<h2 id="sharingsimplified">Sharing simplified</h2>
+<p>The share menu has also been updated to reflect this move to snapshots. <em>This</em> is where we feel the clarification will be intuitive. If you want to share a snapshot, there&#39;s no &quot;lock revision&quot; confusion, just the option to share the latest state or a snapshot (and changing what you want to share, automatically updates the URLs you can share).</p>
+<h2 id="automaticcodecasting">Automatic code casting</h2>
+<p>Now if you share the edit view of your bin and the latest state (ie. not a snapshot), then the viewer will automatically see a code casting view (where the code changes in real time as you change your code).</p>
+<h2 id="ownershipofurls">Ownership of URLs</h2>
+<p>Previously, you only &quot;owned&quot; a URL if you were logged in when it was created. </p>
+<p>By owning a URL, it meant only the owner could create revisions on that URL. </p>
+<p>On the other hand though, if you created a bin whilst logged out, anyone could create revisions on that URL. Which could make a bit of a mess if you anonymously created a bin, then shared it on twitter (because subsequent changes to the bin would create the new latest revision on the same URL).</p>
+<p>This changes today. If you&#39;re logged out, only the creator can create snapshots. We&#39;re using local storage to identify you as the owner of the particular bin (if you&#39;re logged out), and if this is cleared, then no one will be able to write to the bin URL anymore.</p>
+<h2 id="deleting">Deleting</h2>
+<p>Previously, deleting a bin would delete the revision. Now deleting will delete the bin and all the snapshots attached. </p>
+<p>We also use the same method described above to allow anonymous users to delete their bins even after their session has expired.</p>
+<script>var timestamp = NaN;</script><script src="https://learn.jsbin.com/js/blog.js"></script><div id="comments"><h2>Comments</h2><div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jsbinblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></article></div><div class="clear"></div></div><footer id="footer"><div class="inner"><ul class="notable"><li><a href="/about">About</a></li><li><a href="https://github.com/jsbin">Github</a></li><li><a href="https://twitter.com/js_bin">Twitter</a></li><li><a href="http://jsbin.com/videos">YouTube</a></li><li><a href="https://www.gittip.com/js_bin">Donate</a></li></ul><ul class="legal"><li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li></ul></div></footer></body><script type="text">WebFontConfig = {
+  google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script><script src="https://learn.jsbin.com/js/min.js"></script><script src="https://learn.jsbin.com/js/permalink.js"></script><script src="https://learn.jsbin.com/js/search.js"></script><script src="https://learn.jsbin.com/js/xhr.js"></script><script src="https://learn.jsbin.com/js/keyboard.js"></script><script src="https://learn.jsbin.com/js/back-button.js"></script><script src="https://learn.jsbin.com/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>

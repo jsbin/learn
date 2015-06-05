@@ -1,0 +1,58 @@
+<!DOCTYPE html><html id="blog-new-processors-page"><head><meta charset="utf-8"><title>New processors. We need your input - JS Bin Documentation</title><meta name="viewport" content="width=device-width"><meta name="description" content="JS Bin help documentation, tips, tricks, features and blog"><link rel="icon" href="https://learn.jsbin.com/images/favicon.png"><link href="//fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://learn.jsbin.com/css/github.css"><link rel="stylesheet" href="https://learn.jsbin.com/css/help.css"><!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js"></script>
+<![endif]--><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1656750-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script></head><body id="blog-page"><div id="container"><header><div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a><nav><input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off"><ol id="results" hidden></ol><a href="/blog" class="selected">Blog</a><a href="/help">Help</a></nav></div></header><div id="body"><article><a href="/blog/feed.xml" class="subscribe">Subscribe</a><div class="avatar"><img src="//learn.jsbin.com/images/avatars/remy.jpg"><span class="by">By Remy Sharp</span><span class="date">17-Jun, 2014</span></div><h1 id="newprocessorsweneedyourinput">New processors. We need your input</h1>
+<p>We&#39;re doing the final testing on our new processor code. Sass and SCSS have been in high demand for a long time (<a href="https://github.com/jsbin/jsbin/issues/176">#176</a>), which has driven this rewrite (<a href="https://github.com/jsbin/jsbin/pull/1229">#1229</a>).</p>
+<p>But we now need input from <strong>you</strong>.</p>
+<h2 id="compassbourbonetal">Compass, Bourbon, et al</h2>
+<p>Currently our thinking is this: we&#39;ll run both Sass and SCSS using the Compass compile tool. So if you want to include Bourbon, you just import it.</p>
+<p>I&#39;m not particularly a pro user of CSS preprocessors, so I&#39;m not 100% sure if this what people expect or not. I like that everything is just there, and you don&#39;t have to mess around selecting the right config option in your bin.</p>
+<p><strong>A question to you:</strong> what extensions would you want to be available?</p>
+<p>A nice benefit to our system, is that imports from one bin to another just works. The same way as being able to <a href="/help/linking-bins">reference the JavaScript from one bit to another</a> to create Ajax requests.</p>
+<h2 id="otherprocessors">Other processors</h2>
+<p>We&#39;re in the process of <a href="/help/adding-processors">documenting</a> how you add more processors, and currently support (in our rewrite):</p>
+<ul>
+<li><strong>JavaScript</strong>: CoffeeScript, React (JSX), Traceur, Processing, TypeScript</li>
+<li><strong>CSS</strong>: Less, Stlyus, Sass, SCSS</li>
+<li><strong>HTML</strong>: Jade, Markdown</li>
+</ul>
+<p><strong>A question to you:</strong> are there others that we should add?</p>
+<p>I&#39;ve thought about adding <a href="http://sweetjs.org/">sweet.js</a>, and equally I can see how all the new processors might just spiral the options out of control!</p>
+<p>JS Bin&#39;s ethos is that the processor should work in the client side, but I&#39;ve made an exception for Sass and SCSS (due to the sheer demand), so I&#39;m willing to make exceptions for other processors if there&#39;s the demand.</p>
+<h2 id="getyourselfheard">Get yourself heard</h2>
+<p>This is your oppotunity to tell us what you think. What&#39;s important to you and whether there&#39;s something obvious we&#39;re missing.</p>
+<p>Either comment below, or comment directly on the <a href="https://github.com/jsbin/jsbin/pull/1229">pull request for the feature</a>.</p>
+<script>var timestamp = 1402959600000;</script><script src="https://learn.jsbin.com/js/blog.js"></script><div id="comments"><h2>Comments</h2><div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jsbinblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></article></div><div class="clear"></div></div><footer id="footer"><div class="inner"><ul class="notable"><li><a href="/about">About</a></li><li><a href="https://github.com/jsbin">Github</a></li><li><a href="https://twitter.com/js_bin">Twitter</a></li><li><a href="http://jsbin.com/videos">YouTube</a></li><li><a href="https://www.gittip.com/js_bin">Donate</a></li></ul><ul class="legal"><li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li></ul></div></footer></body><script type="text">WebFontConfig = {
+  google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script><script src="https://learn.jsbin.com/js/min.js"></script><script src="https://learn.jsbin.com/js/permalink.js"></script><script src="https://learn.jsbin.com/js/search.js"></script><script src="https://learn.jsbin.com/js/xhr.js"></script><script src="https://learn.jsbin.com/js/keyboard.js"></script><script src="https://learn.jsbin.com/js/back-button.js"></script><script src="https://learn.jsbin.com/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html><html id="help-keyboard-shortcuts-page"><head><meta charset="utf-8"><title>Keyboard shortcuts - JS Bin Documentation</title><meta name="viewport" content="width=device-width"><meta name="description" content="JS Bin help documentation, tips, tricks, features and blog"><link rel="icon" href="https://learn.jsbin.com/images/favicon.png"><link href="//fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://learn.jsbin.com/css/github.css"><link rel="stylesheet" href="https://learn.jsbin.com/css/help.css"><!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js"></script>
+<![endif]--><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1656750-13']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script></head><body id="help-page"><div id="container"><header><div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a><nav><input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off"><ol id="results" hidden></ol><a href="/blog">Blog</a><a href="/help" class="selected">Help</a></nav></div></header><div id="body"><article><a href="https://github.com/jsbin/learn/blob/master/public/help/keyboard-shortcuts.md" class="edit">Edit on github</a><h1 id="keyboardshortcuts">Keyboard Shortcuts</h1>
+<p>JS Bin supports keyboard shortcuts when the editor panels are focused (i.e. you have a cursor). Shortcuts can also be <a href="/help/disabling-all-keyboard-shortcuts">disabled</a> if desired.</p>
+<h2 id="applicationlevel">Application level</h2>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>?</kbd></td>
+<td>Show keyboard shortcuts</td>
+</tr>
+<tr>
+<td><kbd class="same">ctrl</kbd>+<kbd>shift</kbd>+<kbd>/</kbd></td>
+<td>Search help</td>
+</tr>
+<tr>
+<td><kbd class="same">ctrl</kbd>+<kbd>l</kbd></td>
+<td>Clear the console</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>return</kbd></td>
+<td>Run code and send live reload</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>del</kbd></td>
+<td>Delete the current bin</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>s</kbd></td>
+<td>Save current state as a revision</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>s</kbd></td>
+<td>Create a clone of the current bin</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\</kbd></td>
+<td>Hide JS Bin navigation bar</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>o</kbd></td>
+<td>Open bin history (when logged in)</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>y</kbd></td>
+<td>Archive the current bin</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>y</kbd></td>
+<td>Unarchive the current bin</td>
+</tr>
+</tbody>
+</table>
+<p>Note that all changes in any code panel (excluding the console) both triggers a save to the current bin <em>and</em> triggers a live reload on any viewers watching your bin url.</p>
+<h2 id="codebased">Code based</h2>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>/</kbd></td>
+<td>Toggle comments on the selected lines</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>[</kbd></td>
+<td>Indent selected lines</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>]</kbd></td>
+<td>Unindent selected lines</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>L</kbd></td>
+<td>Beautify code</td>
+</tr>
+</tbody>
+</table>
+<h2 id="htmlcsspanel">HTML &amp; CSS panel</h2>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>tab</kbd></td>
+<td>Code expansion using Emmet</td>
+</tr>
+<tr>
+<td><kbd class="same">ctrl</kbd>+<kbd>alt</kbd>+<kbd>right</kbd></td>
+<td>Next edit point</td>
+</tr>
+<tr>
+<td><kbd class="same">ctrl</kbd>+<kbd>shift</kbd>+<kbd>y</kbd></td>
+<td>Evaluate mathematical expression</td>
+</tr>
+<tr>
+<td><kbd>alt</kbd>+<kbd>up</kbd></td>
+<td>Increment number by 0.1</td>
+</tr>
+<tr>
+<td><kbd>alt</kbd>+<kbd>down</kbd></td>
+<td>Decrement number by 0.1</td>
+</tr>
+<tr>
+<td><kbd class="same">ctrl</kbd>+<kbd>up</kbd></td>
+<td>Increment number by 1</td>
+</tr>
+<tr>
+<td><kbd class="same">ctrl</kbd>+<kbd>down</kbd></td>
+<td>Decrement number by 1</td>
+</tr>
+<tr>
+<td><kbd>alt</kbd>+<kbd class="same">ctrl</kbd>+<kbd>up</kbd></td>
+<td>Increment number by 10</td>
+</tr>
+<tr>
+<td><kbd>alt</kbd>+<kbd class="same">ctrl</kbd>+<kbd>down</kbd></td>
+<td>Decrement number by 10</td>
+</tr>
+</tbody>
+</table>
+<h2 id="htmlpanel">HTML panel</h2>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>.</kbd></td>
+<td>Close previous HTML tag</td>
+</tr>
+</tbody>
+</table>
+<h2 id="javascriptpanel">JavaScript panel</h2>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>tab</kbd></td>
+<td>Code complete (using Tern or otherwise)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="consolepanel">Console panel</h2>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>up</kbd>/<kbd>down</kbd></td>
+<td>Up/down through console history</td>
+</tr>
+<tr>
+<td><kbd>return</kbd></td>
+<td>Execute command</td>
+</tr>
+</tbody>
+</table>
+<h2 id="showingandhidingpanels">Showing and hiding panels</h2>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>0</kbd></td>
+<td>Hide currently focused panel</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>1</kbd></td>
+<td>Toggle HTML panel</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>2</kbd></td>
+<td>Toggle CSS panel</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>3</kbd></td>
+<td>Toggle JavaScript panel</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>4</kbd></td>
+<td>Toggle console panel</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>5</kbd></td>
+<td>Toggle output panel</td>
+</tr>
+</tbody>
+</table>
+<p>The shortcuts for toggling specific panels overwrites the default browser&#39;s tab selection shortcut, but this can be changed to include <kbd>alt</kbd> as a modifier key by opening the keyboard shortcuts (<kbd>ctrl</kbd>+<kbd>?</kbd>) and checking the box:</p>
+<p><img src="https://learn.jsbin.com/images/disable-cmd-n.png" alt="disable cmd+n"></p>
+<h2 id="withsublimekeybindings">With Sublime keybindings</h2>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>up</kbd></td>
+<td>Move current line, up one line</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>down</kbd></td>
+<td>Move current line, down one line</td>
+</tr>
+<tr>
+<td><kbd>ctrl</kbd>+<kbd>d</kbd></td>
+<td>Highlight and place multiple cursor on matching words</td>
+</tr>
+<tr>
+<td><kbd>esc</kbd></td>
+<td>Return to single cursor</td>
+</tr>
+<tr>
+<td><kbd>cmd</kbd>+ click</td>
+<td>Place multiple cursor at click point</td>
+</tr>
+</tbody>
+</table>
+</article></div><div class="clear"></div></div><footer id="footer"><div class="inner"><ul class="notable"><li><a href="/about">About</a></li><li><a href="https://github.com/jsbin">Github</a></li><li><a href="https://twitter.com/js_bin">Twitter</a></li><li><a href="http://jsbin.com/videos">YouTube</a></li><li><a href="https://www.gittip.com/js_bin">Donate</a></li></ul><ul class="legal"><li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li></ul></div></footer></body><script type="text">WebFontConfig = {
+  google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script><script src="https://learn.jsbin.com/js/min.js"></script><script src="https://learn.jsbin.com/js/permalink.js"></script><script src="https://learn.jsbin.com/js/search.js"></script><script src="https://learn.jsbin.com/js/xhr.js"></script><script src="https://learn.jsbin.com/js/keyboard.js"></script><script src="https://learn.jsbin.com/js/back-button.js"></script><script src="https://learn.jsbin.com/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>
