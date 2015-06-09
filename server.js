@@ -14,7 +14,8 @@ server.middleware.push(function (req, res, next) {
   }
 
   if (req.method === 'OPTIONS') {
-    res.send(204);
+    res.statusCode = 204;
+    res.end();
   } else {
     next();
   }
