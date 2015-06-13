@@ -190,5 +190,10 @@
   "experimental-features": {
     "title": "Experimental Features",
     "category": "pro"
+  },
+  "asset-uploading": {
+    "title": "Asset uploading",
+    "category": "pro",
+    "video": "//www.youtube.com/embed/d8TkAeGFLx4?rel=0"
   }
 }

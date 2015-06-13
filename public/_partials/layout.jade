@@ -67,7 +67,7 @@ html(id="#{current.path.join('-')}-page")
         - yield = partial(prefix + '/js/_idify')
         - if (yield) yield = yield.replace(/src="\/([^/])/g, 'src="' + static + '/$1')
         if category == 'pro'
-          a.pro-feature.actionButton.actionButton-primary.actionButton-small.actionButton-rounded(href="http://jsbin.com/upgrade") <small>£5/month</small>Upgrade to Pro
+          a.pro-feature.actionButton.actionButton-primary.actionButton-small.actionButton-rounded(href="http://jsbin.com/upgrade") Upgrade to Pro
         if current.path.slice(-1).pop() !== 'index' && current.path.slice(-2, 1).pop() !== 'legals'
           article
             block content

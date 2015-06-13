@@ -30,6 +30,6 @@ if (process.argv[2] === 'compile') {
     console.log('project compiled');
   });
 } else {
-  console.log('Running harp-static on ' + port);
+  console.log('Running harp-static on ' + port, outputPath);
   server(outputPath, port);
 }

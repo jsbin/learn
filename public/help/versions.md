@@ -8,14 +8,14 @@ This page lists the versions of processors used and a few important libraries us
 
 |Processor|Version|Updated|
 |---|---|---|
-|[Marked](https://github.com/chjj/marked/tree/v0.3.2)|0.3.2|10 Mar 2014|
-|[Jade](https://github.com/visionmedia/jade/tree/1.4.2)|1.4.2|16 Jul 2014|
+|[Marked](https://github.com/chjj/marked/tree/v0.3.3)|0.3.3|25 Jan 2015|
+|[Jade](https://github.com/jadejs/jade/tree/1.11.0)|1.11.0|10 Jun 2015|
 
 ### JavaScript
 
 |Processor|Version|Updated|
 |---|---|---|
-|[6to5](https://github.com/sebmck/6to5/tree/v1.10.10)|1.10.10|1 Nov 2014|
+|[Babel](https://github.com/babel/babel/tree/v5.4.2)|5.4.2|15 May 2015|
 |[CoffeeScript](https://github.com/jashkenas/coffeescript/tree/1.7.1)|1.7.1|30 Jan 2014|
 |[LiveScript](https://github.com/gkz/LiveScript/tree/1.2.0)|1.2.0|2 Aug 2013|
 |[React (JSX)](https://github.com/facebook/react/tree/v0.9.0)|0.9.0|20 Feb 2014|
@@ -27,9 +27,9 @@ This page lists the versions of processors used and a few important libraries us
 
 |Processor|Version|Updated|
 |---|---|---|
-|[Less](https://github.com/less/less.js/tree/v1.7.5)|1.7.5|3 Sep 2014|
-|[Stylus](https://github.com/LearnBoost/stylus/tree/0.47.1)|0.47.1|2 Jul 2014|
-|[Myth](https://github.com/segmentio/myth/tree/1.1.0)|1.1.0|14 Jul 2014|
+|[Less](https://github.com/less/less.js/tree/v2.5.1)|2.5.1|21 May 2015|
+|[Stylus](https://github.com/stylus/stylus/tree/0.51.1)|0.51.1|28 Apr 2015|
+|[Myth](https://github.com/segmentio/myth/tree/1.4.0)|1.4.0|6 Mar 2015|
 |[Sass & SCSS](https://github.com/sass/sass/tree/3.3.8)|3.3.8|13 May 2014|
 |[Compass](https://github.com/Compass/compass/tree/core-1.0.0.alpha.19)|1.0.0.alpha.19|12 Mar 2014|
 |[Bourbon](https://github.com/thoughtbot/bourbon/tree/v4.0.1)|4.0.2|23 Apr 2014|
@@ -40,7 +40,7 @@ Note that these libraries are not exposed to you as the user, but might be usefu
 
 |Library|Version|Updated|
 |---|---|---|
-|[CodeMirror](https://github.com/marijnh/CodeMirror/tree/4.5.0)|4.5.0|21 Aug 2014|
+|[CodeMirror](https://github.com/marijnh/CodeMirror/tree/5.3.0)|5.3.0|20 May 2015|
 |[JSHint](https://github.com/jshint/jshint/tree/2.5.1)|2.5.1|16 May 2014|
 |[CSSLint](https://github.com/CSSLint/csslint/tree/v0.10.0)|0.10.0|15 Aug 2013|
 |[HTMLHint](https://github.com/yaniswang/HTMLHint/tree/eddcca1c1ccf0aa08d89ff0ec0751b3aaabef716)|0.9.6|15 Jun 2014|

@@ -19,7 +19,7 @@ Please feel free to **contribute to this list** if you know of a feature, and ad
     * Stylus
     * Sass & SCSS (with Compass & Bourbon)
   * JavaScript
-    * 6to5
+    * Babel (previously 6to5)
     * Coffeescript
     * Processing
     * React (jsx)
@@ -60,16 +60,18 @@ Please feel free to **contribute to this list** if you know of a feature, and ad
 * Bin info card - details about the owner, and whether they're streaming
 * Plain text mode / accessibility mode
 * oEmbed
+* [SSL](/help/ssl-opt-in)
 
 ## Pro features
 
-* [SSL](/help/ssl-opt-in)
+* SSL embeds
+* Custom embed CSS and editor settings
 * [Sandbox mode](/help/sandbox-mode) - does not save the bin
 * [Private bins](/help/private-bins)
 * [Dropbox](/help/dropbox)
 * [Vanity URLs](/help/pro#vanityurls) - [blog post](/blog/twdtw-4-tern-pro-features#upcomingprofeaturevanityurls)
+* [Asset hosting](/help/asset-uploading)
 
 Coming features (currently in closed alpha or under pro)
 
 * Collaborative mode
-* [Asset hosting](http://jsbin.com/help/experimental-features#assetsuploading)

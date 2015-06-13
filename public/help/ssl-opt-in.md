@@ -9,5 +9,4 @@ Once this is enabled, visiting jsbin.com will redirect to `https`. However, not 
 - You *can* share non-`https` URLs, but you need to change these manually
 - Viewing another user's bins can be on `http` and will not redirect to `https`
 - You *can* view another user's bin under `https`
-- Other user's can't view their bins under `https` (if they haven't enabled the pro option)
-- Embedded bins will maintain their protocol of their author
+- Embedded bins will maintain their protocol of their author (a [Pro](https://jsbin.com/upgrade) account is required to embed over SSL)
