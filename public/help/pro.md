@@ -23,7 +23,8 @@ At time of writing, our pro feature set is:
 
 - [Private bins](#privatebins)
 - [Vanity URLs](#vanityurls)
-- [Opt-in SSL for all of JS Bin](#optinssl)
+- [Asset uploads](#assetuploads)
+- [SSL embeds](#sslembeds)
 - [Dropbox integration](#dropbox)
 - [Priority support](#prioritysupport)
 - ["Sandbox" mode](#sandboxmode)
@@ -41,6 +42,12 @@ Once your bin is private, you'll also see the card in the bottom right indicatin
 
 ![Example of a private bin](/images/private-bins.gif)
 
+## Asset uploads
+
+Just simply drag and drop images you need to use *into* the HTML, and JS Bin will upload and generate the `img` tag for you with the URL prefilled in.
+
+Previously uploaded assets can be managed through the [assets](/account/assets) account page.
+
 ## Vanity URLs
 
 Vanity URLs has two purposes. The first is that puts *your* username when you share your bin's output, and secondly allows you to publish to your vanity homepage.
@@ -49,11 +56,11 @@ This means you can publish any bin to your vanity url on `<you>.jsbin.com` for e
 
 In addition, when you share the full output of your bins, your username is included in the URL, such as [http://dave.jsbin.com/fajac/3/](http://dave.jsbin.com/fajac/3/)
 
-## Opt-in SSL
+## SSL embeds
 
 ![SSL URLs in JS Bin](/images/twdtw/11/ssl.png)
 
-[SSL](/help/ssl) can be turned on for all of JS Bin through the [preferences](/account/preferences) and once enabled, all your bins will be served under SSL, also allowing you to [embed](/help/how-can-i-embed-jsbin) bins on an SSL based site.
+[SSL](/help/ssl) can be turned on for all of JS Bin through the [preferences](/account/preferences) and once enabled, all your bins will be served under SSL, in addition, your [embeds](/help/how-can-i-embed-jsbin) can also be served over SSL.
 
 ## Dropbox
 
@@ -80,8 +87,6 @@ JS Bin runs as it normally does, but doesn't save. If you want to save, just use
 As development continues, the following Pro features are next in our roadmap:
 
 * Read and write API access
-* Asset hosting via a simple drag and drop
-* Beta access opt-in setting
 * Sass/SCSS external @imports
 
 <p><center><a class="actionButton actionButton-primary actionButton-jumbo actionButton-rounded" href="http://jsbin.com/upgrade">Upgrade to Pro today</a></center></p>

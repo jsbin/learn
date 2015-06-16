@@ -12,19 +12,19 @@
     "authors": {
       "remy": {
         "name": "Remy Sharp",
-        "avatar": "//learn.jsbin.com/images/avatars/remy.jpg"
+        "avatar": "https://learn.jsbin.com/images/avatars/remy.jpg"
       },
       "danny": {
         "name": "Danny Hope",
-        "avatar": "//learn.jsbin.com/images/avatars/danny.jpg"
+        "avatar": "https://learn.jsbin.com/images/avatars/danny.jpg"
       },
       "fabien": {
         "name": "Fabien O'Carroll",
-        "avatar": "//learn.jsbin.com/images/avatars/fabien.jpg"
+        "avatar": "https://learn.jsbin.com/images/avatars/fabien.jpg"
       },
       "giulia": {
         "name": "Giulia Alfonsi",
-        "avatar": "//learn.jsbin.com/images/avatars/giulia.jpg"
+        "avatar": "https://learn.jsbin.com/images/avatars/giulia.jpg"
       }
 
     },

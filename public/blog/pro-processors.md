@@ -10,7 +10,7 @@ We've been working on Pro accounts for the last 6 months (amongst a lot of other
 
 ![Dave loves you, because you're a pro](/images/blog/dave-loves-you.jpg)
 
-To upgrade to pro, first you'll need a free account, then head to the [upgrade page](http://jsbin.com/upgrade). Pro accounts are £6 per month (with yearly subscriptions currently offering 2 months free).
+To upgrade to pro, first you'll need a free account, then head to the [upgrade page](http://jsbin.com/upgrade). Pro accounts are available monthly or yearly subscriptions currently offering 2 months free.
 
 By upgrading to Pro accounts, your contribution helps support JS Bin as a continued open source project. Plus, you'll have access to [private bins](/help/private-bins), [dropbox support](/help/dropbox), vanity URLs and [more](/help/pro).
 

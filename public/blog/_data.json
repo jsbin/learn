@@ -118,5 +118,11 @@
     "author": "remy",
     "date": "2015-02-04",
     "published": true
+  },
+  "urls": {
+    "title": "A change to the way our URLs work",
+    "author": "remy",
+    "date": "2015-06-16",
+    "published": true
   }
 }
