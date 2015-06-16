@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The JS Bin Blog</title><link>//jsbin.com/blog</link><atom:link href="//jsbin.com/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link><item><title>Asset uploads &amp; oembed</title><description><![CDATA[<h1>Asset uploads &amp; oEmbed</h1>
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The JS Bin Blog</title><link>//jsbin.com/blog</link><atom:link href="//jsbin.com/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link><item><title>A change to the way our URLs work</title><description><![CDATA[<h1>A change to the way our URLs work</h1>
+<p>We&#39;ve just landed a change to the way JS Bin URLs work, and though the new way aims to be intuitive and backward compatible, some of you sharp sighted users might have spotted the change already and wondering what changed and why.</p>
+<h2>In short</h2>
+<ul>
+<li>Revisions are referred to as &quot;snapshots&quot;.</li>
+<li>Snapshots (the numerical identifier) only appear in the URL when take a snapshot (and want to share that snapshot).</li>
+<li>The latest version is the default (i.e. without a number in the URL).</li>
+<li>The share menu has been updated to be simpler, whilst also more powerful.</li>
+</ul>
+<h2>Revisions are now called snapshots</h2>
+<p>There&#39;s been some confusion of exactly what a revision was, and when they&#39;re created. There was also language that talked about creating &quot;milestones&quot;.</p>
+<p>So we&#39;ve changed this all to read as a &quot;snapshot&quot;.</p>
+<p>A snapshot is a static moment in a bin&#39;s lifetime. The shortcut is <kbd>ctrl</kbd>+ <kbd>s</kbd> to create a snapshot of the current code.</p>
+<h2>Snapshot numbers in URLs</h2>
+<p>A difference in the URLs you might notice is that you&#39;ll only see the snapshot number in the URL when you&#39;re looking at a <em>snapshot</em>. If you&#39;re looking at the <strong>latest state of the bin, then there&#39;s no snapshot number</strong>.</p>
+<p>This makes URLs simpler, but also means it&#39;s easy for you to read a URL and know immediately if you&#39;re looking at the latest state or not.</p>
+<h2>Sharing simplified</h2>
+<p>The share menu has also been updated to reflect this move to snapshots. <em>This</em> is where we feel the clarification will be intuitive. If you want to share a snapshot, there&#39;s no &quot;lock revision&quot; confusion, just the option to share the latest state or a snapshot (and changing what you want to share, automatically updates the URLs you can share).</p>
+<p><img src="//learn.jsbin.com/images/blog/new-share.png" alt="New share menu"></p>
+<p>As you can see from the screenshot, the share menu also offers you direct links to the different sources. In my particular case, the JavaScript panel contains JSON, so the share menu has detected that giving me a direct link to the <a href="https://rem.jsbin.com/colefa.json">JSON content</a>.</p>
+<h2>Codecasting by default</h2>
+<p>Now if you share the edit view of your bin and the latest state (ie. not a snapshot), then the viewer will automatically see a code casting view (where the code changes in real time as you change your code).</p>
+<p>Although the old <code>/watch</code> URL will still work, you can share the regular <code>/edit</code> URL and this has all the code casting built in.</p>
+]]></description><pubDate>Tue Jun 16 2015 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/urls</link><guid isPermaLink="true">//jsbin.com/blog/urls</guid></item><item><title>Asset uploads &amp; oembed</title><description><![CDATA[<h1>Asset uploads &amp; oEmbed</h1>
 <p>We said we&#39;d be working on more pro features, and we are. Also, since we&#39;re open source, this awesome stuff happens from time to time: oEmbed as a community submitted feature.</p>
 <p><img src="//learn.jsbin.com/images/blog/oembed-pr.png" alt="Pull request that landed oEmbed"></p>
 <h2>Asset uploads</h2>
@@ -40,7 +63,7 @@
 <h2>Pro</h2>
 <p>We&#39;ve been working on Pro accounts for the last 6 months (amongst a lot of other work) and our initial offering is now live.</p>
 <p><img src="//learn.jsbin.com/images/blog/dave-loves-you.jpg" alt="Dave loves you, because you&#39;re a pro"></p>
-<p>To upgrade to pro, first you&#39;ll need a free account, then head to the <a href="http://jsbin.com/upgrade">upgrade page</a>. Pro accounts are £6 per month (with yearly subscriptions currently offering 2 months free).</p>
+<p>To upgrade to pro, first you&#39;ll need a free account, then head to the <a href="http://jsbin.com/upgrade">upgrade page</a>. Pro accounts are available monthly or yearly subscriptions currently offering 2 months free.</p>
 <p>By upgrading to Pro accounts, your contribution helps support JS Bin as a continued open source project. Plus, you&#39;ll have access to <a href="/help/private-bins">private bins</a>, <a href="/help/dropbox">dropbox support</a>, vanity URLs and <a href="/help/pro">more</a>.</p>
 <h2>Processors</h2>
 <p>The biggest news is that Sass &amp; SCSS both with Compass and Bourbon support has landed. Also, we&#39;ve restored Stylus, updated LESS and added <a href="http://www.myth.io/">Myth</a> to the CSS processors. Full specifics on <a href="/help/versions">versions</a> are also available.</p>

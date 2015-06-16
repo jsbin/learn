@@ -4,10 +4,10 @@ We've just landed a change to the way JS Bin URLs work, and though the new way a
 
 ## In short
 
-- Revisions are referred to as "snapshots"
-- Snapshots (the numerical identifier) only appear in the URL when take a snapshot (and want to share that snapshot)
-- The latest version is the default (i.e. without a number in the URL)
-- The share menu has been updated to be simpler, whilst also more powerful
+- Revisions are referred to as "snapshots".
+- Snapshots (the numerical identifier) only appear in the URL when take a snapshot (and want to share that snapshot).
+- The latest version is the default (i.e. without a number in the URL).
+- The share menu has been updated to be simpler, whilst also more powerful.
 
 ## Revisions are now called snapshots
 
