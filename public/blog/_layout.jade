@@ -9,6 +9,9 @@ block content
   != yield
 
   if current.path[0] == 'blog' && current.path[1] != 'index'
+    div
+      h2 Show your support
+      p You should support JS Bin and upgrade to JS Bin Pro <a href="/upgrade">here</a> <span class="love">&hearts;</span>️
     - var timestamp = new Date(date + ' 00:00:00').getTime();
     script.
       var timestamp = #{timestamp};
