@@ -15,4 +15,5 @@ block content
     script(src='#{static}/js/blog.js')
     #comments
       h2 Comments
-      != partial('_comments')
+      - var permalink = current.source
+      include ../blog/_comments
