@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The JS Bin Blog</title><link>//jsbin.com/blog</link><atom:link href="//jsbin.com/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link><item><title>A change to the way our URLs work</title><description><![CDATA[<h1>A change to the way our URLs work</h1>
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The JS Bin Blog</title><link>//jsbin.com/blog</link><atom:link href="//jsbin.com/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link><item><title>SSL now available to all</title><description><![CDATA[<h1>SSL now available to all</h1>
+<p>As the web moves towards using HTTPS everywhere, JS Bin has <em>moved</em> SSL from being a &quot;pro only&quot; feature to making it available to <strong>everyone</strong> as of today.</p>
+<!--more-->
+
+<p><img src="//learn.jsbin.com/images/blog/ssl-for-all.png" alt="SSL for all"></p>
+<p>This means that you can now swap HTTP for HTTPS and <a href="https://jsbin.com">JS Bin will load</a>. Remember there are <a href="/help/ssl">considerations with SSL</a> so if you&#39;re using HTTPS and the content doesn&#39;t load, it&#39;s likely there&#39;s an HTTP based script in there somewhere.</p>
+<p>If you&#39;re stickler for security, registered users can opt-in to default to SSL via the <a href="https://jsbin.com/account/preferences">account preferences</a> - which means whenever you visit a JS Bin edit page, you&#39;ll be put on HTTPS.</p>
+<p>You <em>do</em> need a pro account to embed bins over SSL, and this will remain a pro feature.</p>
+<p>What this does mean is that I&#39;ve started to lay the foundations to add offline support via Service Worker - <strong>and pro users, I have something new for you in a few days too</strong> - so stay tuned!</p>
+<h2>Google&#39;s 203 on HTTPS everywhere</h2>
+<p>I also highly recommend checking out Jake &amp; Paul&#39;s 203 conversation on HTTPS everywhere:</p>
+<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/_RwzMCRsneU" frameborder="0" allowfullscreen></iframe></div>]]></description><pubDate>Sun Jun 21 2015 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/ssl-for-all</link><guid isPermaLink="true">//jsbin.com/blog/ssl-for-all</guid></item><item><title>A change to the way our URLs work</title><description><![CDATA[<h1>A change to the way our URLs work</h1>
 <p>We&#39;ve just landed a change to the way JS Bin URLs work, and though the new way aims to be intuitive and backward compatible, some of you sharp sighted users might have spotted the change already and wondering what changed and why.</p>
 <h2>In short</h2>
 <ul>

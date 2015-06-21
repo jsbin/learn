@@ -1,4 +1,4 @@
-<!DOCTYPE html><html id="blog-ssl-for-all-page"><head><meta charset="utf-8"><title>JS Bin Documentation</title><meta name="viewport" content="width=device-width"><meta name="description" content="JS Bin help documentation, tips, tricks, features and blog"><link rel="icon" href="https://learn.jsbin.com/images/favicon.png"><link href="//fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://learn.jsbin.com/css/github.css"><link rel="stylesheet" href="https://learn.jsbin.com/css/help.css"><!--[if lt IE 9]>
+<!DOCTYPE html><html id="blog-ssl-for-all-page"><head><meta charset="utf-8"><title>SSL now available to all - JS Bin Documentation</title><meta name="viewport" content="width=device-width"><meta name="description" content="JS Bin help documentation, tips, tricks, features and blog"><link rel="icon" href="https://learn.jsbin.com/images/favicon.png"><link href="//fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://learn.jsbin.com/css/github.css"><link rel="stylesheet" href="https://learn.jsbin.com/css/help.css"><!--[if lt IE 9]>
 <script src="/js/html5shiv.min.js"></script>
 <![endif]--><script>var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-1656750-13']);
@@ -9,29 +9,27 @@ _gaq.push(['_trackPageview']);
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
 })();
-</script></head><body id="blog-page"><div id="container"><header><div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a><nav><input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off"><ol id="results" hidden></ol><a href="/blog" class="selected">Blog</a><a href="/help">Help</a></nav></div></header><div id="body"><article><a href="/blog/feed.xml" class="subscribe">Subscribe</a><h1 id="sslnowavailabletoall">SSL now available to all</h1>
-<p>As the web moves towards SSL everywhere, JS Bin has released this feature from <a href="/upgrade">Pro</a> only accounts and made it available to everyone as of today.</p>
+</script></head><body id="blog-page"><div id="container"><header><div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a><nav><input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off"><ol id="results" hidden></ol><a href="/blog" class="selected">Blog</a><a href="/help">Help</a></nav></div></header><div id="body"><article><a href="/blog/feed.xml" class="subscribe">Subscribe</a><div class="avatar"><img src="https://learn.jsbin.com/images/avatars/remy.jpg"><span class="by">By Remy Sharp</span><span class="date">21-Jun, 2015</span></div><h1 id="sslnowavailabletoall">SSL now available to all</h1>
+<p>As the web moves towards using HTTPS everywhere, JS Bin has <em>moved</em> SSL from being a &quot;pro only&quot; feature to making it available to <strong>everyone</strong> as of today.</p>
 <!--more-->
 
-<p>This means that you can swap <code>http</code> for <code>https</code> and JS Bin will load up. Remember there are <a href="/help/ssl">considerations with SSL</a>.</p>
-<p>If you&#39;re stickler for security, registered users can opt-in to default to SSL via the <a href="https://jsbin.com/account/preferences">account preferences</a>.</p>
+<p><img src="https://learn.jsbin.com/images/blog/ssl-for-all.png" alt="SSL for all"></p>
+<p>This means that you can now swap HTTP for HTTPS and <a href="https://jsbin.com">JS Bin will load</a>. Remember there are <a href="/help/ssl">considerations with SSL</a> so if you&#39;re using HTTPS and the content doesn&#39;t load, it&#39;s likely there&#39;s an HTTP based script in there somewhere.</p>
+<p>If you&#39;re stickler for security, registered users can opt-in to default to SSL via the <a href="https://jsbin.com/account/preferences">account preferences</a> - which means whenever you visit a JS Bin edit page, you&#39;ll be put on HTTPS.</p>
 <p>You <em>do</em> need a pro account to embed bins over SSL, and this will remain a pro feature.</p>
-<p>What this does mean is that I&#39;ve started to lay the foundations to add offline support via Service Worker, so stay tuned!</p>
-<script>var timestamp = NaN;</script><script src="https://learn.jsbin.com/js/blog.js"></script><div id="comments"><h2>Comments</h2><div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'jsbinblog'; // required: replace example with your forum shortname
+<p>What this does mean is that I&#39;ve started to lay the foundations to add offline support via Service Worker - <strong>and pro users, I have something new for you in a few days too</strong> - so stay tuned!</p>
+<h2 id="googles203onhttpseverywhere">Google&#39;s 203 on HTTPS everywhere</h2>
+<p>I also highly recommend checking out Jake &amp; Paul&#39;s 203 conversation on HTTPS everywhere:</p>
+<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/_RwzMCRsneU" frameborder="0" allowfullscreen></iframe></div><script>var timestamp = 1434841200000;</script><script src="https://learn.jsbin.com/js/blog.js"></script><div id="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'jsbinblog'; // required: replace example with your forum shortname
+var disqus_url = 'http://jsbin.com/blog/ssl-for-all';
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div></article></div><div class="clear"></div></div><footer id="footer"><div class="inner"><ul class="notable"><li><a href="/about">About</a></li><li><a href="https://github.com/jsbin">Github</a></li><li><a href="https://twitter.com/js_bin">Twitter</a></li><li><a href="http://jsbin.com/videos">YouTube</a></li><li><a href="https://www.gittip.com/js_bin">Donate</a></li></ul><ul class="legal"><li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li></ul></div></footer></body><script type="text">WebFontConfig = {
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></div><div class="clear"></div></div><footer id="footer"><div class="inner"><ul class="notable"><li><a href="/about">About</a></li><li><a href="https://github.com/jsbin">Github</a></li><li><a href="https://twitter.com/js_bin">Twitter</a></li><li><a href="http://jsbin.com/videos">YouTube</a></li><li><a href="https://www.gittip.com/js_bin">Donate</a></li></ul><ul class="legal"><li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li></ul></div></footer></body><script type="text">WebFontConfig = {
   google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
 };
 (function() {
