@@ -6,7 +6,8 @@
   "scripts": {
     "compile": "harp compile",
     "start": "harp server",
-    "test": "harp compile"
+    "test": "harp compile",
+    "preversion": "harp compile; git add www; git commit -m'build'"
   },
   "engines": {
     "node": "0.10.x",

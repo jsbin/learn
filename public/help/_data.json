@@ -195,5 +195,9 @@
     "title": "Asset uploading",
     "category": "pro",
     "video": "//www.youtube.com/embed/d8TkAeGFLx4?rel=0"
+  },
+  "debugging-preferences":{
+    "title": "Debbugging your preferences",
+    "category": "hack"
   }
 }
