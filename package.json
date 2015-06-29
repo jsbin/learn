@@ -1,6 +1,6 @@
 {
   "name": "learn.jsbin",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Learn about JS Bin",
   "main": "server.js",
   "scripts": {
