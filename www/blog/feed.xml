@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The JS Bin Blog</title><link>//jsbin.com/blog</link><atom:link href="//jsbin.com/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link><item><title>SSL now available to all</title><description><![CDATA[<h1>SSL now available to all</h1>
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The JS Bin Blog</title><link>//jsbin.com/blog</link><atom:link href="//jsbin.com/blog/feed.xml" rel="self" type="application/rss+xml"></atom:link><item><title>Live reloading CSS</title><description><![CDATA[<h1>Live reloading CSS</h1>
+<p>Due to a few recent optimisations in the JS Bin rendering logic, we now have live reloading CSS in the editor.</p>
+<!--more-->
+
+<p>This means that when you change any content in the CSS panel, as always, the output is updated in real time, except now <em>only</em> the CSS will change.</p>
+<p>So any JavaScript or existing DOM state will remain in it&#39;s current state and your styles will change. This also applies to any of the CSS processors, such as Sass, SCSS, Myth, etc.</p>
+<p>You can see a short demo below - note that the JavaScript canvas animation continues to run and the counter increases:</p>
+<div class="embed-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/aglvbxjHmd0?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+<h2>Technical behind the scenes</h2>
+<p>This change is due to a small optimisation I made to JS Bin&#39;s rendering. We use <a href="http://www.html5rocks.com/en/tutorials/es6/promises/">promises</a> under the hood, but before we would always create a new promise for all the panels when <em>any</em> panel changed.</p>
+<p><a href="https://github.com/jsbin/jsbin/blob/4644d8518868e4f8bcf330eafeeb1daa535c8ca3/public/js/render/render.js#L35-L52">Now the code</a> will <em>only</em> re-render the promise of the focused panel. Since you can call the <code>.then</code> on a fulfilled promise over and over, it allows me to re-use the previously rendered promises.</p>
+<p>The two benefits are that it was easy to add live reloading of CSS, but also live rendering is also now faster, as there&#39;s less work for your browser to do.</p>
+]]></description><pubDate>Sat Jul 04 2015 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/live-reloading-css</link><guid isPermaLink="true">//jsbin.com/blog/live-reloading-css</guid></item><item><title>SSL now available to all</title><description><![CDATA[<h1>SSL now available to all</h1>
 <p>As the web moves towards using HTTPS everywhere, JS Bin has <em>moved</em> SSL from being a &quot;pro only&quot; feature to making it available to <strong>everyone</strong> as of today.</p>
 <!--more-->
 
