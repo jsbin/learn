@@ -130,5 +130,11 @@
     "author": "remy",
     "date": "2015-06-21",
     "published": true
+  },
+  "live-reloading-css": {
+    "title": "Live reloading CSS",
+    "author": "remy",
+    "date": "2015-07-04",
+    "published": true
   }
 }
