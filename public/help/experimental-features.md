@@ -1,6 +1,6 @@
 # Experimental Features
 
-*Updated: 2014-10-30*
+*Updated: 2015-07-11*
 
 Experiments are beta features available to [pro users](/upgrade). We first release our experiments to our alpha users (core team and a small collection of industry experts), then the features that are stable enough are moved to beta where you can access them if you choose.
 
