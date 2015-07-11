@@ -16,6 +16,23 @@ _gaq.push(['_trackPageview']);
 <p>This document will change over time as feature change.</p>
 <h2 id="experientialbetafeatures">Experiential beta features</h2>
 <p>To enable experiments head to your <a href="/account/profile">profile</a> page and check the &quot;Enable experiments&quot; box.</p>
+<h3 id="api">API</h3>
+<p>JS Bin&#39;s read/write API is currently under the experiments.</p>
+<ul>
+<li><code>DELETE /api/$bin/$snapshot</code></li>
+<li><code>GET /api/$bin/$snapshot</code></li>
+<li><code>POST /api/save</code> new bin, accepts JSON object with <code>javascript</code>, <code>html</code>, <code>css</code> and <code>settings</code> (object)</li>
+<li><code>POST /api/$bin/save</code> create a new snapshot</li>
+<li><code>GET /api</code> lists all bins</li>
+</ul>
+<p><em>Further documentation to come.</em></p>
+<p>To make a request, first you need the <a href="/account/profile">API token for your account</a> or to generate a new&nbsp;token:</p>
+<p><img src="https://learn.jsbin.com/images/api-key.png" alt="API key"></p>
+<p>To make the request, the token must be included in the <code>Authorization: Token $token</code> header:</p>
+<pre><code class="language-shell">curl -X &quot;GET&quot; &quot;https://jsbin.com/api/&quot; \
+  -H &quot;authorization: token 51af795cf1a606fe2e19d8c77bff3cb866f98d16&quot; \
+  -H &quot;content-type: application/json&quot;</code></pre>
+<p>JS Bin will will respond with <code>200 OK</code> for successful requests, and <code>401 Forbidden</code> for unauthorized.</p>
 <h3 id="finegraincontroloverbinheaders">Fine grain control over bin headers</h3>
 <p>The infocard (that appears on the editor at the bottom right) has been upgraded to include the ability to manage the title, description, status code and headers for the bin. Useful for mocking response handlers with different statuses (like a 404 or 500) or setting a custom content type or setting a CSP header.</p>
 <p><img src="https://learn.jsbin.com/images/bin-info-expanded.png" alt="Bin info extended"></p>
