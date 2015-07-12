@@ -11,7 +11,7 @@
 <p>This change is due to a small optimisation I made to JS Bin&#39;s rendering. We use <a href="http://www.html5rocks.com/en/tutorials/es6/promises/">promises</a> under the hood, but before we would always create a new promise for all the panels when <em>any</em> panel changed.</p>
 <p><a href="https://github.com/jsbin/jsbin/blob/4644d8518868e4f8bcf330eafeeb1daa535c8ca3/public/js/render/render.js#L35-L52">Now the code</a> will <em>only</em> re-render the promise of the focused panel. Since you can call the <code>.then</code> on a fulfilled promise over and over, it allows me to re-use the previously rendered promises.</p>
 <p>The two benefits are that it was easy to add live reloading of CSS, but also live rendering is also now faster, as there&#39;s less work for your browser to do.</p>
-]]></description><pubDate>Sat Jul 04 2015 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/live-reloading-css</link><guid isPermaLink="true">//jsbin.com/blog/live-reloading-css</guid></item><item><title>SSL now available to all</title><description><![CDATA[<h1>SSL now available to all</h1>
+]]></description><pubDate>Sat Jul 04 2015 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/live-reloading-css</link><guid isPermaLink="true">//jsbin.com/blog/live-reloading-css</guid></item><item><title>SSL now available to all</title><description><![CDATA[<h1>SSL now available to all</h1>
 <p>As the web moves towards using HTTPS everywhere, JS Bin has <em>moved</em> SSL from being a &quot;pro only&quot; feature to making it available to <strong>everyone</strong> as of today.</p>
 <!--more-->
 
@@ -22,7 +22,7 @@
 <p>What this does mean is that I&#39;ve started to lay the foundations to add offline support via Service Worker - <strong>and pro users, I have something new for you in a few days too</strong> - so stay tuned!</p>
 <h2>Google&#39;s 203 on HTTPS everywhere</h2>
 <p>I also highly recommend checking out Jake &amp; Paul&#39;s 203 conversation on HTTPS everywhere:</p>
-<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/_RwzMCRsneU" frameborder="0" allowfullscreen></iframe></div>]]></description><pubDate>Sun Jun 21 2015 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/ssl-for-all</link><guid isPermaLink="true">//jsbin.com/blog/ssl-for-all</guid></item><item><title>A change to the way our URLs work</title><description><![CDATA[<h1>A change to the way our URLs work</h1>
+<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/_RwzMCRsneU" frameborder="0" allowfullscreen></iframe></div>]]></description><pubDate>Sun Jun 21 2015 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/ssl-for-all</link><guid isPermaLink="true">//jsbin.com/blog/ssl-for-all</guid></item><item><title>A change to the way our URLs work</title><description><![CDATA[<h1>A change to the way our URLs work</h1>
 <p>We&#39;ve just landed a change to the way JS Bin URLs work, and though the new way aims to be intuitive and backward compatible, some of you sharp sighted users might have spotted the change already and wondering what changed and why.</p>
 <h2>In short</h2>
 <ul>
@@ -45,7 +45,7 @@
 <h2>Codecasting by default</h2>
 <p>Now if you share the edit view of your bin and the latest state (ie. not a snapshot), then the viewer will automatically see a code casting view (where the code changes in real time as you change your code).</p>
 <p>Although the old <code>/watch</code> URL will still work, you can share the regular <code>/edit</code> URL and this has all the code casting built in.</p>
-]]></description><pubDate>Tue Jun 16 2015 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/urls</link><guid isPermaLink="true">//jsbin.com/blog/urls</guid></item><item><title>Asset uploads &amp; oembed</title><description><![CDATA[<h1>Asset uploads &amp; oEmbed</h1>
+]]></description><pubDate>Tue Jun 16 2015 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/urls</link><guid isPermaLink="true">//jsbin.com/blog/urls</guid></item><item><title>Asset uploads &amp; oembed</title><description><![CDATA[<h1>Asset uploads &amp; oEmbed</h1>
 <p>We said we&#39;d be working on more pro features, and we are. Also, since we&#39;re open source, this awesome stuff happens from time to time: oEmbed as a community submitted feature.</p>
 <p><img src="//learn.jsbin.com/images/blog/oembed-pr.png" alt="Pull request that landed oEmbed"></p>
 <h2>Asset uploads</h2>
@@ -70,7 +70,7 @@
   &quot;html&quot;: &quot;&lt;iframe src=\&quot;http://jsbin.com/fajac/3/embed?html,output\&quot; width=\&quot;640\&quot; height=\&quot;480\&quot; frameborder=\&quot;0\&quot;&gt;&lt;/iframe&gt;&quot;
 }</code></pre>
 <p>And just like that, JS Bin links posted in <a href="https://gitter.im/">Gitter</a> (the awesome chat client) pulls in a live embeded bin.</p>
-]]></description><pubDate>Wed Feb 04 2015 00:00:00 GMT+0000 (GMT)</pubDate><link>//jsbin.com/blog/asset-upload-oembed</link><guid isPermaLink="true">//jsbin.com/blog/asset-upload-oembed</guid></item><item><title>Protecting you from yourself</title><description><![CDATA[<h1>Protecting you from yourself</h1>
+]]></description><pubDate>Wed Feb 04 2015 01:00:00 GMT+0100 (CET)</pubDate><link>//jsbin.com/blog/asset-upload-oembed</link><guid isPermaLink="true">//jsbin.com/blog/asset-upload-oembed</guid></item><item><title>Protecting you from yourself</title><description><![CDATA[<h1>Protecting you from yourself</h1>
 <p>JS Bin has recently had some subtle changes that help protect you from bugs in your own code.</p>
 <h2>Crash protection</h2>
 <p>Although we have loop protection in JS Bin, it&#39;s entirely possible that your JavaScript might side-step our protection, and crash the browser anyway.</p>
@@ -81,7 +81,7 @@
 <p>Now you&#39;ll see a warning either in the footer of the JavaScript panel, or in the gutter (if you have gutter warnings enabled in your <a href="/account/preferences">preferences</a>).</p>
 <p><img src="//learn.jsbin.com/images/blog/loop-protect.gif" alt="Loop protection in JS Bin"></p>
 <p>We&#39;ve also made the <a href="http://github.com/jsbin/loop-protect">loop protection module available</a> in our git repo under MIT, so you&#39;re welcome re-use it in your own projects.</p>
-]]></description><pubDate>Fri Aug 08 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/protection</link><guid isPermaLink="true">//jsbin.com/blog/protection</guid></item><item><title>Announcements: Pro &amp; Processors</title><description><![CDATA[<h1>Announcements: Pro &amp; Processors</h1>
+]]></description><pubDate>Fri Aug 08 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/protection</link><guid isPermaLink="true">//jsbin.com/blog/protection</guid></item><item><title>Announcements: Pro &amp; Processors</title><description><![CDATA[<h1>Announcements: Pro &amp; Processors</h1>
 <p>The last few weeks we&#39;ve all been busy on that last stretch of work, that last 5% of work that always eeks itself out to be longer than you expect.</p>
 <p>But now, we&#39;re live and two huge updates for you: Pro and processors.</p>
 <h2>Pro</h2>
@@ -98,7 +98,7 @@
 <h2>Totally aside</h2>
 <p>With all the seriousness aside, you got to take a break, and frankly, this video sours into amazing at 2m49s! Enjoy. This guy is a genius.</p>
 <div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/jus7S5vBJyU" frameborder="0" allowfullscreen></iframe></div>
-]]></description><pubDate>Thu Jul 24 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/pro-processors</link><guid isPermaLink="true">//jsbin.com/blog/pro-processors</guid></item><item><title>TWDTW #11: A week of security</title><description><![CDATA[<h1>TWDTW #11 - A week of security</h1>
+]]></description><pubDate>Thu Jul 24 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/pro-processors</link><guid isPermaLink="true">//jsbin.com/blog/pro-processors</guid></item><item><title>TWDTW #11: A week of security</title><description><![CDATA[<h1>TWDTW #11 - A week of security</h1>
 <p>This last week has had a particularly strong focus on security. Some of these changes might also have a direct impact on the way you use JS Bin.</p>
 <h2>Lint all the things!</h2>
 <p>After last week&#39;s release of JSHint setting control, <a href="https://github.com/electricg">Giulia</a> released the new HTML, CSS and CofeeScript linting control. All available under the <a href="http://jsbin.com/account/preferences">preferences</a> and all of them take a JSON object to control your defaults.</p>
@@ -113,7 +113,7 @@
 <p>There was also an issue reporting that the <code>jsbin.state</code> and user object could be accessed, which has been also closed. The impact of which is that JS Bin can&#39;t be set in an iframe anymore <em>but</em> of course you can still <a href="/help/how-can-i-embed-jsbin">embed</a> (and if you happen to point an iframe to JS Bin, it&#39;ll automagically switch to embed mode for you).</p>
 <p>Finally, if you&#39;re security concious, we&#39;ll be <a href="/help/ssl#enablingsslforallofjsbin">adding SSL for all</a> of JS Bin for pro users as a configurable preference (you just need to make sure your external assets are <a href="http://www.paulirish.com/2010/the-protocol-relative-url/">protocol relative</a> because you can run into trouble):</p>
 <p><img src="//learn.jsbin.com/images/twdtw/11/ssl.png" alt="All of JS Bin under SSL"></p>
-]]></description><pubDate>Wed Jul 09 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/security-limited-output</link><guid isPermaLink="true">//jsbin.com/blog/security-limited-output</guid></item><item><title>TWDTW #10: JSHint, line highlighting and update on pro</title><description><![CDATA[<h1>TWDTW 10 - JSHint, line highlighting and Pro update</h1>
+]]></description><pubDate>Wed Jul 09 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/security-limited-output</link><guid isPermaLink="true">//jsbin.com/blog/security-limited-output</guid></item><item><title>TWDTW #10: JSHint, line highlighting and update on pro</title><description><![CDATA[<h1>TWDTW 10 - JSHint, line highlighting and Pro update</h1>
 <p>Today we pushed a fairly hefty release containing a few PRs to update libraries, but also a few extra features for all our users.</p>
 <h2>JSHint</h2>
 <p>We&#39;ve finally got around to updating JSHint (whilst still providing support to IE8 by serving an old version for them). More importantly, for those of you who have <a href="http://jsbin.com/register">registered</a>, you can now configure your default JSHint <a href="http://jsbin.com/account/preferences">preferences</a>:</p>
@@ -130,7 +130,7 @@
 </blockquote>
 <p>We&#39;ve been working hard towards releasing Pro which will initially include: vanity URLs, read/write API access, private bins, dropbox sync, beta access to features and first line support.</p>
 <p>So tell your friends, your co-workers, help support JS Bin and look out for the release coming very soon.</p>
-]]></description><pubDate>Fri Jun 20 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-10-jshint-linehighlight-pro</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-10-jshint-linehighlight-pro</guid></item><item><title>New processors. We need your input</title><description><![CDATA[<h1>New processors. We need your input</h1>
+]]></description><pubDate>Fri Jun 20 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/twdtw-10-jshint-linehighlight-pro</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-10-jshint-linehighlight-pro</guid></item><item><title>New processors. We need your input</title><description><![CDATA[<h1>New processors. We need your input</h1>
 <p>We&#39;re doing the final testing on our new processor code. Sass and SCSS have been in high demand for a long time (<a href="https://github.com/jsbin/jsbin/issues/176">#176</a>), which has driven this rewrite (<a href="https://github.com/jsbin/jsbin/pull/1229">#1229</a>).</p>
 <p>But we now need input from <strong>you</strong>.</p>
 <h2>Compass, Bourbon, et al</h2>
@@ -151,7 +151,7 @@
 <h2>Get yourself heard</h2>
 <p>This is your oppotunity to tell us what you think. What&#39;s important to you and whether there&#39;s something obvious we&#39;re missing.</p>
 <p>Either comment below, or comment directly on the <a href="https://github.com/jsbin/jsbin/pull/1229">pull request for the feature</a>.</p>
-]]></description><pubDate>Tue Jun 17 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/new-processors</link><guid isPermaLink="true">//jsbin.com/blog/new-processors</guid></item><item><title>TWDTW #9: Tweaks and maintenance</title><description><![CDATA[<h1>TWDTW #9 - Tweaks and maintenance</h1>
+]]></description><pubDate>Tue Jun 17 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/new-processors</link><guid isPermaLink="true">//jsbin.com/blog/new-processors</guid></item><item><title>TWDTW #9: Tweaks and maintenance</title><description><![CDATA[<h1>TWDTW #9 - Tweaks and maintenance</h1>
 <p>These past three weeks we have been mainly working on bug fixes and internal maintenance, so no big announcement except that we have released to 100% of our users the <a href="/blog/twdtw-8-svg-settings#usersettingslive">settings and preferences pages</a>. Go and have fun with it!</p>
 <h2>The small things that matter</h2>
 <p>We&#39;re often releasing multiple times throughout the week with small bug fixes and tweaks, a few that you might have noticed:</p>
@@ -170,7 +170,7 @@
 <h2>Totally aside</h2>
 <p>We like the classics and we like geeky strange ideas, so what&#39;s better than Star Wars, re-edited in alphabetical order..?</p>
 <div class="embed-container"><iframe width="560" height="315" src="//www.youtube.com/embed/5GFW-eEWXlc" frameborder="0" allowfullscreen></iframe></div>
-]]></description><pubDate>Mon Jun 09 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-9-tweaks-maintenance</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-9-tweaks-maintenance</guid></item><item><title>TWDTW #8: SVG support and settings live</title><description><![CDATA[<h1>TWDTW #8 - SVG support and settings live</h1>
+]]></description><pubDate>Mon Jun 09 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/twdtw-9-tweaks-maintenance</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-9-tweaks-maintenance</guid></item><item><title>TWDTW #8: SVG support and settings live</title><description><![CDATA[<h1>TWDTW #8 - SVG support and settings live</h1>
 <p>With <a href="https://twitter.com/electric_g">Giulia</a> back from holiday and <a href="https://twitter.com/rem">Remy</a> easing back into work, the Left Logic offices
 have been a bit more lively, and pushing a few more bits to production.</p>
 <h2>SVG Support</h2>
@@ -190,7 +190,7 @@ so hit me up if you want one for your laptop!</p>
 <h2>Totally aside</h2>
 <p>Myself and Giulia were in tears this week watching this clip over and over and over: Nick Cage knows how to dive:</p>
 <div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/krotxywU2Es?version=3&amp;loop=1&amp;playlist=krotxywU2Es" frameborder="0" allowfullscreen></iframe></div>
-]]></description><pubDate>Thu May 15 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-8-svg-settings</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-8-svg-settings</guid></item><item><title>How I run JS Bin in Zen mode!</title><description><![CDATA[<h1>How I run JS Bin in Zen mode!</h1>
+]]></description><pubDate>Thu May 15 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/twdtw-8-svg-settings</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-8-svg-settings</guid></item><item><title>How I run JS Bin in Zen mode!</title><description><![CDATA[<h1>How I run JS Bin in Zen mode!</h1>
 <p>Since using JS Bin, I&#39;ve discovered a number of ways to customise it to my liking, and I wanted to share how I&#39;m running in <em>Zen mode</em>!</p>
 <p><img src="//learn.jsbin.com/images/jsbin-zen-mode-1.png" alt="Zen mode"></p>
 <h2>Vim mode</h2>
@@ -250,7 +250,7 @@ kind of panel configuration with all of the panels in JS Bin like so:</p>
 <p><img src="//learn.jsbin.com/images/panel-configure.gif" alt="Panel Moving"></p>
 <p>Do note, that currently panel configuration won&#39;t save so you&#39;ll need to do this
 each time you visit.</p>
-]]></description><pubDate>Fri May 09 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/my-zen-mode</link><guid isPermaLink="true">//jsbin.com/blog/my-zen-mode</guid></item><item><title>TWDTW #7: SCSS, Compass and search</title><description><![CDATA[<h1>TWDTW #7 - SCSS, Compass and search</h1>
+]]></description><pubDate>Fri May 09 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/my-zen-mode</link><guid isPermaLink="true">//jsbin.com/blog/my-zen-mode</guid></item><item><title>TWDTW #7: SCSS, Compass and search</title><description><![CDATA[<h1>TWDTW #7 - SCSS, Compass and search</h1>
 <p>Whilst Fabien continues with <a href="/blog/twdtw-6-syncing-pro-accounts">Pro user integration</a> and Giulia <a href="https://twitter.com/electric_g/status/460844432649355264">goes on holiday</a>, I&#39;ve snuck out of paternity leave and cheekily completed a bit of dev.</p>
 <h2>SCSS, Compass and processors total upgrade</h2>
 <p>In the last year, I had to remove the Stylus processor because there was a weird bug that caused an infinite loop (both client <em>and</em> server side). Since JS Bin is single threaded(!) Stylus can&#39;t be reintroduced until it&#39;s running in a separate process.</p>
@@ -267,7 +267,7 @@ each time you visit.</p>
 <p>It&#39;s a bank holiday weekend here in the UK, which means most of us have Monday off. So what to do with all this free time? How about melting your brain on TV?</p>
 <p><a href="http://www.huffingtonpost.com/2014/05/01/binge-watching-chart-_n_5246342.html">Huffington Post</a> rescues us from a hard decision:</p>
 <p><img src="//learn.jsbin.com/images/twdtw/7/tv-brain-melt.jpg" alt="TV brain melt"></p>
-]]></description><pubDate>Fri May 02 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-7-processors-search</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-7-processors-search</guid></item><item><title>TWDTW #6: Bin files, Dropbox, Pro Accounts</title><description><![CDATA[<h1>TWDTW #6 - Bin files, Dropbox, Pro Accounts</h1>
+]]></description><pubDate>Fri May 02 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/twdtw-7-processors-search</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-7-processors-search</guid></item><item><title>TWDTW #6: Bin files, Dropbox, Pro Accounts</title><description><![CDATA[<h1>TWDTW #6 - Bin files, Dropbox, Pro Accounts</h1>
 <p>This week we&#39;ve been doing mostly internal updates to JS Bin, so not much to see. I&#39;ve been working on updating the way in which we create HTML
 files from bins and we&#39;re going to start experimenting with two-way syncing with <a href="http://dropbox.com">Dropbox</a></p>
 <h2>Bin files</h2>
@@ -285,7 +285,7 @@ preproccesors. This will eventually allow files in this format to be dropped int
 <h2>Totally aside</h2>
 <p>Also, a very big congratulations to Remy and <a href="https://twitter.com/julieanne">Julie</a> - they&#39;ve had a beautiful baby girl :D!</p>
 <p><img src="//learn.jsbin.com/images/twdtw/6/baby.png" alt=""></p>
-]]></description><pubDate>Fri Apr 25 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-6-syncing-pro-accounts</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-6-syncing-pro-accounts</guid></item><item><title>TWDTW #5: Heartbleed, Settings, User Backups</title><description><![CDATA[<h1>TWDTW #5 - Heartbleed, Settings, User Backups</h1>
+]]></description><pubDate>Fri Apr 25 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/twdtw-6-syncing-pro-accounts</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-6-syncing-pro-accounts</guid></item><item><title>TWDTW #5: Heartbleed, Settings, User Backups</title><description><![CDATA[<h1>TWDTW #5 - Heartbleed, Settings, User Backups</h1>
 <p>This week we&#39;ve been dealing with the Heartbleed issue, but more positively have also shipped (for internal, but live testing) updates to user settings and a new pro feature: real-time backup of your bins.</p>
 <h2>Heartbleed, no more</h2>
 <p>The Heartbleed bug definately took it&#39;s toll on <a href="https://twitter.com/rem/status/454293558317821952">Remy</a> as he patched our OpenSSL, reissued SSL certificates and fixed weird <a href="http://stackoverflow.com/questions/22968867/error-1018-hy000-cant-read-dir-of-db-errno-13-not-a-permission/23014237">MySQL issues</a>, but we were <a href="/blog/heartbleed">no longer vulnerable</a>!</p>
@@ -304,7 +304,7 @@ preproccesors. This will eventually allow files in this format to be dropped int
   <iframe width="1280" height="720" src="//www.youtube.com/embed/Gw79smKZB9E" frameborder="0" allowfullscreen></iframe>
 </div>
 
-]]></description><pubDate>Fri Apr 11 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-5-settings-dropbox-heartbleed</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-5-settings-dropbox-heartbleed</guid></item><item><title>Heartbleed and JS Bin</title><description><![CDATA[<h1>Heartbleed and JS Bin</h1>
+]]></description><pubDate>Fri Apr 11 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/twdtw-5-settings-dropbox-heartbleed</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-5-settings-dropbox-heartbleed</guid></item><item><title>Heartbleed and JS Bin</title><description><![CDATA[<h1>Heartbleed and JS Bin</h1>
 <p>If you&#39;ve not heard about <a href="http://heartbleed.com">Heartbleed</a>, means that <strong>potentially</strong> all your passwords can be compromised. This isn&#39;t a bug that&#39;s specific to JS Bin, it affects most sign in forms that go over HTTPS. Yes, it&#39;s <strong>that</strong> scary. </p>
 <p>Note that if you registered with JS Bin after 9-April 2014 10pm UK time, then you won&#39;t be affected, but I still strongly recommend you familiar yourself with the issue.</p>
 <p>Here&#39;s what <em>we&#39;ve</em> done:</p>
@@ -329,7 +329,7 @@ preproccesors. This will eventually allow files in this format to be dropped int
 <li><a href="http://www.troyhunt.com/2014/04/everything-you-need-to-know-about.html">Everything you need to know about Heartbleed</a> - very good if you&#39;re at all technical and need to get a grip on the issues</li>
 <li><a href="http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/">Big web sites affected</a> - I found this pretty useful for what to tell non-technical people I know</li>
 </ul>
-]]></description><pubDate>Thu Apr 10 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/heartbleed</link><guid isPermaLink="true">//jsbin.com/blog/heartbleed</guid></item><item><title>TWDTW #4: Tern live, and our upcoming Pro features</title><description><![CDATA[<h1>TWDTW #4 - Tern is live</h1>
+]]></description><pubDate>Thu Apr 10 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/heartbleed</link><guid isPermaLink="true">//jsbin.com/blog/heartbleed</guid></item><item><title>TWDTW #4: Tern live, and our upcoming Pro features</title><description><![CDATA[<h1>TWDTW #4 - Tern is live</h1>
 <p>We&#39;ve now released Tern to live for everyone, and we&#39;ve been hard at work on our Pro features and working on improving the JS Bin core code.</p>
 <h2>Tern</h2>
 <p>A few weeks ago we showed off the <a href="/blog/twdtw-1-sass-tern-security#tern">demo of Tern</a>, and now it&#39;s live. You need to manually turn it on via the <code>addons</code>:</p>
@@ -344,7 +344,7 @@ preproccesors. This will eventually allow files in this format to be dropped int
 <h2>Totally aside</h2>
 <p>Fabien had been catching up on some classic movies, in particular Sneakers, which reminded me of this amazing story by Moran Cerf, about a particular point in life where his group decided to say &quot;yes&quot;.</p>
 <div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/RJVHTQSvUIo" frameborder="0" allowfullscreen></iframe></div>
-]]></description><pubDate>Mon Apr 07 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-4-tern-pro-features</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-4-tern-pro-features</guid></item><item><title>TWDTW #3: CodeMirror, User settings, Hacks</title><description><![CDATA[<h1>TWDTW #3</h1>
+]]></description><pubDate>Mon Apr 07 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/twdtw-4-tern-pro-features</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-4-tern-pro-features</guid></item><item><title>TWDTW #3: CodeMirror, User settings, Hacks</title><description><![CDATA[<h1>TWDTW #3</h1>
 <p>Last week we rolled out <a href="/blog/ssl">SSL support</a> for our sign in (long overdue), and this week we&#39;ve had two pretty cool releases: CodeMirror 4 and (in private testing) user settings UI.</p>
 <h2>CodeMirror 4</h2>
 <p><a href="http://codemirror.net">CodeMirror</a> is the excellent editor that backs JS Bin. Version 4 was released last week and on Tuesday it landed in JS Bin. The highlights for me personally are multiple cursors and sublime mode (via <code>jsbin.settings.addons.sublime = true</code>):</p>
@@ -361,14 +361,14 @@ preproccesors. This will eventually allow files in this format to be dropped int
 <h2>Totally aside</h2>
 <p>Fabien found and shared this site <a href="http://8tracks.com">8tracks</a> that you can give it a tag, say &quot;programming&quot;, and you can listen to tracks to suit that mood. So get your groove on.</p>
 <p><img src="//learn.jsbin.com/images/twdtw/3/dance.gif" alt="/images/twdtw/3/dance.gif"></p>
-]]></description><pubDate>Tue Apr 01 2014 01:00:00 GMT+0100 (BST)</pubDate><link>//jsbin.com/blog/twdtw-3-codemirror-settings</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-3-codemirror-settings</guid></item><item><title>SSL: A secure login</title><description><![CDATA[<h1>SSL: A secure login</h1>
+]]></description><pubDate>Tue Apr 01 2014 02:00:00 GMT+0200 (CEST)</pubDate><link>//jsbin.com/blog/twdtw-3-codemirror-settings</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-3-codemirror-settings</guid></item><item><title>SSL: A secure login</title><description><![CDATA[<h1>SSL: A secure login</h1>
 <p>Up until now all of JS Bin has been served over standard HTTP. This is fine for most of the site, however we&#39;ve decided to upgrade
 the login and register (and eventually the account settings) pages to use SSL (i.e. encrypted data transmission).</p>
 <p>This means your email and password are always sent over a secure connection, keeping those details safe. </p>
 <p>If you&#39;re already logged into JS Bin you&#39;ll notice that the next time you visit you&#39;ll recieve a message and be prompted to sign in again, just the once, using the newer, SSL login.</p>
 <p>If you have any questions, or find any problems with the process, <a href="http://github.com/jsbin/jsbin/issues/new?title=Problem%20with%20new%20SSL%20Login">please submit an issue on github</a>.</p>
 <p><strong>Possibly related</strong> <a href="/help/ssl">Why don&#39;t we use SSL on all of JS Bin?</a></p>
-]]></description><pubDate>Wed Mar 19 2014 00:00:00 GMT+0000 (GMT)</pubDate><link>//jsbin.com/blog/ssl</link><guid isPermaLink="true">//jsbin.com/blog/ssl</guid></item><item><title>TWDTW #2: Addons, Collaboration, Hardware</title><description><![CDATA[<h1>TWDTW #2</h1>
+]]></description><pubDate>Wed Mar 19 2014 01:00:00 GMT+0100 (CET)</pubDate><link>//jsbin.com/blog/ssl</link><guid isPermaLink="true">//jsbin.com/blog/ssl</guid></item><item><title>TWDTW #2: Addons, Collaboration, Hardware</title><description><![CDATA[<h1>TWDTW #2</h1>
 <p>This week we released more experiments, discovered one experiment going wrong (sad face), little two day retreat playing with arduinos and where I&#39;ll be about giving away some sweet <a href="http://www.flickr.com/photos/remysharp/9576228318/">JS Bin stickers</a> and maybe even a <a href="http://www.flickr.com/photos/remysharp/10805438263/">t-shirt</a> or two.</p>
 <h2>User enabled addons</h2>
 <p>Code folding, matched brackets, trailing white spaces, and more. We all have our favourite features in the editors we love, and CodeMirror comes with a great deal of addons that historically I&#39;ve been careful about enabling (since it adds to the footprint of the jsbin.js script request).</p>
@@ -392,7 +392,7 @@ the login and register (and eventually the account settings) pages to use SSL (i
 <p>I&#39;ll be venturing out of sunny Brighton to a couple of London events, and I&#39;ll have a fistfull of JS Bin stickers (which are <em>really</em> nice quality) and a few t-shirts at <a href="http://lanyrd.com/2014/edgeconf/">Edge London</a> and <a href="http://lanyrd.com/2014/lnug-march/">LNUG</a>. So come grab me!</p>
 <h2>Totally aside</h2>
 <p>This shouldn&#39;t be funny, but it&#39;s utterly hypnotic...</p>
-<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/ub1Dc3NHZ3s" frameborder="0" allowfullscreen></iframe></div>]]></description><pubDate>Fri Mar 14 2014 00:00:00 GMT+0000 (GMT)</pubDate><link>//jsbin.com/blog/twdtw-2</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-2</guid></item><item><title>TWDTW #1: Sass, Tern, Security</title><description><![CDATA[<h1>TWDTW #1</h1>
+<div class="embed-container"><iframe width="1280" height="720" src="//www.youtube.com/embed/ub1Dc3NHZ3s" frameborder="0" allowfullscreen></iframe></div>]]></description><pubDate>Fri Mar 14 2014 01:00:00 GMT+0100 (CET)</pubDate><link>//jsbin.com/blog/twdtw-2</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-2</guid></item><item><title>TWDTW #1: Sass, Tern, Security</title><description><![CDATA[<h1>TWDTW #1</h1>
 <p>This is the first installment of &quot;things we did this week&quot;. Where we&#39;ll share some of the features or changes or fixes we&#39;ve been working on. Sometimes it will be small features, sometimes BIG exciting features and other times it&#39;ll be progress to much longer term goals.</p>
 <p>We&#39;re working on local branches of JS Bin with a few cool features.</p>
 <h2>Sass</h2>
@@ -414,7 +414,7 @@ the login and register (and eventually the account settings) pages to use SSL (i
 <div class="embed-container"><iframe src="//player.vimeo.com/video/84938216" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
 <p>And yes, I have actually asked myself: how could I get JS Bin to control a drone...insane, I completely appreciate.</p>
-]]></description><pubDate>Fri Mar 07 2014 00:00:00 GMT+0000 (GMT)</pubDate><link>//jsbin.com/blog/twdtw-1-sass-tern-security</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-1-sass-tern-security</guid></item><item><title>Welcome to the new help &amp; blog</title><description><![CDATA[<h1>Welcome to the new help &amp; blog</h1>
+]]></description><pubDate>Fri Mar 07 2014 01:00:00 GMT+0100 (CET)</pubDate><link>//jsbin.com/blog/twdtw-1-sass-tern-security</link><guid isPermaLink="true">//jsbin.com/blog/twdtw-1-sass-tern-security</guid></item><item><title>Welcome to the new help &amp; blog</title><description><![CDATA[<h1>Welcome to the new help &amp; blog</h1>
 <p>JS Bin for years has done an absolutely superb job of giving its users an editor and the live output of the HTML, CSS &amp; JavaScript. Something the project has been terrible at is exposing features and new information.</p>
 <p>We try hard to recess the application of JS Bin to let you get on with coding right away. This way <em>everyone gets a cursor</em>. You visit JS Bin, you type: you get a bin.</p>
 <p>But we&#39;re also very aware of the cost of recessing away like this. Often I see tweets and issues along the lines of &quot;it would be great if I could do X&quot;, and I reply along the lines of &quot;yeah, we did that back in 2011, it&#39;s here...&quot;. </p>
@@ -453,4 +453,4 @@ the login and register (and eventually the account settings) pages to use SSL (i
 </ul>
 <p>I&#39;d love to hear your feedback, if you&#39;re using JS Bin for teaching or sharing - what&#39;s your experience like? How can we make JS Bin better for all of you?</p>
 <p>– Remy</p>
-]]></description><pubDate>Thu Feb 27 2014 00:00:00 GMT+0000 (GMT)</pubDate><link>//jsbin.com/blog/welcome</link><guid isPermaLink="true">//jsbin.com/blog/welcome</guid></item></channel></rss>
+]]></description><pubDate>Thu Feb 27 2014 01:00:00 GMT+0100 (CET)</pubDate><link>//jsbin.com/blog/welcome</link><guid isPermaLink="true">//jsbin.com/blog/welcome</guid></item></channel></rss>
