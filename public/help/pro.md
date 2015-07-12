@@ -13,7 +13,7 @@ This second point is *really* important to us. JS Bin has existed for over 5 yea
 
 Eventually we decided that to spend full time on JS Bin, and to invest fully in it's infrastructure, JS Bin needed to sustain itself, hence Pro status.
 
-If you don't want (or need) Pro, but you want to support the project, maybe [donate via Gittip](https://www.gittip.com/js_bin/) instead?
+If you don't want (or need) Pro, but you want to support the project, maybe [donate via Gratipay](https://gratipay.com/jsbin/) instead?
 
 <center><a class="actionButton actionButton-primary actionButton-jumbo actionButton-rounded" href="http://jsbin.com/upgrade">Upgrade to Pro</a></center>
 
