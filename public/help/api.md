@@ -2,8 +2,8 @@
 
 JS Bin's API comes in a few flavours.
 
-1. Get data via ajax
-2. Post data via ajax for pro user accounts (to be detailed)
+1. Get data
+2. Post data for pro user accounts (to be detailed)
 
 ## Read API
 

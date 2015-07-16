@@ -1,5 +1,4 @@
-How to change your password
-===========================
+# How to change your password
 
 Click on your avatar in the top right corner to open the account settings dropdown, from here you can enter your new password and click "Update account".
 

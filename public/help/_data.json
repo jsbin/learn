@@ -182,6 +182,10 @@
     "category": "fix",
     "related": ["why-register"]
   },
+  "transfer-a-bin": {
+    "title": "Transferring ownership of a bin",
+    "category": "learn"
+  },
   "ajax-requests": {
     "title": "Ajax request to bins",
     "category": "hack",
