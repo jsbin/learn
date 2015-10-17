@@ -203,5 +203,9 @@
   "debugging-preferences":{
     "title": "Debbugging your preferences",
     "category": "hack"
+  },
+  "stickers": {
+    "title": "Stickers",
+    "category": "hack"
   }
 }
