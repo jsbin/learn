@@ -8,7 +8,7 @@ There's no cost to you, but we will be restricting the send outs to bi-monthly o
 
 ➡ **[Sticker request form](https://docs.google.com/forms/d/1tttJAkH0OEABv7lRr1yhmCZoj5GQ7nemWFjOgOqwxlQ/viewform)**
 
-There's two sizes, we'll send a few of both:
+There are two sizes, we'll send a few of both:
 
 ![JS Bin stickers](/images/stickers.jpg)
 
