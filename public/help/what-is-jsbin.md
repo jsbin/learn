@@ -17,7 +17,7 @@ JS Bin's motto is *"Hack. Learn. Fix. Teach"*, and JS Bin is a vehicle to achiev
 
 ## In plain English
 
-JS Bin is a code sharing site. Along with the code, the complete *output* of the code is also be shared. As a user types in the editor "panels", they will see the output being generated in real-time in the output panel.
+JS Bin is a code sharing site. Along with the code, the complete *output* of the code is also shared. As a user types in the editor "panels", they will see the output being generated in real-time in the output panel.
 
 There's a few common use cases for JS Bin. The first is teaching. Teachers will use JS Bin as a platform for showing how web languages work (HTML, CSS, JavaScript, but also languages that generate these, such as CoffeeScript, LESS and Markdown).
 
