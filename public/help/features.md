@@ -1,6 +1,6 @@
 # Features
 
-This is a non-exhaustive, non-priortised list of features that JS Bin has.
+This is a non-exhaustive, non-prioritised list of features that JS Bin has.
 
 Please feel free to **contribute to this list** if you know of a feature, and add descriptions and demos where appropriate.
 
