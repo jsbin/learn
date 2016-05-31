@@ -15,7 +15,7 @@ Historically, JS Bin v1, v2 and the first release of v3 had support for PHP. **P
 
 ### Node
 
-Install the [latest stable version](http://nodejs.org/) of Node first which will give you the `node` and `npm` programs.
+Install [Node](http://nodejs.org/) version `0.10.x`, which will give you the `node` and `npm` programs. (_Installing JS Bin on newer versions of Node is not supported and may fail_; consider using [nvm](https://github.com/creationix/nvm) to install multiple versions of Node on your machine.)
 
 You can (and should) install JS Bin directly from `npm` using the following command:
 
