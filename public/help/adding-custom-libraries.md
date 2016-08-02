@@ -17,7 +17,7 @@ The format for a new library entry is as follows:
 
 There's a variable called libraries on the global namespace, with two methods: add and clear.
 
-To add this library, open your console, and run the following (changing the library for your own):
+To add this library, open your browser based console, and run the following (changing the library for your own):
 
 ```js
 var mylib = {...}; // the "My Library" object above
