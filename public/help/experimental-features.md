@@ -1,6 +1,6 @@
 # Experimental Features
 
-*Updated: 2015-07-11*
+*Updated: 2016-08-02*
 
 Experiments are beta features available to [pro users](/upgrade). We first release our experiments to our alpha users (core team and a small collection of industry experts), then the features that are stable enough are moved to beta where you can access them if you choose.
 
@@ -11,6 +11,14 @@ This document will change over time as feature change.
 ## Experiential beta features
 
 To enable experiments head to your [profile](/account/profile) page and check the "Enable experiments" box.
+
+### Better mobile support
+
+Work has been put into support a mobile design from as early as 2014, but the implementation was never developed, until now.
+
+The mobile design can be seen in this demo video, you just need to enable experiments and view JS Bin on a mobile device. The UI is a little different and it's still a work in progress, but do check it out:
+
+<div class="embed-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/RxWLFWxzL10?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
 ### API
 
