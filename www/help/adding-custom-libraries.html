@@ -21,7 +21,7 @@ _gaq.push(['_trackPageview']);
   ]
 }</code></pre>
 <p>There&#39;s a variable called libraries on the global namespace, with two methods: add and clear.</p>
-<p>To add this library, open your console, and run the following (changing the library for your own):</p>
+<p>To add this library, open your browser based console, and run the following (changing the library for your own):</p>
 <pre><code class="language-js">var mylib = {...}; // the &quot;My Library&quot; object above
 libraries.add(mylib);</code></pre>
 <p>These changes will save to your browser (on those browsers that support the Storage API - all the latest versions of browsers), and will remain until you call <code>libraries.clear()</code>.</p>
