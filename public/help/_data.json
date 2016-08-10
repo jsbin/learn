@@ -207,5 +207,10 @@
   "stickers": {
     "title": "Stickers",
     "category": "hack"
+  },
+  "adding-libraries": {
+    "title": "Adding Libraries",
+    "category": "hack",
+    "related": ["adding-custom-libraries", "versions"]
   }
 }
