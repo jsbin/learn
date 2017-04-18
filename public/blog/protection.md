@@ -14,6 +14,11 @@ If that happens, JS Bin will automatically disable the *live JavaScript renderin
 
 We've long had [loop protection](https://www.youtube.com/watch?v=EA74ODg1qKE) (video) in JS Bin which meant if you accidently wrote an infinite loop, JS Bin would quietly exit out and warn in the browser console.
 
+> To disable the loop protection: add the following in your JavaScript:
+> ```
+> // noprotect
+> ```
+
 Now you'll see a warning either in the footer of the JavaScript panel, or in the gutter (if you have gutter warnings enabled in your [preferences](/account/preferences)).
 
 ![Loop protection in JS Bin](/images/blog/loop-protect.gif)
