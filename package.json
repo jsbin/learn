@@ -22,6 +22,7 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "harp": "*",
-    "harp-static": "~0.1.0"
+    "harp-static": "~0.1.0",
+    "jstransformer-marked": "^1.0.2"
   }
 }
