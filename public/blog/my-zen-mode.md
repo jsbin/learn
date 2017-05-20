@@ -73,7 +73,7 @@ console.clear();
 
 ## Hidden toolbar
 
-<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\</kbd>
+<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\\</kbd>
 
 The hidden topbar lets me really focus on the code, most of the items in the menus
 can be accessed via keyboard shortcuts and for everything else, when I *do* need
