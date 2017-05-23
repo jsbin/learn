@@ -7,7 +7,7 @@ notifications:
 before_script:
 - npm install
 node_js:
-- "0.10"
+- "7"
 deploy:
   on: master
   api_key:

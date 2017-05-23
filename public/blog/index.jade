@@ -10,5 +10,5 @@ ul.posts
       a(href="/blog/#{ post.slug }")= post.title
       p.extract
         != partial(post.slug).split('<p>')[1].replace(/<\/p>\s*.*/m, '').replace(/(<([^>]+)>)/ig, '').trim()
-        &nbsp;
+        | &nbsp;
         a(href="/blog/#{ post.slug }") Read post
