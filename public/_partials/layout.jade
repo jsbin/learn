@@ -1,12 +1,17 @@
-static = ''
-if environment == "production"
-  static = 'https://learn.jsbin.com'
-if environment == "test"
-  static = 'http://localhost:9000'
+- var getEnvironment = function () {
+-   if (environment == "production") {
+-     return 'https://learn.jsbin.com';
+-   }
+-   else if (environment == "test") {
+-     return 'http://localhost:9000';
+-   }
+-   else {
+-     return '';
+-   }
+- }
+- var static = getEnvironment()
 
-pagetitle = siteTitle
-if title
-  pagetitle = title + ' - ' + siteTitle
+- var pagetitle = title ? title + ' - ' + siteTitle : siteTitle
 
 //- sad panda code: the path of the partial is relative to the request
 //- *not* the file being included (ie. this one).
@@ -14,7 +19,7 @@ if title
 //- of periods to add for path navigation.
 - function repeat(str, num) { return new Array( num + 1 ).join( str ); }
 
-prefix = repeat('.', current.path.length).split('..').join('../')
+- var prefix = repeat('.', current.path.length).split('..').join('../')
 
 doctype
 html(id="#{current.path.join('-')}-page")
