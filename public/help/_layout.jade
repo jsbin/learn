@@ -14,5 +14,5 @@ block content
           a(href="#{slug}")= post.title
           br
           != partial(slug).split('<p>')[1].replace(/<\/p>\s*.*/m, '').replace(/(<([^>]+)>)/ig, '').trim()
-          &nbsp;
+          | &nbsp;
           a(href="#{ slug }") Read&nbsp;more

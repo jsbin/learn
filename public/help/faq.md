@@ -42,7 +42,7 @@ Yes. See the [Ajax debugging video][5] for a demo. Or, it's as simple as removin
 
 ## IE6?
 
-I'm afraid not, but the application is open source, so if you think you can get it working - please go ahead: [<github.com/jsbin/jsbin>][6]
+I'm afraid not, but the application is open source, so if you think you can get it working - please go ahead: [github.com/jsbin/jsbin][6]
 
 ## How do I delete my account?
 

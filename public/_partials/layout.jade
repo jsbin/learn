@@ -1,10 +1,10 @@
-static = ''
+- var static = ''
 if environment == "production"
-  static = 'https://learn.jsbin.com'
+  - static = 'https://learn.jsbin.com'
 if environment == "test"
-  static = 'http://localhost:9000'
+  - static = 'http://localhost:9000'
 
-pagetitle = siteTitle
+- var pagetitle = siteTitle
 if title
   pagetitle = title + ' - ' + siteTitle
 
@@ -14,7 +14,7 @@ if title
 //- of periods to add for path navigation.
 - function repeat(str, num) { return new Array( num + 1 ).join( str ); }
 
-prefix = repeat('.', current.path.length).split('..').join('../')
+- prefix = repeat('.', current.path.length).split('..').join('../')
 
 doctype
 html(id="#{current.path.join('-')}-page")

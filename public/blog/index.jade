@@ -1,3 +1,4 @@
+!= partial(prefix + '/js/moment')
 - function eachPost(data) { return Object.keys(data).map(function (slug) { var post = data[slug]; post.slug = slug; return post }).sort(byDate).filter(function (post) { return environment == "production" ? post.published : post.title }) }
 - function byDate(a, b) { return moment(b.date).unix() - moment(a.date).unix() }
 
@@ -10,5 +11,5 @@ ul.posts
       a(href="/blog/#{ post.slug }")= post.title
       p.extract
         != partial(post.slug).split('<p>')[1].replace(/<\/p>\s*.*/m, '').replace(/(<([^>]+)>)/ig, '').trim()
-        &nbsp;
+        | &nbsp;
         a(href="/blog/#{ post.slug }") Read post
