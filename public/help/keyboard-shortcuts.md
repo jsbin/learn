@@ -13,7 +13,7 @@ JS Bin supports keyboard shortcuts when the editor panels are focused (i.e. you 
 |<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>del</kbd>|Delete the current bin|
 |<kbd>ctrl</kbd>+<kbd>s</kbd>|Save current state as a revision|
 |<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>s</kbd>|Create a clone of the current bin|
-|<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\</kbd>|Hide JS Bin navigation bar|
+|<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\\</kbd>|Hide JS Bin navigation bar|
 |<kbd>ctrl</kbd>+<kbd>o</kbd>|Open bin history (when logged in)|
 |<kbd>ctrl</kbd>+<kbd>y</kbd>|Toggle archive state on the current bin|
 

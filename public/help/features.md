@@ -50,7 +50,7 @@ Please feel free to **contribute to this list** if you know of a feature, and ad
 * File update binding
 * Custom URLs
 * Emmet (previously known as Zen Coding)
-* Hide toolbar - <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\</kbd>
+* Hide toolbar - <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\\</kbd>
 * [Keyboard shortcuts](/help/keyboard-shortcuts) - cmd+shift+?
 * Download
 * Clone
