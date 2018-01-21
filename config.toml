@@ -1,4 +1,4 @@
-baseURL = "https://jsbin.com/"
+baseURL = "/"
 languageCode = "en-gb"
 title = "JS Bin help"
 # theme = "hyde"
