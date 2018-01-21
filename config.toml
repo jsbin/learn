@@ -1,0 +1,15 @@
+baseURL = "https://jsbin.com/"
+languageCode = "en-gb"
+title = "JS Bin help"
+theme = "hyde"
+pygmentsCodeFences = true
+pygmentsStyle = "vs"
+# pygmentsUseClasses=true
+
+[outputs]
+home = [ "RSS", "HTML"]
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"

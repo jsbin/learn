@@ -1,0 +1,21 @@
+{{ define "main" -}}
+{{ if eq $.Section "blog" }}
+<a class="subscribe" href="/blog/feed.xml">Subscribe</a>
+{{ else }}
+<a class="edit" href="https://github.com/jsbin/learn/blob/master/public/{{ $.Path }}">Edit on github</a>
+{{end}}
+
+{{ if .Params.Author }} {{ partial "author.html" . }} {{ end }}
+
+{{ .Content }}
+
+<hr>
+
+<h2>❤️ Love JS Bin?</h2>
+<p>Support this open source project <a href="https://opencollective.com/jsbin/donate">today</a>, and help it continue to run for <em>another</em> decade.</p>
+
+{{ if .Site.DisqusShortname -}}
+<h2>Comments</h2>
+{{ template "_internal/disqus.html" . }}
+{{- end }}
+{{- end }}
