@@ -1,7 +1,7 @@
 baseURL = "https://jsbin.com/"
 languageCode = "en-gb"
 title = "JS Bin help"
-theme = "hyde"
+# theme = "hyde"
 pygmentsCodeFences = true
 pygmentsStyle = "vs"
 # pygmentsUseClasses=true
