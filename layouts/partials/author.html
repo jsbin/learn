@@ -1,0 +1,7 @@
+{{ $author := index .Site.Data.authors .Params.Author }}
+
+<div class="avatar">
+  <img src="{{ $author.avatar }}">
+  <span class="by">By {{ $author.name }}</span>
+  <span class="date">{{ .PublishDate.Format "2-Jan, 2006" }}</span>
+</div>

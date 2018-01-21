@@ -1,0 +1,18 @@
+{
+    "remy": {
+        "name": "Remy Sharp",
+        "avatar": "https://learn.jsbin.com/images/avatars/remy.jpg"
+    },
+    "danny": {
+        "name": "Danny Hope",
+        "avatar": "https://learn.jsbin.com/images/avatars/danny.jpg"
+    },
+    "fabien": {
+        "name": "Fabien O'Carroll",
+        "avatar": "https://learn.jsbin.com/images/avatars/fabien.jpg"
+    },
+    "giulia": {
+        "name": "Giulia Alfonsi",
+        "avatar": "https://learn.jsbin.com/images/avatars/giulia.jpg"
+    }
+}

@@ -1,0 +1,15 @@
+{{ define "main" -}}
+
+<h1>The JS Bin Blog</h1>
+
+<ul class="posts">
+{{ range .Data.Pages -}}
+  <li>
+    <span class="date">{{ .PublishDate.Format "2-Jan, 2006" }}</span>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+
+    <p class="extract">{{ index (split .Summary "\n") 0 | safeHTML }} &nbsp; <a href="{{ .Permalink }}">Read post</a></p>
+  </li>
+{{- end }}
+</ul>
+{{- end }}
