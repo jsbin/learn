@@ -3,6 +3,7 @@ languageCode = "en-gb"
 title = "JS Bin help"
 googleAnalytics = "UA-1656750-13"
 pygmentsCodeFences = true
+enableGitInfo = true
 pygmentsStyle = "vs"
 
 [outputs]
