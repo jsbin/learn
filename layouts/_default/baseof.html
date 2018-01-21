@@ -7,11 +7,11 @@
     <meta name="description" content="JS Bin help documentation, tips, tricks, features and blog">
     <link rel="icon" href="/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/help.css"><!--[if lt IE 9]>
+    <link rel="stylesheet" href="/css/help.css">{{ "<!--[if lt IE 9]>" | safeHTML }}
     <script src="/js/html5shiv.min.js"></script>
-    <![endif]-->
+    {{ "<![endif]-->" | safeHTML }}
   </head>
-  <body data-url="{{ $.URL }}" id="{{ $.URL | replaceRE `/(.*)/` "$1" | replaceRE `/` "-" }}-page">
+  <body data-url="{{ $.GitInfo }}" id="{{ $.URL | replaceRE `/(.*)/` "$1" | replaceRE `/` "-" }}-page">
     <div id="container">
       <header>
         <div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a>
@@ -67,5 +67,6 @@
   <script src="/js/back-button.js"></script>
 
   {{ template "_internal/google_analytics_async.html" . }}
+  {{ "<!--" | safeHTML }} hugo {{ $.GitInfo }} ok? {{ "-->" | safeHTML }}
 </body>
 </html>
