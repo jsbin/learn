@@ -1,10 +1,9 @@
 baseURL = "/"
 languageCode = "en-gb"
 title = "JS Bin help"
-# theme = "hyde"
+googleAnalytics = "UA-1656750-13"
 pygmentsCodeFences = true
 pygmentsStyle = "vs"
-# pygmentsUseClasses=true
 
 [outputs]
 home = [ "RSS", "HTML"]

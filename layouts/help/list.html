@@ -1,0 +1,32 @@
+{{ define "main" -}}
+
+<h1>Help</h1>
+<div class="help-index">
+{{ range $cat := .Site.Data.categories }}
+<div class="category {{ $cat.name }}">
+  <h2>{{ $cat.title }}</h2>
+  <h4>{{ $cat.description }}</h4>
+
+  <ul class="links">
+    {{ range $i, $page := (where $.Site.Pages "Section" "help") }} {{ if eq $page.Params.category $cat.name }}
+    <li>
+      <a href="{{ $page.Permalink }}">{{ replace $page.Title "*" "★" }}</a>
+    </li>{{end}} {{end}}
+  </ul>
+</div>
+{{ end }}
+
+<div class="category">
+  <h2> Legals</h2>
+  <h4>Our terms and privacy policy that we run JS Bin under</h4>
+  <ul class="links">
+    <li>
+      <a href="/legals/privacy/">Privacy Policy</a>
+    </li>
+    <li>
+      <a href="/legals/"> Terms of Service</a>
+    </li>
+</div>
+
+</div>
+{{end}}
