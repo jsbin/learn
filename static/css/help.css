@@ -321,8 +321,12 @@ hr {
 
 header nav {
   display: inline;
-  padding: 4px 0 0px 0;
+  /* padding: 4px 0 0px 0; */
   position: relative;
+}
+
+#search, .algolia-autocomplete {
+  vertical-align: middle;
 }
 
 header nav input {
@@ -338,6 +342,7 @@ header nav a {
   position: relative;
   padding: 10px;
   margin-right: 10px;
+  display: inline-block;
   /* padding-bottom: 0; */
   line-height: 1.2em;
 }

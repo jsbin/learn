@@ -1,18 +1,3 @@
 {{ define "main" -}}
-<div class="posts">
-{{ range .Data.Pages -}}
-<div class="post">
-  <h1 class="post-title">
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-  </h1>
-  <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-  {{ .Summary }}
-  {{ if .Truncated }}
-  <div class="read-more-link">
-    <a href="{{ .RelPermalink }}">Read More…</a>
-  </div>
-  {{ end }}
-</div>
-{{- end }}
-</div>
+<div class="ignore">Ignore this landing page</div>
 {{- end }}
