@@ -7,15 +7,16 @@
     <meta name="description" content="JS Bin help documentation, tips, tricks, features and blog">
     <link rel="icon" href="/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
     <link rel="stylesheet" href="/css/help.css">{{ "<!--[if lt IE 9]>" | safeHTML }}
-    <script src="/js/html5shiv.min.js"></script>
-    {{ "<![endif]-->" | safeHTML }}
-  </head>
-  <body data-url="{{ $.GitInfo }}" id="{{ $.URL | replaceRE `/(.*)/` "$1" | replaceRE `/` "-" }}-page">
-    <div id="container">
-      <header>
-        <div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a>
-          <nav>
+      <script src="/js/html5shiv.min.js"></script>
+      {{ "<![endif]-->" | safeHTML }}
+    </head>
+    <body data-url="{{ $.GitInfo }}" id="{{ $.URL | replaceRE `/(.*)/` "$1" | replaceRE `/` "-" }}-page">
+      <div id="container">
+        <header>
+          <div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a>
+            <nav>
             <input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off">
             <ol id="results" hidden></ol>
             <a {{if eq $.Section "blog" }}class="selected"{{ end }} href="/blog">Blog</a>
@@ -59,9 +60,23 @@
       s.parentNode.insertBefore(wf, s);
     })();
   </script>
-  <script src="/js/min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script>
+    docsearch({
+      appId: 'X7U969ZCKA',
+      apiKey: '43c4a4be12146a98c44795c6078dd9d6', // use a SEARCH-ONLY api key here
+      indexName: 'learn-jsbin',
+      inputSelector: '#search',
+      handleSelected: function (input, event, suggestion) {
+        console.log(input, event, suggestion);
+  },
+
+      debug: false // set to `true` if you want to inspect the dropdown menu's CSS
+    });
+  </script>
+
   <script src="/js/permalink.js"></script>
-  <script src="/js/search.js"></script>
+  <script type="foo" src="/js/search.js"></script>
   <script src="/js/xhr.js"></script>
   <script src="/js/keyboard.js"></script>
   <script src="/js/back-button.js"></script>
