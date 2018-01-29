@@ -68,7 +68,10 @@
       indexName: 'learn-jsbin',
       inputSelector: '#search',
       handleSelected: function (input, event, suggestion) {
-        console.log(input, event, suggestion);
+        var a = document.createElement('a');
+        a.href = suggestion.url;
+        a.hostname = 'jsbin.com';
+        window.location = a.href;
   },
 
       debug: false // set to `true` if you want to inspect the dropdown menu's CSS
@@ -76,8 +79,6 @@
   </script>
 
   <script src="/js/permalink.js"></script>
-  <script type="foo" src="/js/search.js"></script>
-  <script src="/js/xhr.js"></script>
   <script src="/js/keyboard.js"></script>
   <script src="/js/back-button.js"></script>
 

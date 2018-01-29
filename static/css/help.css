@@ -1325,3 +1325,7 @@ input {
 .love {
   color: #FF4136;
 }
+
+pre {
+  background: rgb(234, 238, 239) !important;
+}
