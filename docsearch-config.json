@@ -1,0 +1,12 @@
+{
+  "index_name": "learn-jsbin",
+  "start_urls": ["https://jsbin-learn.netlify.com/"],
+  "stop_urls": ["https://jsbin.com"],
+  "selectors": {
+    "lvl0": "h1",
+    "lvl1": "h2",
+    "lvl2": "h3",
+    "text": "article p"
+  },
+  "selectors_exclude": [".show-your-love", ".ignore"]
+}
