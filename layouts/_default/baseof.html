@@ -8,7 +8,8 @@
     <link rel="icon" href="/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-    <link rel="stylesheet" href="/css/help.css">{{ "<!--[if lt IE 9]>" | safeHTML }}
+    <link rel="stylesheet" href="/css/help.css">
+    {{ "<!--[if lt IE 9]>" | safeHTML }}
       <script src="/js/html5shiv.min.js"></script>
       {{ "<![endif]-->" | safeHTML }}
     </head>
@@ -17,72 +18,71 @@
         <header>
           <div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a>
             <nav>
-            <input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off">
-            <ol id="results" hidden></ol>
-            <a {{if eq $.Section "blog" }}class="selected"{{ end }} href="/blog">Blog</a>
-            <a {{if eq $.Section "help"}}class="selected"{{ end }} href="/help">Help</a>
-          </nav>
+              <input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off">
+              <ol id="results" hidden></ol>
+              <a {{if eq $.Section "blog" }}class="selected"{{ end }} href="/blog">Blog</a>
+              <a {{if eq $.Section "help"}}class="selected"{{ end }} href="/help">Help</a>
+            </nav>
+          </div>
+        </header>
+        <div id="body" data-section="{{ $.Section }}" data-path="{{ $.IsNode }}">
+          <!-- <a href="http://jsbin.com/upgrade" class="pro-feature actionButton actionButton-primary actionButton-small actionButton-rounded">Upgrade to Pro</a> -->
+          {{ if eq $.Section "legals" | or $.IsNode }}{{ block "main" . -}}{{- end }}
+          {{else}}<article>{{ block "main" . -}}{{- end }}</article>{{end}}
         </div>
-      </header>
-      <div id="body" data-section="{{ $.Section }}" data-path="{{ $.IsNode }}">
-        <!-- <a href="http://jsbin.com/upgrade" class="pro-feature actionButton actionButton-primary actionButton-small actionButton-rounded">Upgrade to Pro</a> -->
-        {{ if eq $.Section "legals" | or $.IsNode }}{{ block "main" . -}}{{- end }}
-        {{else}}<article>{{ block "main" . -}}{{- end }}</article>{{end}}
+        <div class="clear"></div>
       </div>
-      <div class="clear"></div>
-    </div>
-    <footer id="footer">
-      <div class="inner">
-        <ul class="notable">
-          <li><a href="/help/about">About</a></li>
-          <li><a href="https://github.com/jsbin">Github</a></li>
-          <li><a href="https://twitter.com/js_bin">Twitter</a></li>
-          <li><a href="http://jsbin.com/videos">YouTube</a></li>
-          <li><a href="https://opencollective.com/jsbin/donate">Donate ❤️</a></li>
-        </ul>
-        <ul class="legal">
-          <li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li>
-        </ul>
-      </div>
-    </footer>
+      <footer id="footer">
+        <div class="inner">
+          <ul class="notable">
+            <li><a href="/help/about">About</a></li>
+            <li><a href="https://github.com/jsbin">Github</a></li>
+            <li><a href="https://twitter.com/js_bin">Twitter</a></li>
+            <li><a href="http://jsbin.com/videos">YouTube</a></li>
+            <li><a href="https://opencollective.com/jsbin/donate">Donate ❤️</a></li>
+          </ul>
+          <ul class="legal">
+            <li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li>
+          </ul>
+        </div>
+      </footer>
+    <script type="text">
+      WebFontConfig = {
+        google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script>
+      docsearch({
+        appId: 'X7U969ZCKA',
+        apiKey: '43c4a4be12146a98c44795c6078dd9d6', // use a SEARCH-ONLY api key here
+        indexName: 'learn-jsbin',
+        inputSelector: '#search',
+        handleSelected: function (input, event, suggestion) {
+          var a = document.createElement('a');
+          a.href = suggestion.url;
+          a.hostname = 'jsbin.com';
+          window.location = a.href;
+        },
+
+        debug: false // set to `true` if you want to inspect the dropdown menu's CSS
+      });
+    </script>
+
+    <script src="/js/permalink.js"></script>
+    <script src="/js/keyboard.js"></script>
+    <script src="/js/back-button.js"></script>
+
+    {{ template "_internal/google_analytics_async.html" . }}
+    {{ "<!--" | safeHTML }} hugo {{ $.GitInfo }} ok? {{ "-->" | safeHTML }}
   </body>
-  <script type="text">
-    WebFontConfig = {
-      google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
-    };
-    (function() {
-      var wf = document.createElement('script');
-      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      wf.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-    })();
-  </script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-  <script>
-    docsearch({
-      appId: 'X7U969ZCKA',
-      apiKey: '43c4a4be12146a98c44795c6078dd9d6', // use a SEARCH-ONLY api key here
-      indexName: 'learn-jsbin',
-      inputSelector: '#search',
-      handleSelected: function (input, event, suggestion) {
-        var a = document.createElement('a');
-        a.href = suggestion.url;
-        a.hostname = 'jsbin.com';
-        window.location = a.href;
-  },
-
-      debug: false // set to `true` if you want to inspect the dropdown menu's CSS
-    });
-  </script>
-
-  <script src="/js/permalink.js"></script>
-  <script src="/js/keyboard.js"></script>
-  <script src="/js/back-button.js"></script>
-
-  {{ template "_internal/google_analytics_async.html" . }}
-  {{ "<!--" | safeHTML }} hugo {{ $.GitInfo }} ok? {{ "-->" | safeHTML }}
-</body>
 </html>
