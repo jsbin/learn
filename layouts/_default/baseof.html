@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{{- $.Scratch.Add "helpRoot" (getenv "HELP_ROOT" | default .Site.Params.helpRoot )}}
 <html id="page">
   <head>
     <meta charset="utf-8">
@@ -8,7 +9,7 @@
     <link rel="icon" href="/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-    <link rel="stylesheet" href="/css/help.css">
+    <link rel="stylesheet" href="{{ $.Scratch.Get "helpRoot" }}/css/help.css">
     {{ "<!--[if lt IE 9]>" | safeHTML }}
       <script src="/js/html5shiv.min.js"></script>
       {{ "<![endif]-->" | safeHTML }}
