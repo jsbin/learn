@@ -1,4 +1,5 @@
-baseURL = "/"
+baseURL = ""
+# canonifyURLs = true
 languageCode = "en-gb"
 title = "JS Bin help"
 googleAnalytics = "UA-1656750-13"
@@ -13,3 +14,6 @@ home = [ "RSS", "HTML"]
 [outputFormats.RSS]
 mediatype = "application/rss"
 baseName = "feed"
+
+[params]
+  helpRoot = ""
