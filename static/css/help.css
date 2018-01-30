@@ -1329,3 +1329,21 @@ input {
 pre {
   background: rgb(234, 238, 239) !important;
 }
+
+/* search specific tweaks */
+.algolia-autocomplete .ds-dropdown-menu {
+  min-width: 400px;
+  max-width: 500px;
+}
+.algolia-autocomplete .algolia-docsearch-suggestion--content {
+  width: 100%;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
+  display: none !important;
+}
+
+
+.algolia-autocomplete .algolia-docsearch-suggestion--content:before {
+  content: none;
+}
