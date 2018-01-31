@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "hugo && npm run codemod",
-    "codemod": "codemod --accept-all -m -d public/ --extensions html 'src=\"\/([^/])' 'src=\"https://help.jsbin.com/\\1'"
+    "codemod": "codemod --accept-all -m -d public/ --extensions html 'src=\"\/([^/])' 'src=\"https://help.jsbin.com/\\1' > /dev/null"
   },
   "repository": {
     "type": "git",
