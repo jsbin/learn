@@ -8,11 +8,16 @@ pygmentsStyle = "vs"
 
 [outputs]
 home = [ "RSS", "HTML"]
+page = ["HTML", "JSON"]
 
 [outputFormats]
 [outputFormats.RSS]
 mediatype = "application/rss"
 baseName = "feed"
+
+[outputFormats.JSON]
+mediatype = "application/json"
+baseName = "all"
 
 [params]
   helpRoot = ""

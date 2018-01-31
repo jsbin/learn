@@ -1,0 +1,22 @@
+{ "blog": [
+  {{ range $i, $e := (where .Site.Pages "Section" "blog") }}
+  {{ if $i }}, {{ end }}
+      {
+          "title": "{{ .Title }}",
+          "url": "{{ .RelPermalink }}",
+          "date": "{{ .PublishDate.Format "2006-01-02" }}",
+          "timestamp": {{ mul (.PublishDate.Unix) 1000 }}
+      }
+  {{ end }}
+    ],
+    "help": [
+      {{ range $i, $e := (where .Site.Pages "Section" "help") }}
+      {{ if $i }}, {{ end }}
+          {
+              "title": "{{ .Title }}",
+              "url": "{{ .RelPermalink }}",
+              "category": "{{ .Params.Category }}"
+          }
+      {{ end }}
+    ]
+  }

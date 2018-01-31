@@ -3,7 +3,7 @@
 <h1>The JS Bin Blog</h1>
 
 <ul class="posts">
-{{ range .Data.Pages -}}
+{{ range where .Data.Pages "Layout" "!=" "feed" -}}
   <li>
     <span class="date">{{ .PublishDate.Format "2-Jan, 2006" }}</span>
     <a href="{{ .Permalink }}">{{ .Title }}</a>
