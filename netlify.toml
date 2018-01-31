@@ -3,4 +3,4 @@ HUGO_ENABLEGITINFO = "true"
 HUGO_VERSION = "0.33"
 
 [context.production]
-  command = "pip install codemod && npm run build"
+  command = "npm run build"
