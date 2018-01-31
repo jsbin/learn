@@ -2,7 +2,7 @@
 title: Vanity URLs
 category: pro
 ---
-# Vanity URLs
+
 
 Vanity URLs has two purposes. The first is that puts *your* username when you share your bin's output, and secondly allows you to publish to your vanity homepage.
 

@@ -2,7 +2,7 @@
 title: Why register?
 category: learn
 ---
-# Why register?
+
 
 Registration is free and very simple with JS Bin, but what are the benefits?
 

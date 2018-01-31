@@ -2,7 +2,7 @@
 title: How to show & hide line numbers
 category: learn
 ---
-# How to show & hide line numbers
+
 
 There's three ways to toggle line numbers:
 

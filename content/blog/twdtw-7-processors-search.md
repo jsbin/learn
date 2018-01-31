@@ -4,7 +4,7 @@ author: remy
 date: '2014-05-02'
 published: true
 ---
-# TWDTW #7 - SCSS, Compass and search
+
 
 Whilst Fabien continues with [Pro user integration](/blog/twdtw-6-syncing-pro-accounts) and Giulia [goes on holiday](https://twitter.com/electric_g/status/460844432649355264), I've snuck out of paternity leave and cheekily completed a bit of dev.
 

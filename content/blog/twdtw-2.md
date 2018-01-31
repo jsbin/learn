@@ -4,7 +4,7 @@ author: remy
 date: '2014-03-14'
 published: true
 ---
-# TWDTW #2
+
 
 This week we released more experiments, discovered one experiment going wrong (sad face), little two day retreat playing with arduinos and where I'll be about giving away some sweet [JS Bin stickers](http://www.flickr.com/photos/remysharp/9576228318/) and maybe even a [t-shirt](http://www.flickr.com/photos/remysharp/10805438263/) or two.
 

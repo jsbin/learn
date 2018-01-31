@@ -2,7 +2,7 @@
 title: "@import with Sass"
 category: learn
 ---
-# @import with Sass
+
 
 In JS Bin you can import other bins with Sass really easily.
 

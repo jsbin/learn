@@ -2,7 +2,7 @@
 title: The state of SSL on JS Bin
 category: fix
 ---
-# The state of SSL on JS Bin
+
 
 Currently only the login, register and (upcoming) account settings are served over SSL. The rest of JS Bin is not.
 

@@ -4,7 +4,7 @@ author: remy
 date: '2014-08-08'
 published: true
 ---
-# Protecting you from yourself
+
 
 JS Bin has recently had some subtle changes that help protect you from bugs in your own code.
 

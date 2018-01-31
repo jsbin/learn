@@ -2,7 +2,7 @@
 title: When do revisions change?
 category: learn
 ---
-# When do revisions change?
+
 
 Let's say you've started afresh on jsbin.com. You're welcomed with either your own saved template or the default empty HTML page.
 

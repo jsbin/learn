@@ -4,7 +4,7 @@ category: fix
 related:
 - why-register
 ---
-# Why do full previews expire?
+
 
 When you visit a shared bin URL you might see this message across the top:
 

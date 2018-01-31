@@ -4,20 +4,20 @@ author: remy
 date: '2014-02-27'
 published: true
 ---
-# Welcome to the new help & blog
+
 
 JS Bin for years has done an absolutely superb job of giving its users an editor and the live output of the HTML, CSS & JavaScript. Something the project has been terrible at is exposing features and new information.
 
 We try hard to recess the application of JS Bin to let you get on with coding right away. This way *everyone gets a cursor*. You visit JS Bin, you type: you get a bin.
 
-But we're also very aware of the cost of recessing away like this. Often I see tweets and issues along the lines of "it would be great if I could do X", and I reply along the lines of "yeah, we did that back in 2011, it's here...". 
+But we're also very aware of the cost of recessing away like this. Often I see tweets and issues along the lines of "it would be great if I could do X", and I reply along the lines of "yeah, we did that back in 2011, it's here...".
 
 It's our own fault, but *this* new area of JS Bin will be the home for all the [help](/help) and the blog will be used to share our workings on new features and ideas—and hopefully share some of the process we use.
 
 There's a few ways you can keep track of what's going on:
 
 * Via twitter, follow [@js_bin](http://twitter.com/js_bin)
-* [Subscribe](/blog/feed.xml) to the blog RSS feed
+* [Subscribe](/feed.xml) to the blog RSS feed
 * Watch the [github projects](http://github.com/jsbin)
 
 ## Say Hello to the Team

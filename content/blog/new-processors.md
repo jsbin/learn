@@ -4,7 +4,7 @@ author: remy
 date: '2014-06-17'
 published: true
 ---
-# New processors. We need your input
+
 
 We're doing the final testing on our new processor code. Sass and SCSS have been in high demand for a long time ([#176](https://github.com/jsbin/jsbin/issues/176)), which has driven this rewrite ([#1229](https://github.com/jsbin/jsbin/pull/1229)).
 

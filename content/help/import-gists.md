@@ -2,7 +2,7 @@
 title: 'Gists: how to import a gist'
 category: teach
 ---
-# Importing Gists
+
 
 Importing a [Gist](http://gist.github.com) is incredible easy. Simply change the `github` part of the URL to `jsbin` and JS Bin will import the gist into JS Bin for editing and rendering.
 

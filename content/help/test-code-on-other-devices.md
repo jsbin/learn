@@ -3,7 +3,7 @@ title: Test out code on other devices
 video: "//www.youtube.com/embed/eDFGrqjjyLk"
 category: learn
 ---
-# Test out code on other devices
+
 
 JS Bin not only includes live rendering in the main window, but also allows you to try out your code on any other device or in any browser, with live updates as you type.
 

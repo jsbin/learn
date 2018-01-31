@@ -2,7 +2,7 @@
 title: Pronounceable URLs
 category: learn
 ---
-# Pronounceable URLs
+
 
 Did you ever notice that that JS Bin's URLs have been designed to be pronounceable?
 

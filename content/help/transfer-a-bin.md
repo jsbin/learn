@@ -2,7 +2,7 @@
 title: Transferring ownership of a bin
 category: learn
 ---
-# Transferring ownership of a bin
+
 
 If you own a bin and you want to transfer ownership, from the "bin info" card in the bottom right of JS Bin, expand it and click the "transfer" link:
 

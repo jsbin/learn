@@ -2,7 +2,7 @@
 title: SSL opt-in support
 category: learn
 ---
-# SSL opt-in
+
 
 SSL, that is, using `https` for *all* of JS Bin, can be enabled via [their preferences](http://jsbin.com/account/preferences). Note that extra care in including resources is needed, and to ensure they work, it's recommended you use [protocol relative](http://www.paulirish.com/2010/the-protocol-relative-url/) URLs.
 

@@ -2,7 +2,7 @@
 title: Session Secrets
 category: fix
 ---
-# Session secrets in jsbin
+
 
 If you see this warning message when running a local `jsbin` command, you'll want to set up a session secret.
 

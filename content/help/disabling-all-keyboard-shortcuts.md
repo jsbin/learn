@@ -2,7 +2,7 @@
 title: How to disable JS Bin keyboard shortcuts
 category: fix
 ---
-# How to disable JS Bin keyboard shortcuts
+
 
 If you're finding there's issues with all or most of JS Bin's keyboard shortcuts,
 perhaps you're using a keyboard that we're not able to bind the shortcuts correctly.

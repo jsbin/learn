@@ -2,7 +2,7 @@
 title: How do I set default code in all new bins?
 category: learn
 ---
-# How do I set default code in all new bins?
+
 
 By default, opening JS Bin, you'll be presented with a boilplate HTML document with no CSS and no JavaScript. But what if you want to *always* include code, like a default meta viewport?
 

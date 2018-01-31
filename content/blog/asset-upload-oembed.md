@@ -1,10 +1,10 @@
 ---
-title: Asset uploads & oembed
+title: Asset uploads & oEmbed
 author: remy
 date: '2015-02-04'
 published: true
 ---
-# Asset uploads & oEmbed
+
 
 We said we'd be working on more pro features, and we are. Also, since we're open source, this awesome stuff happens from time to time: oEmbed as a community submitted feature.
 

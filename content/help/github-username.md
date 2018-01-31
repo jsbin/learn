@@ -2,7 +2,7 @@
 title: My Github username isn't available
 category: fix
 ---
-# My Github username isn't available
+
 
 If you try to register with Github and your Github username is already taken in JS Bin, then you'll need to follow these steps to use Github sign in.
 

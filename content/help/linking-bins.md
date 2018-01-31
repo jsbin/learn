@@ -2,7 +2,7 @@
 title: How to link multiple bins
 category: learn
 ---
-# How to link multiple bins
+
 
 Sometimes you need to create a bin that pulls in some JSON data, makes ajax requests or perhaps includes multiple CSS resources.
 

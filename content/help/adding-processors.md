@@ -2,7 +2,7 @@
 title: Adding new pre-processors
 category: fix
 ---
-# Adding processors
+
 
 Adding processors to JS Bin requires changes to the server side of JS Bin *and* the client side. This article explains how to implement a processor.
 

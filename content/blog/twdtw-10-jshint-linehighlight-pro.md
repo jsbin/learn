@@ -4,7 +4,7 @@ author: remy
 date: '2014-06-20'
 published: true
 ---
-# TWDTW 10 - JSHint, line highlighting and Pro update
+
 
 Today we pushed a fairly hefty release containing a few PRs to update libraries, but also a few extra features for all our users.
 

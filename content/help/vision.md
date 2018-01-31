@@ -2,7 +2,7 @@
 title: Vision
 category: fix
 ---
-# Our vision
+
 
 - hacking (the person who would use jsbin to hack a prototype, and sharing their work)
 - learning to code (like a student, or in a classroom environment)

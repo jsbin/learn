@@ -4,7 +4,7 @@ author: remy
 date: '2015-06-21'
 published: true
 ---
-# SSL now available to all
+
 
 As the web moves towards using HTTPS everywhere, JS Bin has *moved* SSL from being a "pro only" feature to making it available to **everyone** as of today.
 

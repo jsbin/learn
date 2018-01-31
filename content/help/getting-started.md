@@ -2,7 +2,7 @@
 title: "* Getting started"
 category: learn
 ---
-# Getting started with JS Bin
+
 
 JS Bin is a tool for experimenting with web languages. In particular HTML, CSS and JavaScript, but JS Bin also supports other languages too (like Markdown, Jade and Sass).
 

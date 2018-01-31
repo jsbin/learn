@@ -2,7 +2,7 @@
 title: How to add more libraries to the library list
 category: hack
 ---
-# Adding custom libraries
+
 
 JS Bin comes with out of the box support for a number of libraries, but if you're comfortable in the developer tools, you can add your own.
 

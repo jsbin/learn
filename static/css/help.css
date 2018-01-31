@@ -426,12 +426,14 @@ nav {
 }
 
 a {
-  color: blue;
+  color: rgb(21, 101, 192);
+  text-decoration: underline;
+  text-decoration-skip: ink;
 }
 
 a:hover,
 footer .legal a:hover {
-  color: #0074D9;
+  color: blue;
   /* text-shadow: 1px 1px 1px rgba(0,0,0,0.1); */
 }
 
@@ -442,11 +444,30 @@ footer .legal a:hover {
 
 .button.action {
   background: #FFDC00;
+  border-color: #ffdc00;
   color: #111;
 }
 
 .button.action:hover {
   background: #FFEB66;
+  border-color: #ffeb66;
+}
+
+button.button {
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button.call {
+  padding: 10px 20px;
+  display: block;
+  margin: 0 auto;
+  border-width: 2px;
+}
+
+.button.big {
+  font-size: 24px;
 }
 
 /**
@@ -1346,4 +1367,19 @@ pre {
 
 .algolia-autocomplete .algolia-docsearch-suggestion--content:before {
   content: none;
+}
+
+.show-your-love {
+  border: 5px solid #FFDC00;
+  padding: 10px 20px;
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.show-your-love h2 {
+  margin-top:
 }

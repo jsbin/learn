@@ -4,7 +4,7 @@ author: remy
 date: '2014-04-10'
 published: true
 ---
-# Heartbleed and JS Bin
+
 
 If you've not heard about [Heartbleed](http://heartbleed.com), means that **potentially** all your passwords can be compromised. This isn't a bug that's specific to JS Bin, it affects most sign in forms that go over HTTPS. Yes, it's **that** scary. 
 

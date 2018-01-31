@@ -4,7 +4,7 @@ author: remy
 date: '2014-04-01'
 published: true
 ---
-# TWDTW #3
+
 
 Last week we rolled out [SSL support](/blog/ssl) for our sign in (long overdue), and this week we've had two pretty cool releases: CodeMirror 4 and (in private testing) user settings UI.
 

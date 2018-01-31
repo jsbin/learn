@@ -3,7 +3,7 @@ title: Asset uploading
 category: pro
 video: "//www.youtube.com/embed/d8TkAeGFLx4?rel=0"
 ---
-# Asset uploading
+
 
 Available to [pro only](/upload). Simply drag & drop your assets into JS Bin and it'll upload instantly and insert an image tag with your newly uploaded asset.
 

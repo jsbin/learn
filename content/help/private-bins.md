@@ -2,7 +2,7 @@
 title: Private bins
 category: pro
 ---
-# Private bins
+
 
 ![Making a bin private](/images/private-menu.png)
 

@@ -2,7 +2,7 @@
 title: 'Local JS Bin: the detailed how-to'
 category: hack
 ---
-# Running JS Bin locally
+
 
 JS Bin is a [Node](http://nodejs.org) project.
 

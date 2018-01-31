@@ -4,7 +4,7 @@ author: remy
 date: '2014-07-24'
 published: true
 ---
-# Announcements: Pro & Processors
+
 
 The last few weeks we've all been busy on that last stretch of work, that last 5% of work that always eeks itself out to be longer than you expect.
 

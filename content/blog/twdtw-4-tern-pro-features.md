@@ -4,7 +4,7 @@ author: remy
 date: '2014-04-07'
 published: true
 ---
-# TWDTW #4 - Tern is live
+
 
 We've now released Tern to live for everyone, and we've been hard at work on our Pro features and working on improving the JS Bin core code.
 

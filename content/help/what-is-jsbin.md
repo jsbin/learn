@@ -2,7 +2,7 @@
 title: What is JS Bin?
 category: learn
 ---
-# What is JS Bin?
+
 
 JS Bin is a tool that *enables* you to learn, experiment and teach using web technologies.
 

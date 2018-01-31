@@ -2,7 +2,7 @@
 title: How can I embed JS Bin?
 category: teach
 ---
-# How can I embed JS Bin?
+
 
 JS Bin can be embedded in your site with very little work. The easiest way is to simply change the ending url `/edit` to `/embed` and wrap the url in an iframe.
 

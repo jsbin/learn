@@ -2,7 +2,7 @@
 title: "* What to expect from a Pro subscription"
 category: pro
 ---
-# What a Pro can expect
+
 
 If you've upgraded to pro, or if you're curious, then thank you and here's the skinny.
 

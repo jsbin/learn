@@ -2,7 +2,7 @@
 title: How to clear the console
 category: learn
 ---
-# How to clear the console
+
 
 You can clear the JS Bin console either using a [keyboard shortcut](/help/keyboard-shortcuts) or programmatically using JavaScript.
 

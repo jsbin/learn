@@ -2,7 +2,7 @@
 title: Stickers
 category: hack
 ---
-# Get exclusive JS Bin stickers
+
 
 **Want stickers? We've got them!**
 

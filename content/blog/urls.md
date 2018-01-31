@@ -4,7 +4,7 @@ author: remy
 date: '2015-06-16'
 published: true
 ---
-# A change to the way our URLs work
+
 
 We've just landed a change to the way JS Bin URLs work, and though the new way aims to be intuitive and backward compatible, some of you sharp sighted users might have spotted the change already and wondering what changed and why.
 

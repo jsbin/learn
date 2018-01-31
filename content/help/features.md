@@ -2,7 +2,7 @@
 title: Feature list
 category: learn
 ---
-# Features
+
 
 This is a non-exhaustive, non-priortised list of features that JS Bin has.
 

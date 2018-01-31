@@ -5,7 +5,7 @@ related:
 - adding-custom-libraries
 - versions
 ---
-# Adding Libraries
+
 
 You can manually [add custom libraries](/help/adding-custom-libraries) to your own instance of JS Bin, however if there's an important library or framework that many others want to use, then it makes sense to have it included in JS Bin's library selector:
 

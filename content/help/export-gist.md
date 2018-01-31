@@ -2,7 +2,7 @@
 title: 'Gists: how to export to a gist'
 category: teach
 ---
-# Exporting to Gists
+
 
 It's easy to [import gists](/help/import-gists) and it's easy to export to a gist from JS Bin:
 

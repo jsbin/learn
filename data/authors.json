@@ -1,18 +1,18 @@
 {
     "remy": {
         "name": "Remy Sharp",
-        "avatar": "https://help.jsbin.com/images/avatars/remy.jpg"
+        "avatar": "/images/avatars/remy.jpg"
     },
     "danny": {
         "name": "Danny Hope",
-        "avatar": "https://help.jsbin.com/images/avatars/danny.jpg"
+        "avatar": "/images/avatars/danny.jpg"
     },
     "fabien": {
         "name": "Fabien O'Carroll",
-        "avatar": "https://help.jsbin.com/images/avatars/fabien.jpg"
+        "avatar": "/images/avatars/fabien.jpg"
     },
     "giulia": {
         "name": "Giulia Alfonsi",
-        "avatar": "https://help.jsbin.com/images/avatars/giulia.jpg"
+        "avatar": "/images/avatars/giulia.jpg"
     }
 }

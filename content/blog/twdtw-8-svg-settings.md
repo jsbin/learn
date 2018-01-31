@@ -4,7 +4,7 @@ author: fabien
 date: '2014-05-15'
 published: true
 ---
-# TWDTW #8 - SVG support and settings live
+
 
 With [Giulia](https://twitter.com/electric_g) back from holiday and [Remy](https://twitter.com/rem) easing back into work, the Left Logic offices
 have been a bit more lively, and pushing a few more bits to production.

@@ -4,7 +4,7 @@ author: fabien
 date: '2014-04-25'
 published: true
 ---
-# TWDTW #6 - Bin files, Dropbox, Pro Accounts
+
 
 This week we've been doing mostly internal updates to JS Bin, so not much to see. I've been working on updating the way in which we create HTML
 files from bins and we're going to start experimenting with two-way syncing with [Dropbox](http://dropbox.com)

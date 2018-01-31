@@ -4,7 +4,7 @@ category: learn
 related:
 - vanity-urls
 ---
-# How do I share the latest bin?
+
 
 Simple. There's a few ways depending on what you want to achieve.
 

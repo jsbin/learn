@@ -2,7 +2,7 @@
 title: Sandbox mode
 category: pro
 ---
-# "Sandbox" mode
+
 
 JS Bin is different from other pastebins in that it saves by default *automatically*. This means you'll never lose your work. However, sometimes you want to throw open JS Bin and test some code without JS Bin ever knowing you were there. This is "sandbox" mode.
 

@@ -4,7 +4,7 @@ author: remy
 date: '2014-07-09'
 published: true
 ---
-# TWDTW #11 - A week of security
+
 
 This last week has had a particularly strong focus on security. Some of these changes might also have a direct impact on the way you use JS Bin.
 

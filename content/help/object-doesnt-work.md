@@ -2,7 +2,7 @@
 title: Why doesn't <object> work?
 category: fix
 ---
-# Why doesn't `<object>` work?
+
 
 You might have tried to use an `<object>` tag in JS Bin, i.e. for SVG, and noticed that *nothing* appears.
 

@@ -2,7 +2,7 @@
 title: Debbugging your preferences
 category: hack
 ---
-# Debbugging your preferences
+
 
 If you're having problems with preferences being saved (perhaps the right panels are not being shown that you've selected), it's sometimes useful to inspect the settings that are stored locally on the browser you're experiencing issues with.
 

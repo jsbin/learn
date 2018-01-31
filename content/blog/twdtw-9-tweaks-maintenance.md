@@ -4,7 +4,7 @@ author: giulia
 date: '2014-06-09'
 published: true
 ---
-# TWDTW #9 - Tweaks and maintenance
+
 
 These past three weeks we have been mainly working on bug fixes and internal maintenance, so no big announcement except that we have released to 100% of our users the [settings and preferences pages](/blog/twdtw-8-svg-settings#usersettingslive). Go and have fun with it!
 

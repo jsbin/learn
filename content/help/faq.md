@@ -2,7 +2,7 @@
 title: FAQ
 category: learn
 ---
-# Frequently Asked Questions
+
 
 ## How long are bins kept for?
 

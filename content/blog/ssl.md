@@ -5,7 +5,7 @@ date: '2014-03-19'
 published: true
 ---
 
-# SSL: A secure login
+
 
 Up until now all of JS Bin has been served over standard HTTP. This is fine for most of the site, however we've decided to upgrade the login and register (and eventually the account settings) pages to use SSL (i.e. encrypted data transmission).
 

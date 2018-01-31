@@ -2,7 +2,7 @@
 title: 'Versions: Processors & core libraries'
 category: fix
 ---
-# Versions
+
 
 This page lists the versions of processors used and a few important libraries used by JS&nbsp;Bin. Note that _client_ libraries are managed by the web community [through pull requests](/help/adding-libraries).
 

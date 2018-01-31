@@ -4,7 +4,7 @@ author: fabien
 date: '2014-04-11'
 published: true
 ---
-# TWDTW #5 - Heartbleed, Settings, User Backups
+
 
 This week we've been dealing with the Heartbleed issue, but more positively have also shipped (for internal, but live testing) updates to user settings and a new pro feature: real-time backup of your bins.
 

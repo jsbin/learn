@@ -3,7 +3,7 @@ title: How to customise the editor settings
 category: learn
 video: "//www.youtube.com/embed/pzFqaRJwNQ8"
 ---
-# How to customise the editor settings
+
 
 *This article needs updating - as this is only required if you don't have a login.*
 

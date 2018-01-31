@@ -2,7 +2,7 @@
 title: Delete a bin
 category: learn
 ---
-# Delete a bin
+
 
 Deleting a bin is easy. Once a bin is deleted, all changes on that particular bin URL are ignored, and when you leave the browser window (or refresh) the bin is permanently lost.
 

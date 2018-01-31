@@ -4,7 +4,7 @@ category: hack
 related:
 - how-can-i-embed-jsbin
 ---
-# Ajax request to bins
+
 
 JS Bin supports [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) and a number of different ways to access your bin's content using Ajax techniques.
 

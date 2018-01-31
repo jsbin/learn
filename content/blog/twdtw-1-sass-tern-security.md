@@ -4,7 +4,7 @@ author: remy
 date: '2014-03-07'
 published: true
 ---
-# TWDTW #1
+
 
 This is the first installment of "things we did this week". Where we'll share some of the features or changes or fixes we've been working on. Sometimes it will be small features, sometimes BIG exciting features and other times it'll be progress to much longer term goals.
 

@@ -2,7 +2,7 @@
 title: What to do if your embed doesn't load
 category: fix
 ---
-# My embedded bin doesn't load, it just shows the Dave logo
+
 
 There's a particular situations when your embedded bin is hidden then becomes
 visible. It's still showing Dave's logo because there was no known height to

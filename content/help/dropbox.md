@@ -3,7 +3,7 @@ title: Dropbox integration
 category: pro
 video: "//www.youtube.com/embed/BZIMB6suEx8?rel=0"
 ---
-# Dropbox integration
+
 
 Linking to your Dropbox account [from your profile](/account/profile) will put every bin as a full HTML file in your Dropbox `Apps/jsbin` directory. This means you have a complete offline backup of your bins or any bin you edit.
 

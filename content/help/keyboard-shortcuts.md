@@ -2,7 +2,7 @@
 title: Keyboard shortcuts
 category: learn
 ---
-# Keyboard Shortcuts
+
 
 JS Bin supports keyboard shortcuts when the editor panels are focused (i.e. you have a cursor). Shortcuts can also be [disabled](/help/disabling-all-keyboard-shortcuts) if desired.
 

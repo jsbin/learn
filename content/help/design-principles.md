@@ -2,7 +2,7 @@
 title: Design principles
 category: fix
 ---
-# JS Bin design principles
+
 
 These are emerging from the ongoing process of designing and building JS Bin. They’re a work in progress.
 
