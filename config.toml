@@ -1,5 +1,4 @@
-baseURL = ""
-# canonifyURLs = true
+baseURL = "/"
 languageCode = "en-gb"
 title = "JS Bin help"
 googleAnalytics = "UA-1656750-13"
