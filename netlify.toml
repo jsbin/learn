@@ -1,6 +1,2 @@
-HELP_ROOT = "https://help.jsbin.com"
-HUGO_ENABLEGITINFO = "true"
-HUGO_VERSION = "0.33"
-
 [context.production]
   command = "npm run build"
