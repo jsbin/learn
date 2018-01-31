@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "hugo && npm run codemod",
-    "codemod": "codemod --accept-all -m -d public/ --extensions html 'src=\"\/([^/])' 'src=\"https://help.jsbin.com/\\1' > /dev/null"
+    "build": "npm run hugo && npm run codemod",
+    "hugo": "hugo",
+    "codemod": "perl -p -i -e 's@src=\"\\/([^/])@src=\"https://help.jsbin.com/\\1@g' public/**/*.html"
   },
   "repository": {
     "type": "git",
