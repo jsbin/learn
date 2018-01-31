@@ -3,7 +3,7 @@
   {{ if $i }}, {{ end }}
       {
           "title": "{{ .Title }}",
-          "url": "{{ .RelPermalink }}",
+          "slug": "{{ .RelPermalink }}",
           "date": "{{ .PublishDate.Format "2006-01-02" }}",
           "timestamp": {{ mul (.PublishDate.Unix) 1000 }}
       }
@@ -14,7 +14,7 @@
       {{ if $i }}, {{ end }}
           {
               "title": "{{ .Title }}",
-              "url": "{{ .RelPermalink }}",
+              "slug": "{{ .RelPermalink }}",
               "category": "{{ .Params.Category }}"
           }
       {{ end }}
