@@ -2,7 +2,6 @@
 title: The Return and The Refactor
 author: remy
 date: 2018-01-31
-draft: true
 ---
 
 
@@ -20,7 +19,11 @@ In fact, this isn't much of a departure from the original, v1 of JS Bin from bac
 
 ![v1](/images/blog/v1.jpg)
 
-So, I've been working on this new refactor since July 2017 on and off between "real" paid work and making slow progress.
+So, I've been working on this new refactor since July 2017 on and off between "real" paid work and making slow progress. The current alpha version of JS Bin v5 is quite a decent way along, thought there's still [lots to do](https://github.com/jsbin/jsbin/blob/feat/next-v5/TODO.md), there's quite a few nice toys tucked inside new JS Bin too. Here's one to whet your appetite:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Imports on (new) jsbin are pretty cool I think. Downloaded result includes full working version *plus* original source. <a href="https://t.co/ARVH89ij9u">pic.twitter.com/ARVH89ij9u</a></p>&mdash; @rem (@rem) <a href="https://twitter.com/rem/status/956508538184052736?ref_src=twsrc%5Etfw">January 25, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 ## What does this mean?
 
@@ -36,7 +39,7 @@ The aim: back to simple. Simple and fast is what JS Bin was good at. Now I want 
 
 Why yes, you can! And, if you don't like it, you can always "eject" back to JS Bin v4 (from the palette menu).
 
-<button class="button call action big" onclick="document.cookie = 'version=v5; domain=.jsbin.com'; window.open('https://jsbin.com');">Try JS Bin v5 now</button>
+<button class="button call action big" onclick="document.cookie = 'version=v5; domain=.jsbin.com'; window.open('https://jsbin.com?utm_source=jsbin&utm_medium=blog&utm_campaign=try-v5');">Try JS Bin v5-alpha now</button>
 
 Keep in mind that v5 is still in alpha, and there _will_ be some undocumented parts, some broken parts, some missing parts. If you feel there's something important or unobvious that's going wrong, there's a dedicated support link in v5 that you file an issue.
 

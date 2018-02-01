@@ -261,6 +261,7 @@ div > img {
 #body > article table,
 #body > article form,
 #body > article .related,
+twitterwidget,
 #disqus_thread {
   max-width: 660px;
   margin-left: auto;
@@ -1377,9 +1378,5 @@ pre {
   margin-right: auto;
   border-radius: 3px;
   font-size: 18px;
-  margin-top: 40px;
-}
-
-.show-your-love h2 {
-  margin-top:
+  margin-top: 60px;
 }
