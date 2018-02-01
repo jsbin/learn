@@ -7,7 +7,7 @@
     "dev": "hugo -D serve -p 5000",
     "build": "npm run hugo && npm run codemod",
     "hugo": "hugo",
-    "codemod": "perl -pi -e 's#src=\"\/([^/])#src=\"https://help.jsbin.com/\\1#g' 'public/{help,blog}/**/*.html'; grep '/images/deleted-bin.png' public/help/delete-a-bin/index.html"
+    "codemod": "perl -pi -e 's#src=\"\/([^/])#src=\"https://help.jsbin.com/\\1#g' public/**/**/*.html; grep '/images/deleted-bin.png' public/help/delete-a-bin/index.html"
   },
   "repository": {
     "type": "git",
