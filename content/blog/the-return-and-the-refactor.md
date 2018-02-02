@@ -39,7 +39,7 @@ The aim: back to simple. Simple and fast is what JS Bin was good at. Now I want 
 
 Why yes, you can! And, if you don't like it, you can always "eject" back to JS Bin v4 (from the palette menu).
 
-<button class="button call action big" onclick="document.cookie = 'version=v5; domain=.jsbin.com'; window.open('https://jsbin.com?utm_source=jsbin&utm_medium=blog&utm_campaign=try-v5');">Try JS Bin v5-alpha now</button>
+<button class="button call action big" onclick="document.cookie = 'version=v5; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/'; window.open('https://jsbin.com?utm_source=jsbin&utm_medium=blog&utm_campaign=try-v5');">Try JS Bin v5-alpha now</button>
 
 Keep in mind that v5 is still in alpha, and there _will_ be some undocumented parts, some broken parts, some missing parts. If you feel there's something important or unobvious that's going wrong, there's a dedicated support link in v5 that you file an issue.
 
