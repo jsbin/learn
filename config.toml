@@ -7,7 +7,7 @@ enableGitInfo = true
 pygmentsStyle = "vs"
 
 [outputs]
-home = [ "RSS", "HTML"]
+home = ["RSS", "HTML"]
 page = ["HTML", "JSON"]
 
 [outputFormats]
@@ -20,4 +20,4 @@ mediatype = "application/json"
 baseName = "all"
 
 [params]
-  helpRoot = ""
+helpRoot = "https://help.jsbin.com/"
