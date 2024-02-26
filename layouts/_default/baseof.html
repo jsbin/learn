@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html id="page">
+
   <head>
     <meta charset="utf-8">
     <title>{{ .Title }}</title>
@@ -8,44 +9,46 @@
     <link rel="icon" href="/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-    <link rel="stylesheet" href="{{ getenv "HELP_ROOT" | default .Site.Params.helpRoot }}/css/help.css">
+    <link rel="stylesheet" href="{{ getenv " HELP_ROOT" | default .Site.Params.helpRoot }}/css/help.css">
     {{ "<!--[if lt IE 9]>" | safeHTML }}
-      <script src="/js/html5shiv.min.js"></script>
-      {{ "<![endif]-->" | safeHTML }}
-    </head>
-    <body data-url="{{ $.GitInfo }}" id="{{ $.URL | replaceRE `/(.*)/` "$1" | replaceRE `/` "-" }}-page">
-      <div id="container">
-        <header>
-          <div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a>
-            <nav>
-              <input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off">
-              <ol id="results" hidden></ol>
-              <a {{if eq $.Section "blog" }}class="selected"{{ end }} href="/blog">Blog</a>
-              <a {{if eq $.Section "help"}}class="selected"{{ end }} href="/help">Help</a>
-            </nav>
-          </div>
-        </header>
-        <div id="body" data-section="{{ $.Section }}" data-path="{{ $.IsNode }}">
-          <!-- <a href="http://jsbin.com/upgrade" class="pro-feature actionButton actionButton-primary actionButton-small actionButton-rounded">Upgrade to Pro</a> -->
-          {{ if eq $.Section "legals" | or $.IsNode }}{{ block "main" . -}}{{- end }}
-          {{else}}<article>{{ block "main" . -}}{{- end }}</article>{{end}}
+    <script src="/js/html5shiv.min.js"></script>
+    {{ "<![endif]-->" | safeHTML }}
+  </head>
+
+  <body data-url="{{ $.GitInfo }}" id="{{ $.URL | replaceRE `/(.*)/` " $1" | replaceRE `/` "-" }}-page">
+    <div id="container">
+      <header>
+        <div class="inner"><a id="back" href="/"><span class="morewords">Back to JS Bin</span></a>
+          <nav>
+            <input id="search" placeholder="Search..." spellcheck="false" autocapitalize="off" autocorrect="off">
+            <ol id="results" hidden></ol>
+            <a {{if eq $.Section "blog" }}class="selected" {{ end }} href="/blog">Blog</a>
+            <a {{if eq $.Section "help" }}class="selected" {{ end }} href="/help">Help</a>
+          </nav>
         </div>
-        <div class="clear"></div>
+      </header>
+      <div id="body" data-section="{{ $.Section }}" data-path="{{ $.IsNode }}">
+        <!-- <a href="http://jsbin.com/upgrade" class="pro-feature actionButton actionButton-primary actionButton-small actionButton-rounded">Upgrade to Pro</a> -->
+        {{ if eq $.Section "legals" | or $.IsNode }}{{ block "main" . -}}{{- end }}
+        {{else}}
+          <article>{{ block "main" . -}}{{- end }}</article>{{end}}
       </div>
-      <footer id="footer">
-        <div class="inner">
-          <ul class="notable">
-            <li><a href="/help/about">About</a></li>
-            <li><a href="https://github.com/jsbin">Github</a></li>
-            <li><a href="https://twitter.com/js_bin">Twitter</a></li>
-            <li><a href="http://jsbin.com/videos">YouTube</a></li>
-            <li><a href="https://opencollective.com/jsbin/donate">Donate ❤️</a></li>
-          </ul>
-          <ul class="legal">
-            <li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li>
-          </ul>
-        </div>
-      </footer>
+      <div class="clear"></div>
+    </div>
+    <footer id="footer">
+      <div class="inner">
+        <ul class="notable">
+          <li><a href="/help/about">About</a></li>
+          <li><a href="https://github.com/jsbin">Github</a></li>
+          <li><a href="https://twitter.com/js_bin">Twitter</a></li>
+          <li><a href="http://jsbin.com/videos">YouTube</a></li>
+          <li><a href="https://opencollective.com/jsbin/contribute">Donate ❤️</a></li>
+        </ul>
+        <ul class="legal">
+          <li><em><a href="/help/what-is-jsbin">Hack. Learn. Fix. Teach.</a></em></li>
+        </ul>
+      </div>
+    </footer>
     <script type="text">
       WebFontConfig = {
         google: { families: [ 'Open+Sans:400italic,400,700:latin' ] }
@@ -85,4 +88,5 @@
     {{ template "_internal/google_analytics_async.html" . }}
     {{ "<!--" | safeHTML }} hugo {{ $.GitInfo }} ok? {{ "-->" | safeHTML }}
   </body>
+
 </html>

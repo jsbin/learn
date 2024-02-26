@@ -17,7 +17,7 @@ This second point is *really* important to us. JS Bin has existed for over 5 yea
 
 Eventually we decided that to spend full time on JS Bin, and to invest fully in it's infrastructure, JS Bin needed to sustain itself, hence Pro status.
 
-If you don't want (or need) Pro, but you want to support the project, maybe [donate via Gratipay](https://gratipay.com/jsbin/) instead?
+If you want to support the project, you can [donate via OpenCollective](https://opencollective.com/jsbin/contribute)
 
 <center><a class="actionButton actionButton-primary actionButton-jumbo actionButton-rounded" href="http://jsbin.com/upgrade">Upgrade to Pro</a></center>
 
@@ -25,14 +25,16 @@ If you don't want (or need) Pro, but you want to support the project, maybe [don
 
 At time of writing, our pro feature set is:
 
-- [Private bins](#privatebins)
-- [Vanity URLs](#vanityurls)
-- [Asset uploads](#assetuploads)
-- [SSL embeds](#sslembeds)
-- [Dropbox integration](#dropbox)
-- [Priority support](#prioritysupport)
-- ["Sandbox" mode](#sandboxmode)
-- [Coming next](#comingnext)
+- [What does a Pro account get you?](#what-does-a-pro-account-get-you)
+- [Pro features](#pro-features)
+- [Private bins](#private-bins)
+- [Asset uploads](#asset-uploads)
+- [Vanity URLs](#vanity-urls)
+- [SSL embeds](#ssl-embeds)
+- [Dropbox](#dropbox)
+- [Priority support](#priority-support)
+- ["Sandbox" mode](#sandbox-mode)
+- [Coming next](#coming-next)
 
 And you can [upgrade today](/account/upgrade/pay)!
 
