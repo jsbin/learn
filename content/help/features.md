@@ -9,7 +9,6 @@ This is a non-exhaustive, non-priortised list of features that JS Bin has.
 Please feel free to **contribute to this list** if you know of a feature, and add descriptions and demos where appropriate.
 
 * Live reload both in editor and in full preview
-* Codecasting - [blog post](http://remysharp.com/2013/11/14/what-is-codecasting/)
 * Console
 * Full unmodified rendered view
 * Gist support: [import](/help/import-gists) and [export](/help/export-gist)
@@ -72,7 +71,6 @@ Please feel free to **contribute to this list** if you know of a feature, and ad
 * Custom embed CSS and editor settings
 * [Sandbox mode](/help/sandbox-mode) - does not save the bin
 * [Private bins](/help/private-bins)
-* [Dropbox](/help/dropbox)
 * [Vanity URLs](/help/pro#vanityurls) - [blog post](/blog/twdtw-4-tern-pro-features#upcomingprofeaturevanityurls)
 * [Asset hosting](/help/asset-uploading)
 
